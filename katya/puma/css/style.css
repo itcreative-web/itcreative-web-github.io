@@ -3344,6 +3344,13 @@ p.product4__description_color {
   }
 }
 
+@media (max-width: 920px) and (min-width: 300px) and (-ms-high-contrast: none), (max-width: 920px) and (min-width: 300px) and (-ms-high-contrast: active) {
+  .product__left {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 @media (max-width: 920px) {
   .product {
     -webkit-box-orient: vertical;
@@ -3362,7 +3369,6 @@ p.product4__description_color {
   }
   .product__left {
     width: 100%;
-    height: 100%;
   }
   .product__gallery-mini {
     margin-top: 600px;
