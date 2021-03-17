@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>s20</title>
+        <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="./css/slick.css">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style-ru.css">
+    </head>
+    <body data-path=".">
+        <!-- header start -->
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <img src="./img/logo.png" alt="" class="logo" style="opacity: 0; visibility: hidden;"><img src="./img/galaxy.png" alt="" class="galaxy">
+                    <h3>флагманская новинка теперь доступна каждому</h3>
+                    <div class="header__content-img">
+                        <img src="./img/phone/header/1.png" alt="" class="blue active"><img src="./img/phone/header/2.png" alt="" class="gray"><img src="./img/phone/header/3.png" alt="" class="red">
+                        <div class="color">
+                            <input type="radio" id="blue" name="color" value="blue" checked><label for="blue" class="blue">Голубой</label>
+                            <input type="radio" id="gray" name="color" value="gray"><label for="gray" class="gray">Серый</label>
+                            <input type="radio" id="red" name="color" value="red"><label for="red" class="red">Красный</label>
+                        </div>
+                        <div class="sale">
+                            <p>50%</p>
+                            <span class="period"><output></output></span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <p>Основная камера<span>12Мп + 64Мп +12Мп</span></p>
+                        </li>
+                        <li>
+                            <p>Аккумулятор<span>4000 мАч</span></p>
+                        </li>
+                        <li>
+                            <p>Процессор<span>Exynos 990</span></p>
+                        </li>
+                        <li>
+                            <p>Диагональ экрана<span>6.2"</span></p>
+                        </li>
+                    </ul>
+                    <div class="price">
+                        <p class="old-price">Старая цена : <span>{{ $products[241]['price'] * 2 }} {{ $products[241]['currency'] }}</span></p>
+                        <p class="new-price">Новая цена : <span>{{ $products[241]['price'] }} {{ $products[241]['currency'] }}</span></p>
+                    </div>
+                    <figure class="order">
+                        <a href="#catalog">купить</a>
+                        <p>*Количество товара ограничено</p>
+                    </figure>
+                    <a href="#specifications">характеристики</a>
+                </div>
+            </div>
+        </header>
+        <!-- header end --><!-- main start -->
+        <main role="main">
+            <!-- advantages start-->
+            <div class="advantages">
+                <div class="container">
+                    <div class="advantages__content">
+                        <hr>
+                        <figure>
+                            <span></span>
+                            <h5>Главные отличия от S10</h5>
+                            <p>Основные отличия от S10 в уменьшенных рамках дисплея, а также в более мощном процессоре.</p>
+                            <ul>
+                                <li><span>Фронтальная камера компактнее</span></li>
+                                <li><span>Частота обновления дисплея 120 Гц</span></li>
+                                <li><span>Защитное стекло сзади и спереди</span></li>
+                            </ul>
+                        </figure>
+                        <figure>
+                            <span></span>
+                            <h5>Безрамочный дисплей</h5>
+                            <p>Главный повод для гордости — поистине шикарный 6.2-дюймовой дисплей Quad HD+ с поддержкой стандарта HDR10+.</p>
+                            <ul>
+                                <li><span>3200х1440 пикселей</span></li>
+                                <li><span>Сканер отпечатка пальца</span></li>
+                                <li><span>Насыщенная цветовая гамма</span></li>
+                            </ul>
+                        </figure>
+                        <figure>
+                            <span></span>
+                            <h5>Оплата только при получении</h5>
+                            <p>Доставка осуществляется в течение 3-7 дней с момента заказа. Вы оплачиваете товар только после осмотра.</p>
+                            <ul>
+                                <li><span>Полная комплектация</span></li>
+                                <li><span>Быстрая доставка</span></li>
+                                <li><span>Отсутствует предоплата</span></li>
+                            </ul>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <!-- advantages end-->
+            <!-- specifications start -->
+            <div id="specifications" class="specifications">
+                <div class="container">
+                    <h3>технические характеристики</h3>
+                    <img src="./img/galaxy-f.png" alt="" class="galaxy">
+                    <p class="title">Ознакомьтесь с характеристиками нового флагмана. Мы отказались от рамок и оставили лишь крошечное отверстие для камеры, чтобы ничего не отвлекало вас от погружения в контент на безграничном экране.</p>
+                    <div class="specifications__block">
+                        <figure class="camera"><img src="./img/specifications-camera.png" alt=""></figure>
+                        <figure class="mp"><img src="./img/specifications-mp.png" alt="" class="mp"></figure>
+                        <div class="specifications__block-text">
+                            <span><strong>12Мп</strong> Ультраширокоугольная</span>
+                            <span><strong>12Мп</strong> Широкоуголтная</span>
+                            <span><strong>64Мп</strong> Телеобъектив</span>
+                            <span><strong>LED</strong> Вспышка</span>
+                            <span><strong>Фронтальная камера</strong> 10Мп</span>
+                        </div>
+                    </div>
+                    <div class="specifications__content">
+                        <div class="specifications__content-left">
+                            <span><strong>Дисплей</strong>6,2" Quad HD+ (3200x1440)</span>
+                            <span><strong>Процессор</strong>Exynos 990 8 ядер</span>
+                            <span><strong>Память</strong>Оперативаня память 8 Гб Встроенная память 128 Гб</span>
+                            <span><strong>Операционная система</strong>Android 10.0</span>
+                            <span><strong>Аккумулятор</strong>4000 мАч</span>
+                        </div>
+                        <div class="specifications__content-center">
+                            <img src="./img/specifications-phone.png" alt="">
+                        </div>
+                        <div class="specifications__content-right">
+                            <span><strong>Материалы корпуса</strong>металл, стекло</span>
+                            <span><strong>Габариты (ВхШхГ)</strong>152 x 68 x 7.9мм</span>
+                            <span><strong>Вес</strong>164г</span>
+                            <span><strong>Цвета</strong>Голубой,<br>Серый,<br>Красный</span>
+                            <img src="./img/specifications-phones.png" alt="">
+                        </div>
+                        <p><span>Полную информацию о характеристиках <br>уточняйте у консультанта</span></p>
+                    </div>
+                    <figure class="order"><a href="#catalog">оформить заказ</a>
+                    </figure>
+                </div>
+                <canvas></canvas>
+                <canvas></canvas>
+            </div>
+            <!-- specifications end -->
+            <!-- description start -->
+            <div class="description">
+                <div class="container">
+                    <div class="description__content">
+                        <h3>используй все возможности камеры</h3>
+                        <p>Традиционно сильная сторона модели — фото- и видеосъемка основной камеры. На тыльной стороне сочетаются 3 фотомодуля (12 МП ведущий + 64 МП телеобъектив + 12 МП ультраширокоугольная) с недюжинным потенциалом. В частности, камера смартфона умеет записывать <span>ролики в разрешении 8К при 30 к/с</span>, а равных моделей по фотографической части у линейки S20 еще не было.</p>
+                        <p>Дополняют картину по гаджету быстрая беспроводная зарядка аккумулятора-«четырехтысячника» (4000 мАч), <span>пылевлагозащита по стандарту IP68</span> и полный набор актуальных беспроводных коммуникаций (включая Wi-Fi 6 и чип NFC).</p>
+                        <picture>
+                            <source srcset="./img/description-phone-s.png" media="(max-width: 576px)"><img src="./img/description-phone.png" alt=""></source>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <!--  description end -->
+            <!-- gallery start -->
+            <div class="gallery">
+                <div class="container">
+                    <div class="gallery__block">
+                        <a href="./img/gallery/1.jpg" data-fancybox="gallery"><img src="./img/gallery/1s.jpg" alt=""></a>
+                        <figure><a href="./img/gallery/2.jpg" data-fancybox="gallery"><img src="./img/gallery/2s.jpg" alt=""></a>
+                            <a href="./img/gallery/3.jpg" data-fancybox="gallery"><img src="./img/gallery/3s.jpg" alt=""></a>
+                            <a href="./img/gallery/4.jpg" data-fancybox="gallery"><img src="./img/gallery/4s.jpg" alt=""></a>
+                            <a href="./img/gallery/5.jpg" data-fancybox="gallery"><img src="./img/gallery/5s.jpg" alt=""></a>
+                        </figure>
+                    </div>
+                </div>
+                <canvas></canvas>
+                <canvas></canvas>
+            </div>
+            <!-- gallery end -->
+            <!-- catalog start -->
+            <div id="catalog" class="catalog">
+                <div class="container">
+                    <div class="catalog__content">
+                        <img src="./img/logo.png" alt="" class="logo" style="opacity: 0; visibility: hidden;"><img src="./img/galaxy.png" alt="" class="galaxy">
+                        <div class="sale">
+                            <p>50%</p>
+                            <span class="period"><output></output></span>
+                        </div>
+                        <div class="price">
+                            <p class="old-price">Старая цена : <span>{{ $products[241]['price'] * 2 }} {{ $products[241]['currency'] }}</span></p>
+                            <p class="new-price">Новая цена : <span>{{ $products[241]['price'] }} {{ $products[241]['currency'] }}</span></p>
+                        </div>
+                        <div class="catalog__content-img blue">
+                            <div class="small">
+                                <figure class="first active"><img src="./img/catalog/blue/1.png" alt=""></figure>
+                                <figure class="second"><img src="./img/catalog/blue/2.png" alt=""></figure>
+                                <figure class="third"><img src="./img/catalog/blue/3.png" alt=""></figure>
+                                <figure class="fourth"><img src="./img/catalog/blue/4.png" alt=""></figure>
+                            </div>
+                            <div class="big">
+                                <img src="./img/catalog/blue/1.png" alt="" class="first active"><img src="./img/catalog/blue/2.png" alt="" class="second"><img src="./img/catalog/blue/3.png" alt="" class="third"><img src="./img/catalog/blue/4.png" alt="" class="fourth">
+                            </div>
+                        </div>
+                        <p class="color">Цвет: <output>Голубой</output></p>
+                        <div id="mobile-order" class="color">
+                            <figure class="blue active" data-color="blue"><img src="./img/catalog/color/1.png" alt=""></figure>
+                            <figure class="gray" data-color="gray"><img src="./img/catalog/color/2.png" alt=""></figure>
+                            <figure class="red" data-color="red"><img src="./img/catalog/color/3.png" alt=""></figure>
+                        </div>
+                        <form action="{{ $action }}" name="form1" method="POST">
+                            <input type="text" id="name_first" class="form-control" name="name" placeholder="Имя" required>
+                            <input type="tel" id="phone" class="form-control" name="phone" placeholder="Телефон" required>
+                            <button class="btn btn1" type="submit" name="submit">купить</button>
+                            <p>*Количество товара ограничено</p>
+                        </form>
+                    </div>
+                </div>
+                <div class="ellipse"></div>
+            </div>
+            <!-- catalog end -->
+            <!-- kit start -->
+            <div class="kit">
+                <div class="container">
+                    <h3>комплект поставки</h3>
+                    <div class="kit__block">
+                        <figure>
+                            <img src="./img/kit/1.jpg" alt="">
+                            <p>Фирменная упаковка</p>
+                        </figure>
+                        <figure>
+                            <img src="./img/kit/2.jpg" alt="">
+                            <p>S20</p>
+                        </figure>
+                        <figure>
+                            <img src="./img/kit/3.jpg" alt="">
+                            <p>Наушники</p>
+                        </figure>
+                        <div class="kit__block-block">
+                            <figure>
+                                <img src="./img/kit/4.jpg" alt="">
+                                <p>Кабель USB Type-C</p>
+                            </figure>
+                            <figure>
+                                <img src="./img/kit/5.jpg" alt="">
+                                <p>Адаптер питания</p>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- kit end -->
+            <!-- review start -->
+            <div class="review">
+                <div class="container">
+                    <h3>Отзывы <br>наших покупателей</h3>
+                    <div class="review__block">
+                        <div class="review__block-text">
+                            <div class="review__block-text__slider">
+                                <div class="item">
+                                    <figure>
+                                        <p>Смартфон топ! Мой предыдущий s9+ был тоже классный и устраивал меня. Камерой конечно не сравнится с s20, но в целом тот же функционал. Отлично можно работать с фотографиями, обрабатывать их и вставлять текст. Большой плюс в медленном расходе батареи. Весь день активного пользования держит спокойно. Благодарю магазин, нормальная цена за неплохой смартфон.</p>
+                                        <hr>
+                                        <span>Tranh</span>
+                                    </figure>
+                                </div>
+                                <div class="item">
+                                    <figure>
+                                        <p>S20 быстрый, работает здорово, 2 недели пользуюсь и осталась довольна. С первого взгляда видно-это смартфон нового десятилетия, просто прорыв! Он большой, он тяжелый, чувствуется мощь! Сразу начала играться с зумом и увеличивать любые предметы из окна) Впечатляет качество снимков.</p>
+                                        <hr>
+                                        <span>Tia</span>
+                                    </figure>
+                                </div>
+                                <div class="item">
+                                    <figure>
+                                        <p>Телефон отличный. Батарея живет один день при играх и серфинге в течении дня. Экран отличный.
+                                            <br><br>Ну и конечно фирменная Gorilla Glass как всегда радует, потому и его, самый прочный корпус, экран.
+                                            <br><br>На данный момент 3-ий мой смартфон из серии S и пока явно лучший по фото и батарее.
+                                        </p>
+                                        <hr>
+                                        <span>Ngueng</span>
+                                    </figure>
+                                </div>
+                                <div class="item">
+                                    <figure>
+                                        <p>Нереально крутой телефон. Камера просто бомбическая. Советую всем. продолжают радовать</p>
+                                        <hr>
+                                        <span>Tranh</span>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review__block-img">
+                            <img src="./img/review-phone.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <canvas></canvas>
+            </div>
+            <!-- review end -->
+            <!-- delivery start -->
+            <div class="delivery">
+                <div class="container">
+                    <div class="delivery__content">
+                        <h3>доставка и оплата</h3>
+                        <figure>
+                            <span>Заявка</span>
+                            <p>Оставьте заявку на нашем сайте, заполнив форму заказа</p>
+                        </figure>
+                        <figure>
+                            <span>Оформление</span>
+                            <p>Оператор уточнит у Вас детали, и мы отправим ваш заказ</p>
+                        </figure>
+                        <figure>
+                            <span>Получение</span>
+                            <p>Через 3-7 дней Вы получите товар на почте и оплатите его после осмотра</p>
+                        </figure>
+                    </div>
+                    <div class="delivery__img">
+                        <img src="./img/delivery-phones.jpg" alt="">
+                    </div>
+                </div>
+                <canvas></canvas>
+            </div>
+            <!-- delivery end -->
+            <!-- banner start -->
+            <div class="banner">
+                <div class="container">
+                    <div class="banner__content">
+                        <img src="./img/logo.png" alt="" class="logo" style="opacity: 0; visibility: hidden;"><img src="./img/galaxy.png" alt="" class="galaxy">
+                        <h3>получи новинку года по суперцене</h3>
+                        <picture>
+                            <source srcset="./img/banner-phone-s.png" media="(max-width: 979px)"><img src="./img/banner-phone.png" alt=""></source>
+                        </picture>
+                        <div class="sale">
+                            <p>50%</p>
+                            <span class="period"><output></output></span>
+                        </div>
+                        <div class="price">
+                            <p class="old-price">Старая цена : <span>{{ $products[241]['price'] * 2 }} {{ $products[241]['currency'] }}</span></p>
+                            <p class="new-price">Новая цена : <span>{{ $products[241]['price'] }} {{ $products[241]['currency'] }}</span></p>
+                        </div>
+                        <figure class="order">
+                            <a href="#catalog">купить</a>
+                            <p>*Количество товара ограничено</p>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <!-- banner end -->
+        </main>
+        <!-- main end --><!-- footer start -->
+        <div class="footer">
+            <div class="container">
+                <p class="politic">Политика конфиденциальности</p>
+                <p>Все права защищены. Copyright <strong></strong></p>
+                <p>{{ $address }}</p>
+                <p>Разработка лендинга <a class="it-link" target="_blank" href="https://itcreative.info" title="Разработка лендингов">itcreative.info</a></p>
+            </div>
+        </div>
+        <!-- footer end -->
+        <!-- body filter start -->
+        <div class="body__filter"></div>
+        <!-- body filter end -->
+        <!-- political end -->
+        <div class="political">
+            <img class="close" src="./img/cancel.png" alt="">
+            <p>Наш интернет-магазин уважительно относится к правам
+                клиента. Соблюдается строгая конфиденциальность при
+                оформлении заказа. Сведения надёжно сохраняются и
+                защищены от передачи.
+            </p>
+            <p>Согласием на обработку данных клиента исключительно с
+                целью оказания услуг является размещение заказа на
+                сайте.
+            </p>
+            <p>К персональным данным относится личная информация о
+                клиенте: домашний адрес; имя, фамилия, отчество;
+                сведения о рождении; имущественное, семейное положение;
+                личные контакты (телефон, электронная почта) и прочие
+                сведения, которые перечислены в Законе «О
+                персональных данных».
+            </p>
+            <p>Клиент вправе отказаться от обработки персональных
+                данных. Нами в данном случае гарантируется удаление
+                с сайта всех персональных данных в трёхдневный срок
+                в рабочее время. Подобный отказ клиент может оформить
+                простым электронным письмом на адрес, указанный на
+                странице нашего сайта.
+            </p>
+        </div>
+        <!-- political end -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./js/jquery.matchHeight-min.js"></script>
+        <script src="./js/jquery.fancybox.min.js"></script>
+        <script src="./js/slick.js"></script>
+        <script src="./js/main-ru.js"></script>
+        <script src="./js/main-um.js"></script>
+
+    </body>
+</html>
