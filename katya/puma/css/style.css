@@ -983,7 +983,6 @@ button {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100%;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
@@ -996,7 +995,6 @@ button {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1010,6 +1008,15 @@ button {
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .product__gallery-mini_active {
+    height: 100%;
+  }
+  .product__left_wrapper {
+    height: 100%;
+  }
 }
 
 .product-abs-black1 {
