@@ -380,6 +380,7 @@ button {
   top: 0;
   right: -140px;
   z-index: 1;
+  pointer-events: none;
 }
 
 .offer__abs-img-black {
@@ -435,6 +436,7 @@ button {
   top: 70px;
   max-width: 475px;
   z-index: 2;
+  pointer-events: none;
 }
 
 .offer__abs-img-man2 {
@@ -442,6 +444,7 @@ button {
   top: 250px;
   right: -310px;
   z-index: 2;
+  pointer-events: none;
 }
 
 .advantages {
@@ -627,6 +630,7 @@ button {
   right: -100px;
   max-width: 710px;
   z-index: 1;
+  pointer-events: none;
 }
 
 .video__abs-img-shoe {
@@ -634,6 +638,7 @@ button {
   top: -60px;
   right: -100px;
   z-index: 5;
+  pointer-events: none;
 }
 
 .video__abs-img-leaf {
@@ -665,6 +670,7 @@ button {
   left: -380px;
   bottom: -325px;
   z-index: 1;
+  pointer-events: none;
 }
 
 .video__abs-img-logo {
@@ -672,6 +678,7 @@ button {
   left: -250px;
   top: -300px;
   z-index: 1;
+  pointer-events: none;
 }
 
 .video__wrapper {
@@ -1153,16 +1160,22 @@ button {
   margin-bottom: 10px;
 }
 
+.product__description span {
+  font-weight: bold;
+}
+
 .product__color {
   max-width: 155px;
   border-right: 2px solid #bfc6aa;
   padding-right: 30px;
   margin-right: 30px;
   color: #144426;
+  font-weight: bold;
 }
 
 .product__color span {
   color: black;
+  font-weight: normal;
 }
 
 .product__circle-color {
@@ -1263,10 +1276,12 @@ button {
 .product__size {
   position: relative;
   color: #144426;
+  font-weight: bold;
 }
 
 .product__size span {
   color: black;
+  font-weight: normal;
 }
 
 .product__size select {
@@ -1473,6 +1488,7 @@ p.product4__description_color {
   left: calc(50% - 200px);
   top: -150px;
   max-width: 306px;
+  pointer-events: none;
 }
 
 .product4 .price {
@@ -1885,6 +1901,7 @@ p.product4__description_color {
   top: 0;
   left: -60px;
   z-index: 1;
+  pointer-events: none;
 }
 
 .end__abs-img-black {
@@ -1893,6 +1910,7 @@ p.product4__description_color {
   right: -400px;
   z-index: 5;
   max-width: 698px;
+  pointer-events: none;
 }
 
 .end__abs-img-white {
@@ -1901,6 +1919,7 @@ p.product4__description_color {
   top: 70px;
   z-index: 5;
   max-width: 625px;
+  pointer-events: none;
 }
 
 .end .stiker-sale {
@@ -1929,6 +1948,7 @@ p.product4__description_color {
   bottom: -70px;
   max-width: 300px;
   z-index: 10;
+  pointer-events: none;
 }
 
 @media (max-width: 1680px) {
@@ -3167,10 +3187,10 @@ p.product4__description_color {
     margin-bottom: 20px;
   }
   .my-slick-button {
-    border: 2px solid #7CA23C;
+    border: 2px solid #7ca23c;
     width: 10px;
     height: 10px;
-    background: #7CA23C;
+    background: #7ca23c;
     border-radius: 50%;
     margin: 5px;
   }

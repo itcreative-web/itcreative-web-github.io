@@ -27,20 +27,20 @@ $(document).ready(function () {
   formatDate(today); // Якоря к карточке заказа товара в секции продукты
 
   $(".btn-scroll").click(function (event) {
-    if ($(window).width() <= 1590) {
+    if ($(window).width() <= 1000) {
       event.preventDefault();
-      console.log("before 1000");
+      console.log("1");
       var top = $("#order-buy").offset().top;
       $('body, html').animate({
         scrollTop: top + $("#order-buy").height() - $(window).height()
       }, 800);
-    } else if ($(window).width() <= 970) {
+    } else if ($(window).width() <= 2600) {
       event.preventDefault();
-      console.log("before 1000");
       var top = $("#order-buy").offset().top;
       $('body, html').animate({
         scrollTop: top - 400
       }, 800);
+      console.log("2");
     } // } else if ($(window).width() <= 1900) {
     //   event.preventDefault();
     //   console.log("after 1000");
