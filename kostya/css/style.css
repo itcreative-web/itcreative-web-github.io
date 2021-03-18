@@ -559,15 +559,15 @@ footer {
 }
 
 .footer__center .background__blend {
-  width: 800px;
-  height: 800px;
+  width: 1000px;
+  height: 1000px;
   position: absolute;
-  right: -100%;
-  top: -20%;
+  right: -90%;
+  top: -60%;
   opacity: 0.7;
   background: url("../img/flare.png") center center no-repeat;
   background-size: contain;
-  z-index: 20;
+  z-index: 1;
   pointer-events: none;
 }
 
@@ -621,7 +621,7 @@ footer {
   position: absolute;
   top: -30px;
   left: 0;
-  z-index: 5;
+  z-index: 15;
 }
 
 .footer__sale {
@@ -636,6 +636,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  z-index: 10;
 }
 
 .footer__price {
@@ -1115,16 +1116,19 @@ form {
   height: auto;
   display: flex;
   position: relative;
+  z-index: 10;
 }
 
 .card__1 .background__blend {
-  width: 900px;
-  height: 900px;
+  width: 1200px;
+  height: 1200px;
   position: absolute;
   right: -20%;
-  top: -100%;
+  top: -115%;
+  opacity: 0.7;
   background: url("../img/flare.png") center center no-repeat;
   background-size: contain;
+  z-index: 1;
 }
 
 .card__2 .background__blend {
@@ -1373,7 +1377,7 @@ form {
   position: absolute;
   top: -60px;
   left: -50px;
-  z-index: 6;
+  z-index: 100;
 }
 
 .card__center-title {
@@ -1397,6 +1401,8 @@ form {
   align-items: center;
   padding: 48px 30px;
   background-color: #BE9EC9;
+  position: relative;
+  z-index: 10;
 }
 
 .card__right form {
@@ -1615,6 +1621,18 @@ form {
   position: relative;
   z-index: 12;
   margin-right: 20px;
+  flex-basis: 80px;
+  flex-shrink: 0;
+}
+
+.message__foto img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
 }
 
 .message__name {
@@ -2278,6 +2296,9 @@ form {
     width: 450px;
     height: 550px;
   }
+  .footer__center .background__blend {
+    right: -120%;
+  }
   .footer__title {
     font-size: 42px;
   }
@@ -2285,8 +2306,8 @@ form {
     height: 250px;
   }
   .footer__boot-img {
-    width: 400px;
-    top: -50px;
+    width: 340px;
+    top: -60px;
   }
   .footer__sale {
     width: 200px;
