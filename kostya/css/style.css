@@ -1699,12 +1699,12 @@ form {
 
 .slider__text-left {
   top: 60px;
-  left: 11%;
+  left: 5%;
 }
 
 .slider__text-right {
   top: 60px;
-  right: 10.5%;
+  right: 4.5%;
 }
 
 .slider__bg {
@@ -2192,10 +2192,10 @@ form {
     margin-left: 700px;
   }
   .slider__text-left {
-    left: 5%;
+    left: 1%;
   }
   .slider__text-right {
-    right: 5%;
+    right: 1%;
   }
   .btn__prev {
     left: 29%;
@@ -2429,6 +2429,10 @@ form {
   }
   .header__wrapper {
     margin-top: 100px;
+  }
+  .slider__text {
+    width: 250px;
+    text-align: center;
   }
   .slider__text-left {
     left: 1%;
@@ -2670,7 +2674,7 @@ form {
   }
   .slider__text {
     word-wrap: wrap;
-    width: 200px;
+    width: 250px;
     text-align: center;
     top: 0px;
   }
@@ -3036,6 +3040,10 @@ form {
   }
   .header__main-order {
     width: 280px;
+  }
+  .slider__text {
+    width: 200px;
+    font-size: 14px;
   }
   .slide__2 {
     left: -12%;
@@ -4019,16 +4027,19 @@ form {
     width: 100%;
     justify-content: space-around;
   }
+  .header__main {
+    margin-bottom: 80px;
+  }
   .header__main-title {
     font-size: 74px;
-    width: 120px;
+    width: 115px;
   }
   .header__main-center {
     width: 200px;
   }
   .boot__flag {
     width: 150px;
-    left: -10px;
+    left: -5px;
   }
   .boot__main1 {
     width: 320px;
@@ -4082,8 +4093,9 @@ form {
   .slider__text {
     width: 100%;
     margin: 0 auto;
+    font-size: 18px;
     padding: 0 20px;
-    top: -40px;
+    top: -50px;
     left: auto;
   }
   .slick-slide {
@@ -4181,7 +4193,7 @@ form {
     height: auto;
   }
   .card__price {
-    width: 280px;
+    width: 290px;
   }
   .card__center {
     height: 433px;
