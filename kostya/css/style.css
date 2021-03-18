@@ -574,7 +574,7 @@ footer {
 .footer__right-img {
   width: 700px;
   z-index: 30;
-  margin-left: -80px;
+  margin-left: -20px;
   margin-bottom: -40px;
 }
 
@@ -2048,7 +2048,7 @@ form {
   padding: 0;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .header__elipse {
     width: 600px;
     height: 600px;
@@ -3931,6 +3931,10 @@ form {
     background-size: 105%;
     background-position: -20px top;
   }
+  .header__background {
+    background-size: 70%;
+    background-position: -150px 100px;
+  }
   .header__elipse {
     width: 263px;
     height: 263px;
@@ -4066,6 +4070,13 @@ form {
     margin: 0 auto;
     padding: 0;
   }
+  .slider__text {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    top: -40px;
+    left: auto;
+  }
   .slick-slide {
     width: 290px;
     height: 435px;
@@ -4151,6 +4162,14 @@ form {
   }
   .sale {
     left: 190px;
+  }
+  .card__table {
+    width: 290px;
+    max-width: 290px;
+  }
+  .card__table tr {
+    max-width: 290px;
+    height: auto;
   }
   .card__price {
     width: 270px;
@@ -4260,15 +4279,23 @@ form {
   }
   .header__price {
     width: 268px;
+    position: relative;
+    z-index: 100;
   }
   .header__price .price {
     width: 268px;
+  }
+  .header__price .order__btn {
+    transform: translateX(1px);
   }
   .header__main {
     margin-bottom: 90px;
   }
   .header__main-center {
     width: 160px;
+  }
+  .boot__flag {
+    left: -10px;
   }
   .boot__main1 {
     width: 320px;
@@ -4279,6 +4306,12 @@ form {
     width: 240px;
     top: 50px;
     left: -40px;
+  }
+  .card__1 {
+    margin-bottom: 40px;
+  }
+  .card__2 {
+    margin-bottom: 40px;
   }
   .slider__text-left {
     width: 290px;
@@ -4301,6 +4334,12 @@ form {
   .sprey__title-right {
     right: -50px;
     top: 420px;
+  }
+  .reviews {
+    margin-top: 60px;
+  }
+  .footer__boot-img {
+    top: 0;
   }
 }
 

@@ -58,7 +58,7 @@ $(function () {
 
 		$(window).scroll(function () {
 			var currentScroll = window.pageYOffset;
-			if (currentScroll >= startOpacity - 700 && currentScroll <= endOpacity - 300) {
+			if (currentScroll >= startOpacity - 1000 && currentScroll <= endOpacity - 200) {
 				$(".quantity").removeClass("active");
 			} else {
 				$(".quantity").addClass("active");
