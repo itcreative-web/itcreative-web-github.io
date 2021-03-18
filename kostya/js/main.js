@@ -1,1 +1,80 @@
-var e;e=$(".slider").acarousel(),$(".btn__prev").click(function(){if(e.isAnim())return!1;var t=e.move(1);return changeActive(t),!1}),$(".btn__next").click(function(){return e.isAnim()||e.move(-1),!1}),$(window).resize(function(){e.init()}),$(function(){$(".slider__mobile").slick({dots:!1,arrows:!0,slidesToShow:1,centerMode:!0,variableWidth:!0,zIndex:1e5,prevArrow:$(".btn__prev"),nextArrow:$(".btn__next")}),$(".messages").slick({infinite:!0,slidesToShow:2,slidesToScroll:1,variableWidth:!0,dots:!1,arrows:!0,prevArrow:$(".message__btn-prev"),nextArrow:$(".message__btn-next"),responsive:[{breakpoint:660,settings:{centerMode:!0,centerPadding:"40px",slidesToShow:1}}]})}),$(function(){AOS.init(),$('[data-fancybox="slider"]').fancybox({loop:!0}),$('[data-fancybox="gallery1"]').fancybox({loop:!0}),$('[data-fancybox="gallery2"]').fancybox({loop:!0}),$('[data-fancybox="gallery3"]').fancybox({loop:!0}),$('[data-fancybox="slider__mobile"]').fancybox({loop:!0}),$(".review__btn").click(function(){$.fancybox.open($(".modal"),{infobar:!1})})}),$(function(){function t(t){$(t+" .size__btn").click(function(){$(t+" .size__btn").each(function(){$(this).parent().removeClass("active")}),$(this).parent().addClass("active")})}var e;$("body").on("click",'[href*="#"]',function(t){$("html,body").stop().animate({scrollTop:+$(this.hash).offset().top},1e3),t.preventDefault()}),t(".card__1"),t(".card__2"),t(".card__3"),e=".card__2",$(e+" .color__btn").click(function(){$(e+" .color__btn").each(function(){$(this).removeClass("active")});var t=$(e+" .center__img");$(this).hasClass("btn__black")&&($(t).hide().attr("src",$(t).attr("data-black")).fadeIn(1e3),$(this).addClass("active")),$(this).hasClass("btn__white")&&($(t).hide().attr("src",$(t).attr("data-white")).fadeIn(1e3),$(this).addClass("active"))}),$(".sprey .color__btn").click(function(){$(".sprey .color__btn").each(function(){$(this).removeClass("active")}),$(this).addClass("active")}),function(){var e=$(".header").height()+$(".first-section").height(),a=e+$(".second-section").height();$(window).scroll(function(){var t=window.pageYOffset;e-700<=t&&t<=a-300?$(".quantity").removeClass("active"):$(".quantity").addClass("active")});var t=25;setInterval(function(){2<=t?(t-=Math.floor(Math.random()*Math.floor(3)),$(".quantity__number").text(t)):t=25},6e4)}()});
+$(function () {
+	$("body").on('click', '[href*="#"]', function (e) {
+		var fixedOffset = 0;
+		$('html,body')
+			.stop()
+			.animate({ scrollTop: $(this.hash).offset().top - fixedOffset }, 1000);
+		e.preventDefault();
+	});
+
+	function switchBtns(selector) {
+		$(selector + " .size__btn").click(function () {
+			$(selector + " .size__btn").each(function () {
+				$(this).parent().removeClass("active");
+			})
+			$(this).parent().addClass("active");
+		})
+	}
+
+	switchBtns(".card__1");
+	switchBtns(".card__2");
+	switchBtns(".card__3");
+
+	function cards(selector) {
+		$(selector + " .color__btn").click(function () {
+			$(selector + " .color__btn").each(function () {
+				$(this).removeClass("active")
+			})
+			var currentImg = $(selector + " .center__img");
+			if ($(this).hasClass("btn__black")) {
+				$(currentImg).hide().attr("src", $(currentImg).attr("data-black")).fadeIn(1000);
+				$(this).addClass("active");
+			}
+			if ($(this).hasClass("btn__white")) {
+				$(currentImg).hide().attr("src", $(currentImg).attr("data-white")).fadeIn(1000);
+				$(this).addClass("active");
+			}
+		})
+	}
+	cards(".card__2")
+
+	function currentColor() {
+		$(".sprey .color__btn").click(function () {
+			$(".sprey .color__btn").each(function () {
+				$(this).removeClass("active");
+			})
+			$(this).addClass("active");
+		})
+	}
+	currentColor()
+
+	function getRandomInt(max) {
+		return Math.floor(Math.random() * Math.floor(max));
+	}
+
+	function quantity() {
+		var startOpacity = $(".header").height() + $(".first-section").height();
+		var endOpacity = startOpacity + $(".second-section").height();
+
+		$(window).scroll(function () {
+			var currentScroll = window.pageYOffset;
+			if (currentScroll >= startOpacity - 700 && currentScroll <= endOpacity - 300) {
+				$(".quantity").removeClass("active");
+			} else {
+				$(".quantity").addClass("active");
+			}
+		})
+
+		var currentNumber = 25;
+		setInterval(function () {
+			if (currentNumber >= 2) {
+				currentNumber = currentNumber - getRandomInt(3);
+				$(".quantity__number").text(currentNumber);
+			} else {
+				currentNumber = 25;
+			}
+		}, 60000)
+	}
+
+	quantity()
+})
