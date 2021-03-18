@@ -564,7 +564,7 @@ footer {
   position: absolute;
   right: -90%;
   top: -60%;
-  opacity: 0.7;
+  opacity: 0.5;
   background: url("../img/flare.png") center center no-repeat;
   background-size: contain;
   z-index: 1;
@@ -1125,7 +1125,7 @@ form {
   position: absolute;
   right: -20%;
   top: -115%;
-  opacity: 0.7;
+  opacity: 0.5;
   background: url("../img/flare.png") center center no-repeat;
   background-size: contain;
   z-index: 1;
@@ -1154,7 +1154,7 @@ form {
   opacity: 0.5;
   background: url("../img/flare.png") center center no-repeat;
   background-size: contain;
-  z-index: 20;
+  z-index: 5;
   pointer-events: none;
 }
 
@@ -4020,6 +4020,7 @@ form {
   }
   .boot__flag {
     width: 150px;
+    left: -10px;
   }
   .boot__main1 {
     width: 320px;
@@ -4036,16 +4037,16 @@ form {
   .main__advantage {
     width: 256px;
     height: 110px;
-    padding: 19px 19px 19px 48px;
+    padding: 10px 10px 10px 40px;
   }
   .main__advantage-background {
     width: 256px;
     height: 110px;
-    top: 7px;
-    left: 7px;
+    top: -7px;
+    left: -7px;
   }
   .main__advantage-text {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 16px;
   }
   .main__advantage-img {
@@ -4172,7 +4173,7 @@ form {
     height: auto;
   }
   .card__price {
-    width: 270px;
+    width: 280px;
   }
   .card__center {
     height: 433px;
@@ -4215,9 +4216,13 @@ form {
     right: 40px;
   }
   footer {
-    height: 720px;
+    height: 760px;
     margin-top: 150px;
     background-size: 110%;
+  }
+  .footer__center .background__blend {
+    top: 0%;
+    z-index: 1;
   }
   .footer__title {
     font-size: 24px;
@@ -4226,19 +4231,24 @@ form {
   .footer__subtitle {
     font-size: 20px;
     line-height: 23px;
-    margin-bottom: 280px;
+    margin-bottom: 300px;
   }
   .footer__boot {
     width: 290px;
+    height: 240px;
+    margin-top: -30px;
   }
   .footer__boot-img {
     width: 280px;
     left: -50px;
-    top: -20px;
+    top: 0px;
   }
   .footer__left {
     background-size: 55%;
-    background-position: -30px 80px;
+    background-position: -30px 100px;
+  }
+  .footer__price {
+    margin-top: -30px;
   }
 }
 
