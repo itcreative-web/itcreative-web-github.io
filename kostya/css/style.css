@@ -525,10 +525,10 @@ main {
 }
 
 footer {
-  background-image: url("../img/flowers.png"), linear-gradient(180deg, rgba(255, 226, 229, 0) 0%, #FFE2E5 100%);
-  background-position: left center, top center;
+  background-image: url("../img/flowers.png");
+  background-position: left center;
   background-repeat: no-repeat;
-  background-size: 50%, cover;
+  background-size: 50%;
   width: 100%;
   height: 750px;
   display: flex;
@@ -2302,7 +2302,7 @@ form {
     justify-content: space-around;
   }
   footer {
-    background-size: 40%, cover;
+    background-size: 40%;
     height: 650px;
   }
   .footer__left {
@@ -3344,7 +3344,7 @@ form {
   }
   footer {
     height: 900px;
-    background-size: 80%, cover;
+    background-size: 80%;
     background-position: left 120px;
   }
   .footer__left {
