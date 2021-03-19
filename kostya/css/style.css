@@ -1144,7 +1144,7 @@ form {
   position: absolute;
   left: -20%;
   top: -40%;
-  opacity: 0.5;
+  opacity: 0.2;
   background: url("../img/flare.png") center center no-repeat;
   background-size: contain;
   transform: rotate(240deg);
@@ -1433,6 +1433,7 @@ form {
 .card__color .color__btn {
   flex-basis: 30px;
   flex-shrink: 0;
+  outline: none;
 }
 
 .card__color .btn__black {
