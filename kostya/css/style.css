@@ -2302,7 +2302,7 @@ form {
     justify-content: space-around;
   }
   footer {
-    background-size: 40%;
+    background-size: 40%, cover;
     height: 650px;
   }
   .footer__left {
