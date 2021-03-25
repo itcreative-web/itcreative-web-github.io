@@ -15,6 +15,13 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
 /*
     general style
  */
@@ -500,18 +507,13 @@ button {
 }
 
 .nav-btn-prev {
-  -webkit-transform: rotate(-10deg);
-      -ms-transform: rotate(-10deg);
-          transform: rotate(-10deg);
-  padding-right: 4px;
-  padding-bottom: 5px;
+  padding-right: 2px;
+  padding-bottom: 2px;
 }
 
 .nav-btn-next {
-  -webkit-transform: rotate(-10deg);
-      -ms-transform: rotate(-10deg);
-          transform: rotate(-10deg);
-  padding-bottom: 5px;
+  padding-left: 2px;
+  padding-bottom: 2px;
 }
 
 .advantages__prev {
@@ -954,10 +956,6 @@ button {
 
 .swiper-slide img {
   width: 100%;
-}
-
-.owl-item.center {
-  width: 500px !important;
 }
 
 .gallery__slider-large {
