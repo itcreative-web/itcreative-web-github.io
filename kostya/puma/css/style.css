@@ -92,11 +92,13 @@ button, input, label, img {
   bottom: -60px;
   z-index: 10;
   transition: all 1s ease;
+  pointer-events: none;
 }
 
 .header__men.active {
   opacity: 1;
   visibility: visible;
+  pointer-events: none;
 }
 
 .header__boots {
@@ -104,6 +106,7 @@ button, input, label, img {
   visibility: hidden;
   width: 530px;
   transition: all 1s ease;
+  pointer-events: none;
 }
 
 @-webkit-keyframes slide {
@@ -144,6 +147,7 @@ button, input, label, img {
 
 .header__boots-black {
   width: 460px;
+  pointer-events: none;
 }
 
 .header__boots.active {
@@ -575,6 +579,7 @@ main {
   opacity: 0;
   visibility: hidden;
   transition: .5s ease;
+  pointer-events: none;
 }
 
 .rotation__boot.active {
@@ -619,6 +624,7 @@ main {
   position: absolute;
   bottom: 230px;
   left: 100px;
+  pointer-events: none;
 }
 
 .galary__wrapper {
@@ -650,6 +656,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  pointer-events: auto;
 }
 
 .other__foto {
@@ -671,6 +678,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  pointer-events: auto;
 }
 
 .galary__btns-group {
@@ -765,6 +773,7 @@ main {
   left: 50%;
   transform: translateX(-50%);
   margin-left: -15px;
+  pointer-events: none;
 }
 
 .card__3 .card__left-img {
@@ -861,6 +870,7 @@ main {
   transform: translate(-50%, -50%);
   width: 140px;
   height: 90px;
+  pointer-events: auto;
 }
 
 .card__info-sale {
@@ -1511,6 +1521,7 @@ footer {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  pointer-events: none;
 }
 
 .footer__boot1 {
@@ -1520,6 +1531,7 @@ footer {
   transform: translateX(-50%) rotate(60deg);
   margin-left: -500px;
   top: -190px;
+  pointer-events: none;
 }
 
 .footer__boot2 {
@@ -1529,6 +1541,7 @@ footer {
   transform: translateX(-50%);
   margin-left: -400px;
   top: 100px;
+  pointer-events: none;
 }
 
 .footer__logo {
