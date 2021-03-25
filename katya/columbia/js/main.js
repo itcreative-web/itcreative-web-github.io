@@ -739,5 +739,25 @@ $(document).ready(function () {
     document.addEventListener("scroll", lazyload);
     window.addEventListener("resize", lazyload);
     window.addEventListener("orientationChange", lazyload);
-  }
+  } // ПОЯВЛЕНИЕ И СКРЫТИЕ ФИКСИРОВАННОЙ КНОПКИ КОРЗИНЫ 
+
+
+  $(window).on('scroll', function () {
+    var scrollForm = $("#products").offset().top - $(window).height();
+    var scrollFormTop = $("#products").offset().top + $("#products").height();
+
+    if ($(this).scrollTop() < scrollForm) {
+      $('#scroll-fix').css({
+        opacity: 1
+      }).fadeIn('slow');
+    } else if ($(this).scrollTop() < scrollFormTop) {
+      $('#scroll-fix').css({
+        opacity: 0
+      }).fadeIn('slow');
+    } else {
+      $('#scroll-fix').css({
+        opacity: 1
+      }).fadeIn('slow');
+    }
+  });
 });
