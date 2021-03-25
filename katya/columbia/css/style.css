@@ -574,6 +574,7 @@ button {
 }
 
 .advantages__button {
+  pointer-events: auto;
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -4821,16 +4822,6 @@ select::-ms-expand {
 }
 
 @media (max-width: 480px) {
-  #scroll-fix {
-    -webkit-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-            transform: scale(0.7);
-    right: 0px;
-    bottom: 0px;
-  }
-}
-
-@media (max-width: 350px) {
   #scroll-fix {
     -webkit-transform: scale(0.5);
         -ms-transform: scale(0.5);
