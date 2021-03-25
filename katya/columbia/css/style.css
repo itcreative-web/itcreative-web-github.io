@@ -255,6 +255,17 @@ button {
   margin-bottom: 30px;
   text-align: center;
   z-index: 20;
+  -webkit-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+
+.btn-order:hover {
+  background: #47436a;
+}
+
+.products .btn-order:hover {
+  background: #73919b;
 }
 
 .duration-sale {
