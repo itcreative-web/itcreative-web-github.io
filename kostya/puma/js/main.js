@@ -111,8 +111,8 @@ $(function () {
 		}
 	}
 
-	carousel(".galary__wrapper", ".galary__block .move__mark");
-	carousel(".main__galary-wrapper", ".main__galary .move__mark");
+	carousel(".galary__wrapper", ".galary .move__mark");
+	carousel(".main__galary-wrapper", ".galary .move__mark");
 
 	Date.prototype.daysInMonth = function () {
 		return 32 - new Date(this.getFullYear(), this.getMonth(), 32).getDate();

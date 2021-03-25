@@ -45,6 +45,7 @@ img {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  pointer-events: none;
 }
 
 button, input, label, img {
@@ -481,7 +482,7 @@ main {
   left: 50px;
   padding: 10px 20px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
@@ -501,6 +502,9 @@ main {
   text-align: center;
   letter-spacing: 3px;
   color: #fff;
+  width: 100%;
+  height: auto;
+  word-wrap: wrap;
 }
 
 .advantage__text {
@@ -516,6 +520,9 @@ main {
   justify-content: center;
   align-items: center;
   transform: skew(25deg);
+  width: 100%;
+  word-wrap: wrap;
+  height: auto;
 }
 
 .rotation__btn {
@@ -760,7 +767,11 @@ main {
 }
 
 .card__3 .card__left-img {
-  top: -70px;
+  top: -20px;
+}
+
+.card__3 .card__left-img[src="./img/card3-black.png"] {
+  width: 600px;
 }
 
 .card__toggle {
@@ -865,6 +876,7 @@ main {
 .card__right {
   width: 450px;
   height: auto;
+  margin-left: 100px;
 }
 
 .card__table {
@@ -2085,6 +2097,9 @@ footer {
     width: 780px;
     margin-left: -160px;
   }
+  .card__right {
+    margin: 0;
+  }
   .card__logo {
     display: none;
   }
@@ -2100,7 +2115,7 @@ footer {
     height: 360px;
   }
   .main__galary-wrapper {
-    width: 900px;
+    width: 860px;
     height: 310px;
   }
   .main__galary-img {
@@ -2192,6 +2207,10 @@ footer {
     width: 600px;
   }
   .card__left-img[src="./img/card1-black.png"] {
+    width: 500px;
+  }
+  .card__3 .card__left-img,
+  .card__3 .card__left-img[src="./img/card3-black.png"] {
     width: 500px;
   }
   .main__galary {
@@ -2583,6 +2602,11 @@ footer {
     width: 130px;
     bottom: 180px;
   }
+  .rotation__boot-4 {
+    width: 280px;
+    bottom: 120px;
+    margin-left: 20px;
+  }
   .galary {
     height: 450px;
   }
@@ -2634,8 +2658,8 @@ footer {
   .card__left-galary {
     width: 100%;
     max-width: 600px;
-    height: 186px;
     flex-wrap: wrap;
+    height: 90px;
   }
   .card__galary-fotos {
     width: 140px;
@@ -2658,7 +2682,7 @@ footer {
     margin-left: -10px;
   }
   .card__3 .card__left-img {
-    top: -60px;
+    top: -20px;
   }
   .card__left-img[src="./img/card1-black.png"] {
     width: 530px;
@@ -3243,7 +3267,10 @@ footer {
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: -35px;
+    bottom: 20px;
+    margin-left: -20px;
+    left: 50%;
+    transform: skew(-40deg) translateX(-50%);
   }
   .move {
     width: 6px;
@@ -3278,11 +3305,15 @@ footer {
     top: -40px;
     width: 350px;
   }
+  .card__3 .card__left-img[src="./img/card3-black.png"] {
+    width: 400px;
+  }
   .card__toggle {
     margin-bottom: 5px;
   }
   .card__left-galary {
     max-width: 283px;
+    height: 186px;
   }
   .card .time {
     font-family: "Montserat";
