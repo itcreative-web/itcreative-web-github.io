@@ -425,25 +425,209 @@ $(document).ready(function () {
       }
     }]
   }); // СЛАЙДЕР gallery
+  // $('.gallery__slider1').slick({
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   // infinite: true,
+  //   arrows: true,
+  //   // initialSlide: 3,
+  //   centerMode: true,
+  // //   centerPadding: '60px',
+  //   variableWidth: true,
+  //   speed: 300,
+  //   appendArrows: $('.gallery1'),
+  //   prevArrow: '<div class="nav-btn nav-btn-prev gallery1__prev">&#8249;</div>',
+  //   nextArrow: '<div class="nav-btn nav-btn-next gallery1__next">&#8250;</div>',
+  //   appendDots: '.gallery1',
+  //   dots: true,
+  //         customPaging: function(slick,index) {
+  //           return '<button class="my__button"> <div></div></button>';
+  //         },
+  // });
 
-  $('.gallery__slider').slick({
-    slidesToShow: 3,
+  $('.gallery__slider-large').slick({
+    slidesToShow: 1,
     slidesToScroll: 1,
-    infinite: true,
     arrows: true,
-    centerMode: true,
-    //   centerPadding: '60px',
-    variableWidth: true,
-    speed: 300,
-    appendArrows: $('.gallery'),
+    fade: false,
+    speed: 200,
+    draggable: false,
+    swipe: false,
+    touchMove: false,
+    infinite: true,
+    asNavFor: '.gallery__slider',
+    appendArrows: $('.gallery__container'),
     prevArrow: '<div class="nav-btn nav-btn-prev gallery__prev">&#8249;</div>',
     nextArrow: '<div class="nav-btn nav-btn-next gallery__next">&#8250;</div>',
-    appendDots: '.gallery',
+    appendDots: '.gallery__container',
     dots: true,
     customPaging: function customPaging(slick, index) {
-      return '<button class="my__button"> <div></div></button>';
-    }
+      return '<button class="my__button"></button>';
+    },
+    responsive: [{
+      breakpoint: 1051,
+      settings: {
+        slidesToShow: 2,
+        draggable: true,
+        swipe: true,
+        touchMove: true,
+        speed: 300
+      }
+    }, {
+      breakpoint: 651,
+      settings: {
+        slidesToShow: 1,
+        draggable: true,
+        swipe: true,
+        touchMove: true,
+        speed: 300
+      }
+    }, {
+      breakpoint: 651,
+      settings: {
+        slidesToShow: 1,
+        draggable: true,
+        swipe: true,
+        touchMove: true,
+        speed: 300,
+        arrows: false
+      }
+    }]
+  });
+  $('.gallery__slider-med').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.gallery__slider',
+    speed: 200,
+    draggable: false,
+    swipe: false,
+    touchMove: false,
+    dots: false,
+    arrows: false,
+    infinite: true // focusOnSelect: true,
+    // responsive: [
+    //   {
+    //     breakpoint: 956,
+    //     settings: {
+    //       slidesToShow: 4,
+    //       slidesToScroll: 1,
+    //       vertical: false,
+    //       verticalSwiping: false,
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 856,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 1,
+    //       vertical: false,
+    //       verticalSwiping: false,
+    //     }
+    //   }
+    // ]
+
+  });
+  $('.gallery__slider-mini').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    speed: 200,
+    draggable: false,
+    swipe: false,
+    touchMove: false,
+    asNavFor: '.gallery__slider',
+    dots: false,
+    arrows: false,
+    infinite: true // focusOnSelect: true,
+    // responsive: [
+    //   {
+    //     breakpoint: 956,
+    //     settings: {
+    //       slidesToShow: 4,
+    //       slidesToScroll: 1,
+    //       vertical: false,
+    //       verticalSwiping: false,
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 856,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 1,
+    //       vertical: false,
+    //       verticalSwiping: false,
+    //     }
+    //   }
+    // ]
+
   }); // var swiper = new Swiper( '.swiper-container.two', {
+  // 		pagination: '.swiper-pagination',
+  // 		paginationClickable: true,
+  // 		effect: 'coverflow',
+  // 		loop: true,
+  // 		centeredSlides: true,
+  // 		slidesPerView: 'auto',
+  // 		coverflow: {
+  // 			rotate: 0,
+  // 			stretch: 500,
+  // 			depth: 150,
+  // 			modifier: 1.5,
+  // 			slideShadows : false,
+  // 		}
+  // } );
+  // const swiper = new Swiper('.swiper-container', {
+  //   speed: 400,
+  //   slidesPerView: 3,
+  //   spaceBetween: 50,
+  //   loop: false,
+  //   pagination: false,
+  //   centerSlides: true,
+  //   centerSlidesBounds: true,
+  //   // initialSlide: 4,
+  //   spaceBetween: 150,
+  //   coverflowEffect: {
+  //     rotate: 0,
+  //     stretch: 100,
+  // 			depth: 150,
+  // 			modifier: 1.5,
+  //     slideShadows: false,
+  //   },
+  // });
+  // var owl = $(".owl-carousel");
+  // owl.owlCarousel({
+  // items: 5,
+  // margin: 50,
+  // autoWidth: true,
+  // loop: true,
+  // nav: true,
+  // center: true,
+  // navText : ["",""],
+  // dots: true,
+  // // responsive : {
+  // //   0 : {
+  // //     items: 1,
+  // //     margin: 50,
+  // //     center: false,
+  // // },
+  // //   850 : {
+  // //     items: 2,
+  // //     margin: 40,
+  // //     center: false,
+  // //     dots: true,
+  // // },
+  // // // breakpoint from 480 up
+  // // 1201 : {
+  // //   items: 3,
+  // //   margin: 50,
+  // // },
+  // // },
+  // });
+  // $(".rewiev__prev").click(function() {
+  //     owl.trigger('prev.owl.carousel');
+  // })
+  // $(".rewiev__next").click(function() {
+  //     owl.trigger('next.owl.carousel');
+  // })
+  // var swiper = new Swiper( '.swiper-container.two', {
   // 		pagination: '.swiper-pagination',
   // 		paginationClickable: true,
   // 		effect: 'coverflow',
