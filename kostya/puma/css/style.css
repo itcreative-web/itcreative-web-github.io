@@ -47,7 +47,7 @@ img {
   user-select: none;
 }
 
-button, input, label {
+button, input, label, img {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -373,6 +373,7 @@ button, input, label {
   cursor: pointer;
   outline: none;
   position: relative;
+  overflow: visible;
 }
 
 .header__btn.active {
@@ -389,6 +390,7 @@ button, input, label {
   left: 50%;
   transform: translate(-50%, -50%) skew(-25deg);
   width: 100px;
+  z-index: 50;
 }
 
 main {
@@ -998,24 +1000,37 @@ main {
   width: 340px;
   height: 50px;
   line-height: 50px;
-  padding: 20px;
-  font-family: Poppins;
+  padding: 0px 20px;
+  font-family: "Montserat";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   color: #000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .card__form-input::-moz-placeholder {
   color: #000;
+  font-family: "Montserat";
+  font-style: normal;
 }
 
 .card__form-input:-ms-input-placeholder {
   color: #000;
+  font-family: "Montserat";
+  font-style: normal;
 }
 
 .card__form-input::placeholder {
   color: #000;
+  font-family: "Montserat";
+  font-style: normal;
+}
+
+.card .time {
+  display: none;
 }
 
 .sprey {
@@ -1034,6 +1049,7 @@ main {
   box-shadow: -20px 20px 50px rgba(0, 0, 0, 0.25);
   margin-top: 49px;
   display: flex;
+  justify-content: space-between;
 }
 
 .sprey__card-left {
@@ -1063,6 +1079,7 @@ main {
   line-height: 21px;
   color: #000;
   margin-bottom: 16px;
+  width: 100%;
 }
 
 .sprey__info {
@@ -1081,7 +1098,7 @@ main {
 }
 
 .sprey .old__price {
-  font-family: "Montserrat";
+  font-family: "Montserat";
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -1091,6 +1108,11 @@ main {
   border: none;
   padding: 0;
   margin: 0;
+}
+
+.sprey .old__price .bold {
+  font-family: "Montserat";
+  font-weight: bold;
 }
 
 .sprey .old__price span {
@@ -1120,7 +1142,7 @@ main {
 
 .sprey__card-right {
   position: relative;
-  width: 100%;
+  width: 620px;
   height: 100%;
   padding: 40px 40px 40px 210px;
 }
@@ -1601,7 +1623,7 @@ footer {
 .footer__info .old__price:after {
   left: 0;
   width: 72px;
-  background-color: #000;
+  background-color: #fff;
 }
 
 .footer-dev {
@@ -2612,7 +2634,7 @@ footer {
   .card__left-galary {
     width: 100%;
     max-width: 600px;
-    height: auto;
+    height: 186px;
     flex-wrap: wrap;
   }
   .card__galary-fotos {
@@ -3221,7 +3243,7 @@ footer {
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: -20px;
+    bottom: -35px;
   }
   .move {
     width: 6px;
@@ -3234,7 +3256,7 @@ footer {
     background-color: #fff;
   }
   .galary__btns-group {
-    margin-top: 80px;
+    margin-top: 90px;
     justify-content: center;
   }
   .card__left {
@@ -3261,6 +3283,17 @@ footer {
   }
   .card__left-galary {
     max-width: 283px;
+  }
+  .card .time {
+    font-family: "Montserat";
+    display: block;
+    color: #000;
+    margin-top: 10px;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    letter-spacing: normal;
+    font-weight: bold;
   }
   .sprey__card {
     width: 500px;
@@ -3407,9 +3440,12 @@ footer {
   }
   .header__men {
     width: 300px;
-    bottom: 280px;
+    bottom: 285px;
     left: 50%;
     margin-left: -20px;
+  }
+  .header__men-white {
+    bottom: 290px;
   }
   .header__sale {
     top: 183px;
