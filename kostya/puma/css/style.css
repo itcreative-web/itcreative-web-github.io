@@ -764,6 +764,7 @@ main {
   top: 0px;
   left: 50%;
   transform: translateX(-50%);
+  margin-left: -15px;
 }
 
 .card__3 .card__left-img {
@@ -1891,6 +1892,12 @@ footer {
   line-height: 130%;
   text-align: center;
   color: #222222;
+}
+
+@media (max-width: 1680px) {
+  .main__title {
+    display: none;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -3352,6 +3359,12 @@ footer {
   .main__galary {
     height: 240px;
   }
+  .main__galary .move__mark {
+    bottom: -20px;
+    transform: none;
+    transform: translateX(-50%);
+    margin-left: 0;
+  }
   .main__galary:before {
     width: calc(100% - 100px);
     left: 50%;
@@ -3627,7 +3640,13 @@ footer {
   }
   .sprey__card {
     width: 400px;
-    height: 860px;
+    height: auto;
+  }
+  .sprey__card-right {
+    height: auto;
+  }
+  .sprey__card-left {
+    height: auto;
   }
   .sprey__title {
     width: 100%;
