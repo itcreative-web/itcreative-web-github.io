@@ -1149,17 +1149,18 @@ main {
 
 .sprey .new__price {
   width: 104px;
-  height: 35px;
+  height: 36px;
   background-color: #880002;
   font-family: "Bebas Neue";
   font-weight: bold;
   font-size: 36px;
-  line-height: 35px;
+  line-height: 36px;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: normal;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   text-shadow: none;
 }
 
@@ -2401,6 +2402,7 @@ footer {
   .advantages {
     width: 300px;
     height: 118px;
+    justify-content: center;
   }
   .advantage__title {
     font-size: 18px;
@@ -3560,7 +3562,7 @@ footer {
     margin-left: -30px;
   }
   .boot1.header__boots-black {
-    top: 160px;
+    top: 140px;
     width: 150px;
     left: 50%;
     margin-left: -100px;
@@ -3881,6 +3883,9 @@ footer {
     top: -40px;
     width: 290px;
     margin: 0;
+  }
+  .card__3 .card__left-img[src="./img/card3-black.png"] {
+    width: 350px;
   }
   .card__right {
     padding-top: 10px;
