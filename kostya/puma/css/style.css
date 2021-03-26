@@ -2382,6 +2382,22 @@ footer {
   .header__btn-img {
     width: 70px;
   }
+  .rotation__block {
+    width: 807px;
+    background-size: contain;
+    height: 650px;
+  }
+  .rotation__title-back {
+    width: 140px;
+    height: 100px;
+  }
+  .rotation__title {
+    font-size: 50px;
+    top: 0px;
+  }
+  .rotation__subtitle {
+    font-size: 28px;
+  }
   .advantages {
     width: 300px;
     height: 118px;
@@ -2396,6 +2412,50 @@ footer {
     line-height: 16px;
     text-align: center;
     letter-spacing: normal;
+  }
+  .advantages {
+    top: 130px;
+  }
+  .rotation__btn {
+    width: 6px;
+    height: 6px;
+  }
+  .rotation__btn-1 {
+    bottom: 257px;
+    left: 232px;
+  }
+  .rotation__btn-2 {
+    bottom: 140px;
+    left: 232px;
+  }
+  .rotation__btn-3 {
+    left: 400px;
+    bottom: 95px;
+  }
+  .rotation__btn-4 {
+    bottom: 140px;
+    right: 234px;
+  }
+  .rotation__btn-5 {
+    bottom: 257px;
+    right: 234px;
+  }
+  .rotation__boot {
+    width: 300px;
+    bottom: 180px;
+  }
+  .rotation__boot-2 {
+    width: 250px;
+    bottom: 180px;
+  }
+  .rotation__boot-3 {
+    width: 130px;
+    bottom: 180px;
+  }
+  .rotation__boot-4 {
+    width: 280px;
+    bottom: 120px;
+    margin-left: 20px;
   }
   .galary {
     height: 550px;
