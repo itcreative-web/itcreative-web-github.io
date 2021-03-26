@@ -2123,6 +2123,7 @@ footer {
   }
   .card__right {
     margin: 0;
+    margin-left: 60px;
   }
   .card__logo {
     display: none;
@@ -2236,6 +2237,9 @@ footer {
   .card__3 .card__left-img,
   .card__3 .card__left-img[src="./img/card3-black.png"] {
     width: 500px;
+  }
+  .card__right {
+    margin: 20px;
   }
   .main__galary {
     height: 340px;
@@ -2465,6 +2469,7 @@ footer {
   }
   .card__right {
     width: 380px;
+    margin: 0;
   }
   .card__form-input {
     width: 260px;
