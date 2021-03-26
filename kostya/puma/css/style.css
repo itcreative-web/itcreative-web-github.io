@@ -3775,7 +3775,13 @@ footer {
     justify-content: center;
     align-items: center;
     width: 104px;
-    height: 39px;
+    height: 40px;
+    line-height: normal;
+  }
+  .sprey .new__price span {
+    width: 100%;
+    height: 100%;
+    text-align: center;
     line-height: normal;
   }
   .main__galary-wrapper {
