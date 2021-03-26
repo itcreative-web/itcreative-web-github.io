@@ -2059,6 +2059,9 @@ footer {
   .header__btn-img {
     width: 80px;
   }
+  .header__sale {
+    top: 220px;
+  }
   main {
     background-position: right -150px top 50px,  right -150px top 2200px,  left -150px top 100px;
   }
@@ -2569,6 +2572,9 @@ footer {
   .header__content {
     margin-left: -100px;
     padding-right: 20px;
+  }
+  .header__sale {
+    top: 200px;
   }
   main {
     background: none;
