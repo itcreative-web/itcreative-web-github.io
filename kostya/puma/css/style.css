@@ -3770,6 +3770,13 @@ footer {
     text-align: center;
     margin-bottom: 10px;
   }
+  .sprey .new__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 104px;
+    height: 36px;
+  }
   .main__galary-wrapper {
     width: 400px;
   }
