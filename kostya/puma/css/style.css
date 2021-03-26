@@ -3763,6 +3763,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    height: 70px;
   }
   .sprey .old__price {
     width: 100%;
