@@ -642,11 +642,6 @@ main {
   height: 415px;
   box-shadow: 0px 0px 20px rgba(169, 0, 2, 0.25);
   overflow: hidden;
-  transition: 0.3s ease;
-}
-
-.main__foto:hover {
-  transform: translateY(-10px);
 }
 
 .main__foto-img {
@@ -664,11 +659,6 @@ main {
   height: 330px;
   position: relative;
   overflow: hidden;
-  transition: 0.3s ease;
-}
-
-.other__foto:hover {
-  transform: translateY(-10px);
 }
 
 .other__foto-img {
