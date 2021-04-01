@@ -213,18 +213,15 @@ $(document).ready(function () {
     verticalSwiping: true,
     appendArrows: $('.rewiev__left'),
     prevArrow: '<div class="product-btn rewiev__prev"><span>&#8593;</span></div>',
-    nextArrow: '<div class="product-btn rewiev__next"><span>&#8595;</span></div>' // responsive: [
-    //   {
-    //       breakpoint: 1151,
-    //       settings: {
-    //         slidesToShow: 2,
-    //         arrows: false,
-    //         vertical: false,
-    //         verticalSwiping: false,
-    //         centerMode: true,
-    //         variableWidth: true,
-    //       }
-    //     }]
-
+    nextArrow: '<div class="product-btn rewiev__next"><span>&#8595;</span></div>',
+    responsive: [{
+      breakpoint: 481,
+      settings: {
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        vertical: false,
+        verticalSwiping: false
+      }
+    }]
   });
 });
