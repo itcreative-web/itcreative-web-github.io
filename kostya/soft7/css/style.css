@@ -48,6 +48,7 @@ body {
   height: 910px;
   background-image: url("../img/header-man.png"), url("../img/header-right.png"), url("../img/header-left.png"), url("../img/header-lines.png");
   background-repeat: no-repeat;
+  background-size: 33%, 60%, 60%, contain;
   background-position: left -50px, right top, left top, left top;
   position: relative;
 }
@@ -1559,32 +1560,38 @@ span.card__size {
   height: 560px;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 12;
+  opacity: 1;
 }
 
 .slide__2 {
   left: 350px;
-  z-index: 9;
+  z-index: 10;
+  opacity: 1;
 }
 
 .slide__3 {
   left: 580px;
-  z-index: 11;
+  z-index: 9;
+  opacity: 1;
 }
 
 .slide__4 {
   left: 810px;
-  z-index: 11;
+  z-index: 8;
+  opacity: 1;
 }
 
 .slide__5 {
   left: 1040px;
-  z-index: 11;
+  z-index: 7;
+  opacity: 1;
 }
 
 .slide__6 {
-  left: 1540px;
-  z-index: 11;
+  left: 0px;
+  z-index: 6;
+  opacity: 0;
 }
 
 .move__mark {
@@ -1957,7 +1964,6 @@ span.card__size {
 
 @media (max-width: 1600px) {
   .site__header {
-    background-size: 36%, 60%, 60%, contain;
     background-position: left 50px, right top, left top, left top;
   }
   .header__content {
@@ -1967,6 +1973,16 @@ span.card__size {
     left: 50%;
     transform: translateX(-50%);
     margin-left: 400px;
+  }
+  .slide__5 {
+    left: 0px;
+    z-index: 7;
+    opacity: 0;
+  }
+  .slide__6 {
+    left: 0px;
+    z-index: 6;
+    opacity: 0;
   }
 }
 
@@ -2218,27 +2234,21 @@ span.card__size {
     width: 340px;
     height: 500px;
     top: 0;
-    z-index: 10;
   }
   .slide__2 {
     left: 320px;
-    z-index: 9;
   }
   .slide__3 {
     left: 520px;
-    z-index: 11;
   }
   .slide__4 {
     left: 720px;
-    z-index: 11;
   }
   .slide__5 {
-    left: 1040px;
-    z-index: 11;
+    left: 0px;
   }
   .slide__6 {
-    left: 1470px;
-    z-index: 11;
+    left: 0px;
   }
   .move__mark {
     bottom: 110px;
@@ -2556,27 +2566,21 @@ span.card__size {
     width: 280px;
     height: 400px;
     top: 0;
-    z-index: 10;
   }
   .slide__2 {
     left: 270px;
-    z-index: 9;
   }
   .slide__3 {
     left: 450px;
-    z-index: 11;
   }
   .slide__4 {
     left: 630px;
-    z-index: 11;
   }
   .slide__5 {
-    left: 1040px;
-    z-index: 11;
+    left: 0px;
   }
   .slide__6 {
-    left: 1470px;
-    z-index: 11;
+    left: 0px;
   }
   .move__mark {
     bottom: 110px;
@@ -3105,10 +3109,10 @@ span.card__size {
     width: 290px;
   }
   .old__price {
-    font-size: 20px;
+    font-size: 19px;
   }
   .new__price {
-    font-size: 32px;
+    font-size: 30px;
   }
   .order__wrapper {
     width: 290px;
@@ -3345,7 +3349,7 @@ span.card__size {
     height: auto;
   }
   .sprey__container {
-    height: auto;
+    height: 1160px;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
@@ -3649,6 +3653,9 @@ span.card__size {
 }
 
 @media (max-width: 414px) {
+  .header__sale {
+    height: 330px;
+  }
   .site__header {
     background-size: 300px, 800px, 0px, 300%;
     background-position: -90px 220px, -80px -50px, left top, left top;
