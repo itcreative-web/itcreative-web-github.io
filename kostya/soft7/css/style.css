@@ -208,6 +208,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
+  outline: none;
 }
 
 .order:hover {
@@ -620,7 +621,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 35px;
+  line-height: 52px;
   color: #101010;
   padding: 0 20px;
   border-radius: 10px;
@@ -632,7 +633,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 35px;
+  line-height: 52px;
   color: #101010;
 }
 
@@ -641,7 +642,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 35px;
+  line-height: 52px;
   color: #101010;
 }
 
@@ -650,7 +651,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 35px;
+  line-height: 52px;
   color: #101010;
 }
 
@@ -1014,7 +1015,7 @@ body {
 .btn__group {
   display: flex;
   justify-content: flex-start;
-  height: 90px;
+  height: 96px;
   margin-bottom: 20px;
 }
 
@@ -1675,18 +1676,21 @@ body {
   font-family: "Montserat";
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 50px;
   color: #444444;
   padding: 0 20px;
   background-color: #fff;
   margin-right: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .name__input::-moz-placeholder {
   font-family: "Montserat";
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 50px;
   color: #444;
 }
 
@@ -1694,7 +1698,7 @@ body {
   font-family: "Montserat";
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 50px;
   color: #444;
 }
 
@@ -1702,7 +1706,7 @@ body {
   font-family: "Montserat";
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 50px;
   color: #444;
 }
 
@@ -3092,16 +3096,21 @@ body {
     margin-top: -20px;
   }
   .header__info {
-    font-size: 16px;
+    font-size: 15px;
     line-height: normal;
     margin: 0;
     margin-bottom: 400px;
+    width: 100%;
+    word-wrap: wrap;
   }
   .price {
     width: 290px;
   }
   .old__price {
     font-size: 20px;
+  }
+  .new__price {
+    font-size: 34px;
   }
   .order__wrapper {
     width: 290px;
@@ -3341,7 +3350,7 @@ body {
     height: auto;
   }
   .sprey__container {
-    height: 1100px;
+    height: auto;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
@@ -3350,6 +3359,7 @@ body {
     width: 100%;
     height: auto;
     height: 422px;
+    margin-bottom: 270px;
   }
   .sprey__title {
     font-size: 32px;
@@ -3554,7 +3564,7 @@ body {
     transform: translateX(-50%);
     width: 280px;
     margin: 0;
-    top: -60px;
+    top: -70px;
     font-size: 24px;
   }
   .slider__wrapper {

@@ -13,6 +13,7 @@ $(function () {
 		$('html,body')
 			.stop()
 			.animate({ scrollTop: $(this.hash).offset().top + fixedOffset }, 1000);
+			console.log(fixedOffset);
 		e.preventDefault();
 	});
 
@@ -58,15 +59,17 @@ $(function () {
 				swipeStatus: function (event, phase, direction) {
 					if (phase == "end") {
 						if (direction == 'left') {
+							if (acarousel.isAnim()) return false; 
 							acarousel.move(-1)
 						}
 						if (direction == 'right') {
+							if (acarousel.isAnim()) return false; 
 							acarousel.move(1);
 						}
 					}
 				},
 				triggerOnTouchEnd: false,
-				threshold: 20,
+				threshold: 100,
 			});	
 		}
 
