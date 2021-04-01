@@ -5,6 +5,8 @@ $(function () {
 		loop: true,
 	});
 
+
+
 	$("body").on('click', '[href*="#"]', function (e) {
 		var fixedOffset = 0;
 		if ($(document).width() <= 600) {
@@ -69,12 +71,9 @@ $(function () {
 					}
 				},
 				triggerOnTouchEnd: false,
-				threshold: 100,
+				threshold: 200,
 			});	
 		}
-
-		
-		
 		$(btnSelector + " .move__back").click(function () {
 			if (acarousel.isAnim()) return false; 
 			acarousel.move(1);
