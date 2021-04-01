@@ -85,6 +85,11 @@ button {
   border: none;
 }
 
+input,
+select {
+  border-radius: 0;
+}
+
 .offer {
   padding: 40px 35px 160px 35px;
   background: url(../img/1_bg.png) 0% 0% no-repeat;
@@ -864,6 +869,10 @@ button {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.sprey .order__input {
+  margin-bottom: 0px;
 }
 
 .products {
@@ -1814,7 +1823,8 @@ select::-ms-expand {
     display: block;
     width: 280px;
     left: -100px;
-    bottom: 35px;
+    bottom: auto;
+    top: -8px;
   }
 }
 
@@ -1840,6 +1850,9 @@ select::-ms-expand {
   .offer__main-title span::before {
     height: 450px;
   }
+  .offer__main-subtitle {
+    margin-bottom: 355px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -1855,13 +1868,23 @@ select::-ms-expand {
   }
 }
 
+@media (max-width: 380px) {
+  .offer__main-subtitle {
+    margin-bottom: 315px;
+  }
+  .offer__main-title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+
 @media (max-width: 375px) {
   .offer__main-title {
     font-size: 45px;
     line-height: 50px;
   }
   .offer__main-subtitle {
-    margin-bottom: 350px;
+    margin-bottom: 340px;
   }
   .offer__main-subtitle {
     font-size: 24px;
@@ -1931,6 +1954,9 @@ select::-ms-expand {
   }
   .offer__img-abs2 {
     top: 80px;
+  }
+  .offer__main-subtitle {
+    margin-bottom: 350px;
   }
 }
 
@@ -2717,6 +2743,9 @@ select::-ms-expand {
   .sprey__right__text {
     width: 100%;
   }
+  .sprey__price-old::before {
+    top: 50%;
+  }
 }
 
 @media (max-width: 425px) {
@@ -3045,6 +3074,36 @@ select::-ms-expand {
   .product2__duration-sale {
     display: inline-block;
   }
+  .product__form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .product .price {
+    max-width: none;
+    margin-top: 10px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .product .new-price {
+    margin-left: 15px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -3090,7 +3149,7 @@ select::-ms-expand {
             justify-content: center;
   }
   .product .old-price {
-    margin-right: 15px;
+    margin-right: 0px;
   }
   .product2 .product__left {
     margin-bottom: -10px;
@@ -3425,30 +3484,57 @@ select::-ms-expand {
     margin-right: -35px;
   }
   .rewiev-slide {
-    height: 230px !important;
+    height: auto !important;
     margin: 10px 0px 10px 30px;
+  }
+  .rewiev-slide1 {
+    z-index: 6;
+  }
+  .rewiev-slide2 {
+    z-index: 5;
+  }
+  .rewiev-slide3 {
+    z-index: 4;
+  }
+  .rewiev-slide4 {
+    z-index: 3;
+  }
+  .rewiev-slide5 {
+    z-index: 2;
   }
   .rewiev-slider {
     width: 100%;
     margin-left: -35px;
   }
-}
-
-@media (max-width: 425px) {
-  .rewiev-slide {
-    height: 240px !important;
+  .rewiev-slide:nth-child(even)::before {
+    left: -85px;
+    top: 5%;
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .rewiev-slide:nth-child(odd)::before {
+    left: -85px;
+    top: 5%;
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
   }
 }
 
 @media (max-width: 380px) {
-  .rewiev-slide {
-    height: 270px !important;
+  .rewiev-list-item:nth-child(odd) {
+    width: auto;
+    margin-bottom: 45px;
+  }
+  .rewiev-list-item:nth-child(even) {
+    width: auto;
+    margin-bottom: 25px;
   }
 }
 
 @media (max-width: 355px) {
   .rewiev-slide {
-    height: 295px !important;
     margin: 10px 0px 10px 25px;
     padding: 25px 20px 25px 40px;
   }
@@ -3459,6 +3545,12 @@ select::-ms-expand {
   .rewiev-list-item:nth-child(even) {
     width: auto;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .rewiev-list-item {
+    margin-left: 140px;
   }
 }
 
