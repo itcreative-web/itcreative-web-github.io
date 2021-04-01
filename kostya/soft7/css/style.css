@@ -48,8 +48,8 @@ body {
   height: 910px;
   background-image: url("../img/header-man.png"), url("../img/header-right.png"), url("../img/header-left.png"), url("../img/header-lines.png");
   background-repeat: no-repeat;
-  background-size: 33%, 60%, 60%, contain;
-  background-position: left -50px, right top, left top, left top;
+  background-size: 32%, 60%, 60%, contain;
+  background-position: -20px -20px, right top, left top, left top;
   position: relative;
 }
 
