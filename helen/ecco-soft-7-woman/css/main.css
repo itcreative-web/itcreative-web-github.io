@@ -433,7 +433,9 @@ li {
   height: 100%;
   background: none; }
   .back div {
-    position: absolute; }
+    position: absolute;
+    z-index: -10;
+  }
     .back div img {
       display: block; }
 
@@ -2462,8 +2464,9 @@ h1 {
   left: -780px; }
 
 .h-b-6 {
-  top: 640px;
-  left: 550px; }
+  top: 710px;
+  left: 550px;
+}
 
 .h-b-7 {
   top: 720px;
