@@ -565,6 +565,7 @@ h1 {
     text-align: center;
     font-size: 170px;
     line-height: 1;
+    letter-spacing: 5px;
 }
 
 .order-link {
@@ -728,6 +729,12 @@ h1 {
     color: transparent;
     -webkit-text-stroke: 1px white;
     text-stroke: 1px white;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .header-images .sale-text {
+        color: #fff;
+    }
 }
 
 .header-images .image-1 {
@@ -1029,6 +1036,7 @@ h1 {
 @media (max-width: 585px) {
     .main-logo {
         font-size: 44px;
+        letter-spacing: 3px;
     }
 
     .header:before {
@@ -1045,7 +1053,7 @@ h1 {
 
     .header-images .sale-text {
         font-size: 12vw;
-        top: 1%;
+        top: 3%;
     }
 
     .main-price {
@@ -1147,11 +1155,47 @@ h1 {
 
 .privilege-content {
     padding-bottom: 75px;
-    border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
+
 }
 
+@media (max-width: 991px) {
+
+    .privilege-content {
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+}
+
+
 @media (min-width: 992px) {
+
+    .privilege-content {
+        position: relative;
+    }
+
+    .privilege-content:before {
+        position: absolute;
+        bottom: 0;
+        left: -1px;
+        content: "";
+        width: 1px;
+        height: calc(100% - 45px);
+        background-color: #fff;
+        z-index: -10;
+    }
+
+
+    .privilege-content:after {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        content: "";
+        width: 1px;
+        height: calc(100% - 45px);
+        background-color: #fff;
+        z-index: -10;
+    }
+
     .privilege-item {
         min-width: 173px;
       min-height: 145px;
@@ -3002,6 +3046,11 @@ h1 {
     margin-top: 20px;
 }
 
+.owl-dots button {
+    outline: none;
+    border: none;
+}
+
 .owl-dots .owl-dot {
     margin: 0 5px;
 }
@@ -3377,7 +3426,7 @@ h1 {
 }
 
 .h-b-9 {
-    top: 840px;
+    top: 870px;
     left: 160px;
 }
 
