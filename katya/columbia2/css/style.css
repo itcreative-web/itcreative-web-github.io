@@ -136,7 +136,23 @@ select {
 .btn-order {
   width: 290px;
   height: 60px;
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: -webkit-gradient(linear, left top, right top, color-stop(-7.69%, #7d00e3), color-stop(107.69%, #d100e3));
   background: -o-linear-gradient(left, #7d00e3 -7.69%, #d100e3 107.69%);
   background: linear-gradient(90deg, #7d00e3 -7.69%, #d100e3 107.69%);
@@ -819,7 +835,7 @@ select {
   width: 180px;
   height: 40px;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 40px;
   position: relative;
   z-index: 999;
 }
