@@ -1643,6 +1643,12 @@ h1 {
     font-family: "Bebas Neue Cyrillic";
 }
 
+@media (max-width: 992px) {
+    .about-item h4 {
+        font-size: 24px;
+    }
+}
+
 .about-item p {
     max-width: 400px;
     font-size: 14px;
@@ -1902,10 +1908,6 @@ h1 {
         min-height: initial;
         margin-bottom: 15px;
     }
-
-    .about-item h4 {
-        font-size: 24px;
-    }
 }
 
 .card {
@@ -1918,8 +1920,7 @@ h1 {
     display: flex;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    -webkit-align-content: center;
-    align-content: center;
+
     z-index: 20;
 }
 
