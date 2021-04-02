@@ -3350,9 +3350,9 @@ span.card__size {
   }
   .sprey__container {
     height: 1160px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
   }
   .sprey__left {
     width: 100%;
