@@ -493,7 +493,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  z-index: 10;
+  z-index: 100;
+  pointer-events: auto;
 }
 
 .video iframe {
@@ -515,6 +516,7 @@ body {
   background-repeat: no-repeat;
   cursor: pointer;
   z-index: 10;
+  pointer-events: auto;
 }
 
 .video__leafs {
