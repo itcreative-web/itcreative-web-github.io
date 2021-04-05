@@ -2965,6 +2965,12 @@ span.card__size {
   .site__footer .price {
     width: 290px;
   }
+  .site__footer .price .old__price {
+    font-size: 22px;
+  }
+  .site__footer .price .new__price {
+    font-size: 34px;
+  }
   .footer-dev {
     font-size: 12px;
   }
