@@ -2215,11 +2215,12 @@ span.card__size {
     margin-top: 60px;
   }
   .slider__title {
+    width: 350px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    margin-left: 450px;
-    font-size: 32px;
+    margin-left: 380px;
+    font-size: 30px;
     line-height: 140%;
     top: 70px;
   }
