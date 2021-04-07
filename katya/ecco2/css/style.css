@@ -425,6 +425,7 @@ button {
 
 .abs-splash__sale {
   background: url(../img/1_splash.svg) 0% 0% no-repeat;
+  background-size: cover;
   width: 370px;
   height: 370px;
   position: absolute;
@@ -1076,6 +1077,7 @@ button {
   position: absolute;
   left: calc(56% - 345px);
   top: 55px;
+  pointer-events: none;
 }
 
 .product__sale-block {
@@ -3174,12 +3176,18 @@ select {
     width: 90%;
   }
   .advantages__abs-splash1 {
-    left: 30%;
-    top: 14%;
+    left: 45%;
+    top: 18%;
   }
   .advantages__abs-splash2 {
-    top: 42%;
+    top: 50%;
     right: -55%;
+  }
+  .advantages__abs-splash3 {
+    position: absolute;
+    left: -41%;
+    bottom: -7%;
+    pointer-events: none;
   }
 }
 
