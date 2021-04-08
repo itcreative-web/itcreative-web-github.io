@@ -2844,7 +2844,7 @@ select {
             transform: scale(0.6);
   }
   .video {
-    padding: 50px 15px;
+    padding: 50px 15px 20px 15px;
     background: url(../img/3_bg_mobile.png) 0% 2% no-repeat;
     background-size: 105%;
   }
@@ -2865,6 +2865,12 @@ select {
   .video {
     background: url(../img/3_bg_mobile.png) 0% 1% no-repeat;
     background-size: 107%;
+  }
+}
+
+@media (max-width: 360px) {
+  .video {
+    padding: 50px 15px 20px 15px;
   }
 }
 
@@ -3128,12 +3134,16 @@ select {
     left: 0%;
     bottom: -6px;
   }
+  .gallery__container {
+    width: 100%;
+    padding-top: 40px;
+  }
 }
 
 @media (max-width: 435px) {
   .offer__abs-leaf2 {
     left: -32%;
-    top: -33%;
+    top: -23%;
   }
 }
 
@@ -3145,16 +3155,33 @@ select {
   .gallery {
     padding: 0px 15px 60px 15px;
   }
+  .offer__abs-leaf2 {
+    left: -32%;
+    top: -17%;
+    -webkit-transform: scale(0.5) rotate(120deg);
+        -ms-transform: scale(0.5) rotate(120deg);
+            transform: scale(0.5) rotate(120deg);
+  }
 }
 
 @media (max-width: 375px) {
   .offer__abs-leaf2 {
     left: -37%;
-    top: -33%;
+    top: -15%;
   }
   .offer__abs-leaf1 {
     right: -22%;
     top: -80%;
+  }
+}
+
+@media (max-width: 360px) {
+  .offer__abs-leaf2 {
+    left: -37%;
+    top: -20%;
+    -webkit-transform: scale(0.5) rotate(120deg);
+        -ms-transform: scale(0.5) rotate(120deg);
+            transform: scale(0.5) rotate(120deg);
   }
 }
 
