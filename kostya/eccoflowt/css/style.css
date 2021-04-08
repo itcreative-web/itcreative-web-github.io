@@ -1711,7 +1711,7 @@ body {
   font-family: Montserrat;
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 50px;
   color: #444444;
   padding: 0 20px;
   background-color: #fff;
@@ -2949,7 +2949,7 @@ body {
     font-size: 20px;
   }
   .footer__price .price .new__price {
-    font-size: 42px;
+    font-size: 38px;
   }
 }
 
@@ -3168,7 +3168,7 @@ body {
     font-size: 20px;
   }
   .price .new__price {
-    font-size: 40px;
+    font-size: 38px;
   }
   .galary {
     width: 320px;
