@@ -335,6 +335,8 @@ button {
   -webkit-transition: all ease-out 0.3s;
   -o-transition: all ease-out 0.3s;
   transition: all ease-out 0.3s;
+  position: relative;
+  z-index: 999;
 }
 
 .btn-order:hover {
@@ -451,6 +453,14 @@ button {
   left: 0;
   top: 0;
   pointer-events: none;
+}
+
+.main__abs-wave {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
 }
 
 .advantages {
@@ -722,6 +732,10 @@ button {
 .video__right-shoe {
   position: relative;
   z-index: 2;
+}
+
+.video__right-shoe img {
+  pointer-events: none;
 }
 
 .video__abs-splash {
@@ -1778,6 +1792,7 @@ select {
 #modal-2 {
   text-align: center;
   padding: 40px;
+  color: black;
 }
 
 #modal-2 p {
@@ -1923,12 +1938,32 @@ select {
             transform: scale(0.8) !important;
     left: 430px;
     top: 100px;
+    z-index: 50;
   }
   .offer__abs-man {
     left: 730px;
     -webkit-transform: scale(0.9);
         -ms-transform: scale(0.9);
             transform: scale(0.9);
+    z-index: 50;
+  }
+  .offer {
+    background: url(../img/1_bg.png) 0% 0% no-repeat;
+    background-size: 145%;
+  }
+  .main__abs-wave {
+    display: block;
+    position: absolute !important;
+    z-index: 1;
+    top: -40px;
+    right: -300px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .offer {
+    background: url(../img/1_bg.png) 0% 0% no-repeat;
+    background-size: cover;
   }
 }
 
@@ -2002,6 +2037,9 @@ select {
   .offer__container {
     max-width: 770px;
     margin: 0 auto;
+  }
+  .main__abs-wave {
+    display: none;
   }
 }
 
@@ -2778,6 +2816,7 @@ select {
   .video {
     background: url(../img/3_bg_mobile.png) 0% 0% no-repeat;
     background-size: 110%;
+    padding: 70px 35px 0px 35px;
   }
   .video__left {
     z-index: 20;
@@ -2836,6 +2875,17 @@ select {
   }
   .video .duration-sale {
     margin-bottom: 40px;
+  }
+  .video .logo {
+    -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+            align-self: auto;
+    margin-bottom: 20px;
+  }
+  .video {
+    padding: 50px 35px 0px 35px;
+    background: url(../img/3_bg_mobile.png) 0% 0% no-repeat;
+    background-size: 100%;
   }
 }
 
@@ -3057,9 +3107,6 @@ select {
         -ms-transform: scale(0.6) rotate(5deg);
             transform: scale(0.6) rotate(5deg);
     z-index: 1;
-  }
-  .video {
-    padding: 70px 35px 0px 35px;
   }
   .gallery__slide {
     margin: 0px 5px;
