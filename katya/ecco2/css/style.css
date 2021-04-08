@@ -2814,9 +2814,12 @@ select {
             transform: scale(0.6);
   }
   .video {
-    background: url(../img/3_bg_mobile.png) 0% 0% no-repeat;
-    background-size: 110%;
-    padding: 70px 35px 0px 35px;
+    background: url(../img/3_bg_mobile.png) 0% 2% no-repeat;
+    background-size: 100%;
+    padding: 50px 35px 0px 35px;
+  }
+  .video .logo {
+    margin-bottom: 30px;
   }
   .video__left {
     z-index: 20;
@@ -2842,6 +2845,8 @@ select {
   }
   .video {
     padding: 50px 15px;
+    background: url(../img/3_bg_mobile.png) 0% 2% no-repeat;
+    background-size: 105%;
   }
 }
 
@@ -2856,6 +2861,10 @@ select {
     -webkit-transform: scale(0.5);
         -ms-transform: scale(0.5);
             transform: scale(0.5);
+  }
+  .video {
+    background: url(../img/3_bg_mobile.png) 0% 1% no-repeat;
+    background-size: 107%;
   }
 }
 
@@ -2880,12 +2889,12 @@ select {
     -webkit-align-self: auto;
         -ms-flex-item-align: auto;
             align-self: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .video {
     padding: 50px 35px 0px 35px;
     background: url(../img/3_bg_mobile.png) 0% 0% no-repeat;
-    background-size: 100%;
+    background-size: 105%;
   }
 }
 
