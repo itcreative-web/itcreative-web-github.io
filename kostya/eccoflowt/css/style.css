@@ -2096,7 +2096,7 @@ body {
     height: 850px;
     background-image: url("../img/info-bg.jpg");
     background-repeat: no-repeat;
-    background-position: left -300px bottom;
+    background-position: left -270px bottom;
     background-size: cover;
   }
   .info__wrapper {
@@ -2212,6 +2212,12 @@ body {
   }
   .footer__title {
     font-size: 44px;
+  }
+  .footer__price .price .old__price {
+    font-size: 22px;
+  }
+  .footer__price .price .new__price {
+    font-size: 46px;
   }
 }
 
