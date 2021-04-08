@@ -1117,10 +1117,11 @@ body {
 .sprey__card .card__title {
   margin-bottom: 60px;
   margin-top: -20px;
+  font-size: 24px;
 }
 
 .sprey__card .card__info-order .card__title {
-  margin-top: -20px;
+  margin-top: -30px;
 }
 
 .sprey__card .card__form {
@@ -1715,13 +1716,19 @@ body {
   padding: 0 20px;
   background-color: #fff;
   margin-right: 0px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 .name__input::-webkit-input-placeholder {
   font-family: Montserrat;
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 50px;
   color: #444;
 }
 
@@ -1729,7 +1736,7 @@ body {
   font-family: Montserrat;
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 50px;
   color: #444;
 }
 
@@ -1737,7 +1744,7 @@ body {
   font-family: Montserrat;
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 50px;
   color: #444;
 }
 
@@ -2968,9 +2975,10 @@ body {
     height: 850px;
   }
   .site__header:before {
-    background-image: url("../img/header-left.png"), url("../img/header-birds.png"), url("../img/header-right.jpg");
-    background-position: left bottom 40px, 300px 500px, -550px top;
-    background-size: 500px,  250px,  1250px;
+    background-color: #F2F2F2;
+    background-image: url("../img/header-mobile.png"), url("../img/header-right.jpg");
+    background-position: left bottom 40px, -550px top;
+    background-size: 500px,   1250px;
   }
   .header__content {
     width: 350px;
@@ -3150,6 +3158,18 @@ body {
   .container {
     width: 400px;
   }
+  .header__order {
+    width: 290px;
+  }
+  .price {
+    width: 290px;
+  }
+  .price .old__price {
+    font-size: 20px;
+  }
+  .price .new__price {
+    font-size: 40px;
+  }
   .galary {
     width: 320px;
     height: 518px;
@@ -3271,18 +3291,18 @@ body {
 
 @media (max-width: 414px) {
   .site__header {
-    height: 900px;
+    height: 860px;
   }
   .container {
     width: 360px;
   }
   .site__header:before {
-    background-image: url("../img/header-left.png"), url("../img/header-birds.png"), url("../img/header-right.jpg");
-    background-position: left bottom 230px, 150px 450px, -600px top;
-    background-size: 300px,  200px,  1200px;
+    background-image: url("../img/header-mobile.png"), url("../img/header-right.jpg");
+    background-position: left bottom 225px, -600px top;
+    background-size: 270px,  1200px;
   }
   .header__title {
-    margin-bottom: 130px;
+    margin-bottom: 95px;
     font-size: 28px;
   }
   .site__header .sale__line {
