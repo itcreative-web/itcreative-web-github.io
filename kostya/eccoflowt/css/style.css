@@ -819,6 +819,10 @@ body {
   margin-bottom: 100px;
 }
 
+.card__1 .card__info-order .card__title {
+  margin-bottom: 80px;
+}
+
 .active__info {
   display: -webkit-flex !important;
   display: flex !important;
