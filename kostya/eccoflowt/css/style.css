@@ -2163,6 +2163,7 @@ body {
   .card .header__order-btn, .sprey__card .header__order-btn {
     width: 100%;
     height: 80px;
+    line-height: 80px;
   }
   .card__input {
     margin-bottom: 20px;
@@ -2233,8 +2234,11 @@ body {
 }
 
 @media (max-width: 1366px) {
+  .site__header {
+    height: 670px;
+  }
   .galary__block {
-    max-height: 511px;
+    max-height: 500px;
   }
 }
 
@@ -2331,9 +2335,14 @@ body {
   .summer__section-wrapper {
     height: 850px;
   }
+  .summer__section .title__wrapper {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+  }
   .summer__section .block__title {
     width: 340px;
-    margin-left: auto;
   }
   .summer__foto-1 {
     width: 300px;
@@ -2540,6 +2549,12 @@ body {
   }
 }
 
+@media (max-width: 1024px) {
+  .galary__block {
+    max-height: 360px;
+  }
+}
+
 @media (max-width: 880px) {
   .site__header {
     height: 650px;
@@ -2613,7 +2628,7 @@ body {
     left: -60px;
   }
   .card {
-    height: 890px;
+    height: 920px;
     position: relative;
   }
   .card__left {
@@ -2654,7 +2669,7 @@ body {
     width: 290px;
   }
   .card .card__info-block {
-    padding: 420px 50px 100px 50px;
+    padding: 440px 50px 100px 50px;
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
     -webkit-align-items: center;
@@ -2707,7 +2722,6 @@ body {
     height: 300px;
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
-    padding: 15px;
   }
   .sprey__card .slider {
     margin-top: 0px;
@@ -3106,7 +3120,7 @@ body {
     right: 30px;
   }
   .sprey__card {
-    height: 920px;
+    height: 960px;
   }
   .sprey__img {
     top: 50%;
@@ -3118,7 +3132,7 @@ body {
   .sprey__info {
     width: 290px;
     position: absolute;
-    top: 300px;
+    top: 330px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -3208,7 +3222,7 @@ body {
     width: 100%;
   }
   .card {
-    height: 980px;
+    height: 1000px;
   }
   .slider__btns {
     display: none;
@@ -3291,22 +3305,23 @@ body {
 
 @media (max-width: 414px) {
   .site__header {
-    height: 860px;
+    height: 640px;
+    margin-bottom: 250px;
   }
   .container {
     width: 360px;
   }
   .site__header:before {
     background-image: url("../img/header-mobile.png"), url("../img/header-right.jpg");
-    background-position: left bottom 225px, -600px top;
+    background-position: left bottom -5px, -600px top;
     background-size: 270px,  1200px;
   }
   .header__title {
-    margin-bottom: 95px;
+    margin-bottom: 105px;
     font-size: 28px;
   }
   .site__header .sale__line {
-    bottom: 180px;
+    bottom: -50px;
   }
   .summer__foto-1 {
     width: 100%;
@@ -3425,7 +3440,7 @@ body {
     width: 290px;
   }
   .summer__section .block__title {
-    margin-top: 430px;
+    margin-top: 320px;
   }
   .advantages {
     margin-bottom: 540px;
