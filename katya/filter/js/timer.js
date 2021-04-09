@@ -54,7 +54,7 @@
       element.date = function() {
         var now = new Date();
         if (config.etType == 1) {
-          date = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 3);
+          date = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
         } else if (config.etType == 2) {
           var day = now.getDay();
           if (day == 0) day = 7;

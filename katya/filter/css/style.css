@@ -358,7 +358,6 @@ button {
 
 .eTimer {
   border-radius: 10px !important;
-  width: 114px !important;
   display: inline-block !important;
 }
 
@@ -369,6 +368,42 @@ button {
 .eTimer .etSep {
   padding: 0px !important;
   margin: 0px 2px;
+}
+
+.eTimer .etSep {
+  display: none !important;
+}
+
+.eTimer .etDays {
+  display: none !important;
+}
+
+.eTimer .etHours {
+  margin-right: 10px;
+  position: relative;
+}
+
+.eTimer .etHours::after {
+  content: ":";
+  display: block;
+  color: white;
+  position: absolute;
+  top: -1px;
+  right: -8px;
+}
+
+.eTimer .etMinutes {
+  margin-right: 10px;
+  position: relative;
+}
+
+.eTimer .etMinutes::after {
+  content: ":";
+  display: block;
+  color: white;
+  position: absolute;
+  top: -1px;
+  right: -8px;
 }
 
 .btn-order {
@@ -489,6 +524,7 @@ button {
 .advantages__text {
   margin-top: 20px;
   text-align: center;
+  width: 100%;
 }
 
 .problems {

@@ -25,7 +25,7 @@ $(document).ready(function () {
     $(".sale-data").text(dd + '.' + mm + '.' + yy);
   }
 
-  formatDate(today); // ТАЙМЕР ОБРАТНОГО ОТСЧЕТА (+3дня - etType: 1)"
+  formatDate(today); // ТАЙМЕР ОБРАТНОГО ОТСЧЕТА (до конца дня - etType: 1)"
 
   $(".eTimer").eTimer({
     etType: 1,
@@ -43,7 +43,7 @@ $(document).ready(function () {
     etBorderRadius: 0,
     etBorderColor: "white",
     etShadow: " 0px 0px 0px 0px #333333",
-    etLastUnit: 3,
+    etLastUnit: 4,
     etNumberFontFamily: "Arial",
     etNumberSize: 18,
     etNumberColor: "white",
