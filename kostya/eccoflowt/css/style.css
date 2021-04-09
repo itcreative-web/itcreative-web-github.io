@@ -685,12 +685,7 @@ body {
   height: 30px;
   transition: 0.3s ease;
   position: relative;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
+  display: inline-block;
   cursor: pointer;
   text-align: center;
 }
@@ -708,7 +703,7 @@ body {
 }
 
 .card__color.active img {
-  display: block;
+  display: inline-block;
   width: 20px;
   height: 16px;
 }
@@ -764,12 +759,7 @@ body {
   font-size: 16px;
   line-height: 50px;
   color: #DEC1BC;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
+  display: inline-block;
   border: 1px solid #DEC1BC;
   cursor: pointer;
   outline: none;
@@ -838,12 +828,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
+  display: inline-block;
   text-align: center;
 }
 
@@ -1947,12 +1932,7 @@ body {
   line-height: 50px;
   text-align: center;
   color: #FFFFFF;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
+  display: inline-block;
   cursor: pointer;
   text-align: center;
 }
