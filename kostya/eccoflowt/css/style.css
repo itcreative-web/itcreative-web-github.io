@@ -685,13 +685,14 @@ body {
   height: 30px;
   transition: 0.3s ease;
   position: relative;
-  display: -webkit-flex;
-  display: flex;
+  display: -webkit-inline-flex;
+  display: inline-flex;
   -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   align-items: center;
   cursor: pointer;
+  text-align: center;
 }
 
 .card__color img {
@@ -763,8 +764,8 @@ body {
   font-size: 16px;
   line-height: 50px;
   color: #DEC1BC;
-  display: -webkit-flex;
-  display: flex;
+  display: -webkit-inline-flex;
+  display: inline-flex;
   -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
@@ -773,6 +774,7 @@ body {
   cursor: pointer;
   outline: none;
   transition: 0.3s ease;
+  text-align: center;
 }
 
 .card__size-btn:hover {
@@ -836,6 +838,13 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  text-align: center;
 }
 
 .card__info-order {
@@ -1935,16 +1944,17 @@ body {
   font-family: Montserrat;
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 50px;
   text-align: center;
   color: #FFFFFF;
-  display: -webkit-flex;
-  display: flex;
+  display: -webkit-inline-flex;
+  display: inline-flex;
   -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   align-items: center;
   cursor: pointer;
+  text-align: center;
 }
 
 .send__window {
