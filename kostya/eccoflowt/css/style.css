@@ -68,6 +68,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  background-color: #F3F3F3;
   background-image: url("../img/header-left.png"), url("../img/header-birds.png"), url("../img/header-right.jpg");
   background-position: left bottom, 70px 90px, right bottom;
   background-repeat: no-repeat;
@@ -200,9 +201,7 @@ body {
   background-color: #950237;
 }
 
-.sale__line {
-  width: 2040px;
-  height: 50px;
+.sale__line-wrapper {
   position: absolute;
   bottom: 0px;
   left: 50%;
@@ -210,6 +209,38 @@ body {
   transform: translateX(-50%);
   background-color: #6475F5;
   z-index: 1;
+  width: 100%;
+  height: 50px;
+}
+
+.sale__line {
+  width: 2040px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.sale__line:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 100px;
+  height: 50px;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0), #6475f5 80%);
+}
+
+.sale__line:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 100px;
+  height: 50px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), #6475f5 80%);
 }
 
 .sale__line .sale__item {
@@ -423,9 +454,12 @@ body {
 .info__section {
   width: 100%;
   height: 950px;
+  padding-bottom: 20%;
   background-image: url("../img/info-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  background-color: #F3F3F3;
 }
 
 .info__container {
@@ -556,10 +590,10 @@ body {
 }
 
 .galary__block {
-  width: 25%;
-  max-height: 713px;
+  width: 25vw;
+  height: auto;
   padding: 0;
-  display: inline-block;
+  vertical-align: middle;
 }
 
 .galary__block a {
@@ -575,7 +609,7 @@ body {
   pointer-events: auto;
 }
 
-.first__section .sale__line {
+.first__section .sale__line-wrapper {
   bottom: 0px;
 }
 
@@ -2069,9 +2103,6 @@ body {
   .advantages {
     margin-top: 350px;
   }
-  .galary__block {
-    max-height: 560px;
-  }
   .site__footer {
     background-color: #C11855;
     width: 100%;
@@ -2117,9 +2148,6 @@ body {
   }
   .summer__foto-wrapper {
     bottom: -40px;
-  }
-  .galary__block {
-    max-height: 539px;
   }
   .info__blocks {
     width: 420px;
@@ -2238,15 +2266,6 @@ body {
 @media (max-width: 1366px) {
   .site__header {
     height: 670px;
-  }
-  .galary__block {
-    max-height: 500px;
-  }
-}
-
-@media (max-width: 1280px) {
-  .galary__block {
-    max-height: 540px;
   }
 }
 
@@ -2554,12 +2573,6 @@ body {
   }
   .footer__price .price .new__price {
     font-size: 42px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .galary__block {
-    max-height: 360px;
   }
 }
 

@@ -244,6 +244,11 @@ $(function () {
 		$(".banner__close").click(function() {
 			$(".banner").removeClass("active");
 		})
+		$(".banner").click(function(e) {
+			if(e.target.classList.contains("banner")) {
+				$(".banner").removeClass("active");
+			}
+		})
 	}
 	banner()
 })
