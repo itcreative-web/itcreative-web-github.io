@@ -10,6 +10,10 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+button {
+  margin: auto;
+}
+
 img {
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -2359,8 +2363,11 @@ body {
     background-position: left bottom, -400px top;
     background-size: 60%, 190%;
   }
+  .summer__section .title__wrapper {
+    margin-top: 100px;
+  }
   .summer__section-wrapper {
-    height: 850px;
+    height: auto;
   }
   .summer__section .title__wrapper {
     display: -webkit-flex;
@@ -2374,7 +2381,7 @@ body {
   .summer__foto-1 {
     width: 300px;
     height: 400px;
-    top: -80px;
+    top: -100px;
   }
   .summer__foto-wrapper {
     width: 300px;
@@ -2394,10 +2401,11 @@ body {
     height: auto;
   }
   .info__section {
-    height: 650px;
+    height: 680px;
     background-image: url(../img/info-bg.jpg);
     background-repeat: no-repeat;
     background-position: left 100% top;
+    background-size: cover;
     position: relative;
   }
   .info__container {
@@ -2641,7 +2649,7 @@ body {
     -webkit-align-items: center;
     align-items: center;
   }
-  .site__header .sale__line {
+  .site__header .sale__line-wrapper {
     bottom: 0px;
     z-index: 5;
   }
@@ -3341,8 +3349,11 @@ body {
     margin-bottom: 105px;
     font-size: 28px;
   }
-  .site__header .sale__line {
+  .site__header .sale__line-wrapper {
     bottom: -50px;
+  }
+  .summer__section .title__wrapper {
+    margin-top: 0px;
   }
   .summer__foto-1 {
     width: 100%;
@@ -3350,7 +3361,7 @@ body {
     top: 0;
   }
   .summer__section .block__title {
-    margin-top: 380px;
+    margin-top: 500px;
     font-size: 24px;
   }
   .summer__foto-wrapper {
@@ -3359,6 +3370,34 @@ body {
   }
   .advantages {
     margin-bottom: 550px;
+  }
+  .info__section {
+    margin-bottom: 0;
+  }
+  .galary {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 85px;
+  }
+  .galary .galary__block {
+    display: -webkit-flex;
+    display: flex;
+  }
+  .galary__block {
+    width: 100%;
+    max-height: auto;
+    height: auto;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .galary__img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 25%;
+    object-fit: cover;
   }
   .info__wrapper .block__title {
     font-size: 24px;
@@ -3461,7 +3500,7 @@ body {
     width: 290px;
   }
   .summer__section .block__title {
-    margin-top: 320px;
+    margin-top: 460px;
   }
   .advantages {
     margin-bottom: 540px;
