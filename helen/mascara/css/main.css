@@ -2558,4 +2558,13 @@ h4 {
   .footer-subtitle {
     font-size: 18px; } }
 
+
+@media (max-width: 480px) {
+
+  .timer .text {
+    font-size: 11px;
+  }
+
+}
+
 /*# sourceMappingURL=main.css.map */
