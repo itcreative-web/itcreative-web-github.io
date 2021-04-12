@@ -2742,7 +2742,7 @@ h4 {
     border-radius: 50%;
     background-color: #FF5353;
     opacity: 0.3;
-    outline: none;
+    outline: none !important;
     color: rgba(255, 255, 255, 0);
 }
 
