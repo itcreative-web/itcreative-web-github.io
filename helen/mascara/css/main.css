@@ -2263,7 +2263,7 @@ h4 {
   .footer:after {
     position: absolute;
     bottom: 0;
-    right: -webkit-calc(50% - 910px);
+    right: -webkit-calc(50% - 960px);
     right: calc(50% - 910px);
     content: "";
     width: 726px;
