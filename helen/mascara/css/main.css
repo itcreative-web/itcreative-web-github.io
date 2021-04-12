@@ -1808,7 +1808,7 @@ h4 {
 
 @media (min-width: 768px) {
     .results-item {
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     .results-item:last-child {
@@ -1822,7 +1822,7 @@ h4 {
 }
 
 .results-item:nth-child(2) {
-    margin-right: 206px;
+    margin-right: 226px;
 }
 
 .results-item img {
