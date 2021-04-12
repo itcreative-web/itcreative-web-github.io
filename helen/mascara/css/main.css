@@ -2093,7 +2093,25 @@ h4 {
     position: absolute;
     right: -20px;
     bottom: 150px;
-    font-family: Atma;
+    font-family: Atma, sans-serif;
+}
+
+.product-card .product .product-image {
+    position: relative;
+    z-index: 20;
+}
+
+@media (max-width: 1365px) and (min-width: 1200px){
+    .product-card .product .sale-text {
+        right: -30px;
+        bottom: auto;
+        top: -40px;
+    }
+
+    .product-card  .sale-text:before {
+        opacity: 0.6;
+    }
+
 }
 
 .product-card .product .product-image {
