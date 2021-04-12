@@ -83,6 +83,11 @@ function getDocumentScrollTop() {
 
 $(document).ready(function() {
 
+    setTimeout(function() {
+        $('body').addClass('loaded');
+    }, 1000);
+
+
     var link = window.location.href;
     link = link.toLowerCase();
 
