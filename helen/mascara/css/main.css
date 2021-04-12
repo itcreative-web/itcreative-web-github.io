@@ -1825,6 +1825,12 @@ h4 {
     margin-right: 226px;
 }
 
+@media (max-width: 1199px) {
+  .results-item:nth-child(2) {
+    margin-right: 126px;
+  }
+}
+
 .results-item img {
     display: block;
     width: 100%;
