@@ -891,11 +891,11 @@ body {
   font-family: Arial;
   font-style: normal;
   font-weight: 900;
-  font-size: 30px;
+  font-size: 36px;
   line-height: 140%;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .card__table {
@@ -1990,16 +1990,16 @@ body {
     background-size: cover;
   }
   .card__boot {
-    width: 85%;
+    width: 80%;
     bottom: 60px;
   }
   .card__boot[src="./img/card1-black.png"] {
-    width: 120%;
-    bottom: 0px;
+    width: 115%;
+    bottom: 20px;
   }
   .card__boot[src="./img/card2-black.png"] {
-    width: 120%;
-    bottom: 0px;
+    width: 115%;
+    bottom: 20px;
   }
   .site__footer {
     width: 100%;
@@ -2666,13 +2666,31 @@ body {
   }
   .card__section {
     background: none;
-    padding-bottom: 0;
+    padding: 0;
   }
   .card {
     height: 1500px;
     -webkit-flex-direction: column;
     flex-direction: column;
     margin-bottom: 60px;
+  }
+  .card__1 {
+    height: 1600px;
+  }
+  .card__1 .card__center {
+    top: 560px;
+  }
+  .card__1 .card__galary {
+    top: 940px;
+  }
+  .card__3 {
+    height: 1600px;
+  }
+  .card__3 .card__center {
+    top: 560px;
+  }
+  .card__3 .card__galary {
+    top: 940px;
   }
   .card__3 .card__boot {
     width: 350px;
@@ -2687,15 +2705,15 @@ body {
     margin: auto;
   }
   .card__title {
-    font-size: 30px;
+    font-size: 36px;
     line-height: 140%;
     margin-bottom: 20px;
   }
   .card__2 .card__title {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   .card__3 .card__title {
-    font-size: 26px;
+    font-size: 36px;
     margin-bottom: 20px;
   }
   .card__center {
@@ -2746,6 +2764,21 @@ body {
     margin-top: 0px;
     position: relative;
   }
+  .review__section {
+    height: auto;
+  }
+  .reviews__wrapper {
+    width: 400px;
+    height: 500px;
+  }
+  .review__autor {
+    margin-left: 20px;
+  }
+  .review__message {
+    width: 390px;
+    height: 380px;
+    background-size: 380px;
+  }
   .footer__content {
     width: 100%;
     margin: 0;
@@ -2755,6 +2788,10 @@ body {
     justify-content: center;
     -webkit-align-items: center;
     align-items: center;
+  }
+  .footer__content .sale__text {
+    color: #fff;
+    opacity: 1;
   }
   .footer__girl {
     display: none;
@@ -3071,19 +3108,19 @@ body {
     right: 40px;
   }
   .galary__wrapper {
-    width: 262px;
-    height: 410px;
+    width: 340px;
+    height: 540px;
   }
   .galary__item {
-    width: 262px;
-    height: 375px;
+    width: 340px;
+    height: 510px;
   }
   .galary__item .galary__foto {
     position: absolute;
     top: 50%;
     left: 50%;
     width: auto;
-    height: 375px;
+    height: 510px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
@@ -3110,6 +3147,22 @@ body {
     margin-top: 0px;
     position: relative;
   }
+  .review__section {
+    margin-bottom: 50px;
+  }
+  .reviews__wrapper {
+    width: 360px;
+    height: 470px;
+  }
+  .review__autor {
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+  .review__message {
+    width: 340px;
+    height: 370px;
+    background-size: 350px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -3135,5 +3188,55 @@ body {
     bottom: 0px;
     left: auto;
     right: 20px;
+  }
+  .galary__wrapper {
+    width: 290px;
+    height: 500px;
+  }
+  .galary__item {
+    width: 290px;
+    height: 450px;
+  }
+  .galary__item .galary__foto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 450px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .reviews__wrapper {
+    width: 290px;
+    height: 430px;
+  }
+  .review__autor {
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+  .review__message {
+    width: 280px;
+    height: 320px;
+    background-size: 290px;
+  }
+}
+
+@media (max-width: 360px) {
+  .galary__wrapper {
+    width: 270px;
+    height: 440px;
+  }
+  .galary__item {
+    width: 270px;
+    height: 410px;
+  }
+  .galary__item .galary__foto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 410px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
