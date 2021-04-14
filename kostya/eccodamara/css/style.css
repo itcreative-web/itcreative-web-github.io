@@ -941,7 +941,7 @@ body {
 
 .card__center {
   width: 598px;
-  height: 580px;
+  height: 590px;
   background-image: url("../img/card-bg.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -2679,11 +2679,14 @@ body {
     flex-direction: column;
     margin-bottom: 60px;
   }
+  .card__table {
+    margin-bottom: 20px;
+  }
   .card__1 {
     height: 1600px;
   }
   .card__1 .card__center {
-    top: 560px;
+    top: 520px;
   }
   .card__1 .card__galary {
     top: 940px;
@@ -2692,7 +2695,7 @@ body {
     height: 1600px;
   }
   .card__3 .card__center {
-    top: 560px;
+    top: 520px;
   }
   .card__3 .card__galary {
     top: 940px;
@@ -2723,8 +2726,8 @@ body {
   }
   .card__center {
     width: 300px;
-    height: 350px;
-    top: 480px;
+    height: 400px;
+    top: 450px;
   }
   .card__center:before {
     width: 320px;
