@@ -2215,7 +2215,7 @@ h4 {
     margin-top: 20px;
 }
 
-.form-control {
+input.form-control {
     display: block;
     width: 100%;
     background-color: #fff;
@@ -3083,7 +3083,7 @@ h4 {
     position: absolute;
     bottom: 0;
     right: -webkit-calc(50% - 960px);
-    right: calc(50% - 910px);
+    right: calc(50% - 960px);
     content: "";
     width: 726px;
     height: 400px;
@@ -3091,6 +3091,12 @@ h4 {
     background-size: contain;
     pointer-events: none;
     z-index: -10;
+}
+
+@media (min-width: 1920px) {
+    .footer:after {
+        right: 0;
+    }
 }
 
 .footer-info-wrapper {
