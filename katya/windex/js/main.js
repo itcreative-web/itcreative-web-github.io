@@ -3,12 +3,6 @@
 $(document).ready(function () {
   // Якоря к карточке заказа товара
   $(".btn-scroll").click(function (event) {
-    // event.preventDefault();
-    // var id = $(this).attr('href');
-    // var top = $(id).offset().top;
-    // $('body, html').animate({
-    //   scrollTop: top - 300
-    // }, 800);
     if ($(window).width() <= 1000) {
       event.preventDefault();
       var id = $(this).attr('href');
@@ -21,7 +15,7 @@ $(document).ready(function () {
       var id = $(this).attr('href');
       var top = $(id).offset().top;
       $('body, html').animate({
-        scrollTop: top - 600
+        scrollTop: top - 550
       }, 800);
       console.log("2");
     }
@@ -136,8 +130,8 @@ $(document).ready(function () {
   }); // ПОЯВЛЕНИЕ И СКРЫТИЕ ФИКСИРОВАННОЙ КНОПКИ КОРЗИНЫ 
 
   $(window).on('scroll', function () {
-    var scrollForm = $("#order-form").offset().top - $(window).height();
-    var scrollFormTop = $("#order-form").offset().top + $("#order-form").height();
+    var scrollForm = $("#product").offset().top - $(window).height();
+    var scrollFormTop = $("#product").offset().top + $("#product").height();
     var scrollFormBottom = $("#order-form2").offset().top - $(window).height();
 
     if ($(this).scrollTop() < scrollForm) {
