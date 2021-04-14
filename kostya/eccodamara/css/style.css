@@ -239,6 +239,8 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 30px;
+  word-wrap: wrap;
+  width: 100%;
 }
 
 .header__timer {
@@ -2038,7 +2040,7 @@ body {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .container {
     width: 800px;
   }
@@ -2354,8 +2356,11 @@ body {
     top: 0;
     left: 0;
     width: 160px;
+    height: 100%;
     padding: 12px 0px 12px 20px;
     z-index: 1;
+    font-size: 14px;
+    line-height: 130%;
   }
   .advantage__img {
     position: absolute;
