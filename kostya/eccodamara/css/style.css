@@ -3247,4 +3247,10 @@ body {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
+  .card .card__center {
+    height: 380px;
+  }
+  .card__2 .card__center {
+    height: 360px;
+  }
 }
