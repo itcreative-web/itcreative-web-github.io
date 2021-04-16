@@ -164,6 +164,8 @@ button {
 .text-skew {
   position: relative;
   z-index: 5;
+  width: 100%;
+  text-align: center;
 }
 
 .logo .color__abs-top {

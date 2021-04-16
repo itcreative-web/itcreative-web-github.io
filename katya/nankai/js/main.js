@@ -33,7 +33,7 @@ $(document).ready(function () {
       event.preventDefault();
       var top = $("#order-form").offset().top;
       $('body, html').animate({
-        scrollTop: top - 400
+        scrollTop: top - 350
       }, 800);
     }
   }); // SLIDER REWIEV
