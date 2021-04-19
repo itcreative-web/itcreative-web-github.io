@@ -1352,9 +1352,16 @@ body {
   width: 34px;
   height: 100px;
   margin-right: 10px;
+  display: inline-block;
 }
 
 .card__size-button {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
   width: 34px;
   height: 34px;
   border: 1px solid #FFFFFF;
@@ -1374,7 +1381,7 @@ body {
 
 .card__size {
   position: absolute;
-  top: 60px;
+  top: 62px;
   left: 50%;
   -webkit-transform: translateX(-50%) rotate(90deg);
   transform: translateX(-50%) rotate(90deg);
@@ -2545,13 +2552,15 @@ body {
   }
   .big {
     font-size: 24px;
-    top: 35px;
+    line-height: 100%;
+    top: 52px;
     left: 30px;
   }
   .sale__text {
     font-size: 43px;
-    top: 12px;
-    left: 85px;
+    top: 34px;
+    left: 82px;
+    line-height: 100%;
   }
   .header__plane {
     width: 700px;
@@ -2730,7 +2739,7 @@ body {
     font-size: 28px;
   }
   .header__subtitle {
-    margin-bottom: 250px;
+    margin-bottom: 310px;
     font-size: 18px;
   }
   .sale {
@@ -3130,7 +3139,7 @@ body {
 
 @media (max-width: 414px) {
   .container {
-    width: 340px;
+    width: 360px;
   }
   .site__header {
     height: 720px;
@@ -3204,27 +3213,53 @@ body {
   .slick-prev {
     bottom: 15px;
     width: 74px;
-    height: 36px;
+    height: 38px;
     border-radius: 22px 0px 0px 22px;
-    z-index: 100000;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
     padding-left: 5px;
   }
   .slick-prev:before {
-    font-size: 36px;
-    line-height: 36px;
+    font-family: inherit;
+    content: "\2190";
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    line-height: 38px;
     padding-bottom: 5px;
+    opacity: 1;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
   }
   .slick-next {
     bottom: 15px;
     width: 74px;
-    height: 36px;
+    height: 38px;
     border-radius: 0px 22px 22px 0px;
     padding-left: 5px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
   }
   .slick-next:before {
-    font-size: 36px;
-    line-height: 36px;
+    font-family: inherit;
+    content: "\2192";
+    font-size: 30px;
+    line-height: 38px;
+    padding: 0;
+    margin: 0;
     padding-bottom: 5px;
+    opacity: 1;
+    text-align: center;
+    margin: 0 auto;
   }
   .sprey__text {
     margin-bottom: 10px;
@@ -3261,6 +3296,9 @@ body {
   }
   .card__table {
     margin-bottom: 20px;
+  }
+  .card__size-wrapper {
+    width: 100%;
   }
   .card__sale {
     top: 120px;
