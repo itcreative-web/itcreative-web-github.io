@@ -64,7 +64,7 @@ $(function () {
 			nextArrow: $('.btn__next'),
 			responsive: [
 				{
-					breakpoint: 1000,
+					breakpoint: 1026,
 					settings: {
 					  slidesToShow: 2,
 					  slidesToScroll: 1,
