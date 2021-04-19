@@ -2954,6 +2954,8 @@ input.form-control {
     .review .review-inner {
         width: 63%;
         font-size: 16px;
+
+        min-height: 140px;
     }
 }
 
