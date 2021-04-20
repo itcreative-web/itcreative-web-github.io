@@ -27,7 +27,7 @@ $(".video-inner").click(function() {
             }
         });
     } else {
-        var videoSrc = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&mute=0";
+        var videoSrc = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&mute=1";
         $(this).append("<iframe src=\""+videoSrc+"\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>");
     }
 });

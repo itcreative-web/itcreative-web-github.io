@@ -3613,7 +3613,7 @@ h1 {
     background: url("../images/arrow.png") center no-repeat;
     background-size: contain;
     z-index: 20;
-    outline: none;
+    outline: none !important;
 }
 
 .review-btn--prev {
