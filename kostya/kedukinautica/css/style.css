@@ -3436,8 +3436,8 @@ body {
     z-index: 10000;
   }
   .footer-dev {
-    padding: 0;
-    width: 290px;
+    padding: 0 50px;
+    width: 100%;
   }
 }
 
@@ -3496,6 +3496,10 @@ body {
   .slider__info {
     bottom: -270px;
   }
+  .footer-dev {
+    padding: 0 50px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 360px) {
@@ -3511,5 +3515,9 @@ body {
   }
   .sprey__img {
     margin-top: 0px;
+  }
+  .footer-dev {
+    padding: 0 20px;
+    width: 100%;
   }
 }
