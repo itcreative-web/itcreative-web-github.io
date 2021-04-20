@@ -624,9 +624,15 @@ p {
     content: "";
     width: 2368px;
     height: 1279px;
-    background: url("../images/header-wave.svg") center no-repeat;
+    background: url("../images/header-wave.png") center no-repeat;
     background-size: contain;
 }
+
+/*@media (max-width: 991px) {*/
+/*    .header:before {*/
+/*        background-image: url("../images/header-wave.svg");*/
+/*    }*/
+/*}*/
 
 @media (min-width: 1930px) {
     .header:before {
