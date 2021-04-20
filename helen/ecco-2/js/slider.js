@@ -5,6 +5,8 @@ var overviewElement = document.querySelector(".overview-slides");
 var overviewSlider;
 var overviewHammer;
 
+var $windowWidthInit = $(window).width();
+
 function debounce(name, delay, func) {
     window.appDebounceTimers = window.appDebounceTimers || {};
     clearTimeout(window.appDebounceTimers[name]);
@@ -31,7 +33,9 @@ function dynamicGalleryOwl(name) {
     func();
 
     $(window).on("resize", function() {
-        debounce("dynamicGalleryOwl_" + name, 100, func);
+        if ($windowWidthInit !== $(window).width()) {
+            debounce("dynamicGalleryOwl_" + name, 100, func);
+        }
     });
 }
 
