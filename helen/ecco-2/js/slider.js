@@ -151,20 +151,23 @@ $(document).ready(function() {
         );
     }
 
+    $(".overview-dots .dot").on("click", function(e) {
+        if ($(e.target).closest(".dot").length > 0) {
+            overviewSlider.setIndex($(e.target).closest(".dot").index());
+        }
+    })
+
     overviewHammer = new Hammer(overviewElement, {
         recognizers: [
             [Hammer.Swipe, {direction: Hammer.DIRECTION_HORIZONTAL}]
         ]
     });
 
-
     overviewHammer.on("swipeleft", function() {
-        console.log("swipe")
         overviewSlider.next();
     });
 
     overviewHammer.on("swiperight", function() {
-        console.log("swipe")
         overviewSlider.prev();
     });
 

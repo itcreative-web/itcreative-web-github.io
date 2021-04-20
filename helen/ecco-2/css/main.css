@@ -636,7 +636,10 @@ p {
 
 @media (min-width: 1930px) {
     .header:before {
-        left: 0;
+        top: -27vw;
+        left: calc(50% - 72vw);
+        width: 127vw;
+        height: 69vw;
     }
 }
 
@@ -2755,6 +2758,13 @@ h1 {
     .spray-images {
         margin-top: -300px;
     }
+
+
+    .sizes {
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 585px) {
@@ -2808,6 +2818,7 @@ h1 {
     .spray-images {
         margin-top: -58vw;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -3202,6 +3213,12 @@ h1 {
     .spray-content-wrapper:after {
         width: 215px;
     }
+    .order-form {
+        width: 100%;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 585px) {
@@ -3265,13 +3282,6 @@ h1 {
 
     .prices .new-price {
         font-size: 36px;
-    }
-
-    .order-form {
-        width: 100%;
-        max-width: 340px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .product .order-link,
