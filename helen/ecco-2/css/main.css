@@ -1127,6 +1127,10 @@ h1 {
         padding-top: 20px;
     }
 
+    .logo--header {
+        margin-bottom: 0;
+    }
+
     h1 {
         font-size: 22px;
         margin-bottom: 10px;
