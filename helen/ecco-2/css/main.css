@@ -1884,6 +1884,12 @@ h1 {
     .video .headline {
         text-align: center;
     }
+
+    .video-content .order-link {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 @media (max-width: 585px) {
