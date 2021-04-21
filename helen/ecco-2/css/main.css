@@ -1854,7 +1854,7 @@ h1 {
     }
 
     .video-inner iframe {
-        border-radius: 30px;
+        border-radius: 20px;
     }
 
     .video-inner img {
@@ -1887,7 +1887,6 @@ h1 {
         width: 100%;
         margin-top: 30px;
     }
-
 
     .video-content {
         width: 100%;

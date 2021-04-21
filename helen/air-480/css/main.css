@@ -1,0 +1,1016 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: Gilroy, sans-serif;
+  font-size: 18px;
+  color: #222;
+  background-size: cover; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  border: none;
+  outline: none; }
+  a:active {
+    outline: none;
+    border: none; }
+
+button {
+  font-family: inherit;
+  color: inherit;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer; }
+
+input {
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none; }
+  input::-webkit-input-placeholder {
+    opacity: 1; }
+  input::-moz-placeholder {
+    opacity: 1; }
+  input:-ms-input-placeholder {
+    opacity: 1; }
+  input::-ms-input-placeholder {
+    opacity: 1; }
+  input::placeholder {
+    opacity: 1; }
+  input::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 1; }
+  input::-moz-placeholder {
+    color: inherit;
+    opacity: 1; }
+  input:-ms-input-placeholder {
+    color: inherit;
+    opacity: 1; }
+  input::-ms-input-placeholder {
+    color: inherit;
+    opacity: 1; }
+  input::placeholder {
+    color: inherit;
+    opacity: 1; }
+  input:invalid {
+    box-shadow: none; }
+
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none !important;
+  -webkit-user-select: none !important; }
+
+select::-ms-expand {
+  display: none; }
+
+label.error {
+  display: none !important; }
+
+input::-ms-clear {
+  width: 15px;
+  height: 15px; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+.overflow-hidden {
+  position: relative;
+  overflow: hidden; }
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background: none; }
+  .back div {
+    position: absolute; }
+  .back img {
+    position: absolute; }
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  margin: auto;
+  padding: 0 15px; }
+
+.overflow {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 480px;
+  background: #B8E9F0;
+  margin: 0 auto; }
+
+p {
+  margin: 0; }
+
+.full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50000;
+  pointer-events: none;
+  opacity: 0.4; }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+h1,
+h2 {
+  color: #FDB93D;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.33;
+  padding: 0 15px; }
+
+h3 {
+  color: #FF3D00;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.3;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase; }
+
+.prices {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  padding: 9px 15px 0; }
+  .prices .text {
+    margin-bottom: 8px; }
+
+.old-price-wrapper {
+  text-align: center; }
+
+.price-wrapper {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-align-items: center;
+          align-items: center; }
+
+.old-price {
+  position: relative;
+  display: inline;
+  font-size: 24px;
+  line-height: 30px; }
+  .old-price:before {
+    position: absolute;
+    top: 13px;
+    left: -5px;
+    content: "";
+    width: -webkit-calc(100% + 10px);
+    width: calc(100% + 10px);
+    height: 2px;
+    background-color: #FF0000;
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg); }
+
+.new-price-wrapper {
+  font-weight: 500;
+  text-align: center; }
+  .new-price-wrapper .text {
+    margin-bottom: 10px; }
+
+.new-price {
+  color: #263A7F;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold; }
+
+.order-link {
+  display: block;
+  width: 100%;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #FF3D00;
+  border-radius: 30px; }
+
+.prices--small .old-price-wrapper {
+  margin-right: 20px; }
+
+.prices--small .new-price-wrapper {
+  margin-left: 20px; }
+
+.headline--promo {
+  padding-top: 20px;
+  padding-bottom: 23px;
+  background-color: #2F63AC; }
+
+.promo-image {
+  width: 100%; }
+
+.promo-content {
+  max-width: 390px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+  padding-bottom: 50px; }
+  .promo-content h3 {
+    margin: 13px 0 11px; }
+
+.promo-product-image {
+  width: 110px;
+  position: relative;
+  margin-top: -160px;
+  margin-bottom: -40px; }
+  .promo-product-image img {
+    display: block;
+    width: 100%; }
+
+@media (max-width: 480px) {
+  .promo-product-image {
+    width: 25%;
+    margin-top: -35vw;
+    margin-bottom: -10vw; }
+  .price-wrapper {
+    width: -webkit-calc(75% / 2);
+    width: calc(75% / 2); }
+  .new-price {
+    color: #263A7F;
+    font-size: 6.2vw; }
+  .old-price {
+    font-size: 5vw; } }
+
+@media (max-width: 480px) {
+  .prices .text {
+    font-size: 4vw; } }
+
+.timer-box {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-top: 9px;
+  margin-bottom: 20px; }
+  .timer-box .text {
+    margin-right: 10px; }
+
+.timer {
+  text-align: center;
+  width: 120px;
+  border: 2px solid #263A7F;
+  border-radius: 10px;
+  background-color: #FDB93D;
+  color: #263A7F;
+  font-weight: 600;
+  line-height: -webkit-calc(43px - 4px);
+  line-height: calc(43px - 4px); }
+
+.promo-2 .headline--promo {
+  color: #263A7F;
+  background: none; }
+
+.promo-2 .head {
+  height: 502px;
+  background: url("../images/promo-2-image.jpg") center no-repeat;
+  background-size: contain; }
+
+@media (max-width: 480px) {
+  .promo-2 .head {
+    height: 105vw; } }
+
+.features1 {
+  background-color: #2F63AC;
+  padding: 40px 0 50px; }
+  .features1 h2 {
+    margin-bottom: 43px; }
+
+.features1-items {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: -13px; }
+
+.features1-item {
+  background: -webkit-linear-gradient(217.51deg, #2CC2EF 0%, #2173D5 100%);
+  background: linear-gradient(232.49deg, #2CC2EF 0%, #2173D5 100%);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-top: 24px;
+  padding: 40px 10px 20px;
+  width: -webkit-calc(50% - 10px);
+  width: calc(50% - 10px);
+  text-align: center; }
+  .features1-item .icon {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+    height: 55px; }
+  .features1-item .text {
+    margin-top: 15px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px; }
+
+.about {
+  padding-top: 43px;
+  background-color: #001123; }
+
+.about-subtitle {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.about-image {
+  width: 100%; }
+  .about-image img {
+    display: block;
+    width: 100%; }
+
+.privilege {
+  padding-top: 43px;
+  padding-bottom: 350px;
+  background: url("../images/priv-image.jpg") center bottom no-repeat;
+  background-size: contain; }
+  .privilege .headline {
+    color: #263A7F;
+    margin-bottom: 20px; }
+
+@media (max-width: 480px) {
+  .privilege {
+    padding-bottom: 74vw; } }
+
+.privilege-product-image {
+  margin-top: 32px;
+  text-align: center; }
+  .privilege-product-image img {
+    max-width: 100%; }
+
+.privilege-items {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  margin-top: -33px;
+  padding-bottom: 20px; }
+
+.privilege-item {
+  width: -webkit-calc(50% - 5px);
+  width: calc(50% - 5px);
+  text-align: center;
+  padding: 4px;
+  margin-top: 33px; }
+  .privilege-item .icon {
+    width: 100%;
+    max-width: 156px;
+    margin-left: auto;
+    margin-right: auto; }
+    .privilege-item .icon img {
+      display: block;
+      width: 100%; }
+  .privilege-item .text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: -10px; }
+
+.product-card {
+  padding-top: 23px;
+  padding-bottom: 50px; }
+  .product-card .headline {
+    color: #263A7F;
+    margin-bottom: 24px; }
+  .product-card h3 {
+    margin: 18px 0 11px; }
+
+.product-card-content {
+  padding-top: 15px; }
+
+.product-card-image {
+  position: relative; }
+  .product-card-image img {
+    display: block;
+    width: 100%; }
+
+.order-form {
+  max-width: 390px;
+  padding: 0 15px;
+  margin: 30px auto; }
+
+.delivery-info {
+  width: -webkit-calc(100% - 30px);
+  width: calc(100% - 30px);
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #FF3D00;
+  border-radius: 20px; }
+
+.form-group {
+  margin-bottom: 10px; }
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  padding: 0 15px;
+  color: #222;
+  border: 1px solid #263A7F;
+  -webkit-transition: 320ms;
+  transition: 320ms; }
+  .form-control:focus {
+    border: 2px solid #263A7F;
+    padding-left: 14px; }
+
+.form-group--btn {
+  margin-top: 20px; }
+
+.delivery-info {
+  padding: 15px;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  color: #393A4F; }
+
+.reviews {
+  padding-top: 43px;
+  padding-bottom: 20px;
+  background-color: #2F63AC; }
+
+.review {
+  position: relative;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  font-size: 20px;
+  line-height: 150%;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.25); }
+  .review:before {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    content: "";
+    width: 32px;
+    height: 24px;
+    background: url("../images/icon-review.png") center no-repeat;
+    background-size: contain; }
+
+.reviews-inner {
+  margin-top: 23px; }
+
+.review-wrapper {
+  padding: 15px 15px 20px; }
+
+.reviews .slick-dots {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center; }
+  .reviews .slick-dots button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 0;
+    color: rgba(0, 0, 0, 0);
+    text-indent: -5000px;
+    padding: 0; }
+  .reviews .slick-dots li {
+    margin: 0 5px; }
+    .reviews .slick-dots li.slick-active button {
+      background-color: #263A7F; }
+
+.review .user-name {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 15px; }
+
+.reviews-btns {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-align-items: center;
+          align-items: center;
+  width: -webkit-calc(100% - 80px);
+  width: calc(100% - 80px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px; }
+
+.reviews .slick-dots {
+  margin-top: 20px; }
+
+.review-btn {
+  position: relative;
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #263A7F;
+  background: url("../images/arrow.png") center no-repeat;
+  z-index: 50; }
+
+.review-btn--prev {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1); }
+
+.usage {
+  padding-top: 41px;
+  padding-bottom: 40px;
+  background-color: #2F63AC; }
+  .usage h2 {
+    max-width: 390px;
+    margin-left: auto;
+    margin-right: auto; }
+
+.usage-items {
+  margin-top: 40px; }
+
+.usage-item {
+  margin-bottom: 29px;
+  max-width: 390px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .usage-item:last-child {
+    margin-bottom: 0; }
+  .usage-item .photo {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 10px; }
+    .usage-item .photo img {
+      display: block;
+      width: 100%; }
+  .usage-item .text {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: center; }
+
+.footer {
+  background-color: #9ADAE3; }
+
+.footer-info {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+          align-items: center;
+  color: #555555;
+  font-size: 14px;
+  padding: 15px 0; }
+  .footer-info a {
+    font-weight: 500; }
+
+.modal {
+  display: none;
+  padding: 15px !important;
+  max-width: 480px !important; }
+  .modal h2 {
+    font-size: 19px;
+    margin-bottom: 15px;
+    color: #263A7F; }
+  .modal p {
+    margin-bottom: 10px;
+    font-size: 16px; }
+    .modal p:last-child {
+      margin-bottom: 0; }
+
+@media (max-width: 480px) {
+  h1,
+  h2 {
+    font-size: 6vw; }
+  .prices--small .old-price-wrapper {
+    margin-right: 3vw; }
+  .prices--small .new-price-wrapper {
+    margin-left: 3vw; }
+  .features1-items {
+    margin-top: -4vw; }
+  .features1-item {
+    padding: 8.4vw 2vw 4vw;
+    width: -webkit-calc(50% - 2vw);
+    width: calc(50% - 2vw);
+    margin-top: 5vw; }
+  .features1-item .icon {
+    height: 11vw; }
+    .features1-item .icon img {
+      height: 100%; }
+  .features1-item .text {
+    font-size: 4.2vw; }
+  .about-subtitle {
+    font-size: 4.35vw; }
+  .privilege-item {
+    margin-top: 5vw; }
+  .privilege-item .text {
+    font-size: 4.2vw; } }
+
+@media (max-width: 414px) {
+  .review {
+    font-size: 18px;
+    line-height: 1.3; }
+  .review .user-name {
+    font-size: 18px; }
+  .review-btn {
+    width: 36px;
+    height: 36px;
+    background-size: 30%; } }
+
+@media (max-width: 360px) {
+  h3 {
+    font-size: 6vw; }
+  .timer-box {
+    display: block;
+    padding: 0 15px;
+    text-align: center; }
+  .timer-box .text {
+    margin-left: 0;
+    margin-bottom: 10px; }
+  .timer {
+    width: 36vw;
+    margin-left: auto;
+    margin-right: auto; }
+  .privilege-item .icon {
+    max-width: 130px; }
+  .order-form {
+    margin-top: 9.5vw; }
+  .form-control {
+    height: 50px; }
+  .order-link {
+    padding: 15px 10px; }
+  .review {
+    font-size: 16px; }
+  .review .user-name {
+    font-size: 17px; }
+  .delivery-info {
+    font-size: 20px;
+    padding: 10px; } }
