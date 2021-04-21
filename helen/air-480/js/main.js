@@ -2,6 +2,20 @@ var $reviewsSlick = $(".reviews-inner");
 
 $(document).ready(function() {
 
+    $("a[href='#order']").click(function(e) {
+        e.preventDefault();
+
+        if ($(window).width() >= 1200) {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $($(this).attr("href")).offset().top
+            }, 1200);
+        } else {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $($(this).attr("href")).offset().top - $(window).height() + $($(this).attr("href")).outerHeight()
+            }, 1200);
+        }
+    });
+
     $reviewsSlick.slick({
         infinite: true,
         slidesToShow: 1,
