@@ -1010,6 +1010,11 @@ h3 {
     justify-content: center;
 }
 
+.reviews .slick-dots li {
+    position: relative;
+    z-index: 100;
+}
+
 .reviews .slick-dots button {
     display: block;
     width: 10px;
