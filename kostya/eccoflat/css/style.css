@@ -1186,7 +1186,7 @@ main {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 100%;
   display: inline-block;
   text-align: center;
   color: #FDC93C;
