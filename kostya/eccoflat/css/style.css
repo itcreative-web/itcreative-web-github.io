@@ -51,6 +51,7 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   overflow: hidden;
+  margin: auto;
 }
 
 .container {
@@ -3119,7 +3120,7 @@ main {
   }
 }
 
-@media (max-width: 388px) {
+@media (max-width: 393px) {
   .advantage__boot {
     margin-top: 550px;
     width: 300px;
@@ -3341,6 +3342,13 @@ main {
 }
 
 @media (max-width: 1440px) {
+  .galary__section {
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .galary__wrapper {
+    height: auto;
+  }
   .galary__foto {
     width: 223px;
     height: 340px;
@@ -3356,6 +3364,30 @@ main {
   .galary__foto-big img {
     width: 470px;
     height: auto;
+  }
+  .galary__branch1 {
+    width: 360px;
+    bottom: auto;
+    top: 500px;
+    left: -200px;
+  }
+  .galary__branch2 {
+    width: 360px;
+    bottom: auto;
+    top: 510px;
+    right: -200px;
+  }
+  .galary__branch3 {
+    width: 360px;
+    transform: rotate(180deg);
+    top: 80px;
+    right: -200px;
+  }
+  .galary__branch4 {
+    width: 360px;
+    transform: rotate(180deg);
+    top: 70px;
+    left: -200px;
   }
 }
 
@@ -3593,7 +3625,7 @@ main {
   }
 }
 
-@media (max-width: 388px) {
+@media (max-width: 393px) {
   .galary__title-wrapper {
     width: 340px;
     height: 60px;
@@ -3864,7 +3896,7 @@ main {
   }
 }
 
-@media (max-width: 388px) {
+@media (max-width: 393px) {
   .card__title {
     margin-top: 18px;
     margin-bottom: 0;
@@ -4671,7 +4703,7 @@ main {
   }
 }
 
-@media (max-width: 388px) {
+@media (max-width: 393px) {
   .footer__title-wrapper {
     margin-bottom: 400px;
     margin-left: -15px;
