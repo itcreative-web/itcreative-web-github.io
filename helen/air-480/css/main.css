@@ -638,6 +638,7 @@ h3 {
     text-transform: uppercase;
     background-color: #FF3D00;
     border-radius: 30px;
+    outline: none !important;
 }
 
 .prices--small .old-price-wrapper {
