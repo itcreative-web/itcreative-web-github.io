@@ -19,6 +19,10 @@ img {
   pointer-events: none;
 }
 
+*:focus-visible {
+  outline: none;
+}
+
 p {
   width: 100%;
   word-wrap: wrap;
@@ -2537,6 +2541,9 @@ main {
   .container {
     width: 384px;
   }
+  .site__header {
+    height: 900px;
+  }
   .site__header .container {
     width: 391px;
   }
@@ -2587,12 +2594,15 @@ main {
   }
 }
 
-@media (max-width: 388px) {
+@media (max-width: 393px) {
   .container {
     width: 350px;
   }
   .site__header {
-    height: 850px;
+    height: 800px;
+  }
+  .site__header .container {
+    width: 100%;
   }
   .site__title-wrapper {
     width: 310px;
@@ -2657,6 +2667,7 @@ main {
   }
   .header__price {
     align-items: center;
+    margin: auto;
     width: 310px;
   }
   .price {
@@ -2686,7 +2697,7 @@ main {
 
 @media (max-width: 360px) {
   .site__header {
-    height: 820px;
+    height: 780px;
   }
   .site__header .container {
     width: 310px;
@@ -3081,7 +3092,7 @@ main {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 72px;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -3097,6 +3108,15 @@ main {
     margin-top: 550px;
     width: 380px;
   }
+  .advantage .advantage__title {
+    width: 200px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .advantage .advantage__text {
+    font-size: 14px;
+    line-height: 150%;
+  }
 }
 
 @media (max-width: 388px) {
@@ -3107,10 +3127,6 @@ main {
   .advantage__title-wrapper {
     width: 320px;
     height: 58px;
-  }
-  .advantage__title-text {
-    font-size: 20px;
-    line-height: 58px;
   }
   .advantage__slider {
     width: 320px;
@@ -3279,7 +3295,7 @@ main {
     margin-bottom: 0px;
   }
   .video__title {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 61px;
   }
   .video__content {
@@ -4048,7 +4064,7 @@ main {
     margin: 0;
   }
   .sprey__title {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 44px;
   }
   .sprey__subtitle-wrapper {
@@ -4085,7 +4101,7 @@ main {
   }
 }
 
-@media (max-width: 388px) {
+@media (max-width: 393px) {
   .sprey__title-wrapper {
     width: 320px;
     height: 60px;
@@ -4328,7 +4344,7 @@ main {
   }
 }
 
-@media (max-width: 388px) {
+@media (max-width: 393px) {
   .review__title-wrapper {
     width: 360px;
     height: 140px;
