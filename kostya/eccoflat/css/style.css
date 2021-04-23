@@ -2579,6 +2579,12 @@ main {
     right: -90px;
     top: 200px;
   }
+  .site__title-wrapper {
+    width: calc(100% + 20px);
+  }
+  .header__subtitle-wrapper {
+    margin-left: 0px;
+  }
   .header__price {
     margin-left: 0;
   }
@@ -2606,8 +2612,7 @@ main {
     width: 100%;
   }
   .site__title-wrapper {
-    width: 310px;
-    height: 88px;
+    height: 94px;
     margin-top: 30px;
     background-size: contain;
   }
