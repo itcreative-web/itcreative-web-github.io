@@ -1049,7 +1049,7 @@ input::-webkit-input-placeholder {
     width: 100%;
   }
   .eTimer {
-    width: 320px;
+    width: 330px;
   }
   .order__card {
     padding: 35px 15px;
@@ -1184,7 +1184,7 @@ input::-webkit-input-placeholder {
 @media (max-width: 320px) {
   .parameters .section-title {
     font-size: 30px;
-    line-height: 130%;
+    line-height: 40px;
   }
 }
 
