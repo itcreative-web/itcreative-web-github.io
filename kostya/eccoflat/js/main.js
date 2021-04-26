@@ -1,6 +1,10 @@
 $(function () {
 	AOS.init();
 
+	$('[data-fancybox]').fancybox({
+		loop: true,
+	});
+
 	$('.review__slider').slick({
 		infinite: true,
 		slidesToShow: 3,
@@ -47,6 +51,18 @@ $(function () {
   			autoplaySpeed: 2000,
 			adaptiveHeight: true
 		});
+		$("[data-fancybox=\"gallery-1\"]").fancybox({
+			loop: true,
+			afterClose: function(instance, current) {
+				$(".galary").slick("slickGoTo", current.index-1, true);
+			},
+		})
+		$("[data-fancybox=\"gallery-2\"]").fancybox({
+			loop: true,
+			afterClose: function(instance, current) {
+				$(".galary").slick("slickGoTo", current.index-1, true);
+			},
+		})
 	}
 	
 	
@@ -68,9 +84,7 @@ $(function () {
 	cardSliderInit(".card__2")
 	cardSliderInit(".card__3")
 
-	$('[data-fancybox]').fancybox({
-		loop: true,
-	});
+
 
 	$("body").on('click', '[href*="#"]', function (e) {
 		var fixedOffset = 0;
@@ -243,31 +257,4 @@ $(function () {
 	galary(".card__1")
 	galary(".card__2")
 
-
-	// var banner = $(".site__header");
-    // var imgs = $(".animate");
-	// // /////////////////////////////////////////////////////////////
-	// function showAllObjects (object) {
-	// 		object.fadeIn(900);
-	// }
-	// // /////////////////////////////////////////////////////////////
-	// function moving (object, speed) {
-	// 	banner.on('mousemove', function(event) {
-	// 		var X = Math.floor((event.pageX)/speed-20) + "px";
-	// 		var Y = Math.floor((event.pageY)/speed) + "px";	
-	// 		object.css('transform', 'translate('+X+' , '+Y+')');
-	// 	});
-	// }
-	// // /////////////////////////////////////////////////////////////
-	// function moveAll (object) {
-	// 	moving($(object[0]),60);
-	// 	moving($(object[1]),62);
-	// 	moving($(object[2]),68);
-	// 	moving($(object[3]),60);
-	// 	moving($(object[4]),80);	
-	// }
-	// // /////////////////////////////////////////////////////////////
-	// showAllObjects(imgs);
-	// moveAll(imgs);
-	// // ////////////
 })
