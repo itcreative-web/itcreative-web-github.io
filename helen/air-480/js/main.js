@@ -1,6 +1,77 @@
-var $reviewsSlick = $(".reviews-inner");
+function pad(num) {
+    return ("0" + num).substr(-2);
+}
+
 
 $(document).ready(function() {
+    $.fancybox.defaults.animationEffect = "fade";
+    $.fancybox.defaults.infobar = false;
+    $.fancybox.defaults.loop = true;
+
+
+    // $(".reviews-content").height($(".review").eq(0).innerHeight());
+
+
+    var $windowWidth = $(window).width();
+
+    // $(window).on("resize", function() {
+    //     if ($windowWidth !== $(window).width()){
+    //         $(".reviews-content").height($(".review").eq(0).innerHeight());
+    //     }
+    // });
+
+    $(".spray .colors").click(function(e) {
+        if ($(e.target).closest(".color-item").length > 0) {
+            $(".color-item", this).removeClass("active");
+            $(e.target).closest(".color-item").addClass("active");
+        }
+    })
+
+    $(".product").click(function(e) {
+        var $currentColor = $(e.target).closest(".color-item");
+
+        if ($currentColor.length > 0 && $currentColor.data("color") !== undefined) {
+            $(".color-item", this).removeClass("active");
+            $currentColor.addClass("active")
+            $(".product-image", this).removeClass('active');
+            $(".product-image--" + $currentColor.data("color"), this).addClass('active');
+
+            $(".product-galleries .gallery", this).removeClass("active");
+            $(".product-galleries .gallery--" + $currentColor.data("color"), this).addClass("active");
+        }
+    })
+
+    if ($(window).width() < 1200 && $(window).width() > 991) {
+        $(".product").each(function(index, item) {
+            var $prodGal = item.querySelector(".product-galleries");
+            var $prodGalClone = $prodGal.cloneNode(true);
+
+            $(".product-info", $(item)).append($prodGal);
+            $prodGalClone.remove();
+        });
+    }
+
+    $(window).on("resize", function() {
+        if ($windowWidth !== $(window).width()){
+            $(".product").each(function(index, item) {
+                if ($(window).width() < 1200 && $(window).width() > 991) {
+                    var $prodGal = item.querySelector(".product-galleries");
+                    var $prodGalClone = $prodGal.cloneNode(true);
+
+                    $(".product-info", $(item)).append($prodGal);
+                    $prodGalClone.remove();
+                } else {
+                    var gall = $(".product-galleries", item);
+
+                    if (gall.length > 0) {
+                        $(".product-galleries-wrapper", item).append(gall);
+                        // gall.remove();
+                    }
+                }
+            })
+        }
+    });
+
 
     $("a[href='#order']").click(function(e) {
         e.preventDefault();
@@ -16,79 +87,53 @@ $(document).ready(function() {
         }
     });
 
-    $reviewsSlick.slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        mobileFirst: true,
-        rows: 1,
-        dots: true,
-        arrows: false,
-        adaptiveHeight: true,
-        // autoplay: true,
-        // fade: true,
-        fadeSpeed: 1000,
-        // autoplaySpeed: 6000,
-
+    $("a[href='#order-woman']").click(function(e) {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $($(this).attr("href")).offset().top
+        }, 1200);
     });
 
-    $(".review-btn--prev").click(function () {
-        $reviewsSlick.slick('slickPrev');
+    $("a[href='#order-man']").click(function(e) {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $($(this).attr("href")).offset().top
+        }, 1200);
+    });
+
+
+
+    $(".btn-send-review").click(function(e) {
+        $.fancybox.open({
+            src  : '#modal-reviews',
+            type : 'inline',
+            opts : {
+                beforeShow : function( instance, current ) {
+                    $(".review-popup__form").show();
+                    $(".thanks-your-feedback").hide();
+                    $(".add-photo-file__inner img").attr("src", "images/photo-reviews.png");
+                    $(".add-photo__icon").show()
+                }
+            }
+        });
     })
 
-    $(".review-btn--next").click(function () {
-        $reviewsSlick.slick('slickNext');
-    })
+    $(".review-popup__form").submit(function(e) {
+        e.preventDefault();
+        $(".form-control").val("");
+        $(".thanks-your-feedback").show(320);
+        $(".review-popup__form").hide(320);
+    });
 
-});
-
-// timer
-
-const TimerUtils = {
-    startTimer: function(targetDateStr, tickCallback) {
-        const targetDateMillis = Date.parse(targetDateStr);
-
-        return setInterval(function() {
-            const currentMillis = Date.now();
-            const diffMillis = targetDateMillis - currentMillis;
-            const diff = {};
-
-            diff.seconds = Math.floor(diffMillis / 1000) % 60;
-            diff.minutes = Math.floor(diffMillis / 1000 / 60) % 60;
-            diff.hours = Math.floor(diffMillis / 1000 / 60 / 60) % 24;
-            diff.days = Math.floor(diffMillis / 1000 / 60 / 60 / 24);
-
-            tickCallback(diff);
-        }, 500);
-    },
-
-    getTimerFinish: function(finishDate, period) {
-        const finishDateMillis = Date.parse(finishDate);
-
-        if (Date.now() >= finishDateMillis) {
-            return TimerUtils.getTimerFinish(
-                new Date(finishDateMillis + (period * 60 * 60 * 24 * 1000)).toISOString(),
-                period
-            );
+    $(".add-photo-file__field").change(function(e) {
+        if (this.files.length > 0) {
+            if (["image/jpeg", "image/png"].indexOf(this.files[0].type) > -1) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $(".add-photo-file__inner img").attr("src", e.target.result)
+                };
+                reader.readAsDataURL(this.files[0]);
+            }
+            $(".add-photo__icon").hide(320)
         }
+    });
 
-        return new Date(finishDateMillis);
-    }
-};
-
-function pad(num) {
-    return ("0" + num).substr(-2);
-}
-
-const timerLeftDays = 1;
-const finish = TimerUtils.getTimerFinish("2020-10-16T00:00:00", timerLeftDays);
-
-TimerUtils.startTimer(finish.toISOString(), function(diff) {
-
-    if ($(".timer").length > 0) {
-        // $(".timer .days").text(pad(diff.days, 2));
-        $(".timer .hours").text(pad(diff.hours, 2));
-        $(".timer .minutes").text(pad(diff.minutes, 2));
-        $(".timer .seconds").text(pad(diff.seconds, 2));
-    }
-});
+})
