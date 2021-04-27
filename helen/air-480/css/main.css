@@ -3513,6 +3513,14 @@ h1 {
         font-size: 38px;
     }
 
+    .product-sizes {
+        margin-top: 20px;
+    }
+
+    .sizes-inner {
+        margin-bottom: 65px;
+    }
+
     .product .head .drop-image:before {
         right: -10px;
         width: 103px;
@@ -4204,7 +4212,7 @@ h1 {
 
     .footer-headline {
         max-width: 510px;
-        font-size: 51px;
+        font-size: 43px;
     }
 
     .footer-images:before {
