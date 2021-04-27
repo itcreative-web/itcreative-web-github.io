@@ -33,12 +33,10 @@ $(document).ready(function() {
     });
 
     $(".review-btn--prev").click(function () {
-        console.log(56453)
         $reviewsSlick.slick('slickPrev');
     })
 
     $(".review-btn--next").click(function () {
-        console.log(56453)
         $reviewsSlick.slick('slickNext');
     })
 
@@ -88,8 +86,6 @@ const finish = TimerUtils.getTimerFinish("2020-10-16T00:00:00", timerLeftDays);
 TimerUtils.startTimer(finish.toISOString(), function(diff) {
 
     if ($(".timer").length > 0) {
-        console.log($(".timer .hours"))
-
         // $(".timer .days").text(pad(diff.days, 2));
         $(".timer .hours").text(pad(diff.hours, 2));
         $(".timer .minutes").text(pad(diff.minutes, 2));
