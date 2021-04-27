@@ -910,6 +910,8 @@ h3 {
 }
 
 .product-card h3 {
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 18px 0 11px;
 }
 
@@ -1242,7 +1244,7 @@ h3 {
 
 @media (max-width: 360px) {
     h3 {
-        font-size: 6vw;
+        font-size: 5.5vw;
     }
 
     .timer-box {
