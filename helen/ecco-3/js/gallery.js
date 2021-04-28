@@ -106,7 +106,7 @@ $(document).ready(function() {
             // $(".overview-gallery .all-index").text(pad(total));
 
             $(".reviews-slides-counts .current-slide").text(pad(index + 1));
-            $(".reviews-slides-counts .all-slides").text(pad(total + 1));
+            $(".reviews-slides-counts .all-slides").text(pad(total));
 
             $(".current-count", overviewGalleryEl).text(pad(this.index + 1));
             $(".total-count", overviewGalleryEl).text(pad(this.slides.length));
