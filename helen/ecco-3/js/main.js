@@ -109,7 +109,7 @@ $(document).ready(function() {
                 beforeShow : function( instance, current ) {
                     $(".review-popup__form").show();
                     $(".thanks-your-feedback").hide();
-                    $(".add-photo-file__inner img").attr("src", "");
+                    $(".add-photo-file__inner img").attr("src", "images/elipse.png");
                     $(".add-photo__icon").show()
                 }
             }
