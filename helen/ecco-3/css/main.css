@@ -4505,3 +4505,19 @@ h1 {
         font-size: 24px;
     }
 }
+
+.delivery-info span {
+    color: #CC1414;
+    font-weight: bold;
+}
+
+
+@media (max-width: 767px) {
+    .size-label {
+        margin-right: 20px;
+    }
+
+    .size-label:last-child {
+        margin-right: 0;
+    }
+}
