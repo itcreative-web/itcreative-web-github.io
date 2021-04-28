@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
     font face
  */
@@ -456,34 +455,34 @@ button {
 }
 
 .eTimer .etHours::before {
-  content: "Часов";
+  content: "Jam";
   display: block;
   color: white;
   position: absolute;
   bottom: -17px;
-  right: calc(42% - 25px);
+  right: calc(65% - 25px);
   font-size: 14px;
   line-height: 16px;
 }
 
 .eTimer .etMinutes::before {
-  content: "Минут";
+  content: "Minit";
   display: block;
   color: white;
   position: absolute;
   bottom: -17px;
-  right: calc(50% - 25px);
+  right: calc(54% - 25px);
   font-size: 14px;
   line-height: 16px;
 }
 
 .eTimer .etSeconds::before {
-  content: "Секунд";
+  content: "Detik";
   display: block;
   color: white;
   position: absolute;
   bottom: -17px;
-  right: calc(50% - 25px);
+  right: calc(62% - 25px);
   font-size: 14px;
   line-height: 16px;
 }
@@ -530,7 +529,7 @@ button {
 }
 
 .model {
-  padding: 40px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
 }
 
 .model__item {
@@ -1141,6 +1140,15 @@ input::-webkit-input-placeholder {
   .order__card-title {
     margin-bottom: 0px;
   }
+  .eTimer .etHours::before {
+    right: calc(71% - 25px);
+  }
+  .eTimer .etMinutes::before {
+    right: calc(62% - 25px);
+  }
+  .eTimer .etSeconds::before {
+    right: calc(56% - 25px);
+  }
 }
 
 @media (max-width: 320px) {
@@ -1157,20 +1165,6 @@ input::-webkit-input-placeholder {
   }
 }
 
-@media (max-width: 420px) {
-  .application__item {
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .application__item-img {
-    width: 100%;
-  }
-  .application__item-text {
-    width: 100%;
-  }
-}
-
 @media (max-width: 360px) {
   .application {
     padding: 0px 0px 30px 0px;
@@ -1184,6 +1178,9 @@ input::-webkit-input-placeholder {
   }
   .order__input {
     width: 100%;
+  }
+  .eTimer .etUnit .etNumber {
+    width: 32px;
   }
 }
 
