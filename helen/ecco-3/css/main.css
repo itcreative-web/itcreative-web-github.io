@@ -782,6 +782,10 @@ h1 {
     transition: 320ms;
 }
 
+.product .order-link {
+    background-color: #F8F0F9;
+}
+
 .order-link:before {
     position: absolute;
     top: 0;
