@@ -2916,8 +2916,8 @@ h1 {
         align-items: flex-end;
     }
 
-    .right-decor {
-        display: none;
+    .spray-desc .text {
+        width: 100%;
     }
 }
 
