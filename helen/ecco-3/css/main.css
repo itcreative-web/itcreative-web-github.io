@@ -3477,9 +3477,9 @@ h1 {
 .size-value {
     position: absolute;
     top: 48px;
-    left: -10px;
+    left: -18px;
     display: block;
-    width: 50px;
+    width: 67px;
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     opacity: 0;
@@ -3490,7 +3490,7 @@ h1 {
 }
 
 .sizes-inner .size-label:nth-child(odd) .size-value {
-    left: -10px;
+    left: -17px;
 }
 
 .size-number {
