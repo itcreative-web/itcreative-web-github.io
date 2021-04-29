@@ -82,6 +82,9 @@ $(function () {
 
 	$("body").on('click', '[href*="#"]', function (e) {
 		var fixedOffset = 0;
+		if ($(document).width() <= 380) {
+			fixedOffset = 100;
+		}
 		if ($(document).width() <= 320) {
 			fixedOffset = 180;
 		}
