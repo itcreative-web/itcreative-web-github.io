@@ -308,8 +308,8 @@ body {
   display: flex;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: baseline;
+  align-items: baseline;
 }
 
 .old__price {
@@ -1029,6 +1029,8 @@ body {
   justify-content: space-between;
   -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
 }
 
 .card__header-right .old__price {
@@ -2187,8 +2189,8 @@ body {
     flex-direction: row;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    -webkit-align-items: flex-end;
-    align-items: flex-end;
+    -webkit-align-items: baseline;
+    align-items: baseline;
   }
   .footer__price .header__order-btn {
     margin: auto;
