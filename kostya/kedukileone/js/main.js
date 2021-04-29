@@ -1,5 +1,7 @@
 $(function () {
-	AOS.init();
+	AOS.init({
+		disable : "phone"
+	});
 
 	$('[data-fancybox]').fancybox({
 		loop: true,
@@ -11,6 +13,8 @@ $(function () {
 		slidesToShow: 2,
 		slidesToScroll: 1,
 		dots: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
 		responsive: [
 			{
 				breakpoint: 540,
@@ -31,6 +35,8 @@ $(function () {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		dots: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
 		responsive: [
 			{
 				breakpoint: 540,
@@ -49,6 +55,8 @@ $(function () {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		dots: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
 		responsive: [
 			{
 				breakpoint: 1440,
@@ -74,9 +82,9 @@ $(function () {
 
 	$("body").on('click', '[href*="#"]', function (e) {
 		var fixedOffset = 0;
-		// if ($(document).width() <= 600) {
-		// 	fixedOffset = 700;
-		// }
+		if ($(document).width() <= 320) {
+			fixedOffset = 180;
+		}
 		$('html,body')
 			.stop()
 			.animate({ scrollTop: $(this.hash).offset().top + fixedOffset }, 1000);
