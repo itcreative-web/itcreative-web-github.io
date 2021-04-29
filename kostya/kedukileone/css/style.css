@@ -1762,7 +1762,7 @@ body {
     margin-bottom: 10px;
   }
   .card__header-right .price {
-    width: 260px;
+    width: 270px;
     -webkit-flex-direction: row;
     flex-direction: row;
     -webkit-justify-content: space-between;
