@@ -1040,7 +1040,6 @@ body {
   font-size: 48px;
   line-height: 48px;
   word-wrap: normal;
-  margin-right: 10px;
 }
 
 .card__table {
@@ -1216,6 +1215,10 @@ body {
 
 .card__input:focus::placeholder {
   color: #FF004C;
+}
+
+.card__sale-mobile {
+  display: none;
 }
 
 .sprey__card {
@@ -2101,21 +2104,22 @@ body {
     height: 450px;
   }
   .card__fotos {
-    margin-bottom: 700px;
+    margin-bottom: 0px;
   }
   .card__right {
-    position: absolute;
-    height: 700px;
+    height: auto;
     margin: auto;
-    left: 50%;
-    top: 805px;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    padding-bottom: 0;
   }
   .card__sale {
+    display: none;
+  }
+  .card__sale-mobile {
+    display: block;
     color: #fff;
     width: 100%;
     text-align: center;
+    margin-top: 30px;
     margin-bottom: 30px;
   }
   .sprey__card {
@@ -2220,15 +2224,6 @@ body {
   }
   .card__main-foto {
     height: 335px;
-  }
-  .card__right {
-    position: absolute;
-    height: 700px;
-    margin: auto;
-    left: 50%;
-    top: 690px;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
   }
   .card__sale {
     font-size: 26px;
@@ -2472,15 +2467,6 @@ body {
   }
   .card__main-foto {
     height: 267px;
-  }
-  .card__right {
-    position: absolute;
-    height: 700px;
-    margin: auto;
-    left: 50%;
-    top: 620px;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
   }
   .card__sale {
     font-size: 24px;
@@ -2916,20 +2902,8 @@ body {
   .card__size-btn {
     margin-bottom: 10px;
   }
-  .card__fotos {
-    margin-bottom: 750px;
-  }
   .card__main-foto {
     height: 207px;
-  }
-  .card__right {
-    position: absolute;
-    height: 700px;
-    margin: auto;
-    left: 50%;
-    top: 560px;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
   }
   .sprey__card .card__left {
     height: 380px;
