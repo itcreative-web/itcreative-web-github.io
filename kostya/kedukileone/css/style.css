@@ -2569,6 +2569,9 @@ body {
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
   }
+  .header__price .price .new__price {
+    font-size: 56px;
+  }
   .header__order-btn {
     margin: auto;
   }
@@ -2731,6 +2734,9 @@ body {
     width: 400px;
     top: 0;
     right: -10px;
+  }
+  .footer__price .price .new__price {
+    font-size: 56px;
   }
 }
 

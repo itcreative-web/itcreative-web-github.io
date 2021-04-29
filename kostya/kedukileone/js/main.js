@@ -7,7 +7,6 @@ $(function () {
 		'alwaysShowNavOnTouchDevices': true,
 		'wrapAround': true,
 		'disableScrolling': true,
-		'resizeDuration': 700
 	})
 
 	// $('[data-fancybox]').fancybox({
