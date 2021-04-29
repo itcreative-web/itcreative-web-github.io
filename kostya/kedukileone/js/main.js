@@ -3,9 +3,15 @@ $(function () {
 		disable : "phone"
 	});
 
-	$('[data-fancybox]').fancybox({
-		loop: true,
-	});
+	lightbox.option({
+		// 'resizeDuration': 200,
+		'alwaysShowNavOnTouchDevices': true,
+		'wrapAround': true
+	})
+
+	// $('[data-fancybox]').fancybox({
+	// 	loop: true,
+	// });
 
 
 	$(".info__slider").slick({
