@@ -59,7 +59,7 @@ $(function () {
 		autoplaySpeed: 4000,
 		responsive: [
 			{
-				breakpoint: 1440,
+				breakpoint: 1441,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1,
@@ -82,6 +82,9 @@ $(function () {
 
 	$("body").on('click', '[href*="#"]', function (e) {
 		var fixedOffset = 0;
+		if ($(document).width() <= 380) {
+			fixedOffset = 100;
+		}
 		if ($(document).width() <= 320) {
 			fixedOffset = 180;
 		}
