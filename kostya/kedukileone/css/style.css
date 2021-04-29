@@ -2782,7 +2782,7 @@ body {
 
 @media (max-width: 375px) {
   .container {
-    width: 310px;
+    width: 330px;
   }
   .header__logo {
     margin-bottom: 300px;
