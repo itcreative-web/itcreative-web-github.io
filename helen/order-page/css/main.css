@@ -612,7 +612,7 @@ h1 {
 
 @media (max-width: 991px) {
     .container {
-        max-width: 768px;
+        max-width: 650px;
     }
 
     .block1-container,
