@@ -4,9 +4,10 @@ $(function () {
 	});
 
 	lightbox.option({
-		// 'resizeDuration': 200,
 		'alwaysShowNavOnTouchDevices': true,
-		'wrapAround': true
+		'wrapAround': true,
+		'disableScrolling': true,
+		'resizeDuration': 700
 	})
 
 	// $('[data-fancybox]').fancybox({
