@@ -1,5 +1,7 @@
 $(function () {
-	AOS.init();
+	AOS.init({
+		disable : "phone"
+	});
 
 	$('[data-fancybox]').fancybox({
 		loop: true,

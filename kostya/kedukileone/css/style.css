@@ -1,3 +1,27 @@
+@font-face {
+  font-family: Montserrat;
+  font-weight: normal;
+  src: url("../fonts/Montserrat-Regular.woff");
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: 600;
+  src: url("../fonts/Montserrat-SemiBold.woff");
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  src: url("../fonts/bebas-neue-bold.woff");
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-weight: normal;
+  src: url("../fonts/BebasNeue-Regular.woff");
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -35,7 +59,7 @@ body {
   width: 100%;
   height: auto;
   font-size: 15px;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: normal;
   background: #0A1727;
 }
@@ -193,7 +217,7 @@ body {
 }
 
 .sale span {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -255,7 +279,7 @@ body {
 
 .header__title {
   width: 600px;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 54px;
@@ -289,7 +313,7 @@ body {
 }
 
 .old__price {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -299,7 +323,7 @@ body {
 }
 
 .new__price {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
@@ -326,7 +350,7 @@ body {
 .header__order-btn span {
   position: relative;
   z-index: 3;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -347,30 +371,6 @@ body {
 
 .header__order-btn:hover:before {
   opacity: 1;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-weight: normal;
-  src: url("../fonts/Montserrat-Regular.woff");
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-weight: 600;
-  src: url("../fonts/Montserrat-SemiBold.woff");
-}
-
-@font-face {
-  font-family: "Bebas Neue";
-  font-weight: bold;
-  src: url("../fonts/bebas-neue-bold.woff");
-}
-
-@font-face {
-  font-family: "Bebas Neue";
-  font-weight: normal;
-  src: url("../fonts/BebasNeue-Regular.woff");
 }
 
 .site__main {
@@ -433,7 +433,7 @@ body {
 }
 
 .video__title {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 42px;
@@ -455,7 +455,7 @@ body {
 }
 
 .video__info-title {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -465,7 +465,7 @@ body {
 }
 
 .video__info-text {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -567,7 +567,7 @@ body {
 }
 
 .advantage__title {
-  font-family: Bebas Neue;
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -577,7 +577,7 @@ body {
 }
 
 .advantage__text {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -624,7 +624,7 @@ body {
 
 .info__wrapper {
   width: 100%;
-  heigth: auto;
+  height: auto;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
@@ -643,7 +643,7 @@ body {
 }
 
 .info__title {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -669,7 +669,7 @@ body {
 }
 
 .information__number {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 84px;
@@ -683,7 +683,7 @@ body {
 }
 
 .information__title {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -693,7 +693,7 @@ body {
 }
 
 .information__text {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -740,7 +740,6 @@ body {
   border-width: 7px 13px 7px 0;
   border-color: transparent #fff transparent transparent;
   top: auto;
-  left: auto;
   bottom: -62px;
   left: 130px;
   z-index: 10;
@@ -761,7 +760,6 @@ body {
   border-width: 7px 0 7px 13px;
   border-color: transparent transparent transparent #fff;
   top: auto;
-  left: auto;
   bottom: -62px;
   left: 350px;
   z-index: 10;
@@ -801,7 +799,7 @@ body {
 }
 
 .slick-dots li.slick-active {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .slick-dots li.slick-active button {
@@ -835,7 +833,7 @@ body {
 
 .card__dots-2 {
   top: 2000px;
-  left: 0px;
+  left: 0;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
@@ -847,7 +845,7 @@ body {
 
 .card__dots-4 {
   top: 1350px;
-  right: 0px;
+  right: 0;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
@@ -863,7 +861,7 @@ body {
 }
 
 .card__section-title {
-  font-family: Bebas Neue;
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -878,7 +876,7 @@ body {
   height: 652px;
   display: -webkit-flex;
   display: flex;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   margin-bottom: 50px;
 }
 
@@ -964,7 +962,7 @@ body {
 }
 
 .card__sale {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -1015,7 +1013,7 @@ body {
 }
 
 .card__title {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -1047,7 +1045,7 @@ body {
 
 .card__table {
   width: 100%;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1080,7 +1078,7 @@ body {
   -webkit-align-items: center;
   align-items: center;
   border: 1px solid #FFFFFF;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1092,7 +1090,7 @@ body {
 }
 
 .card__size-btn span {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -1167,7 +1165,7 @@ body {
   -webkit-align-items: center;
   align-items: center;
   text-align: center;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1177,7 +1175,7 @@ body {
 }
 
 .card__input::-webkit-input-placeholder {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1186,7 +1184,7 @@ body {
 }
 
 .card__input:-ms-input-placeholder {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1195,7 +1193,7 @@ body {
 }
 
 .card__input::placeholder {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1349,7 +1347,7 @@ body {
 .review__title {
   width: 100%;
   text-align: center;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -1385,7 +1383,7 @@ body {
 }
 
 .review__text {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1424,7 +1422,7 @@ body {
 }
 
 .review__autor-name {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1433,7 +1431,7 @@ body {
 }
 
 .review__autor-city {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1497,7 +1495,7 @@ body {
 .delivery__section-title {
   width: 100%;
   text-align: center;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -1540,7 +1538,7 @@ body {
 }
 
 .delivery__title {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -1550,7 +1548,7 @@ body {
 }
 
 .delivery__text {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1570,8 +1568,8 @@ body {
 }
 
 .footer__dots-1 {
-  left: 0px;
-  bottom: 0px;
+  left: 0;
+  bottom: 0;
 }
 
 .footer__dots-2 {
@@ -1609,7 +1607,6 @@ body {
 }
 
 .footer__wrapper .sale {
-  top: auto;
   left: auto;
   right: -174px;
   top: 130px;
@@ -1629,7 +1626,7 @@ body {
 
 .footer__title {
   width: 100%;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 72px;
@@ -1661,7 +1658,7 @@ body {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   text-align: center;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1675,7 +1672,7 @@ body {
 
 @media (max-width: 1680px) {
   .header__dots-1 {
-    left: 0px;
+    left: 0;
     top: 60px;
   }
   .info__dots-1 {
@@ -1829,7 +1826,7 @@ body {
   }
   .footer__dots-1 {
     left: -150px;
-    bottom: 0px;
+    bottom: 0;
   }
   .footer__dots-2 {
     right: -75px;
@@ -1954,9 +1951,8 @@ body {
     right: -400px;
   }
   .footer__wrapper .sale {
-    top: auto;
     left: auto;
-    right: 0px;
+    right: 0;
     top: 250px;
   }
 }
@@ -2003,7 +1999,7 @@ body {
   }
   .video__title {
     font-size: 32px;
-    margin-top: 0px;
+    margin-top: 0;
     width: 260px;
     margin-bottom: 20px;
     text-align: center;
@@ -2146,8 +2142,8 @@ body {
   }
   .footer__boot {
     width: 600px;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
   }
   .footer__wrapper .sale {
     right: auto;
@@ -2265,11 +2261,11 @@ body {
   }
   .footer__boot {
     width: 410px;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
   }
   .footer__wrapper .sale {
-    right: 0px;
+    right: 0;
     left: auto;
     top: 240px;
   }
@@ -2549,7 +2545,7 @@ body {
   }
   .header__man {
     width: 195px;
-    right: 0px;
+    right: 0;
     top: 54px;
   }
   .header__price {
@@ -2704,7 +2700,7 @@ body {
   }
   .footer__boot {
     width: 400px;
-    top: 0px;
+    top: 0;
     right: -10px;
   }
 }
@@ -2767,7 +2763,7 @@ body {
   }
   .footer__boot {
     width: 360px;
-    top: 0px;
+    top: 0;
     right: -10px;
   }
   .footer__title {
@@ -2801,7 +2797,7 @@ body {
   }
   .header__man {
     width: 150px;
-    right: 0px;
+    right: 0;
     top: 70px;
   }
   .header__price {
@@ -3037,14 +3033,14 @@ body {
   }
   .footer__dots-1 {
     left: -180px;
-    bottom: 0px;
+    bottom: 0;
   }
   .footer__dots-2 {
     right: -90px;
     bottom: 80px;
   }
   .footer__wrapper .sale {
-    right: 0px;
+    right: 0;
     left: auto;
     top: 220px;
   }
