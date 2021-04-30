@@ -1,6 +1,7 @@
 $(function () {
 	AOS.init({
-		disable : "phone"
+		disable : "phone",
+		offset : -100,
 	});
 
 	lightbox.option({
