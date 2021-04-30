@@ -3857,6 +3857,12 @@ button {
   }
 }
 
+@media (max-width: 390px) {
+  .product3 .product__color {
+    top: 352px;
+  }
+}
+
 @media (max-width: 385px) {
   .product3 .product__color {
     top: 355px;
