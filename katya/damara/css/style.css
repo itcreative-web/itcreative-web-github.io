@@ -3852,6 +3852,12 @@ button {
   }
 }
 
+@media (max-width: 394px) {
+  .product__color {
+    top: 265px;
+  }
+}
+
 @media (max-width: 465px) {
   .product3 .product__color {
     top: 328px;
@@ -3862,11 +3868,17 @@ button {
   .product__left {
     min-height: 730px;
   }
+  .product__sale-block {
+    padding: 10px 0px;
+  }
 }
 
-@media (max-width: 391px) {
+@media (max-width: 390px) {
   .product3 .product__color {
     top: 352px;
+  }
+  .product__sale-block {
+    padding: 10px 20px;
   }
 }
 
