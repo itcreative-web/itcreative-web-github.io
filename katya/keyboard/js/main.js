@@ -52,5 +52,10 @@ $(document).ready(function () {
     customPaging: function customPaging(slider, i) {
       return '<button class="my__dots"></button>';
     }
-  });
+  }); // // МОДАЛЬНОЕ ОКНО 
+  //   $('[data-fancybox]').fancybox({
+  //     loop: true
+  //   }); 
+  //   // МОДАЛЬНОЕ ОКНО ОТЗЫВА
+  //   $(".modal").fancybox({}); 
 });
