@@ -3278,7 +3278,7 @@ body {
   }
   .review__text {
     font-size: 17px;
-    line-height: 27px;
+    line-height: 150%;
   }
   .review__title-slide {
     display: block;
