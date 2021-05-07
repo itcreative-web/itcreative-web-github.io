@@ -12,10 +12,14 @@ $(function () {
 		number: 5,
 	});
 
-	$('a[data-rel^=lightcase]').lightcase({
-		swipe: true,
-		showCaption: false,
+	$('[data-fancybox]').fancybox({
+		loop: true,
 	});
+
+	// $('a[data-rel^=lightcase]').lightcase({
+	// 	swipe: true,
+	// 	showCaption: false,
+	// });
 
 	// lightbox.option({
 	// 	'alwaysShowNavOnTouchDevices': true,
@@ -28,7 +32,14 @@ $(function () {
 			dots: true,
 			appendDots: $(".galary__controls"),
 			prevArrow: $(".galary__prev"),
-			nextArrow: $(".galary__next")
+			nextArrow: $(".galary__next"),
+
+		});
+		$("[data-fancybox]").fancybox({
+			loop: true,
+			afterClose: function(instance, current) {
+				$(".galary").slick("slickGoTo", current.index-1, true);
+			},
 		})
 	}
 

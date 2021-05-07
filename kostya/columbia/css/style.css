@@ -2624,7 +2624,7 @@ body {
   .sprey__card .sale {
     top: 280px;
     left: 50%;
-    margin-left: -125px;
+    margin-left: -163px;
     -webkit-transform: translateX(-50%) rotate(-10deg);
     transform: translateX(-50%) rotate(-10deg);
   }
@@ -2753,6 +2753,7 @@ body {
   }
   .info__text {
     margin-bottom: 1270px;
+    font-size: 17px;
   }
   .info__left {
     left: 50%;
@@ -2826,9 +2827,6 @@ body {
   }
   .sprey__input-wrapper {
     margin-bottom: 20px;
-  }
-  .sprey__card .sale {
-    margin-left: -163px;
   }
   .delivery {
     width: 100%;
@@ -3279,12 +3277,17 @@ body {
     bottom: 20px;
   }
   .review__text {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 27px;
   }
   .review__title-slide {
     display: block;
     font-size: 30px;
+  }
+  .review__name {
+    position: absolute;
+    bottom: 32px;
+    left: 20px;
   }
   .footer__info .container span {
     font-size: 12px;
@@ -3336,6 +3339,9 @@ body {
     top: 85px;
     right: -20px;
     width: 190px;
+  }
+  .header__title {
+    font-size: 28px;
   }
   .sale {
     top: 165px;
@@ -3408,6 +3414,9 @@ body {
     width: 220px;
     top: 320px;
     right: 0;
+  }
+  .footer__title {
+    font-size: 28px;
   }
   .footer__boot {
     right: 60px;
