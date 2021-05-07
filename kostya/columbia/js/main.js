@@ -201,6 +201,21 @@ $(function () {
 			return false;
 		});
 
+		$(selector).swipeleft(function(e) {
+			if (acarousel.isAnim()) return false;
+			var move = acarousel.move(-1);
+			changeActive(move);
+			return false;
+		})
+
+		$(selector).swiperight(function(e) {
+			console.log("swipe")
+			if (acarousel.isAnim()) return false;
+			var move = acarousel.move(1);
+			changeActive(move);
+			return false;
+		})
+
 		// setInterval(function () {
 		// 	if (acarousel.isAnim()) return false;
 		// 	var move = acarousel.move(-1);
