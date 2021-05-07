@@ -3395,6 +3395,9 @@ body {
   .sprey__card {
     margin-top: 50px;
   }
+  .sprey__card .sale {
+    margin-left: -166px;
+  }
   .delivery {
     margin-bottom: 35px;
   }
@@ -3559,7 +3562,7 @@ body {
   }
   .sprey__card .sale {
     top: 275px;
-    margin-left: -100px;
+    margin-left: -145px;
   }
   .sprey__logo {
     margin-right: 0;
@@ -3680,7 +3683,7 @@ body {
   }
   .sprey__card .sale {
     top: 255px;
-    margin-left: -90px;
+    margin-left: -138px;
   }
   .sprey__logo {
     margin-right: 0;
