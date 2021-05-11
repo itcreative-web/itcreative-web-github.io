@@ -78,14 +78,6 @@ body {
   max-width: 480px;
   height: auto;
   margin: 0 auto;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
   overflow: hidden;
 }
 
