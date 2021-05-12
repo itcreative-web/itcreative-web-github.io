@@ -2197,7 +2197,7 @@ body {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1680px) {
   .info__name {
     right: -100px;
   }
@@ -2761,7 +2761,7 @@ body {
     top: 410px;
   }
   .info__text {
-    margin-bottom: 1300px;
+    margin-bottom: 1280px;
     font-size: 20px;
   }
   .info__left {
@@ -3372,7 +3372,7 @@ body {
     animation: none;
   }
   .info__left {
-    top: 440px;
+    top: 430px;
   }
   .info__logo-bg {
     right: -150px;
