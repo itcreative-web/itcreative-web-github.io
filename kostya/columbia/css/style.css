@@ -563,7 +563,7 @@ body {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 130%;
   color: #14E7E9;
   margin-bottom: 15px;
@@ -573,7 +573,7 @@ body {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 130%;
   color: #FFFFFF;
 }
@@ -770,11 +770,11 @@ body {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 128%;
   text-transform: uppercase;
   color: #28B0FF;
-  margin-bottom: 34px;
+  margin-bottom: 20px;
 }
 
 .galary__advantage {
@@ -817,17 +817,17 @@ body {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 130%;
   color: #14E7E9;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .galary__advantage-text {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 130%;
   color: #FFFFFF;
 }
@@ -1040,10 +1040,11 @@ body {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 128%;
   text-transform: uppercase;
   color: #28B0FF;
+  width: 180px;
 }
 
 .raiting span {
@@ -1060,15 +1061,15 @@ body {
   width: 18px;
 }
 
-.card__price {
-  margin-bottom: 16px;
+.card__price .price {
+  margin-bottom: 10px;
 }
 
 .card__info {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 150%;
   color: #FFFFFF;
 }
@@ -1080,7 +1081,7 @@ body {
   display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
-  margin-top: 23px;
+  margin-top: 10px;
 }
 
 .card__input-wrapper {
@@ -1232,6 +1233,7 @@ body {
 }
 
 .sprey__logo {
+  display: none;
   margin-right: 20px;
 }
 
@@ -1239,7 +1241,7 @@ body {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 22px;
   line-height: 128%;
   text-transform: uppercase;
   color: #28B0FF;
@@ -1635,7 +1637,7 @@ body {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 38px;
   line-height: 125%;
   text-transform: uppercase;
   color: #28B0FF;
@@ -2263,6 +2265,9 @@ body {
   .header__wrapper {
     margin-bottom: 120px;
   }
+  .header__title {
+    font-size: 36px;
+  }
   .header__boot {
     width: 500px;
     top: 30px;
@@ -2378,7 +2383,7 @@ body {
   }
   .footer__title {
     width: 560px;
-    font-size: 45px;
+    font-size: 34px;
   }
   .footer__man {
     width: 380px;
@@ -2603,6 +2608,7 @@ body {
     margin-bottom: 20px;
   }
   .sprey__logo {
+    display: inline-block;
     margin-right: 0;
     margin-bottom: 455px;
   }
@@ -2656,7 +2662,7 @@ body {
   }
   .footer__title {
     width: 470px;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 100px;
   }
   .footer__wrapper .header__label {
@@ -2753,7 +2759,7 @@ body {
   }
   .info__text {
     margin-bottom: 1270px;
-    font-size: 17px;
+    font-size: 20px;
   }
   .info__left {
     left: 50%;
@@ -2917,7 +2923,7 @@ body {
   }
   .footer__title {
     max-width: 470px;
-    font-size: 40px;
+    font-size: 24px;
     margin-bottom: 400px;
   }
   .footer__bg-logo {
@@ -2958,6 +2964,7 @@ body {
   .header__title {
     padding: 0 50px;
     margin-bottom: 370px;
+    font-size: 32px;
   }
   .advantage__wrapper {
     -webkit-justify-content: center;
@@ -3055,16 +3062,16 @@ body {
   }
   .header__boot {
     width: 410px;
-    top: 120px;
+    top: 140px;
     left: -25px;
   }
   .header__man {
-    top: 85px;
+    top: 110px;
     right: -20px;
     width: 200px;
   }
   .sale {
-    top: 180px;
+    top: 200px;
     left: 220px;
   }
   .cross__wrapper-blue {
@@ -3079,6 +3086,9 @@ body {
     width: 220px;
     top: 730px;
     right: -55px;
+  }
+  .info__text {
+    font-size: 17px;
   }
   .info__right .sale {
     left: 20px;
@@ -3296,7 +3306,7 @@ body {
   .footer__title {
     max-width: 100%;
     text-align: center;
-    font-size: 30px;
+    font-size: 22px;
     margin-bottom: 400px;
   }
   .footer__man {
@@ -3332,11 +3342,11 @@ body {
   }
   .header__boot {
     width: 390px;
-    top: 120px;
+    top: 140px;
     left: -10px;
   }
   .header__man {
-    top: 85px;
+    top: 110px;
     right: -20px;
     width: 190px;
   }
@@ -3344,11 +3354,14 @@ body {
     font-size: 28px;
   }
   .sale {
-    top: 165px;
+    top: 185px;
     left: 210px;
   }
   .advantages {
     width: 100%;
+  }
+  .info__title {
+    font-size: 30px;
   }
   .line__blue {
     -webkit-animation: none;
@@ -3370,14 +3383,8 @@ body {
     width: 100%;
   }
   .galary__title {
-    font-size: 30px;
+    font-size: 26px;
     text-align: center;
-  }
-  .galary__advantage-title {
-    font-size: 24px;
-  }
-  .galary__advantage-text {
-    font-size: 18px;
   }
   .galary__advantage {
     margin-bottom: 35px;
@@ -3401,6 +3408,11 @@ body {
     max-width: 300px;
     margin: auto;
   }
+  .card__title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
   .sprey__card {
     margin-top: 50px;
   }
@@ -3414,9 +3426,6 @@ body {
     width: 220px;
     top: 320px;
     right: 0;
-  }
-  .footer__title {
-    font-size: 28px;
   }
   .footer__boot {
     right: 60px;
@@ -3434,6 +3443,9 @@ body {
 }
 
 @media (max-width: 390px) {
+  .header__title {
+    font-size: 24px;
+  }
   .card__foto {
     width: 92px;
     height: 63px;
@@ -3457,7 +3469,6 @@ body {
 @media (max-width: 375px) {
   .header__title {
     padding: 0;
-    font-size: 26px;
     margin-bottom: 370px;
     text-align: center;
   }
@@ -3476,11 +3487,8 @@ body {
     width: 290px;
     margin: 30px 0 20px 0;
   }
-  .advantage__title {
-    font-size: 20px;
-  }
   .advantage__text {
-    font-size: 17px;
+    font-size: 13px;
   }
   .advantage__man {
     width: 360px;
@@ -3558,7 +3566,6 @@ body {
   .footer__title {
     max-width: 100%;
     text-align: center;
-    font-size: 26px;
     margin-bottom: 400px;
   }
   .footer__logo {
@@ -3610,11 +3617,14 @@ body {
   }
   .header__boot {
     width: 350px;
-    top: 120px;
+    top: 170px;
     left: -40px;
   }
+  .header__man {
+    top: 130px;
+  }
   .sale {
-    top: 150px;
+    top: 190px;
     left: 150px;
   }
   .header__dots-blue {
@@ -3623,9 +3633,6 @@ body {
   }
   .advantage__wrapper {
     padding-bottom: 500px;
-  }
-  .advantage__text {
-    font-size: 16px;
   }
   .advantage__man {
     width: 320px;
@@ -3636,6 +3643,9 @@ body {
   }
   .info__right {
     width: 100%;
+  }
+  .info__title {
+    font-size: 28px;
   }
   .info__left {
     top: 460px;
@@ -3655,6 +3665,7 @@ body {
   }
   .info__text {
     margin-bottom: 1100px;
+    font-size: 16px;
   }
   .galary {
     width: 100%;
@@ -3664,12 +3675,12 @@ body {
     height: 240px;
   }
   .galary__title {
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
     margin-bottom: 26px;
   }
   .galary__advantage-title {
-    font-size: 20px;
+    font-size: 18px;
   }
   .galary__advantage-text {
     font-size: 16px;
@@ -3742,7 +3753,6 @@ body {
   .footer__title {
     max-width: 100%;
     text-align: center;
-    font-size: 26px;
     margin-bottom: 380px;
   }
   .footer__wrapper .header__label {
