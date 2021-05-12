@@ -74,8 +74,7 @@ body {
 }
 
 .site__wrapper {
-  width: 100%;
-  max-width: 480px;
+  width: 480px;
   height: auto;
   margin: 0 auto;
   overflow: hidden;
