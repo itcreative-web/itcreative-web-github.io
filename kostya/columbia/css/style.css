@@ -3367,12 +3367,16 @@ body {
   .info__title {
     font-size: 30px;
   }
+  .info__text {
+    margin-bottom: 1260px;
+    font-size: 16px;
+  }
   .line__blue {
     -webkit-animation: none;
     animation: none;
   }
   .info__left {
-    top: 430px;
+    top: 380px;
   }
   .info__logo-bg {
     right: -150px;
