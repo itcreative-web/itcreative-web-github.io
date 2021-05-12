@@ -71,6 +71,10 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 .site__wrapper {
