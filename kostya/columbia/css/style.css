@@ -338,7 +338,7 @@ body {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 46px;
   line-height: 125%;
   text-align: left;
   text-transform: uppercase;
@@ -2530,11 +2530,11 @@ body {
     padding: 50px 0;
   }
   .galary__info {
-    width: 400px;
+    width: 380px;
     height: auto;
   }
   .galary__title {
-    font-size: 32px;
+    font-size: 30px;
   }
   .galary__advantage-title {
     font-size: 20px;
@@ -2757,8 +2757,11 @@ body {
     top: 190px;
     left: -165px;
   }
+  .info__left {
+    top: 410px;
+  }
   .info__text {
-    margin-bottom: 1270px;
+    margin-bottom: 1300px;
     font-size: 20px;
   }
   .info__left {
@@ -3333,7 +3336,8 @@ body {
     width: calc(100% - 30px);
   }
   .header__dots-blue {
-    left: -100px;
+    top: 450px;
+    left: -120px;
   }
   .header__dots-yellow {
     width: 220px;
@@ -3351,7 +3355,7 @@ body {
     width: 190px;
   }
   .header__title {
-    font-size: 28px;
+    font-size: 24px;
   }
   .sale {
     top: 185px;
@@ -3433,7 +3437,7 @@ body {
     width: 344px;
   }
   .footer__wrapper .sale {
-    top: 210px;
+    top: 220px;
     right: 0;
   }
   .footer__wrapper .header__label {
@@ -3521,9 +3525,9 @@ body {
     margin-bottom: 280px;
   }
   .card__foto {
-    width: 80px;
-    height: 54px;
-    margin-bottom: 10px;
+    width: 32%;
+    height: 60px;
+    margin-bottom: 5px;
   }
   .card__boot {
     width: 300px;
