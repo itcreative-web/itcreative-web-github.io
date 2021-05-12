@@ -2,8 +2,8 @@ $(function () {
 
 	$(".slider").slick({
 		dots: false,
-		nextArrow: $(".slider__btn-next"),
-		prevArrow: $(".slider__btn-prev")
+		nextArrow: $(".slider__btn-prev"),
+		prevArrow: $(".slider__btn-next")
 	})
 
 	function addVideoOnPage(selector) {
