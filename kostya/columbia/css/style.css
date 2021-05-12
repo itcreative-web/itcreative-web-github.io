@@ -3010,10 +3010,11 @@ body {
     -webkit-align-self: center;
     align-self: center;
     margin-bottom: 35px;
+    margin-top: 50px;
   }
   .info__section-wrapper {
     position: relative;
-    padding: 50px 0 0 0;
+    padding: 0;
   }
   .info__title {
     margin-bottom: 30px;
@@ -3368,8 +3369,8 @@ body {
     font-size: 30px;
   }
   .info__text {
-    margin-bottom: 1260px;
-    font-size: 16px;
+    margin-bottom: 1270px;
+    font-size: 14px;
   }
   .line__blue {
     -webkit-animation: none;
