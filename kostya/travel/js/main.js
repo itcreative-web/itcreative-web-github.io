@@ -7,6 +7,7 @@ $(function () {
 		arrows: false,
 		autoplay: true,
 		autoplaySpeed: 3000,
+		lazyLoad: 'progressive',
 		responsive: [
 			{
 				breakpoint: 1080,
@@ -18,6 +19,7 @@ $(function () {
 			{
 				breakpoint: 600,
 				settings: {
+					autoplay: false,
 					slidesToShow: 1,
 					slidesToScroll: 1,
 				}
