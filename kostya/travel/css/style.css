@@ -170,6 +170,7 @@ body {
 .travel__img {
   width: 101%;
   height: auto;
+  min-height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -190,8 +191,8 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 13px;
+  line-height: 130%;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
@@ -289,7 +290,10 @@ body {
 
 .header__order-btn span {
   font-weight: 900;
-  margin-right: 10px;
+}
+
+.header__order-btn img {
+  margin-left: 10px;
 }
 
 .header__order-btn:hover {
@@ -367,8 +371,8 @@ body {
 }
 
 .slide__img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1166,7 +1170,7 @@ body {
   .header__text {
     width: 360px;
     font-size: 4.5vw;
-    line-height: 23px;
+    line-height: 140%;
   }
   .header__girl {
     position: absolute;
@@ -1197,7 +1201,7 @@ body {
     bottom: 13px;
   }
   .travel__name {
-    font-size: 11px;
+    font-size: 9px;
     line-height: 120%;
   }
   .travel__3 {
@@ -1301,8 +1305,6 @@ body {
   }
   .header__text {
     width: 90vw;
-    font-size: 20px;
-    line-height: 23px;
   }
   .header__order-btn {
     width: 90vw;
