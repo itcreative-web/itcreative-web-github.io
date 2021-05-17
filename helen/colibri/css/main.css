@@ -2921,8 +2921,12 @@ h2 {
     .delivery-item--1:before,
     .delivery-item--2:before,
     .delivery-item--3:before {
-        position: relative;
+        position: absolute;
         top: 70px;
+    }
+
+    .delivery-item {
+        height: 100px;
     }
 
     .delivery-item--1:before {
