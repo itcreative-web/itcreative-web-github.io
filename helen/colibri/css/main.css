@@ -2502,6 +2502,8 @@ h2 {
     background-size: contain;
     -webkit-transition: 320ms;
     transition: 320ms;
+
+  -webkit-tap-highlight-color: transparent;
 }
 
 .slides-btns button:hover {
