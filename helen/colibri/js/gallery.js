@@ -106,11 +106,13 @@ $(document).ready(function() {
     overview2Gallery = new OverviewGallery(overview2GalleryEl,function(index, total) {});
 
     $(".overview--2 .overviews-btns .prev").on("click", function(e) {
-        overview1Gallery.prev();
+        console.log(1)
+        overview2Gallery.prev();
     });
 
     $(".overview--2 .overviews-btns .next").on("click", function(e) {
-        overview1Gallery.next();
+        console.log(1)
+        overview2Gallery.next();
     });
 
 
