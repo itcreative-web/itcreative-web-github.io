@@ -1,11 +1,18 @@
 $(function () {
 	AOS.init({
-		disable : "phone"
+		disable : "phone",
+		offset : -100,
 	});
 
-	$('[data-fancybox]').fancybox({
-		loop: true,
-	});
+	lightbox.option({
+		'alwaysShowNavOnTouchDevices': true,
+		'wrapAround': true,
+		'disableScrolling': true,
+	})
+
+	// $('[data-fancybox]').fancybox({
+	// 	loop: true,
+	// });
 
 
 	$(".info__slider").slick({
@@ -30,9 +37,9 @@ $(function () {
 
 	$(".slider").slick({
 		infinite: true,
-		centerMode: true,
-		variableWidth: true,
-		slidesToShow: 3,
+		// centerMode: true,
+		// variableWidth: true,
+		slidesToShow: 5,
 		slidesToScroll: 1,
 		dots: true,
 		autoplay: true,
