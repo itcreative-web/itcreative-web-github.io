@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'v_Mighty Zeo 2.0';
+    src: url('fonts/v_MightyZeo20.woff2') format('woff2'),
+        url('fonts/v_MightyZeo20.woff') format('woff'),
+        url('fonts/v_MightyZeo20.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -535,10 +535,11 @@ h1 {
 }
 
 .main-link {
+    position: relative;
     display: block;
     width: 100%;
     max-width: 280px;
-    padding: 20px 10px;
+    padding: 20px 10px 20px 10px;
     color: #fff;
     background-color: #28a219;
     text-align: center;
@@ -546,6 +547,24 @@ h1 {
     -webkit-transition: 320ms;
     transition: 320ms;
     font-size: 16px;
+}
+
+.main-link span {
+    display: inline-block;
+    position: relative;
+    left: 25px;
+    max-width: 170px;
+}
+
+.main-link span:before {
+    position: absolute;
+    top: calc(50% - 19px);
+    left: -50px;
+    content: "";
+    width: 35px;
+    height: 35px;
+    background: url("../images/icon.png") center no-repeat;
+    background-size: contain;
 }
 
 .main-link:hover {
@@ -663,7 +682,7 @@ h1 {
     }
 
     .main-link {
-        max-width: 220px;
+        max-width: 260px;
     }
 
     .block1__image {
