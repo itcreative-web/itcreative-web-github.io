@@ -2724,7 +2724,10 @@ h2 {
 }
 
 .card .prices .old-price {
+    color: #000;
     margin-right: 40px;
+    font-weight: normal;
+    -webkit-text-stroke: 0;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
