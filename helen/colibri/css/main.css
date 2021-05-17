@@ -931,8 +931,8 @@ h2 {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    width: 55px;
-    height: 55px;
+    width: 85px;
+    height: 85px;
     background: #FDC93C url("../images/basket.png") center no-repeat;
     background-size: 60%;
     border-radius: 50%;
