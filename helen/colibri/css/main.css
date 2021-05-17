@@ -3301,7 +3301,15 @@ h2 {
 }
 
 @media (max-width: 767px) {
-    .delivery-item--2 {
+  .delivery {
+    margin-bottom: 10px;
+  }
+
+  .other-info {
+    margin-bottom: 10px;
+  }
+
+  .delivery-item--2 {
         margin-left: auto;
     }
 
@@ -3595,6 +3603,11 @@ h4 {
 }
 
 @media (max-width: 767px) {
+  .spray {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
     .spray-images {
         position: relative;
         top: auto;
@@ -4046,6 +4059,12 @@ h4 {
     }
 }
 
+@media (max-width: 767px) {
+  .footer {
+    margin-top: 10px;
+  }
+}
+
 @media (max-width: 414px) {
     .header .price-box, .footer .price-box {
         max-width: initial;
@@ -4157,6 +4176,13 @@ h4 {
 }
 
 @media (max-width: 767px) {
+
+  .card {
+    border-bottom: 7px solid #000;
+    border-top: 7px solid #000;
+    margin: 10px 0;
+  }
+
     .card-content {
         display: block;
     }
