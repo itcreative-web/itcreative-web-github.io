@@ -1562,7 +1562,7 @@ h2 {
   margin-top: 20px;
   padding-top: 60px;
   padding-bottom: 40px;
-  background: url("../images/red-back.jpg") center no-repeat;
+  background: url("../images/red-back.svg") center no-repeat;
   background-size: cover;
   border-top: 10px solid #000;
   border-bottom: 10px solid #000; }
@@ -1713,7 +1713,7 @@ h2 {
   border-top: 10px solid #000;
   border-bottom: 10px solid #000;
   padding: 40px 0;
-  background: url("../images/red-back.jpg") center no-repeat;
+  background: url("../images/red-back.svg") center no-repeat;
   background-size: cover; }
   .card--red:before {
     position: absolute;
@@ -2689,7 +2689,7 @@ h4 {
   margin-top: 20px;
   border-top: 10px solid #000;
   border-bottom: 10px solid #000;
-  background: url("../images/red-back.jpg") center bottom no-repeat;
+  background: url("../images/red-back.svg") center bottom no-repeat;
   background-size: cover; }
   .footer:before {
     position: absolute;
