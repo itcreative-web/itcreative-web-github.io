@@ -350,6 +350,7 @@ button {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 .btn-order {
@@ -407,7 +408,7 @@ button {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
   margin-top: 15px;
   position: relative;
 }
@@ -416,37 +417,26 @@ button {
   position: absolute;
   left: -20px;
   top: -13px;
-  -webkit-transform: scale(0.76);
-      -ms-transform: scale(0.76);
-          transform: scale(0.76);
 }
 
 .timer_bg2 {
   position: absolute;
-  left: 95px;
+  left: 129px;
   top: -15px;
-  -webkit-transform: scale(0.76);
-      -ms-transform: scale(0.76);
-          transform: scale(0.76);
 }
 
 .timer_bg3 {
   position: absolute;
-  left: 210px;
+  left: 276px;
   top: -15px;
-  -webkit-transform: scale(0.76);
-      -ms-transform: scale(0.76);
-          transform: scale(0.76);
 }
 
 .eTimer {
   margin-left: 0px;
   font-weight: bold;
   font-weight: 500;
-  font-size: 58px;
   line-height: 75px;
   text-transform: uppercase;
-  width: 320px;
 }
 
 .eTimer .etUnit .etNumber {
@@ -473,7 +463,7 @@ button {
 }
 
 .eTimer .etHours {
-  margin-right: 45px;
+  margin-right: 80px;
   position: relative;
 }
 
@@ -481,21 +471,23 @@ button {
   content: ":";
   display: block;
   position: absolute;
+  font-size: 64px;
   top: -5px;
-  right: -36px;
+  right: -48px;
 }
 
 .eTimer .etMinutes {
-  margin-right: 45px;
+  margin-right: 75px;
   position: relative;
 }
 
 .eTimer .etMinutes::after {
   content: ":";
   display: block;
+  font-size: 64px;
   position: absolute;
   top: -5px;
-  right: -35px;
+  right: -44px;
 }
 
 .eTimer .etSeconds {
@@ -507,7 +499,7 @@ button {
   content: "Jam";
   display: block;
   position: absolute;
-  bottom: -8px;
+  bottom: -10px;
   right: calc(66% - 25px);
   font-size: 14px;
   line-height: 16px;
@@ -517,7 +509,7 @@ button {
   content: "Minit";
   display: block;
   position: absolute;
-  bottom: -7px;
+  bottom: -11px;
   right: calc(57% - 25px);
   font-size: 14px;
   line-height: 16px;
@@ -527,7 +519,7 @@ button {
   content: "Detik";
   display: block;
   position: absolute;
-  bottom: -7px;
+  bottom: -12px;
   right: calc(61% - 25px);
   font-size: 14px;
   line-height: 16px;
@@ -981,10 +973,25 @@ button {
   margin-bottom: 30px;
 }
 
+@media (max-width: 470px) {
+  .timer-wrapper {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+    width: 385px;
+  }
+}
+
 @media (max-width: 450px) {
   .offer {
     background: url(../img/1_title_bg.svg) 0% 0% no-repeat;
     background-size: 110%;
+  }
+  .timer-wrapper {
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+    width: 385px;
   }
 }
 
@@ -1044,6 +1051,19 @@ button {
   }
 }
 
+@media (max-width: 390px) {
+  .timer-wrapper {
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
+    width: 385px;
+    margin-bottom: 30px;
+  }
+  .order-card__title {
+    margin-bottom: 0px;
+  }
+}
+
 @media (max-width: 370px) {
   .offer {
     background: url(../img/1_title_bg.svg) 20% 0% no-repeat;
@@ -1051,11 +1071,6 @@ button {
   }
   .offer__product {
     margin-top: -180px;
-  }
-  .timer-wrapper {
-    -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-            transform: scale(0.9);
   }
 }
 
@@ -1065,6 +1080,21 @@ button {
   }
   .offer__product {
     margin-top: -165px;
+  }
+}
+
+@media (max-width: 340px) {
+  .timer-wrapper {
+    -webkit-transform: scale(0.65);
+        -ms-transform: scale(0.65);
+            transform: scale(0.65);
+    width: 385px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+  .order-card__title {
+    font-size: 28px;
+    line-height: 36px;
   }
 }
 
@@ -1078,13 +1108,6 @@ button {
   }
   .sale-triangle {
     margin-top: 15px;
-  }
-  .timer-wrapper {
-    -webkit-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-            transform: scale(0.8);
-    margin-bottom: 25px;
-    margin-top: 10px;
   }
   .main-subtitle {
     margin-bottom: 20px;
@@ -1107,14 +1130,6 @@ button {
     background: url(../img/2_bg.svg) 0% 0% no-repeat;
     background-size: 100% 70%;
     background-position: 50% 43%;
-  }
-}
-
-@media (max-width: 415px) {
-  .advantages {
-    background: url(../img/2_bg.svg) 0% 0% no-repeat;
-    background-size: 100% 57%;
-    background-position: 50% 52%;
   }
 }
 
