@@ -626,6 +626,11 @@ body {
     font-size: 30px;
     line-height: 36px;
   }
+  .main__block-img3 {
+    width: 120%;
+    height: auto;
+    margin-right: -10px;
+  }
   .main__block-3 .main__block-text {
     width: 100%;
     font-size: 18px;
