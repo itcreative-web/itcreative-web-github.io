@@ -13,14 +13,14 @@
 @font-face {
   font-family: "Cormorant Garamond";
   font-weight: bold;
-  src: url("../fonts/CormorantGaramond-Bold.woff");
+  src: url("../fonts/CormorantGaramond-Bold.woff2");
 }
 
 @font-face {
   font-family: "Cormorant Garamond";
   font-style: italic;
   font-weight: normal;
-  src: url("../fonts/CormorantGaramond-Italic.woff");
+  src: url("../fonts/CormorantGaramond-Italic.woff2");
 }
 
 *, *::before, *::after {
@@ -180,7 +180,6 @@ body {
   height: 645px;
   margin-left: -100px;
   margin-top: -50px;
-  visibility: hidden;
 }
 
 .main__block-text {
@@ -210,7 +209,6 @@ body {
   height: 1050px;
   margin-right: -200px;
   margin-top: -100px;
-  visibility: hidden;
 }
 
 .main__block-title {
@@ -238,7 +236,6 @@ body {
   height: 573px;
   margin-left: -352px;
   margin-top: -70px;
-  visibility: hidden;
 }
 
 .video__block {
@@ -281,7 +278,6 @@ body {
   width: 543px;
   height: 815px;
   margin-right: -50px;
-  visibility: hidden;
 }
 
 .main__block-4 {
@@ -303,7 +299,6 @@ body {
   height: 1183px;
   margin-left: -140px;
   margin-top: -415px;
-  visibility: hidden;
 }
 
 .site__footer {
@@ -457,7 +452,7 @@ body {
   }
   .main__block-img2 {
     width: 455px;
-    height: auto;
+    height: 682px;
     margin-right: -50px;
     margin-top: 20px;
   }
@@ -468,7 +463,7 @@ body {
   }
   .main__block-img3 {
     width: 540px;
-    height: auto;
+    height: 360px;
     margin-left: -190px;
     margin-top: 36px;
   }
@@ -477,12 +472,12 @@ body {
   }
   .main__block-img4 {
     width: 400px;
-    height: auto;
+    height: 600px;
     margin-right: -50px;
   }
   .main__block-img5 {
     width: 530px;
-    height: auto;
+    height: 795px;
     margin-left: -140px;
     margin-top: -160px;
   }
@@ -671,7 +666,7 @@ body {
     background-position: center bottom;
   }
   .main__block-title {
-    bottom: 23.5%;
+    top: 69.5%;
   }
   .video__block {
     height: 210px;
@@ -689,19 +684,19 @@ body {
     margin-bottom: 24vw;
   }
   .main__block-title {
-    bottom: 25%;
+    top: 69%;
   }
 }
 
 @media (max-width: 375px) {
   .main__block-title {
-    bottom: 29%;
+    top: 65%;
   }
 }
 
 @media (max-width: 360px) {
   .main__block-title {
-    bottom: 30%;
+    top: 64%;
   }
 }
 
@@ -719,6 +714,6 @@ body {
     font-size: 14px;
   }
   .main__block-title {
-    bottom: 36%;
+    top: 58.5%;
   }
 }
