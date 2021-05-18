@@ -500,7 +500,7 @@ body {
   }
   .main__block-img2 {
     width: 400px;
-    height: auto;
+    height: 600px;
     margin-right: -50px;
     margin-top: 20px;
   }
@@ -526,7 +526,7 @@ body {
   }
   .main__block-img3 {
     width: 115%;
-    height: auto;
+    height: 536px;
     margin-left: 0;
     margin-right: -40px;
     margin-top: 36px;
@@ -537,7 +537,7 @@ body {
   }
   .main__block-img4 {
     width: 330px;
-    height: auto;
+    height: 495px;
     margin-right: -35px;
   }
   .main__block-img5 {
