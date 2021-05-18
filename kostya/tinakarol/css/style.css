@@ -666,7 +666,17 @@ body {
     background-position: center bottom;
   }
   .main__block-title {
-    top: 69.5%;
+    -webkit-transform: none;
+    transform: none;
+    margin-top: -25px;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+  .main__block-blockquote {
+    margin-top: 30px;
   }
   .video__block {
     height: 210px;
@@ -683,20 +693,11 @@ body {
     font-size: 6vw;
     margin-bottom: 24vw;
   }
-  .main__block-title {
-    top: 69%;
-  }
 }
 
 @media (max-width: 375px) {
   .main__block-title {
-    top: 65%;
-  }
-}
-
-@media (max-width: 360px) {
-  .main__block-title {
-    top: 64%;
+    margin-top: -20px;
   }
 }
 
@@ -712,8 +713,5 @@ body {
   }
   .main__block-3 .main__block-text {
     font-size: 14px;
-  }
-  .main__block-title {
-    top: 58.5%;
   }
 }
