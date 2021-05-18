@@ -368,6 +368,10 @@ button {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .sale-block {
@@ -1037,6 +1041,17 @@ button {
   }
   .offer__item p {
     text-align: left;
+  }
+}
+
+@media (max-width: 460px) {
+  .old-price .price-numb {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .new-price .price-numb {
+    font-size: 26px;
+    line-height: 36px;
   }
 }
 
