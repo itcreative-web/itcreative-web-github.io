@@ -986,7 +986,8 @@ body {
   }
   .card.active .card__title {
     margin-bottom: 10px;
-    margin-top: 40px;
+    margin-top: 50px;
+    min-height: auto;
   }
   .card.active .card__link {
     bottom: 40px;
@@ -1078,6 +1079,13 @@ body {
     color: #182534;
     margin-top: 40px;
     margin-bottom: 50px;
+    min-height: 38px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
   }
   .film__description {
     width: 100%;
