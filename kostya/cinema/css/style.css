@@ -1233,9 +1233,6 @@ body {
 }
 
 @media (max-width: 414px) {
-  .slider {
-    height: 455px;
-  }
   .slide__1 {
     opacity: 0;
   }
@@ -1278,6 +1275,9 @@ body {
     height: 455px;
     position: relative;
     margin: 0 auto;
+  }
+  .slider {
+    height: 100%;
   }
   .slide__4 {
     width: 320px;
