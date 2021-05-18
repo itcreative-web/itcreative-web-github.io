@@ -665,12 +665,7 @@ body {
   }
 }
 
-@media (max-width: 414px) {
-  .site__main {
-    background-image: url("../img/mobile-bg.jpg");
-    background-size: 100%;
-    background-position: center bottom;
-  }
+@media (max-width: 480px) {
   .main__block-title {
     -webkit-transform: none;
     transform: none;
@@ -680,6 +675,20 @@ body {
     left: auto;
     right: auto;
     bottom: auto;
+  }
+  .main__block-blockquote {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 414px) {
+  .site__main {
+    background-image: url("../img/mobile-bg.jpg");
+    background-size: 100%;
+    background-position: center bottom;
+  }
+  .main__block-title {
+    margin-top: -25px;
   }
   .main__block-blockquote {
     margin-top: 30px;
