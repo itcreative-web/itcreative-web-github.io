@@ -224,7 +224,7 @@ button {
 }
 
 select {
-  font-family: inherit !important;
+  font-family: Roboto, sans-serif !important;
 }
 
 .offer {
@@ -393,6 +393,10 @@ select {
   position: relative;
   z-index: 999;
   color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .btn-order:hover {
@@ -904,6 +908,10 @@ select {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .gal-btn:hover {
@@ -1501,6 +1509,7 @@ select {
   -webkit-transition: all ease-out 0.3s;
   -o-transition: all ease-out 0.3s;
   transition: all ease-out 0.3s;
+  user-select: none;
 }
 
 .rewiev-btn:hover {
@@ -2285,6 +2294,7 @@ select {
   .video__wrapper {
     height: 231px;
     background-size: 110%;
+    margin-bottom: 35px;
   }
   .offer__abs-line1 {
     display: none;
@@ -2306,7 +2316,7 @@ select {
   .video {
     background: url(../img/2_bg_mobile.png) 0% 0% no-repeat;
     background-size: cover;
-    padding: 50px 15px 70px 15px;
+    padding: 50px 15px;
   }
   .section-title {
     font-size: 30px;
@@ -2334,6 +2344,7 @@ select {
 @media (max-width: 360px) {
   .video__wrapper {
     height: 187px;
+    margin-bottom: 25px;
   }
 }
 
@@ -2699,6 +2710,10 @@ select {
   }
   .sale-stiker {
     margin-right: 15px;
+  }
+  .products {
+    background: -o-linear-gradient(180.71deg, #bd3fff 0.61%, #ff709f 99.39%);
+    background: linear-gradient(269.29deg, #bd3fff 0.61%, #ff709f 99.39%);
   }
 }
 
