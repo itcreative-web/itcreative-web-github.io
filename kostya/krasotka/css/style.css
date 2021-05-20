@@ -455,6 +455,11 @@ body {
   transition: 0.3s ease;
 }
 
+.slide a {
+  width: 100%;
+  height: 100%;
+}
+
 .slide__photo-wrapper {
   width: 100%;
   height: 240px;
