@@ -2734,6 +2734,11 @@ select {
     background: -o-linear-gradient(180.71deg, #bd3fff 0.61%, #ff709f 99.39%);
     background: linear-gradient(269.29deg, #bd3fff 0.61%, #ff709f 99.39%);
   }
+  .product__gallery a {
+    width: 32%;
+    margin-right: 0px;
+    margin: 4px 0px;
+  }
 }
 
 @media (max-width: 390px) {
@@ -2760,6 +2765,11 @@ select {
   .product4 .sale-stiker {
     top: 34px;
     right: 20px;
+  }
+  .product__gallery a {
+    width: 31%;
+    margin-right: 0px;
+    margin: 5px 0px;
   }
 }
 
