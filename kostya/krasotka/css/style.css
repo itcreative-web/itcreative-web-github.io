@@ -488,15 +488,25 @@ body {
   padding: 20px;
 }
 
+.slide__category {
+  font-family: Sarpanch, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  text-decoration: underline;
+  color: #0D1602;
+  margin-bottom: 5px;
+}
+
 .slide__text-title {
   font-family: Sarpanch, sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 25px;
   text-transform: uppercase;
   color: #0D1602;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .slide__text {
@@ -704,7 +714,7 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 35px;
   text-align: center;
   text-transform: uppercase;
@@ -1179,7 +1189,7 @@ body {
     margin-left: -22vw;
   }
   .footer__title {
-    font-size: 7vw;
+    font-size: 6vw;
     line-height: 120%;
     margin-top: 22vw;
     margin-bottom: 90vw;
@@ -1190,10 +1200,13 @@ body {
 }
 
 @media (max-width: 414px) {
+  .header__text {
+    font-size: 3.5vw;
+  }
   .header__text-1 {
     top: 230px;
     left: 50%;
-    margin-left: -35vw;
+    margin-left: -36vw;
   }
   .header__text-2 {
     top: 80px;
@@ -1375,9 +1388,6 @@ body {
 }
 
 @media (max-width: 375px) {
-  .header__text {
-    font-size: 4vw;
-  }
   .header__text:before {
     width: 15vw;
     height: 15vw;
@@ -1417,6 +1427,12 @@ body {
   }
   .owl-theme .owl-nav {
     width: 340px;
+  }
+  .slide__text-wrapper {
+    padding: 15px;
+  }
+  .slide__text-title {
+    font-size: 14px;
   }
 }
 
@@ -1461,5 +1477,14 @@ body {
     bottom: -23px;
     width: 190vw;
     margin-left: -22vw;
+  }
+  .owl-dots button.owl-dot {
+    margin: 0 4px;
+  }
+  .slide__text-wrapper {
+    padding: 15px;
+  }
+  .slide__text-title {
+    font-size: 13px;
   }
 }
