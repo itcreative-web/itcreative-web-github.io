@@ -162,7 +162,7 @@ select {
       -ms-flex-align: center;
           align-items: center;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 44px;
   line-height: 56px;
   text-align: center;
   color: #ffffff;
@@ -1049,6 +1049,12 @@ select {
   .old-price .price-numb {
     font-size: 20px;
     line-height: 24px;
+  }
+}
+
+@media (max-width: 415px) {
+  .sale-stiker {
+    top: 500px;
   }
 }
 
