@@ -3092,6 +3092,8 @@ h2 {
     background-size: 30%;
 
     -webkit-tap-highlight-color: transparent;
+
+    outline: none !important;
 }
 
 .review-btn:focus-visible {
