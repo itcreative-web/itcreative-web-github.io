@@ -1533,6 +1533,12 @@ h2 {
     }
 }
 
+.view-video,
+.main-btn-styles,
+.order-btn {
+    -webkit-tap-highlight-color: transparent;
+}
+
 @media (max-width: 585px) {
     .privilege {
         padding-top: 10vw;
