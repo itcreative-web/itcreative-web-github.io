@@ -3095,8 +3095,7 @@ h2 {
 }
 
 .review-btn:focus-visible {
-    outline: none;
-    border: none;
+    outline: none !important;
 }
 
 .review-btn.prev {
