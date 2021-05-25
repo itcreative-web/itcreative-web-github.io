@@ -1553,6 +1553,12 @@ h2 {
     }
 }
 
+@media (max-width: 413px) {
+    .privilege-items .item p {
+        font-size: 4.2vw;
+    }
+}
+
 .overview {
     position: relative;
     padding: 97px 0;
@@ -1839,7 +1845,9 @@ h2 {
 
 @media (max-width: 413px) {
     .overview-content p {
-        font-size: 18px;
+        /*font-size: 18px;*/
+
+        font-size: 4.2vw;
     }
 }
 
