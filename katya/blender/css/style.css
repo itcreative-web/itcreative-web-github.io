@@ -222,6 +222,7 @@ select {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  line-height: 130%;
 }
 
 .old-price .price-numb {
@@ -271,6 +272,7 @@ select {
 
 .new-price .price-text {
   max-width: 140px;
+  line-height: 130%;
 }
 
 .price-text {
@@ -373,7 +375,7 @@ select {
   background: linear-gradient(114.73deg, #008816 2.07%, #00d749 93.43%);
   border-radius: 20px;
   font-weight: 500;
-  font-size: 48px;
+  font-size: 34px;
   line-height: 70px;
   text-align: center;
   text-transform: uppercase;
@@ -1090,6 +1092,9 @@ select {
     left: -15px;
     top: 43%;
   }
+  .btn-buy {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1166,7 +1171,7 @@ select {
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .delivery__wrapper {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -1208,6 +1213,20 @@ select {
   .offer2 .sale-stiker {
     left: -15px;
     top: 32%;
+  }
+}
+
+@media (max-width: 360px) {
+  .btn-order {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .btn-order {
+    height: 60px;
+    font-size: 26px;
+    line-height: 60px;
   }
 }
 
