@@ -3396,3 +3396,8 @@ h2 {
         left: -150px;
     }
 }
+
+.mfp-wrap {
+    position: fixed;
+    overflow: auto;
+}

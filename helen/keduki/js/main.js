@@ -135,9 +135,6 @@ $(document).ready(function() {
     $(".sizes-box").click(function(e) {
         var currentSize = $(e.target).closest(".size");
 
-        console.log(123)
-
-
         if (currentSize.length > 0) {
             $(".size", this).removeClass("active");
             currentSize.addClass("active");
