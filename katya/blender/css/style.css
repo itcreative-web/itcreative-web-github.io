@@ -758,6 +758,7 @@ select {
   background: linear-gradient(114.73deg, #008816 2.07%, #00d749 93.43%);
   color: white;
   padding: 15px;
+  width: 100%;
 }
 
 .characteristics__img {
