@@ -3391,4 +3391,8 @@ h2 {
     .promo:before {
         left: 0;
     }
+
+    .overview:before {
+        left: -150px;
+    }
 }
