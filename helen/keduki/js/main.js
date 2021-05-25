@@ -79,7 +79,8 @@ $(document).ready(function() {
     $("#open-privacy-policy-trigger").magnificPopup({
         items: {
             type: 'inline',
-            src: "#privacy-policy-popup"
+            src: "#privacy-policy-popup",
+            fixedContentPos: true,
         }
     });
 
@@ -87,7 +88,8 @@ $(document).ready(function() {
     $("#open-reviews-trigger").magnificPopup({
         items: {
             type: 'inline',
-            src: "#review-popup"
+            src: "#review-popup",
+            fixedContentPos: true,
         },
         callbacks: {
             open: function() {
