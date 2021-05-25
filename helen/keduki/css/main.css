@@ -3387,3 +3387,8 @@ h2 {
     }
 }
 
+@media (min-width: 1920px) {
+    .promo:before {
+        left: 0;
+    }
+}
