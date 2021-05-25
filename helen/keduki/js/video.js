@@ -26,6 +26,8 @@ $(document).ready(function() {
             items: {
                 src: '<div class="mfp-iframe-scaler"><button class="mfp-close">×</button><div id="' + videoElId + '"></div></div>',
                 type: 'inline',
+
+                fixedContentPos: true,
             },
             callbacks: {
                 open: function() {
