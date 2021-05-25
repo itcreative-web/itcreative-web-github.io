@@ -139,7 +139,7 @@ $(document).ready(function() {
             $(".size", this).removeClass("active");
             currentSize.addClass("active");
 
-            $(".current-size .value").text(currentSize.data("size"))
+            $(".current-size .value", this).text(currentSize.data("size"))
         }
     });
 

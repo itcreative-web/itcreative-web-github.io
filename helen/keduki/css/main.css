@@ -2475,6 +2475,8 @@ h2 {
     line-height: 38px;
     color: #183BB5;
     cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .sizes .size.active {
@@ -3090,6 +3092,11 @@ h2 {
     background-size: 30%;
 
     -webkit-tap-highlight-color: transparent;
+}
+
+.review-btn:focus-visible {
+    outline: none;
+    border: none;
 }
 
 .review-btn.prev {
