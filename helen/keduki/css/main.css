@@ -1494,9 +1494,12 @@ h2 {
     }
 
     .privilege-images .video-btn {
+        font-size: 16px;
+    }
+
+    .privilege-images .view-video {
         padding-top: 15px;
         padding-bottom: 15px;
-        font-size: 16px;
     }
 
     .privilege-left {
