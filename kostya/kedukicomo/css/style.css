@@ -2798,6 +2798,17 @@ body {
 }
 
 @media (max-width: 414px) {
+  .price {
+    width: 290px;
+  }
+  .new__price {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .old__price {
+    font-size: 22px;
+    line-height: 26px;
+  }
   .video {
     width: 92vw;
     height: 52vw;
@@ -2859,6 +2870,9 @@ body {
     margin-bottom: 30px;
     font-size: 32px;
   }
+  .sprey__input {
+    font-weight: normal;
+  }
   .sprey__text-block {
     margin-bottom: 92vw;
   }
@@ -2879,6 +2893,9 @@ body {
   .sprey__img {
     width: 58vw;
     margin-top: -10px;
+  }
+  .card {
+    margin-bottom: 40px;
   }
   .card__sale {
     top: 30px;
@@ -2907,6 +2924,16 @@ body {
   }
   .card__top-block {
     margin-top: 350px;
+  }
+  .card__input {
+    font-weight: normal;
+  }
+  .card__select {
+    font-weight: normal;
+  }
+  .card__form-right .header__order-btn {
+    font-weight: 900;
+    margin-top: 16px;
   }
   .review__section {
     width: 100%;
