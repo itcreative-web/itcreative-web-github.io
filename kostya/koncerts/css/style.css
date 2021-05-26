@@ -24,25 +24,6 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-button,
-input,
-optgroup,
-select,
-textarea, html input[type="button"],
-input[type="reset"],
-input[type="submit"], button[disabled],
-html input[disabled], button::-moz-focus-inner,
-input::-moz-focus-inner, input[type="checkbox"],
-input[type="radio"], input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button, input[type="search"], input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  border: none;
-  background-image: none;
-  background-color: transparent;
-  box-shadow: none;
-  outline: none;
-}
-
 select, input {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -503,8 +484,8 @@ body {
   font-family: "Exo 2", sans-serif;
   font-style: italic;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 17px;
+  line-height: 100%;
   text-align: right;
   color: #FFFFFF;
   -webkit-transform: translateX(-50%) rotate(-90deg);
@@ -513,8 +494,16 @@ body {
   bottom: -107px;
   left: 50%;
   width: 180px;
+  height: 22px;
+  min-height: 22px;
   text-align: right;
   cursor: pointer;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 .btns__section label:before {

@@ -46,7 +46,8 @@ $(function() {
 			if($(this).prop("disabled")){
 				var value = $(".input__wrapper input").eq(index+1).val()
 				var dataDate = $(".input__wrapper input").eq(index+1).attr("data-date")
-				writeData(value, dataDate)
+				var price = $(".input__wrapper input").eq(index+1).attr("data-price")
+				writeData(value, dataDate, price)
 				$(".input__wrapper input").eq(index+1).click()
 			}
 		})
@@ -65,7 +66,7 @@ $(function() {
 			})
 		})
 	
-		function writeData(value, date) {
+		function writeData(value, date, price) {
 	
 			const monthNames = [
 				"Января", 
@@ -86,13 +87,15 @@ $(function() {
 			var currentDate = dataDate[0] + " " + monthNames[+dataDate[1] - 1] + " " + "2021"
 			$(".form__text-city").text(value)
 			$(".form__text-date").text(currentDate)
+			$(".form__text-price").text(price)
 		}
 	
 		$(".input__wrapper input").click(function() {
 			var value = $(this).val()
 			var dataDate = $(this).attr("data-date")
+			var price = $(this).attr("data-price")
 	
-			writeData(value, dataDate)
+			writeData(value, dataDate, price)
 		})
 	}
 
