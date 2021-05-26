@@ -510,9 +510,9 @@ body {
   -webkit-transform: translateX(-50%) rotate(-90deg);
   transform: translateX(-50%) rotate(-90deg);
   position: absolute;
-  bottom: -96px;
+  bottom: -107px;
   left: 50%;
-  width: 160px;
+  width: 180px;
   text-align: right;
   cursor: pointer;
 }
@@ -1025,7 +1025,7 @@ body {
     line-height: 30px;
   }
   .item__link {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .inputs__wrapper {
     width: 100%;
@@ -1048,11 +1048,21 @@ body {
   .footer__logo {
     width: 95vw;
   }
+  .all__item a {
+    font-size: 18px;
+    line-height: 100%;
+  }
+  .city {
+    font-size: 34px;
+    line-height: 100%;
+    color: #C70000;
+    text-align: center;
+  }
 }
 
 @media (max-width: 375px) {
   .parallax {
-    height: 600px;
+    height: 650px;
   }
   .info {
     font-size: 16px;
