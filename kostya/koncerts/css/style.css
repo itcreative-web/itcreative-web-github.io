@@ -943,7 +943,10 @@ body {
 
 @media (max-width: 480px) {
   .parallax {
-    height: 700px;
+    height: 750px;
+  }
+  .logo {
+    margin-top: 20px;
   }
   .titles {
     margin-top: 250px;
@@ -977,6 +980,9 @@ body {
   }
   .order__section {
     padding: 0 20px;
+  }
+  .main__information {
+    padding: 50px 0 250px;
   }
 }
 
