@@ -221,7 +221,7 @@ body {
   transform: translateY(-50%);
   cursor: pointer;
   transition: 0.3s ease;
-  font-family: Exo 2;
+  font-family: "Exo 2", sans-serif;
   font-style: italic;
   font-weight: bold;
   font-size: 18px;
@@ -727,6 +727,7 @@ body {
     overflow: auto;
     margin: 0;
     padding-top: 30px;
+    padding-left: 10px;
   }
   .btns__section {
     width: 1260px;
