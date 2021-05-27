@@ -1372,6 +1372,11 @@ body {
   cursor: pointer;
 }
 
+#lightcase-case,
+.lightcase-contentInner img {
+  pointer-events: auto;
+}
+
 .site__footer {
   width: 100%;
   height: auto;
