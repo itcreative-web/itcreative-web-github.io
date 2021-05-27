@@ -69,8 +69,8 @@ $(function () {
 		swipe: true,
 		showCaption: false,
 		maxHeight: 1200,
-		speedIn: 100,
-		speedOut: 100,
+		speedIn: 0,
+		speedOut: 0,
 	});
 
 	function modal() {
