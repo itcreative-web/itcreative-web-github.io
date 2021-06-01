@@ -2933,14 +2933,14 @@ body {
   .preview__wrapper.owl-theme .owl-nav.disabled + .owl-dots {
     position: absolute;
     bottom: -60px;
-    left: 14vw;
-    width: 300px;
+    left: -15px;
+    width: 100vw;
   }
   .review__wrapper.owl-theme .owl-nav.disabled + .owl-dots {
     position: absolute;
     bottom: -60px;
-    left: 14vw;
-    width: 300px;
+    left: -15px;
+    width: 100vw;
   }
   .video {
     width: 100%;
@@ -3124,6 +3124,9 @@ body {
     width: 300px;
     margin-top: 40px;
     margin-bottom: 0;
+  }
+  .card__title {
+    margin-bottom: 30px;
   }
   .footer__wrapper .header__price {
     width: 158px;

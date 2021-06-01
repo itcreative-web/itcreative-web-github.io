@@ -16,16 +16,24 @@ $(function () {
 			900: {
 				items: 3,
 			},
-			1280: {
+			1281: {
 				items: 4,
 			}
 		}
 	});
-	
+
 	AOS.init({
 		disable : 'mobile',
 		// offset : -100,
 	});
+
+	$(window).resize(function() {
+		AOS.refresh();
+	})
+
+	if($(window).width() < 1080) {
+		$(".card__boot").removeAttr("data-aos");
+	}
 
 	if($(window).width() <= 700) {
 		$(".preview__wrapper").addClass("owl-theme owl-carousel").owlCarousel({
@@ -38,14 +46,18 @@ $(function () {
 	}
 
 
-
-	$('a[data-rel^=lightcase]').lightcase({
-		swipe: true,
-		showCaption: false,
-		maxHeight: 1200,
-		speedIn: 0,
-		speedOut: 0,
+	$('[data-fancybox]').fancybox({
+		loop: true,
 	});
+
+
+	// $('a[data-rel^=lightcase]').lightcase({
+	// 	swipe: true,
+	// 	showCaption: false,
+	// 	maxHeight: 1200,
+	// 	speedIn: 0,
+	// 	speedOut: 0,
+	// });
 
 	function modal() {
 		$(".add__review").click(function () {
