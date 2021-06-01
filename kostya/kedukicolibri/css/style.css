@@ -500,7 +500,7 @@ body {
 }
 
 .preview__title {
-  margin-top: 100px;
+  margin-top: 80px;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -3333,6 +3333,9 @@ body {
     width: 290px;
     margin-top: 40px;
     margin-bottom: 0;
+  }
+  .sprey__text {
+    margin-bottom: 0px;
   }
   .input {
     width: 290px;
