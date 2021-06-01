@@ -7,9 +7,9 @@ $(function () {
 		dotsEach: true,
 		items: 4,
 		margin: 30,
-		// autoplay: true,
-		// onChange: callback,
-		// onInitialized: initialized,
+		autoplay:true,
+		autoplayTimeout: 4000,
+		autoplayHoverPause: true,
 		responsive:{
 			290: {
 				items: 2,
@@ -44,6 +44,9 @@ $(function () {
 			items: 2,
 			margin: 20,
 			dotsEach: true,
+			autoplay:true,
+			autoplayTimeout: 4000,
+			autoplayHoverPause: true,
 		});
 	}
 

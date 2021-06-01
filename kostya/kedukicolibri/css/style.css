@@ -1790,7 +1790,7 @@ body {
   content: "";
   position: absolute;
   top: 50%;
-  right: 62px;
+  right: 40px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 19px;
