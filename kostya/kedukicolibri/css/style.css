@@ -13,7 +13,7 @@
 @font-face {
   font-family: Roboto;
   font-weight: 900;
-  src: url("../fonts/Roboto-Black.woff2");
+  src: url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.eot");
 }
 
 @font-face {
@@ -332,7 +332,7 @@ body {
 }
 
 .header__title-black {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -638,7 +638,7 @@ body {
 
 .video__content .title__stack {
   top: -40px;
-  margin-left: 170px;
+  margin-left: 180px;
 }
 
 .video__content .title__stack-white {
@@ -2739,7 +2739,7 @@ body {
     top: 5px;
   }
   .video__content .title__stack-white {
-    top: 45px;
+    top: 50px;
     left: 80px;
   }
   .video__boot-1 {
@@ -2793,12 +2793,6 @@ body {
     width: 630px;
     margin: 0 30px;
     padding-right: 30px;
-  }
-  .galary__text-wrapper {
-    width: 400px;
-    height: 60px;
-    top: 185px;
-    left: 13px;
   }
   .galary__img-wrapper1 .galary__img {
     width: 116px;
@@ -3078,9 +3072,10 @@ body {
   }
   .video__boot-1 {
     position: absolute;
-    width: 70vw;
+    width: 68vw;
     right: auto;
-    left: 5px;
+    left: 10px;
+    top: 105px;
   }
   .video__boot-2 {
     position: absolute;
@@ -3243,6 +3238,24 @@ body {
     left: -25vw;
     width: 113vw;
   }
+  .galary__section {
+    height: 330px;
+  }
+  .galary {
+    width: 550px;
+  }
+  .galary__img-wrapper1 .galary__img {
+    width: 102px;
+  }
+  .galary__img-wrapper2 .galary__img,
+  .galary__img-wrapper3 .galary__img {
+    width: 210px;
+  }
+  .galary__img-wrapper4 .galary__img,
+  .galary__img-wrapper5 .galary__img,
+  .galary__img-wrapper6 .galary__img {
+    width: 175px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -3403,5 +3416,26 @@ body {
   .footer__wrapper:before {
     width: 350px;
     height: 350px;
+  }
+  .galary__section {
+    height: 280px;
+  }
+  .galary {
+    width: 475px;
+  }
+  .galary__img-wrapper1 .galary__img {
+    width: 90px;
+  }
+  .galary__img-wrapper2 .galary__img,
+  .galary__img-wrapper3 .galary__img {
+    width: 185px;
+  }
+  .galary__img-wrapper4 .galary__img,
+  .galary__img-wrapper5 .galary__img,
+  .galary__img-wrapper6 .galary__img {
+    width: 155px;
+  }
+  .galary__text-wrapper {
+    top: 112px;
   }
 }
