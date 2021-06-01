@@ -1,13 +1,13 @@
 @font-face {
   font-family: Roboto;
   font-weight: normal;
-  src: url("../fonts/Roboto-Regular.woff2");
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.eot");
 }
 
 @font-face {
   font-family: Roboto;
   font-weight: 500;
-  src: url("../fonts/Roboto-Medium.woff2");
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.eot");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
 @font-face {
   font-family: Roboto;
   font-weight: bold;
-  src: url("../fonts/Roboto-Bold.woff2");
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.eot");
 }
 
 *, *::before, *::after {
