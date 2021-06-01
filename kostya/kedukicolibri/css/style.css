@@ -3030,6 +3030,9 @@ body {
 }
 
 @media (max-width: 414px) {
+  body {
+    background-size: 250%;
+  }
   .header__girl {
     top: 18px;
     width: 190px;
