@@ -4,6 +4,7 @@ $(function () {
 		loop: true,
 		nav : false,
 		dots : true,
+		dotsEach: true,
 		items: 4,
 		margin: 30,
 		// autoplay: true,
@@ -42,6 +43,7 @@ $(function () {
 			dots : true,
 			items: 2,
 			margin: 20,
+			dotsEach: true,
 		});
 	}
 
