@@ -13,6 +13,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    speed: 300,
     swipe: false,
     fade: false,
     asNavFor: '.toggle-slider_start',
@@ -30,31 +31,13 @@ $(document).ready(function () {
     responsive: [{
       breakpoint: 1367,
       settings: {
-        swipe: true //         dots: true,
-        //     appendDots: $('.slider-wrapper_recommend'),
-        //     customPaging: function(slick,index) {
-        //     startDotsCount++;
-        //     if(startDotsCount === 6){
-        //       startDotsCount = 1;
-        //     }
-        //     return '<button class="slider__dot"><span class="slider__dot_abs">0' + startDotsCount + '</span></button>';
-        // },
-
+        swipe: true
       }
     }, {
       breakpoint: 769,
       settings: {
         swipe: true,
-        adaptiveHeight: true //         dots: true,
-        //     appendDots: $('.slider-wrapper_recommend'),
-        //     customPaging: function(slick,index) {
-        //     startDotsCount++;
-        //     if(startDotsCount === 6){
-        //       startDotsCount = 1;
-        //     }
-        //     return '<button class="slider__dot"><span class="slider__dot_abs">0' + startDotsCount + '</span></button>';
-        // },
-
+        adaptiveHeight: true
       }
     }]
   });
@@ -70,6 +53,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    speed: 250,
     swipe: false,
     fade: false,
     asNavFor: '.toggle-slider',
@@ -114,15 +98,15 @@ $(document).ready(function () {
     });
     $(this).addClass("toggle__slide_active");
   }); // ДОБАВЛЕНИЕ АКТИВНОГО КЛАССА В MENU при клике
-
-  $(".menu__item").click(function (event) {
-    var parentMenu = $(this).parent();
-    var arrItemMenu = parentMenu.children(".menu__item");
-    arrItemMenu.each(function (indx, element) {
-      $(element).removeClass("menu__item_active");
-    });
-    $(this).addClass("menu__item_active");
-  }); // ПОИСК
+  // $(".menu__item").click(function (event) {
+  //     var parentMenu = $(this).parent();
+  //     var arrItemMenu = parentMenu.children(".menu__item");
+  //     arrItemMenu.each(function(indx, element){
+  //       $(element).removeClass("menu__item_active");
+  //     });
+  //     $(this).addClass("menu__item_active");
+  // });
+  // ПОИСК
 
   $(".search__btn").click(function (event) {
     event.preventDefault();
@@ -144,33 +128,7 @@ $(document).ready(function () {
       citySearch.removeClass("city__input_active");
       $(".city__btn").removeClass("city__btn_active");
     });
-  }); // Работа с виджетом recaptcha
-  // 1. Получить ответ гугл капчи
-  // var captcha = grecaptcha.getResponse();
-  // // 2. Если ответ пустой, то выводим сообщение о том, что пользователь не прошёл тест.
-  // // Такую форму не будем отправлять на сервер.
-  // if (!captcha.length) {
-  //   // Выводим сообщение об ошибке
-  //   $('#recaptchaError').text('* Вы не прошли проверку "Я не робот"');
-  // } else {
-  //   // получаем элемент, содержащий капчу
-  //   $('#recaptchaError').text('');
-  // }
-  // // 3. Если форма валидна и длина капчи не равно пустой строке, то отправляем форму на сервер (AJAX)
-  // if ((formValid) && (captcha.length)) {
-  //   // добавить в formData значение 'g-recaptcha-response'=значение_recaptcha
-  //   formData.append('g-recaptcha-response', captcha);
-  // }
-  // // 4. Если сервер вернул ответ error, то делаем следующее...
-  // // Сбрасываем виджет reCaptcha
-  // grecaptcha.reset();
-  // // Если существует свойство msg у объекта $data, то...
-  // if ($data.msg) {
-  //   // вывести её в элемент у которого id=recaptchaError
-  //   $('#recaptchaError').text($data.msg);
-  // }
-  // $('.queue .man:last-child')
-  //   .css({'border':'1px solid red'});
+  }); // МЕДИА ТОЧКИ - ДОБАВЛЕНИЕ/СКРЫТИЕ КАРТОЧЕК НОВОСТИ, РЕКЛАМЫ
 
   if ($(window).width() < 1367) {
     $('.section-card__wrapper .card:last-child').css({
@@ -195,6 +153,78 @@ $(document).ready(function () {
     $('.section-card__wrapper .card:last-child').css({
       'display': 'none'
     });
+  }
+
+  if ($(window).width() < 601) {
+    $('.section-card__wrapper .card:last-child').css({
+      'display': 'block'
+    });
+  } // ДОБАВЛЕНИЕ "..." В ЗАГОЛОВКИ 
+
+
+  function stringTruncate(str, maxlength) {
+    if (str.length < maxlength) {
+      return str;
+    }
+
+    var pos = str.lastIndexOf(" ", maxlength);
+    return str.substring(0, pos) + "...";
+  }
+
+  $(".main__slide-link .main__slide-title").each(function (index, item) {
+    if ($(window).width() < 2700) {
+      $(item).text(stringTruncate($(item).text(), 160));
+    }
+
+    if ($(window).width() < 1681) {
+      $(item).text(stringTruncate($(item).text(), 140));
+    }
+
+    if ($(window).width() < 1441) {
+      $(item).text(stringTruncate($(item).text(), 125));
+    }
+  });
+  $(".toggle-slider .toggle__title_start").each(function (index, item) {
+    if ($(window).width() < 2700) {
+      $(item).text(stringTruncate($(item).text(), 120));
+    }
+
+    if ($(window).width() < 1681) {
+      $(item).text(stringTruncate($(item).text(), 110));
+    }
+
+    if ($(window).width() < 1441) {
+      $(item).text(stringTruncate($(item).text(), 95));
+    }
+  });
+  $(".card .card-title").each(function (index, item) {
+    if ($(window).width() < 2700) {
+      $(item).text(stringTruncate($(item).text(), 130));
+    }
+
+    if ($(window).width() < 1681) {
+      $(item).text(stringTruncate($(item).text(), 115));
+    }
+
+    if ($(window).width() < 1601) {
+      $(item).text(stringTruncate($(item).text(), 110));
+    }
+  });
+  $(".toggle-slider_recommend .toggle__title").each(function (index, item) {
+    if ($(window).width() < 2700) {
+      $(item).text(stringTruncate($(item).text(), 120));
+    }
+
+    if ($(window).width() < 1681) {
+      $(item).text(stringTruncate($(item).text(), 110));
+    }
+
+    if ($(window).width() < 391) {
+      $(item).text(stringTruncate($(item).text(), 80));
+    }
+  }); // ОТКРЫТИЕ И ЗАКРЫТИЕ МОБИЛЬНОГО МЕНЮ
+
+  if ($(window).width() < 769) {
     $('.logo').unbind('click');
     $(".btn-menu").click(function () {
       // $(".menu").slideToggle("100");
@@ -204,9 +234,13 @@ $(document).ready(function () {
     });
   }
 
-  if ($(window).width() < 601) {
-    $('.section-card__wrapper .card:last-child').css({
-      'display': 'block'
-    });
-  }
+  $("*").click(function (event) {
+    var targetClassBtn = event.target.classList.contains("btn-menu");
+    var targetClassMenu = event.target.classList.contains("menu__wrapper");
+
+    if (targetClassBtn !== true && targetClassMenu !== true) {
+      $(".menu").removeClass("menu_open");
+      $(".btn-menu").removeClass("btn-menu_open");
+    }
+  });
 });
