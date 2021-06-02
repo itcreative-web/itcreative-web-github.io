@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NEWS</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    /> -->
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="overflow">
+      <header>
+        <div class="header__container">
+          <form class="search">
+            <input
+              class="search__input"
+              type="text"
+              placeholder="Введите ваш запрос"
+            />
+            <button class="search__btn" type="submit">Поиск</button>
+          </form>
+          <form class="city">
+            <button class="city__btn" type="submit">
+              Одесса <img src="img/arrow-bottom.svg" alt="arrow" />
+            </button>
+            <input
+              class="city__input"
+              type="text"
+              placeholder="Введите ваш город"
+            />
+          </form>
+          <form class="language">
+            <select
+              class="language__btn"
+              onchange="window.location.href=this.options[this.selectedIndex].value"
+            >
+              <option class="language__item" value="#ru">Рус</option>
+              <option class="language__item" value="#ukr">Укр</option>
+              <option class="language__item" value="#eng">Eng</option>
+            </select>
+          </form>
+        </div>
+        <div class="header__container header__container_mobile">
+          <a href="#" class="logo-mobile">
+            <img src="img/logo_white.png" alt="logo" />
+          </a>
+          <div class="btn-menu">
+            <div class="line first__line"></div>
+            <div class="line second__line"></div>
+            <div class="line third__line"></div>
+          </div>
+        </div>
+      </header>
+      <div class="menu">
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+        <div class="menu__wrapper">
+          <div class="menu__list">
+            <a href="index.html" class="menu__item menu__item_active"
+              ><p>Главная</p></a
+            >
+            <a href="section.html" class="menu__item"><p>Политика</p></a>
+            <a href="section.html" class="menu__item"><p>Экономика</p></a>
+            <a href="section.html" class="menu__item"><p>Шоу-бизнес</p></a>
+            <a href="section.html" class="menu__item"><p>Спорт</p></a>
+            <a href="section.html" class="menu__item"><p>Здоровье</p></a>
+            <a href="section.html" class="menu__item"><p>Общество</p></a>
+            <a href="section.html" class="menu__item"><p>Полезные советы</p></a>
+            <a href="section.html" class="menu__item"><p>Интересное</p></a>
+          </div>
+          <div class="social-networks">
+            <a class="social-link" href="#fb"
+              ><img src="img/facebook.png" alt="fb"
+            /></a>
+            <a class="social-link" href="#insta"
+              ><img src="img/instagram.png" alt="insta"
+            /></a>
+            <a class="social-link" href="#tl"
+              ><img src="img/telegram.png" alt="tl"
+            /></a>
+          </div>
+          <div class="about__list">
+            <a class="about__link about__link_active" href="advertising.html"
+              >Реклама в интернете</a
+            >
+            <a class="about__link" href="confidentiality.html"
+              >Политика конфиденциальности</a
+            >
+            <a class="about__link" href="#contacts">Контакты</a>
+          </div>
+          <p class="menu__year">© 2021</p>
+        </div>
+      </div>
+      <section class="start">
+        <div class="container">
+          <div class="slider-wrapper slider-wrapper_start">
+            <div class="main-slider main-slider_start">
+              <div class="main__slide">
+                <div
+                  class="main__wrapper-img"
+                  style="background-image: url('img/photo1.png')"
+                >
+                  <!-- <img
+                    class="main__slide_img"
+                    src="img/photo1.png"
+                    alt="photo"
+                  /> -->
+                </div>
+                <a class="main__slide-link" href="article.html">
+                  <h3 class="main__slide-title">
+                    «Аббатство Даунтон» возвращается: все, что известно о
+                    сиквеле сериала
+                  </h3>
+                  <div class="main__slide-text">
+                    <span class="main__slide_section">Политика</span
+                    ><span class="main__slide_slash"> /</span> Среда, 21 апреля
+                    2021 г.
+                  </div>
+                </a>
+              </div>
+              <div class="main__slide">
+                <div
+                  class="main__wrapper-img"
+                  style="background-image: url('img/photo2.png')"
+                >
+                  <!-- <img class="main__slide_img" src="img/2.jpg" alt="photo" /> -->
+                </div>
+                <a class="main__slide-link" href="article.html">
+                  <h3 class="main__slide-title">
+                    «Первый поцелуй»: Денис Реконвальд презентовал клип на
+                    ностальгический трек
+                  </h3>
+                  <div class="main__slide-text">
+                    <span class="main__slide_section">Политика</span
+                    ><span class="main__slide_slash"> /</span> Среда, 21 апреля
+                    2021 г.
+                  </div>
+                </a>
+              </div>
+              <div class="main__slide">
+                <div
+                  class="main__wrapper-img"
+                  style="background-image: url('img/photo3.png')"
+                >
+                  <!-- <img class="main__slide_img" src="img/3.jpg" alt="photo" /> -->
+                </div>
+                <a class="main__slide-link" href="article.html">
+                  <h3 class="main__slide-title">
+                    Грандиозное шоу к 30-му юбилею конкурса «Мисс Украина»
+                    состоится111
+                  </h3>
+                  <div class="main__slide-text">
+                    <span class="main__slide_section">Политика</span
+                    ><span class="main__slide_slash"> /</span> Среда, 21 апреля
+                    2021 г.
+                  </div>
+                </a>
+              </div>
+              <div class="main__slide">
+                <div
+                  class="main__wrapper-img"
+                  style="background-image: url('img/4.jpg')"
+                >
+                  <!-- <img class="main__slide_img" src="img/4.jpg" alt="photo" /> -->
+                </div>
+                <a class="main__slide-link" href="article.html">
+                  <h3 class="main__slide-title">
+                    Грандиозное шоу к 30-му юбилею конкурса «Мисс Украина»
+                    состоится222
+                  </h3>
+                  <div class="main__slide-text">
+                    <span class="main__slide_section">Политика</span
+                    ><span class="main__slide_slash"> /</span> Среда, 21 апреля
+                    2021 г.
+                  </div>
+                </a>
+              </div>
+              <div class="main__slide">
+                <div
+                  class="main__wrapper-img"
+                  style="background-image: url('img/5.jpg')"
+                >
+                  <!-- <img class="main__slide_img" src="img/5.jpg" alt="photo" /> -->
+                </div>
+                <a class="main__slide-link" href="article.html">
+                  <h3 class="main__slide-title">
+                    Грандиозное шоу к 30-му юбилею конкурса «Мисс Украина»
+                    состоится333
+                  </h3>
+                  <div class="main__slide-text">
+                    <span class="main__slide_section">Политика</span
+                    ><span class="main__slide_slash"> /</span> Среда, 21 апреля
+                    2021 г.
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="toggle-slider toggle-slider_start">
+              <div class="toggle__slide toggle__slide_active">
+                <h3 class="toggle__title_start">
+                  «Аббатство Даунтон» возвращается: все, что известно о сиквеле
+                  сериала
+                </h3>
+              </div>
+              <div class="toggle__slide">
+                <h3 class="toggle__title_start">
+                  «Первый поцелуй»: Денис Реконвальд презентовал клип на
+                  ностальгический трек
+                </h3>
+              </div>
+              <div class="toggle__slide">
+                <h3 class="toggle__title_start">
+                  Грандиозное шоу к 30-му юбилею конкурса «Мисс Украина»
+                  состоится
+                </h3>
+              </div>
+              <div class="toggle__slide">
+                <h3 class="toggle__title_start">
+                  Грандиозное шоу к 30-му юбилею конкурса «Мисс Украина»
+                  состоится22222
+                </h3>
+              </div>
+              <div class="toggle__slide">
+                <h3 class="toggle__title_start">
+                  Грандиозное шоу к 30-му юбилею конкурса «Мисс Украина»
+                  состоится33333
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="politics">
+        <div class="container container__main container__main_end">
+          <div class="main-content">
+            <div class="section-card">
+              <div class="section-name__wrapper">
+                <h2 class="section-title">ПОЛИТИКА</h2>
+                <a class="section-link" href="section.html">СМОТРЕТЬ ВСЕ</a>
+              </div>
+              <div class="section-card__wrapper">
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo1.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo1.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    «Аббатство Даунтон» возвращается: все, что известно о
+                    сиквеле сериала
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo2.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo2.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    «Первый поцелуй»: Денис Реконвальд презентовал клип на
+                    ностальгический трек
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo3.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo3.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    Грандиозное шоу к 30-му юбилею конкурса «Мисс Украина»
+                    состоится
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar">
+            <div class="ad-unit_big">
+              <img src="img/advertising_big.png" alt="ad" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="economy">
+        <div class="container container__main">
+          <div class="main-content">
+            <div class="section-card">
+              <div class="section-name__wrapper">
+                <h2 class="section-title section-title_dark">ЭКОНОМИКА</h2>
+                <a class="section-link" href="section.html">СМОТРЕТЬ ВСЕ</a>
+              </div>
+              <div class="section-card__wrapper">
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo3.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo3.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    «Аббатство Даунтон» возвращается: все, что известно о
+                    сиквеле сериала
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo1.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo1.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    «Первый поцелуй»: Денис Реконвальд презентовал клип на
+                    ностальгический трек
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo1.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo2.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    Грандиозное шоу к 30-му юбилею конкурса «Мисс Украина»
+                    состоится
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar">
+            <div class="ad-unit_big">
+              <img src="img/advertising_big.png" alt="ad" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recommend">
+        <div class="container recommend__container">
+          <h2 class="section-title section-title_dark">
+            РЕКОМЕНДУЕМ ПОСМОТРЕТЬ
+          </h2>
+          <div class="slider-wrapper slider-wrapper_recommend">
+            <div class="toggle-slider toggle-slider_recommend">
+              <div class="toggle__slide toggle__slide_active">
+                <div
+                  class="toggle__wrapper"
+                  style="background-image: url('img/photo1.png')"
+                >
+                  <!-- <img class="toggle__img" src="img/photo1.png" alt="img" /> -->
+                </div>
+                <h3 class="toggle__title">
+                  «Аббатство Даунтон» возвращается: все, что известно о сиквеле
+                  сериалаАббатство Даунтон» возвращается: все, что известно о
+                  сиквеле сериала
+                </h3>
+              </div>
+              <div class="toggle__slide">
+                <div
+                  class="toggle__wrapper"
+                  style="background-image: url('img/photo2.png')"
+                >
+                  <!-- <img class="toggle__img" src="img/photo2.png" alt="img" /> -->
+                </div>
+                <h3 class="toggle__title">
+                  «Первый поцелуй»: Денис Реконвальд презентовал клип на
+                  ностальгический трек
+                </h3>
+              </div>
+              <div class="toggle__slide">
+                <div
+                  class="toggle__wrapper"
+                  style="background-image: url('img/photo1.png')"
+                >
+                  <!-- <img class="toggle__img" src="img/photo3.png" alt="img" /> -->
+                </div>
+                <h3 class="toggle__title">
+                  Грандиозное шоу к 30-му юбилею конкурса «Мисс Украина»
+                  состоится
+                </h3>
+              </div>
+            </div>
+            <div class="main-slider main-slider_recommend">
+              <div class="main__slide">
+                <div class="main__wrapper-img" style="background-image: url('img/photo1.png')">
+                  <!-- <img
+                    class="main__slide_img"
+                    src="img/photo1.png"
+                    alt="photo"
+                  /> -->
+                </div>
+                <a class="main__slide-link" href="article.html">
+                  <h3 class="main__slide-title">
+                    «Аббатство Даунтон» возвращается: все, что известно о
+                    сиквеле сериала
+                  </h3>
+                  <div class="main__slide-text">
+                    <span class="main__slide_section">Политика</span
+                    ><span class="main__slide_slash"> /</span> Среда, 21 апреля
+                    2021 г.
+                  </div>
+                </a>
+              </div>
+              <div class="main__slide">
+                <div class="main__wrapper-img" style="background-image: url('img/photo2.png')">
+                  <!-- <img
+                    class="main__slide_img"
+                    src="img/photo2.png"
+                    alt="photo"
+                  /> -->
+                </div>
+                <a class="main__slide-link" href="article.html">
+                  <h3 class="main__slide-title">
+                    «Первый поцелуй»: Денис Реконвальд презентовал клип на
+                    ностальгический трек
+                  </h3>
+                  <div class="main__slide-text">
+                    <span class="main__slide_section">Политика</span
+                    ><span class="main__slide_slash"> /</span> Среда, 21 апреля
+                    2021 г.
+                  </div>
+                </a>
+              </div>
+              <div class="main__slide">
+                <div class="main__wrapper-img" style="background-image: url('img/photo3.png')">
+                  <!-- <img
+                    class="main__slide_img"
+                    src="img/photo3.png"
+                    alt="photo"
+                  /> -->
+                </div>
+                <a class="main__slide-link" href="article.html">
+                  <h3 class="main__slide-title">
+                    Грандиозное шоу к 30-му юбилею конкурса «Мисс Украина»
+                    состоится111
+                  </h3>
+                  <div class="main__slide-text">
+                    <span class="main__slide_section">Политика</span
+                    ><span class="main__slide_slash"> /</span> Среда, 21 апреля
+                    2021 г.
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="others-section">
+        <div class="container container__main">
+          <div class="main-content">
+            <div class="section-card section-card_margin-bottom">
+              <div class="section-name__wrapper">
+                <h2 class="section-title">ШОУ-БИЗНЕС</h2>
+                <a class="section-link" href="section.html">СМОТРЕТЬ ВСЕ</a>
+              </div>
+              <div class="section-card__wrapper">
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo3.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo3.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    «Аббатство Даунтон» возвращается: все, что известно о
+                    сиквеле сериала
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo1.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo1.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    «Первый поцелуй»: Денис Реконвальд презентовал клип на
+                    ностальгический трек
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo1.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo2.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    Грандиозное шоу к 30-му юбилею конкурса «Мисс Украина»
+                    состоится
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+              </div>
+            </div>
+            <div class="section-card section-card_margin-bottom">
+              <div class="section-name__wrapper">
+                <h2 class="section-title">СПОРТ</h2>
+                <a class="section-link" href="section.html">СМОТРЕТЬ ВСЕ</a>
+              </div>
+              <div class="section-card__wrapper">
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo1.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo3.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    «Аббатство Даунтон» возвращается: все, что известно о
+                    сиквеле сериала
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo1.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo1.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    «Первый поцелуй»: Денис Реконвальд презентовал клип на
+                    ностальгический трек
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo1.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo2.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    Грандиозное шоу к 30-му юбилею конкурса «Мисс Украина»
+                    состоится
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+              </div>
+            </div>
+            <div class="section-card section-card_margin-bottom">
+              <div class="section-name__wrapper">
+                <h2 class="section-title">ЗДОРОВЬЕ</h2>
+                <a class="section-link" href="section.html">СМОТРЕТЬ ВСЕ</a>
+              </div>
+              <div class="section-card__wrapper">
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo1.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo3.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    «Аббатство Даунтон» возвращается: все, что известно о
+                    сиквеле сериала
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo1.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo1.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    «Первый поцелуй»: Денис Реконвальд презентовал клип на
+                    ностальгический трек
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo1.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo2.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    Грандиозное шоу к 30-му юбилею конкурса «Мисс Украина»
+                    состоится
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+              </div>
+            </div>
+            <div class="section-card section-card_margin-bottom">
+              <div class="section-name__wrapper">
+                <h2 class="section-title">ОБЩЕСТВО</h2>
+                <a class="section-link" href="section.html">СМОТРЕТЬ ВСЕ</a>
+              </div>
+              <div class="section-card__wrapper">
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo1.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo3.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    «Аббатство Даунтон» возвращается: все, что известно о
+                    сиквеле сериала
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo2.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo1.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    «Первый поцелуй»: Денис Реконвальд презентовал клип на
+                    ностальгический трек
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo1.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo2.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    Грандиозное шоу к 30-му юбилею конкурса «Мисс Украина»
+                    состоится
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+              </div>
+            </div>
+            <div class="section-card section-card_margin-bottom">
+              <div class="section-name__wrapper">
+                <h2 class="section-title">ПОЛЕЗНЫЕ СОВЕТЫ</h2>
+                <a class="section-link" href="section.html">СМОТРЕТЬ ВСЕ</a>
+              </div>
+              <div class="section-card__wrapper">
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo3.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo3.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    «Аббатство Даунтон» возвращается: все, что известно о
+                    сиквеле сериала
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo1.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo1.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    «Первый поцелуй»: Денис Реконвальд презентовал клип на
+                    ностальгический трек
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo2.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo2.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    Грандиозное шоу к 30-му юбилею конкурса «Мисс Украина»
+                    состоится
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+              </div>
+            </div>
+            <div class="section-card section-card_margin-bottom">
+              <div class="section-name__wrapper">
+                <h2 class="section-title">ИНТЕРЕСНОЕ</h2>
+                <a class="section-link" href="section.html">СМОТРЕТЬ ВСЕ</a>
+              </div>
+              <div class="section-card__wrapper">
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo1.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo3.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    «Аббатство Даунтон» возвращается: все, что известно о
+                    сиквеле сериала
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo1.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo1.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    «Первый поцелуй»: Денис Реконвальд презентовал клип на
+                    ностальгический трек
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+                <a href="article.html" class="card">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo2.png')"
+                  >
+                    <!-- <img class="card-img" src="img/photo2.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    Грандиозное шоу к 30-му юбилею конкурса «Мисс Украина»
+                    состоится
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+              </div>
+            </div>
+            <div class="ad-unit_bottom ad-unit_margin ad-unit_last">
+              <img
+                style="width: 100%"
+                src="img/advertising_bottom.png"
+                alt="ad"
+              />
+            </div>
+          </div>
+          <div class="sidebar">
+            <div class="ad-unit_big ad-unit_margin">
+              <img src="img/advertising_big.png" alt="ad" />
+            </div>
+            <div class="ad-unit_small ad-unit_margin">
+              <img src="img/advertising_small.png" alt="ad" />
+            </div>
+            <div class="ad-unit_big ad-unit_margin">
+              <img src="img/advertising_big.png" alt="ad" />
+            </div>
+            <div class="ad-unit_small ad-unit_margin">
+              <img src="img/advertising_small.png" alt="ad" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="js/jq.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/lazysizes.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

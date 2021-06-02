@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NEWS</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    /> -->
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="overflow">
+      <header>
+        <div class="header__container">
+          <form class="search">
+            <input
+              class="search__input"
+              type="text"
+              placeholder="Введите ваш запрос"
+            />
+            <button class="search__btn" type="submit">Поиск</button>
+          </form>
+          <form class="city">
+            <button class="city__btn" type="submit">
+              Одесса <img src="img/arrow-bottom.svg" alt="arrow" />
+            </button>
+            <input
+              class="city__input"
+              type="text"
+              placeholder="Введите ваш город"
+            />
+          </form>
+          <form class="language">
+            <select
+              class="language__btn"
+              onchange="window.location.href=this.options[this.selectedIndex].value"
+            >
+              <option class="language__item" value="#ru">Рус</option>
+              <option class="language__item" value="#ukr">Укр</option>
+              <option class="language__item" value="#eng">Eng</option>
+            </select>
+          </form>
+        </div>
+        <div class="header__container header__container_mobile">
+          <a href="index.html" class="logo-mobile">
+            <img src="img/logo_white.png" alt="logo" />
+          </a>
+          <div class="btn-menu">
+            <div class="line first__line"></div>
+            <div class="line second__line"></div>
+            <div class="line third__line"></div>
+          </div>
+        </div>
+      </header>
+      <div class="menu">
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+        <div class="menu__wrapper">
+          <div class="menu__list">
+            <a href="index.html" class="menu__item menu__item_active"><p>Главная</p></a>
+            <a href="section.html" class="menu__item"><p>Политика</p></a>
+            <a href="section.html" class="menu__item"><p>Экономика</p></a>
+            <a href="section.html" class="menu__item"><p>Шоу-бизнес</p></a>
+            <a href="section.html" class="menu__item"><p>Спорт</p></a>
+            <a href="section.html" class="menu__item"><p>Здоровье</p></a>
+            <a href="section.html" class="menu__item"><p>Общество</p></a>
+            <a href="section.html" class="menu__item"><p>Полезные советы</p></a>
+            <a href="section.html" class="menu__item"><p>Интересное</p></a>
+          </div>
+          <div class="social-networks">
+            <a class="social-link" href="#fb"
+              ><img src="img/facebook.png" alt="fb"
+            /></a>
+            <a class="social-link" href="#insta"
+              ><img src="img/instagram.png" alt="insta"
+            /></a>
+            <a class="social-link" href="#tl"
+              ><img src="img/telegram.png" alt="tl"
+            /></a>
+          </div>
+          <div class="about__list">
+            <a class="about__link about__link_active" href="advertising.html"
+              >Реклама в интернете</a
+            >
+            <a class="about__link" href="confidentiality.html"
+              >Политика конфиденциальности</a
+            >
+            <a class="about__link" href="#contacts">Контакты</a>
+          </div>
+          <p class="menu__year">© 2021</p>
+        </div>
+      </div>
+      <section class="article__main-content">
+        <div class="container article__container">
+          <div class="article">
+            <div class="article__wrapper">
+              <img class="article__img" src="img/photo1.png" alt="photo" />
+              <h3 class="article__title">
+                Грандиозное шоу к 30-му юбилею конкурса «Мисс Украина» состоится
+              </h3>
+              <p class="article__text">
+                На пресс-конференции была представлена ​​новая владелица и глава
+                комитета <a class="article__link" href="#">Вероника Щипцова</a>,
+                которая заявила, что в этом году грандиозный
+                <a class="article__link" href="#"
+                  >финал национального конкурса красоты «Мисс Украина-2021»</a
+                >
+                состоится. Организацией и проведением феерического шоу будет
+                заниматься новая креативная команда, а также планируется
+                привлечь украинские и международные компании в качестве
+                партнеров. Мероприятие запланировано на октябрь 2021 во Дворце
+                Украина.
+              </p>
+              <p class="article__text">
+                Впервые в истории конкурса, к 30-му юбилею, организаторы
+                объявили о проведении открытых кастингов. Известно, что первым
+                городом проведения региональных кастингов станет Одесса.
+              </p>
+              <img class="article__img" src="img/2.jpg" alt="photo" />
+              <div class="article__ad">
+                <img
+                  style="margin: 0 auto; display: block"
+                  src="img/advertising_big.png"
+                  alt="ad"
+                />
+              </div>
+              <p class="article__text">
+                Впервые в истории конкурса, к 30-му юбилею, организаторы
+                объявили о проведении открытых кастингов. Известно, что первым
+                городом проведения региональных кастингов станет Одесса.
+              </p>
+              <img class="article__img" src="img/4.jpg" alt="photo" />
+              <div class="article__ad">
+                <img
+                  style="margin: 0 auto; display: block"
+                  src="img/advertising_big.png"
+                  alt="ad"
+                />
+              </div>
+              <p class="article__text">
+                Впервые в истории конкурса, к 30-му юбилею, организаторы
+                объявили о проведении открытых кастингов. Известно, что первым
+                городом проведения региональных кастингов станет Одесса.
+              </p>
+              <p class="article__text">
+                Впервые в истории конкурса, к 30-му юбилею, организаторы
+                объявили о проведении открытых кастингов. Известно, что первым
+                городом проведения региональных кастингов станет Одесса.
+              </p>
+              <p class="article__text">
+                Впервые в истории конкурса, к 30-му юбилею, организаторы
+                объявили о проведении открытых кастингов. Известно, что первым
+                городом проведения региональных кастингов станет Одесса.
+              </p>
+              <img class="article__img" src="img/3.jpg" alt="photo" />
+              <div class="article__ad">
+                <img
+                  style="margin: 0 auto; display: block"
+                  src="img/advertising_big.png"
+                  alt="ad"
+                />
+              </div>
+              <p class="article__text">
+                Напомним, что победительница финала конкурса «Мисс Украина-2021»
+                представит Украину на международном конкурсе «Miss World» в
+                Сан-Хуане, Пуэрто-Рико. Новости конкурса можно узнать на
+                официальном сайте missukraine.ua, а также на страницах Instagram
+                (missukraine_official), Facebook (missukraineofficial) и Youtube
+                (MissUkraine).
+              </p>
+            </div>
+            <div class="article__info">
+              <div class="article__about">
+                <div class="article__autor">
+                  Автор: <span>Иванов Иван Иванович</span>
+                </div>
+                <div class="article__data">
+                  Дата: <span>Среда, 21 апреля 2021 г.</span>
+                </div>
+              </div>
+              <button class="share-article">Поделиться</button>
+            </div>
+            <div class="article__ad">
+              <img
+                style="margin: 0 auto; display: block"
+                src="img/advertising_big.png"
+                alt="ad"
+              />
+            </div>
+
+            <div class="ad-unit_bottom ad-unit_last">
+              <img
+                style="width: 100%"
+                src="img/advertising_bottom.png"
+                alt="ad"
+              />
+            </div>
+            <div class="section-card section-card_margin-top">
+              <div class="section-name__wrapper">
+                <h2 class="section-title">МАТЕРИАЛЫ ПО ТЕМЕ</h2>
+                <a class="section-link" href="section.html">СМОТРЕТЬ ВСЕ</a>
+              </div>
+              <div class="section-card__wrapper">
+                <a href="article.html" class="card">
+                  <div class="card-wrapper" style="background-image: url('img/photo1.png');">
+                    <!-- <img class="card-img" src="img/photo3.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    «Аббатство Даунтон» возвращается: все, что известно о
+                    сиквеле сериала
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+                <a href="article.html" class="card">
+                  <div class="card-wrapper" style="background-image: url('img/photo3.png');">
+                    <!-- <img class="card-img" src="img/photo1.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    «Первый поцелуй»: Денис Реконвальд презентовал клип на
+                    ностальгический трек
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+                <a href="article.html" class="card">
+                  <div class="card-wrapper" style="background-image: url('img/photo2.png');">
+                    <!-- <img class="card-img" src="img/photo2.png" alt="photo" /> -->
+                  </div>
+                  <h4 class="card-title">
+                    Грандиозное шоу к 30-му юбилею конкурса «Мисс Украина»
+                    состоится
+                  </h4>
+                  <p class="card-data">Среда, 21 апреля 2021 г.</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar">
+            <div class="ad-unit_big ad-unit_margin">
+              <img src="img/advertising_big.png" alt="ad" />
+            </div>
+            <div class="ad-unit_small ad-unit_margin">
+              <img src="img/advertising_small.png" alt="ad" />
+            </div>
+            <div class="ad-unit_big ad-unit_margin">
+              <img src="img/advertising_big.png" alt="ad" />
+            </div>
+            <div class="ad-unit_small ad-unit_margin">
+              <img src="img/advertising_small.png" alt="ad" />
+            </div>
+            <div class="ad-unit_big ad-unit_margin">
+              <img src="img/advertising_big.png" alt="ad" />
+            </div>
+            <div class="ad-unit_small ad-unit_margin">
+              <img src="img/advertising_small.png" alt="ad" />
+            </div>
+            <div class="ad-unit_big ad-unit_margin">
+              <img src="img/advertising_big.png" alt="ad" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="js/jq.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/lazysizes.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
