@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
 
     <!-- <link
       rel="stylesheet"
@@ -69,7 +70,9 @@
         </a>
         <div class="menu__wrapper">
           <div class="menu__list">
-            <a href="index.html" class="menu__item menu__item_active"><p>Главная</p></a>
+            <a href="index.html" class="menu__item menu__item_active"
+              ><p>Главная</p></a
+            >
             <a href="section.html" class="menu__item"><p>Политика</p></a>
             <a href="section.html" class="menu__item"><p>Экономика</p></a>
             <a href="section.html" class="menu__item"><p>Шоу-бизнес</p></a>
@@ -78,18 +81,19 @@
             <a href="section.html" class="menu__item"><p>Общество</p></a>
             <a href="section.html" class="menu__item"><p>Полезные советы</p></a>
             <a href="section.html" class="menu__item"><p>Интересное</p></a>
+            <div class="social-networks">
+              <a class="social-link" href="#fb"
+                ><img src="img/facebook.png" alt="fb"
+              /></a>
+              <a class="social-link" href="#insta"
+                ><img src="img/instagram.png" alt="insta"
+              /></a>
+              <a class="social-link" href="#tl"
+                ><img src="img/telegram.png" alt="tl"
+              /></a>
+            </div>
           </div>
-          <div class="social-networks">
-            <a class="social-link" href="#fb"
-              ><img src="img/facebook.png" alt="fb"
-            /></a>
-            <a class="social-link" href="#insta"
-              ><img src="img/instagram.png" alt="insta"
-            /></a>
-            <a class="social-link" href="#tl"
-              ><img src="img/telegram.png" alt="tl"
-            /></a>
-          </div>
+
           <div class="about__list">
             <a class="about__link about__link_active" href="advertising.html"
               >Реклама в интернете</a
@@ -98,8 +102,8 @@
               >Политика конфиденциальности</a
             >
             <a class="about__link" href="#contacts">Контакты</a>
+            <p class="menu__year">© 2021</p>
           </div>
-          <p class="menu__year">© 2021</p>
         </div>
       </div>
       <section class="article__main-content">
@@ -159,15 +163,15 @@
               </div>
               <div class="wrapper-captcha">
                 <!-- добавление элемента div -->
-              <div
-                class="g-recaptcha"
-                data-sitekey="6KepjAsTFFFFFFMqccY0ZiGqc3TEd3YVxo8cHsGX"
-              ></div>
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6KepjAsTFFFFFFMqccY0ZiGqc3TEd3YVxo8cHsGX"
+                ></div>
 
-              <!-- элемент для вывода ошибок -->
-              <div class="text-danger" id="recaptchaError"></div>
+                <!-- элемент для вывода ошибок -->
+                <div class="text-danger" id="recaptchaError"></div>
               </div>
-              
+
               <div class="form-group submite__wrapper">
                 <button class="feedback__btn" type="submit">Отправить</button>
               </div>
@@ -175,13 +179,14 @@
           </div>
         </div>
       </section>
-    </div> 
+    </div>
 
     <script src="js/jq.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/lazysizes.min.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <script src="js/main.js"></script>
   </body>

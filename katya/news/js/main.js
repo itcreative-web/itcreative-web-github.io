@@ -243,4 +243,9 @@ $(document).ready(function () {
       $(".btn-menu").removeClass("btn-menu_open");
     }
   });
+
+  if ($(window).height() < 870) {
+    $(".menu").css("width", "270px");
+    $(".menu").mCustomScrollbar();
+  }
 });
