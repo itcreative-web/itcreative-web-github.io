@@ -141,9 +141,6 @@ $(document).ready(function () {
   }
 
   if ($(window).width() < 1001) {
-    $(".logo").click(function () {
-      $(".menu__wrapper").slideToggle("slow");
-    });
     $('.section-card__wrapper .card:last-child').css({
       'display': 'block'
     });
@@ -173,15 +170,15 @@ $(document).ready(function () {
 
   $(".main__slide-link .main__slide-title").each(function (index, item) {
     if ($(window).width() < 2700) {
-      $(item).text(stringTruncate($(item).text(), 160));
-    }
-
-    if ($(window).width() < 1681) {
       $(item).text(stringTruncate($(item).text(), 140));
     }
 
+    if ($(window).width() < 1681) {
+      $(item).text(stringTruncate($(item).text(), 110));
+    }
+
     if ($(window).width() < 1441) {
-      $(item).text(stringTruncate($(item).text(), 125));
+      $(item).text(stringTruncate($(item).text(), 105));
     }
   });
   $(".toggle-slider .toggle__title_start").each(function (index, item) {
@@ -222,30 +219,60 @@ $(document).ready(function () {
     if ($(window).width() < 391) {
       $(item).text(stringTruncate($(item).text(), 80));
     }
-  }); // ОТКРЫТИЕ И ЗАКРЫТИЕ МОБИЛЬНОГО МЕНЮ
+  }); // ОТКРЫТИЕ И ЗАКРЫТИЕ МЕНЮ при клике на/вне кнопки и области меню
 
   if ($(window).width() < 769) {
-    $('.logo').unbind('click');
+    $('.logo_btn').unbind('click');
     $(".btn-menu").click(function () {
       // $(".menu").slideToggle("100");
       $(".menu").toggleClass("menu_open");
       $(".btn-menu").toggleClass("btn-menu_open");
       $("html,body").toggleClass("scroll-hidden");
     });
+    $("*").click(function (event) {
+      var targetClassBtn = event.target.classList.contains("btn-menu");
+      var targetClassMenu = event.target.classList.contains("menu__wrapper");
+
+      if (targetClassBtn !== true && targetClassMenu !== true) {
+        $(".menu").removeClass("menu_open");
+        $(".btn-menu").removeClass("btn-menu_open");
+        $("html,body").removeClass("scroll-hidden");
+        console.log("2");
+      }
+    });
+  } else if ($(window).width() < 1001) {
+    $(".logo_btn").click(function () {
+      $(".menu__wrapper").slideToggle("slow");
+      $(".menu").toggleClass("menu__open_height");
+      $("html,body").toggleClass("scroll-hidden");
+    });
+    $("*").click(function (event) {
+      var targetClassLogo = event.target.classList.contains("logo_btn");
+
+      if (targetClassLogo !== true) {
+        $(".menu__wrapper").slideUp();
+        $(".menu").removeClass("menu__open_height");
+        $("html,body").removeClass("scroll-hidden");
+        console.log("1");
+      }
+    });
   }
-
-  $("*").click(function (event) {
-    var targetClassBtn = event.target.classList.contains("btn-menu");
-    var targetClassMenu = event.target.classList.contains("menu__wrapper");
-
-    if (targetClassBtn !== true && targetClassMenu !== true) {
-      $(".menu").removeClass("menu_open");
-      $(".btn-menu").removeClass("btn-menu_open");
-    }
-  });
 
   if ($(window).height() < 870) {
     $(".menu").css("width", "270px");
     $(".menu").mCustomScrollbar();
-  }
+  } // КНОПКА КОПИРОВАТЬ ССЫЛКУ
+
+
+  $("#shareLink").click(function (event) {
+    var copyText = document.getElementById("linkNew");
+    copyText.select();
+    document.execCommand("copy");
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Скопировано";
+  }); // ОТКРЫТИЕ МОДАЛКИ ПОДПИСАТЬСЯ
+
+  $("#subscribe").fancybox({}); // setTimeout(function(){
+  //   $('#subscribe').trigger('click');
+  // }, 3000);
 });

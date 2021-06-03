@@ -65,12 +65,17 @@
         </div>
       </header>
       <div class="menu">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo logo_link">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+        <a href="#" class="logo logo_btn">
           <img src="img/logo.png" alt="logo" />
         </a>
         <div class="menu__wrapper">
           <div class="menu__list">
-            <a href="index.html" class="menu__item menu__item_active"><p>Главная</p></a>
+            <a href="index.html" class="menu__item menu__item_active"
+              ><p>Главная</p></a
+            >
             <a href="section.html" class="menu__item"><p>Политика</p></a>
             <a href="section.html" class="menu__item"><p>Экономика</p></a>
             <a href="section.html" class="menu__item"><p>Шоу-бизнес</p></a>
@@ -80,18 +85,18 @@
             <a href="section.html" class="menu__item"><p>Полезные советы</p></a>
             <a href="section.html" class="menu__item"><p>Интересное</p></a>
             <div class="social-networks">
-            <a class="social-link" href="#fb"
-              ><img src="img/facebook.png" alt="fb"
-            /></a>
-            <a class="social-link" href="#insta"
-              ><img src="img/instagram.png" alt="insta"
-            /></a>
-            <a class="social-link" href="#tl"
-              ><img src="img/telegram.png" alt="tl"
-            /></a>
+              <a class="social-link" href="#fb"
+                ><img src="img/facebook.png" alt="fb"
+              /></a>
+              <a class="social-link" href="#insta"
+                ><img src="img/instagram.png" alt="insta"
+              /></a>
+              <a class="social-link" href="#tl"
+                ><img src="img/telegram.png" alt="tl"
+              /></a>
+            </div>
           </div>
-          </div>
-          
+
           <div class="about__list">
             <a class="about__link about__link_active" href="advertising.html"
               >Реклама в интернете</a
@@ -102,7 +107,6 @@
             <a class="about__link" href="#contacts">Контакты</a>
             <p class="menu__year">© 2021</p>
           </div>
-          
         </div>
       </div>
       <section class="article__main-content">
@@ -193,7 +197,43 @@
                   Дата: <span>Среда, 21 апреля 2021 г.</span>
                 </div>
               </div>
-              <button class="share-article">Поделиться</button>
+              <a href="#modal-share" class="share-article modal">Поделиться</a>
+              <div id="modal-share" style="display: none">
+                <h3 class="modal__title">Поделиться</h3>
+                <div class="modal__wrapper-icon">
+                  <a class="icon-network" href="#f"
+                    ><img src="img/icons/facebook.png" alt="network"
+                  /></a>
+                  <a class="icon-network" href="#w"
+                    ><img src="img/icons/whatsapp.png" alt="network"
+                  /></a>
+                  <a class="icon-network" href="#t"
+                    ><img src="img/icons/telegram.png" alt="network"
+                  /></a>
+                  <a class="icon-network" href="#v"
+                    ><img src="img/icons/viber.png" alt="network"
+                  /></a>
+                  <a class="icon-network" href="#tw"
+                    ><img src="img/icons/twitter.png" alt="network"
+                  /></a>
+                  <a class="icon-network" href="#g"
+                    ><img src="img/icons/gmail.png" alt="network"
+                  /></a>
+                </div>
+                <div class="modal-copy">
+                  <input type="text" value="https/postgid/Sjf76392kdfk" id="linkNew" />
+
+                  <div class="tooltip">
+                    <button id="shareLink">
+                      <span class="tooltiptext" id="myTooltip"
+                        >Копировать ссылку</span
+                      >
+                      Копировать
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- <button class="share-article">Поделиться</button> -->
             </div>
             <div class="article__ad">
               <img
@@ -217,7 +257,10 @@
               </div>
               <div class="section-card__wrapper">
                 <a href="article.html" class="card">
-                  <div class="card-wrapper" style="background-image: url('img/photo1.png');">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo1.png')"
+                  >
                     <!-- <img class="card-img" src="img/photo3.png" alt="photo" /> -->
                   </div>
                   <h4 class="card-title">
@@ -227,20 +270,24 @@
                   <p class="card-data">Среда, 21 апреля 2021 г.</p>
                 </a>
                 <a href="article.html" class="card">
-                  <div class="card-wrapper" style="background-image: url('img/photo3.png');">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo3.png')"
+                  >
                     <!-- <img class="card-img" src="img/photo1.png" alt="photo" /> -->
                   </div>
                   <h4 class="card-title">
                     «Первый поцелуй»: Денис Реконвальд презентовал клип на
-                    ностальгический трек 
-                    «Первый поцелуй»: Денис Реконвальд презентовал клип на
-                    ностальгический трек
-                  
+                    ностальгический трек «Первый поцелуй»: Денис Реконвальд
+                    презентовал клип на ностальгический трек
                   </h4>
                   <p class="card-data">Среда, 21 апреля 2021 г.</p>
                 </a>
                 <a href="article.html" class="card">
-                  <div class="card-wrapper" style="background-image: url('img/photo2.png');">
+                  <div
+                    class="card-wrapper"
+                    style="background-image: url('img/photo2.png')"
+                  >
                     <!-- <img class="card-img" src="img/photo2.png" alt="photo" /> -->
                   </div>
                   <h4 class="card-title">

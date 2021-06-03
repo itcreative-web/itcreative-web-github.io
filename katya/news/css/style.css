@@ -213,7 +213,8 @@ header {
 }
 
 :-ms-input-placeholder {
-  color: #ffffff;
+  color: #ffffff !important;
+  font-weight: 400 !important;
 }
 
 .city__btn {
@@ -465,6 +466,14 @@ option[selected] {
   height: 38px;
 }
 
+.logo_btn {
+  display: none;
+}
+
+.logo_btn img {
+  pointer-events: none;
+}
+
 .menu__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -653,6 +662,10 @@ option[selected] {
   margin-right: 20px !important;
 }
 
+.scroll-hidden {
+  overflow: hidden;
+}
+
 .slider-wrapper {
   width: 100%;
   display: -webkit-box;
@@ -803,7 +816,7 @@ option[selected] {
           align-items: center;
   position: absolute;
   right: 100px;
-  bottom: 0px;
+  bottom: 30px;
   pointer-events: none;
 }
 
@@ -1712,6 +1725,9 @@ option[selected] {
   .main__slide-link {
     width: 85%;
   }
+  .main__slide-title {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -1822,6 +1838,10 @@ option[selected] {
   .menu {
     position: absolute;
     z-index: 999;
+    height: auto;
+  }
+  .menu__open_height {
+    height: 100vh !important;
   }
   .card {
     width: 31%;
@@ -1831,6 +1851,12 @@ option[selected] {
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .logo {
+    display: none;
+  }
+  .logo_btn {
+    display: block;
   }
 }
 
@@ -1852,6 +1878,7 @@ option[selected] {
     -webkit-transition: all ease-out 0.3s;
     -o-transition: all ease-out 0.3s;
     transition: all ease-out 0.3s;
+    height: 100vh;
   }
   .menu_open {
     left: 0;
@@ -1929,9 +1956,6 @@ option[selected] {
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
-  }
-  .scroll-hidden {
-    overflow: hidden;
   }
   .main__slide-link {
     width: 90%;
@@ -2329,6 +2353,318 @@ option[selected] {
 @media (max-width: 1366px) {
   .confidentiality__article {
     width: 100%;
+  }
+}
+
+#modal-share {
+  background: #e3eeff;
+  padding: 50px;
+  width: 90%;
+  max-width: 680px;
+}
+
+.modal__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.modal__wrapper-icon {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.icon-network {
+  width: 80px;
+  height: 80px;
+}
+
+.icon-network img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-copy {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#linkNew {
+  width: 60%;
+  height: 50px;
+  background: #747c98;
+  border: none;
+  padding: 15px 30px;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+#shareLink {
+  width: 100%;
+  height: 50px;
+  background: #139cff;
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.tooltip {
+  width: 40%;
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #5c6178;
+  border: 2px solid white;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.fancybox-button {
+  height: 70px;
+  width: 70px;
+}
+
+@media (max-width: 700px) {
+  #modal-share {
+    width: 90%;
+    max-width: 375px;
+    padding: 30px 20px;
+  }
+  .icon-network {
+    width: 50px;
+    height: 50px;
+  }
+  .modal-copy {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #linkNew {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  .tooltip {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #shareLink {
+    width: 200px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  .icon-network {
+    width: 45px;
+    height: 45px;
+    margin: 0px 3px;
+  }
+  .modal__wrapper-icon {
+    margin-bottom: 15px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .modal__title {
+    margin-bottom: 15px;
+  }
+  #linkNew {
+    height: 40px;
+    padding: 15px 10px;
+    margin-bottom: 25px;
+  }
+  #shareLink {
+    width: 200px;
+    height: 40px;
+  }
+  .fancybox-button {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media (max-width: 385px) {
+  .icon-network {
+    width: 35px;
+    height: 35px;
+    margin: 0px 3px;
+  }
+}
+
+#subscribe {
+  padding: 50px;
+  max-width: 365px;
+  width: 95%;
+  background: #4f5468;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+.subscribe__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe__logo {
+  max-width: 160px;
+  margin-bottom: 30px;
+}
+
+.subscribe__title {
+  width: 100%;
+  text-align: center;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  margin-bottom: 30px;
+}
+
+.subscribe__title_bold {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.subscribe__btn {
+  width: 250px;
+  height: 50px;
+  background: #139cff;
+  padding: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 425px) {
+  #subscribe {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .subscribe__title {
+    font-size: 22px;
+    line-height: 36px;
   }
 }
 
