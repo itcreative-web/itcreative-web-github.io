@@ -1861,6 +1861,9 @@ option[selected] {
   .logo_btn {
     display: block;
   }
+  .about__list {
+    margin-bottom: 130px;
+  }
 }
 
 @media (max-width: 768px) {
