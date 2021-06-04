@@ -128,6 +128,16 @@ $(document).ready(function () {
       citySearch.removeClass("city__input_active");
       $(".city__btn").removeClass("city__btn_active");
     });
+  }); // ВЫБОР ЯЗЫКА
+
+  $(".language").click(function (event) {
+    console.log("***");
+    $(".language__btn").focus(function () {
+      $(".language").addClass("language_active");
+    });
+    $(".language__btn").blur(function () {
+      $(".language").removeClass("language_active");
+    });
   }); // МЕДИА ТОЧКИ - ДОБАВЛЕНИЕ/СКРЫТИЕ КАРТОЧЕК НОВОСТИ, РЕКЛАМЫ
 
   if ($(window).width() < 1367) {

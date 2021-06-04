@@ -168,10 +168,14 @@ header {
 }
 
 .search__btn:hover {
-  background: #139cff;
+  background: #747c98;
 }
 
 .search__btn_active {
+  background: #139cff;
+}
+
+.search__btn_active:hover {
   background: #139cff;
 }
 
@@ -329,15 +333,27 @@ header {
   transition: all ease-out 0.3s;
 }
 
-.language__btn::after {
+.language {
+  position: relative;
+}
+
+.language::after {
   content: url(../img/arrow-bottom.svg);
   display: block;
   width: 15px;
   height: 15px;
   z-index: 999;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 12px;
+  right: 10px;
+}
+
+.language_active::after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: 24px;
+  right: 14px;
 }
 
 select {
@@ -345,7 +361,23 @@ select {
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background: url("../img/arrow-bottom.svg") no-repeat 93% 50%;
+  background-color: #747c98;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: url(../img/arrow-bottom.svg) no-repeat 60% 50% !important;
+  }
+  .language::after {
+    display: none;
+  }
+  .language_active::after {
+    display: none;
+  }
 }
 
 select::-ms-expand {
@@ -717,6 +749,10 @@ option[selected] {
   z-index: 10;
 }
 
+.main__slide-link:hover .main__slide-title {
+  color: #139cff;
+}
+
 .main__slide-title {
   width: 100%;
   font-weight: 600;
@@ -724,6 +760,9 @@ option[selected] {
   line-height: 165%;
   color: #2c3144;
   margin-bottom: 20px;
+  -webkit-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
 }
 
 .main__slide-text {
@@ -776,6 +815,10 @@ option[selected] {
           align-items: center;
 }
 
+.toggle__slide:hover {
+  background: #5c6178;
+}
+
 .toggle__title_start {
   font-size: 16px;
   line-height: 24px;
@@ -789,6 +832,10 @@ option[selected] {
   color: #2c3144;
   background: #ffffff;
   border-left: 10px solid #139cff !important;
+}
+
+.toggle__slide_active:hover {
+  background: white;
 }
 
 .toggle-slider .slick-slide {
@@ -1029,6 +1076,15 @@ option[selected] {
   line-height: 22px;
   letter-spacing: 0.1em;
   color: #747c98;
+  -webkit-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+
+.section-link:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .card {
@@ -2402,11 +2458,21 @@ option[selected] {
 .icon-network {
   width: 80px;
   height: 80px;
+  overflow: hidden;
 }
 
 .icon-network img {
   width: 100%;
   height: 100%;
+  -webkit-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+
+.icon-network:hover img {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .modal-copy {
