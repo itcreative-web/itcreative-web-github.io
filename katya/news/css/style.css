@@ -335,6 +335,7 @@ header {
 
 .language {
   position: relative;
+  cursor: pointer;
 }
 
 .language::after {
@@ -362,6 +363,7 @@ select {
   -ms-appearance: none;
   appearance: none;
   background-color: #747c98;
+  cursor: pointer;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
