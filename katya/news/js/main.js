@@ -14,8 +14,6 @@ $(document).ready(function () {
     slidesToScroll: 1,
     arrows: false,
     speed: 300,
-    autoplay: true,
-    autoplaySpeed: 2000,
     swipe: false,
     fade: false,
     asNavFor: '.toggle-slider_start',
@@ -33,7 +31,9 @@ $(document).ready(function () {
     responsive: [{
       breakpoint: 1367,
       settings: {
-        swipe: true
+        swipe: true,
+        autoplay: true,
+        autoplaySpeed: 7000
       }
     }, {
       breakpoint: 769,
