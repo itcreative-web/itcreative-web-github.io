@@ -14,6 +14,8 @@ $(document).ready(function () {
     slidesToScroll: 1,
     arrows: false,
     speed: 300,
+    autoplay: true,
+    autoplaySpeed: 2000,
     swipe: false,
     fade: false,
     asNavFor: '.toggle-slider_start',
@@ -270,7 +272,11 @@ $(document).ready(function () {
 
   if ($(window).height() < 870) {
     $(".menu").css("width", "270px");
-    $(".menu").mCustomScrollbar();
+    $(".menu").mCustomScrollbar({
+      mouseWheel: {
+        scrollAmount: 2000
+      }
+    });
   } // КНОПКА КОПИРОВАТЬ ССЫЛКУ
 
 
