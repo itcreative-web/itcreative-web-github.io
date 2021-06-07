@@ -254,6 +254,7 @@ header {
   -webkit-transition: all ease-out 0.3s;
   -o-transition: all ease-out 0.3s;
   transition: all ease-out 0.3s;
+  pointer-events: none;
 }
 
 .city__btn_active {
@@ -347,6 +348,7 @@ header {
   position: absolute;
   top: 12px;
   right: 10px;
+  pointer-events: none;
 }
 
 .language_active::after {
