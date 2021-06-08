@@ -13,6 +13,7 @@ $(function () {
 
 	AOS.init({
 		disable : 'mobile',
+		once: true,
 		// offset : -100,
 	});
 
