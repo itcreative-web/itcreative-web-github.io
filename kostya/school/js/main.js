@@ -6,9 +6,9 @@ $(function () {
 		items: 1,
 		dots: true,
 		margin: 30,
-		// autoplay:true,
-		// autoplayTimeout: 4000,
-		// autoplayHoverPause: true,
+		autoplay:true,
+		autoplayTimeout: 4000,
+		autoplayHoverPause: true,
 	});
 
 	AOS.init({
