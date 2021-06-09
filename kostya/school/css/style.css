@@ -1965,6 +1965,9 @@ body {
     z-index: 10000;
     overflow: hidden;
   }
+  .site__header.active .header__wrapper{
+    height: 100vh;
+  }
   .site__header.active .site__menu {
     opacity: 1;
     visibility: visible;
