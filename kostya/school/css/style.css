@@ -1,6 +1,7 @@
-@font-face {
+/* @font-face {
   font-family: Raleway;
   font-weight: normal;
+  font-style: normal;
   src: url("../fonts/Raleway-Regular.eot");
   src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.ttf") format("truetype");
 }
@@ -8,6 +9,7 @@
 @font-face {
   font-family: Raleway;
   font-weight: 600;
+  font-style: normal;
   src: url("../fonts/Raleway-SemiBold.eot");
   src: url("../fonts/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-SemiBold.woff2") format("woff2"), url("../fonts/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway-SemiBold.ttf") format("truetype");
 }
@@ -15,6 +17,7 @@
 @font-face {
   font-family: Raleway;
   font-weight: bold;
+  font-style: normal;
   src: url("../fonts/Raleway-Bold.eot");
   src: url("../fonts/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.ttf") format("truetype");
 }
@@ -25,7 +28,7 @@
   font-weight: bold;
   src: url("../fonts/Raleway-ExtraBoldItalic.eot");
   src: url("../fonts/Raleway-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Raleway-ExtraBoldItalic.woff") format("woff"), url("../fonts/Raleway-ExtraBoldItalic.ttf") format("truetype");
-}
+} */
 
 *, *::before, *::after {
   margin: 0;
@@ -1942,6 +1945,7 @@ body {
     border: none;
     height: 85px;
     transition: 0.3s ease;
+    overflow: auto;
   }
   .site__header .container {
     width: 100%;
@@ -1959,6 +1963,7 @@ body {
   .site__header.active {
     height: 100vh;
     z-index: 10000;
+    overflow: hidden;
   }
   .site__header.active .site__menu {
     opacity: 1;
@@ -1969,6 +1974,9 @@ body {
     opacity: 1;
     visibility: visible;
     height: 52px;
+  }
+  .site__header.active .header__left {
+    margin-bottom: 20px;
   }
   .menu__link {
     font-weight: normal;
@@ -1998,7 +2006,7 @@ body {
     flex-direction: column;
     -webkit-align-items: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   .header__name {
     width: 100%;
