@@ -65,9 +65,11 @@ $(function () {
 			if($(this).hasClass("active")) {
 				$(this).removeClass("active");
 				$(".site__header").removeClass("active")
+				$("body").css("overflow", "auto");
 			} else {
 				$(this).addClass("active");
 				$(".site__header").addClass("active")
+				$("body").css("overflow", "hidden");
 			}
 		})
 		
@@ -75,6 +77,7 @@ $(function () {
 			if($(window).width() <= 1080) {
 				$(".burger__menu").removeClass("active")
 				$(".site__header").removeClass("active")
+				$("body").css("overflow", "auto");
 			}
 		})
 		

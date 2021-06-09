@@ -1945,7 +1945,6 @@ body {
     border: none;
     height: 85px;
     transition: 0.3s ease;
-    overflow: auto;
   }
   .site__header .container {
     width: 100%;
@@ -1963,7 +1962,10 @@ body {
   .site__header.active {
     height: 100vh;
     z-index: 10000;
-    overflow: hidden;
+  }
+  .site__header.active body{
+    height: 100vh;
+    z-index: 10000;
   }
   .site__header.active .header__wrapper{
     height: 100vh;
