@@ -1,26 +1,30 @@
 @font-face {
   font-family: Raleway;
   font-weight: normal;
-  src: url("../fonts/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.eot");
+  src: url("../fonts/Raleway-Regular.eot");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: Raleway;
   font-weight: 600;
-  src: url("../fonts/Raleway-SemiBold.woff2") format("woff2"), url("../fonts/Raleway-SemiBold.woff") format("woff2"), url("../fonts/Raleway-SemiBold.eot");
+  src: url("../fonts/Raleway-SemiBold.eot");
+  src: url("../fonts/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-SemiBold.woff2") format("woff2"), url("../fonts/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: Raleway;
   font-weight: bold;
-  src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.eot");
+  src: url("../fonts/Raleway-Bold.eot");
+  src: url("../fonts/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: Raleway;
   font-style: italic;
   font-weight: bold;
-  src: url("../fonts/Raleway-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Raleway-ExtraBoldItalic.woff") format("woff"), url("../fonts/Raleway-ExtraBoldItalic.eot");
+  src: url("../fonts/Raleway-ExtraBoldItalic.eot");
+  src: url("../fonts/Raleway-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Raleway-ExtraBoldItalic.woff") format("woff"), url("../fonts/Raleway-ExtraBoldItalic.ttf") format("truetype");
 }
 
 *, *::before, *::after {
@@ -759,12 +763,16 @@ body {
   width: 100%;
   height: 215px;
   background: #F3B64D;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
+  position: relative;
+}
+
+.question__section .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: auto;
 }
 
 .question__wrapper {
@@ -1731,7 +1739,7 @@ body {
     margin: 0 20px 50px;
   }
   .question__section {
-    height: auto;
+    height: 250px;
     padding: 50px 0;
   }
   .question__wrapper {
@@ -1917,6 +1925,12 @@ body {
   }
   .contact__block {
     margin-bottom: 20px;
+  }
+  .question__form {
+    min-width: 100%;
+  }
+  .input {
+    width: 340px;
   }
 }
 
@@ -2155,6 +2169,9 @@ body {
     -webkit-align-items: center;
     align-items: center;
   }
+  .input {
+    width: 371px;
+  }
   .input__wrapper {
     margin-bottom: 20px;
   }
@@ -2262,6 +2279,10 @@ body {
     position: absolute;
     bottom: -26px;
     right: 0;
+  }
+  .question__section {
+    height: 350px;
+    padding: 50px 0;
   }
 }
 
@@ -2469,9 +2490,9 @@ body {
   }
   .details__main-title {
     position: absolute;
-    top: -120px;
+    top: -110px;
     left: 0;
-    font-size: 36px;
+    font-size: 32px;
   }
   .details__photo-wrapper {
     width: 104vw;
@@ -2648,9 +2669,14 @@ body {
   .list__column-right {
     width: 113%;
   }
+  .airplane {
+    bottom: -35px;
+    left: -5px;
+    width: 90vw;
+  }
   .airplane__one {
     position: absolute;
-    bottom: 12px;
+    bottom: 30px;
     left: 69vw;
     z-index: -1;
     width: 60px;
@@ -2665,7 +2691,7 @@ body {
     height: 212vw;
   }
   .airplane {
-    bottom: -65px;
+    bottom: -40px;
     left: -15px;
     width: 102vw;
   }
@@ -2747,7 +2773,7 @@ body {
   }
   .airplane__one {
     position: absolute;
-    bottom: -3px;
+    bottom: 26px;
     left: 75vw;
     z-index: -1;
     width: 60px;
