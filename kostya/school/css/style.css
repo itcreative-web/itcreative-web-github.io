@@ -2117,22 +2117,26 @@ body {
   }
   .slide {
     width: 374px;
-    height: 200px;
+    height: 220px;
+  }
+  .owl-theme .owl-dots, .owl-theme .owl-nav {
+    text-align: center;
+    margin-top: 0px;
   }
   .slide__img {
     position: absolute;
     top: 0;
     left: 0;
     width: auto;
-    height: 80px;
+    height: 70px;
   }
   .slide__title {
-    padding-left: 110px;
+    padding-left: 90px;
     padding-top: 5px;
     margin-bottom: 18px;
   }
   .slide__text {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.4;
   }
   .owl-theme .owl-nav {
