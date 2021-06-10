@@ -856,7 +856,7 @@ body {
   .header__blockquote {
     margin-bottom: 4vw;
     font-size: 28px;
-    width: 300px;
+    width: 100%;
   }
   .header__btns-block {
     margin-top: 7vw;
@@ -1045,13 +1045,13 @@ body {
 
 @media (max-width: 412px) {
   .information__text {
-    font-size: 15px;
+    font-size: 14px;
   }
   .right__container-1 {
-    top: 360vw;
+    top: 1435px;
   }
   .right__container-2 {
-    top: 675vw;
+    top: 2668px;
   }
 }
 
