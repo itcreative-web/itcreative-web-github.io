@@ -1043,9 +1043,24 @@ body {
   }
 }
 
+@media (max-width: 412px) {
+  .information__text {
+    font-size: 15px;
+  }
+  .right__container-1 {
+    top: 360vw;
+  }
+  .right__container-2 {
+    top: 675vw;
+  }
+}
+
 @media (max-width: 393px) {
   .information__blockquot-mobile {
     font-size: 6vw;
+  }
+  .information__text {
+    font-size: 4vw;
   }
   .right__container-1 {
     top: 388vw;
