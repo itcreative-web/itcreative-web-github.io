@@ -720,7 +720,7 @@ body {
     position: relative;
   }
   .information__blockquot {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 30px;
   }
   .photo__1 {
@@ -1025,11 +1025,11 @@ body {
     margin-bottom: 585px;
   }
   .right__container-2 {
-    top: 702vw;
+    top: 719vw;
   }
   .player__wrapper {
     width: 100vw;
-    height: 235px;
+    height: 300px;
     margin: -20px;
     margin-bottom: 600px;
   }
@@ -1047,8 +1047,11 @@ body {
   .information__blockquot-mobile {
     font-size: 6vw;
   }
+  .right__container-1 {
+    top: 388vw;
+  }
   .right__container-2 {
-    top: 722vw;
+    top: 740vw;
   }
   .information__block {
     margin-bottom: 660px;
@@ -1060,7 +1063,7 @@ body {
     top: 388vw;
   }
   .right__container-2 {
-    top: 734vw;
+    top: 756vw;
   }
 }
 
@@ -1068,9 +1071,12 @@ body {
   .site__footer {
     height: 150px;
   }
+  .right__container-2 {
+    top: 757vw;
+  }
   .photo__1 {
     top: -22vw;
-    right: -37vw;
+    right: -40vw;
     width: 100vw;
   }
 }
