@@ -3241,6 +3241,9 @@ body {
     top: -80px;
     right: -70px;
   }
+  .slide__img {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 414px) {
@@ -3265,10 +3268,10 @@ body {
   }
   .header__title-2 {
     margin-bottom: 160px;
-    font-size: 8vw;
+    font-size: 9vw;
   }
   .sale {
-    top: 136vw;
+    top: 139vw;
   }
   .site__header {
     height: 220vw;
@@ -3290,6 +3293,9 @@ body {
   }
   .card__color-left {
     padding: 0 15px;
+  }
+  .card__color-text {
+    font-size: 19px;
   }
   .site__footer {
     width: 100%;
