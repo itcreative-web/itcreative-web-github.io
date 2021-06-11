@@ -999,6 +999,13 @@ p {
   .btn-primary:hover:after {
     opacity: 1; }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .btn-primary:after {
+    display: none; }
+  .btn-primary:hover {
+    -webkit-box-shadow: 0 3px 15px 10px rgba(255, 0, 213, 0.1);
+            box-shadow: 0 3px 15px 10px rgba(255, 0, 213, 0.1); } }
+
 section {
   padding: 60px 0; }
 
@@ -2147,7 +2154,8 @@ section {
 
 @media (max-width: 1199px) {
   .about__item .green-headline {
-    font-size: 72px;
+    font-size: 72px; }
+  .about__item .head {
     margin-bottom: 10px; }
   .about--services .about__item .green-headline {
     font-size: 50px; }
@@ -2174,6 +2182,7 @@ section {
   .about-content {
     display: block; }
   .about__item {
+    margin-top: 30px;
     margin-bottom: 30px; }
   .about .col {
     width: 100%; } }
@@ -2194,7 +2203,7 @@ section {
 
 @media (max-width: 413px) {
   .about__item .head .green-headline {
-    font-size: 50px; }
+    font-size: 48px; }
   .about__item .head .description {
     font-size: 20px; }
   .about--services .about__item .green-headline {
@@ -3921,7 +3930,9 @@ input {
 
 @media (max-width: 585px) {
   .price-info-items {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+  .price-info h2 {
+    text-align: center; } }
 
 @media (max-width: 480px) {
   .price-info-items {
