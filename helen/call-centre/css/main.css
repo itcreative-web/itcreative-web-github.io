@@ -3161,6 +3161,8 @@ section {
     font-size: 18px; } }
 
 @media (max-width: 585px) {
+  .prices-steps {
+    display: block; }
   .prices-steps .step-item {
     width: 75%;
     margin-left: auto;
