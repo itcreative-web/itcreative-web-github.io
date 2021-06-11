@@ -323,6 +323,10 @@ body {
   flex-direction: column;
 }
 
+.right__container-mobile {
+  display: none;
+}
+
 .advert__wrapper {
   width: 100%;
   height: 250px;
@@ -905,10 +909,22 @@ body {
 
 @media (max-width: 480px) {
   .right__container-1 {
-    top: 188vw;
+    display: none;
   }
   .right__container-2 {
-    top: 376vw;
+    display: none;
+  }
+  .right__container-mobile {
+    display: block;
+    position: static;
+    -webkit-transform: none;
+    transform: none;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .photo__2 {
+    width: 100%;
+    margin-bottom: 30px;
   }
   .advert__block {
     width: 100%;
@@ -964,6 +980,12 @@ body {
   .advert__block {
     margin-bottom: 20px;
   }
+  .player__wrapper {
+    width: 100vw;
+    height: 300px;
+    margin: -20px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 414px) {
@@ -1017,21 +1039,8 @@ body {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
-  .right__container-1 {
-    top: 385vw;
-  }
   .photo__2 {
     width: 100%;
-    margin-bottom: 585px;
-  }
-  .right__container-2 {
-    top: 719vw;
-  }
-  .player__wrapper {
-    width: 100vw;
-    height: 300px;
-    margin: -20px;
-    margin-bottom: 600px;
   }
   .information__block {
     margin-bottom: 158vw;
@@ -1041,17 +1050,8 @@ body {
     right: -36vw;
     width: 110vw;
   }
-}
-
-@media (max-width: 412px) {
-  .information__text {
-    font-size: 14px;
-  }
-  .right__container-1 {
-    top: 1435px;
-  }
-  .right__container-2 {
-    top: 2668px;
+  .photo__3 {
+    margin-top: 10px;
   }
 }
 
@@ -1062,23 +1062,14 @@ body {
   .information__text {
     font-size: 4vw;
   }
-  .right__container-1 {
-    top: 388vw;
-  }
-  .right__container-2 {
-    top: 740vw;
-  }
   .information__block {
-    margin-bottom: 660px;
+    margin-bottom: 168vw;
   }
 }
 
 @media (max-width: 375px) {
-  .right__container-1 {
-    top: 388vw;
-  }
-  .right__container-2 {
-    top: 756vw;
+  .information__block {
+    margin-bottom: 175vw;
   }
 }
 
@@ -1086,13 +1077,13 @@ body {
   .site__footer {
     height: 150px;
   }
-  .right__container-2 {
-    top: 757vw;
-  }
   .photo__1 {
     top: -22vw;
     right: -40vw;
     width: 100vw;
+  }
+  .information__block {
+    margin-bottom: 180vw;
   }
 }
 
@@ -1102,12 +1093,6 @@ body {
   }
   .video__section {
     height: 50vw;
-  }
-  .right__container-1 {
-    top: 398vw;
-  }
-  .right__container-2 {
-    top: 780vw;
   }
   .advert__row {
     width: 41vw;
@@ -1140,5 +1125,8 @@ body {
     bottom: -20vw;
     right: -40vw;
     width: 110vw;
+  }
+  .information__block {
+    margin-bottom: 208vw;
   }
 }
