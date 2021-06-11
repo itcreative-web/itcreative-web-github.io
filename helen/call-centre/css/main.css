@@ -1758,6 +1758,8 @@ section {
     left: 620px; } }
 
 @media (max-width: 1199px) {
+  .promo__subtitle {
+    max-width: 528px; }
   .promo-content {
     width: 585px;
     min-height: 400px; }
