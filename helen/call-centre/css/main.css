@@ -3055,6 +3055,9 @@ section {
   margin-left: auto;
   margin-right: auto; }
 
+.service-price {
+  position: relative; }
+
 .prices-steps {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3651,20 +3654,20 @@ input {
             justify-content: center;
     margin-top: 10px; } }
 
-.lorem h2,
-.lorem .subtitle {
+.um-info h2,
+.um-info .subtitle {
   text-align: left; }
 
-.lorem-inner {
+.um-info-inner {
   position: relative;
   width: 555px;
   margin-left: auto; }
-  .lorem-inner .lorem-images {
+  .um-info-inner .um-info-images {
     position: absolute;
     top: 50px;
     left: -705px;
     width: 638px; }
-    .lorem-inner .lorem-images:before {
+    .um-info-inner .um-info-images:before {
       position: absolute;
       top: 0;
       left: 0;
@@ -3677,22 +3680,22 @@ input {
       -webkit-transform: rotate(8deg);
           -ms-transform: rotate(8deg);
               transform: rotate(8deg); }
-    .lorem-inner .lorem-images img {
+    .um-info-inner .um-info-images img {
       position: relative;
       display: block;
       width: 100%;
       z-index: 20;
       border-radius: 32px; }
 
-.lorem-list {
+.um-info-list {
   margin-top: 30px; }
-  .lorem-list li {
+  .um-info-list li {
     position: relative;
     padding-left: 47px;
     font-size: 20px;
     line-height: 130%;
     margin-bottom: 22px; }
-    .lorem-list li:before {
+    .um-info-list li:before {
       position: absolute;
       top: calc(50% - 16px);
       left: 0;
@@ -3704,22 +3707,22 @@ input {
       background: #E2F6E7 url("../images/icon-done-active.png") center no-repeat; }
 
 @media (max-width: 1536px) {
-  .lorem-inner .lorem-images {
+  .um-info-inner .um-info-images {
     left: -658px;
     width: 608px; } }
 
 @media (max-width: 1365px) {
-  .lorem-inner .lorem-images {
+  .um-info-inner .um-info-images {
     top: 70px;
     left: -611px;
     width: 568px; } }
 
 @media (max-width: 1199px) {
-  .lorem-inner {
+  .um-info-inner {
     width: 100%; }
-  .lorem h2, .lorem .subtitle {
+  .um-info h2, .um-info .subtitle {
     text-align: center; }
-  .lorem-inner .lorem-images {
+  .um-info-inner .um-info-images {
     position: relative;
     top: auto;
     right: auto;
@@ -3728,7 +3731,7 @@ input {
     margin: 70px auto; } }
 
 @media (max-width: 1199px) and (min-width: 768px) {
-  .lorem-list {
+  .um-info-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3737,16 +3740,16 @@ input {
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    .lorem-list li {
+    .um-info-list li {
       width: 49%; } }
 
 @media (max-width: 767px) {
-  .lorem-inner .lorem-images {
+  .um-info-inner .um-info-images {
     width: 94%;
     margin: 60px auto; } }
 
 @media (max-width: 585px) {
-  .lorem-inner .lorem-images {
+  .um-info-inner .um-info-images {
     margin: 9vw auto; } }
 
 .taking-orders {
