@@ -69,6 +69,8 @@ $(function () {
 		swipe: true,
 		showCaption: false,
 		maxHeight: 1200,
+		speedIn: 0,
+		speedOut: 0,
 	});
 
 	function modal() {
@@ -152,7 +154,7 @@ $(function () {
 
 	addVideoOnPage(".video");
 
-	$("body").on('click', '[href*="#"]', function (e) {
+	$('[href*="#"]').on('click', function (e) {
 		var fixedOffset = 0;
 		if ($(document).width() <= 768) {
 			fixedOffset = 300;

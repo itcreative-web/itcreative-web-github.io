@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NEWS</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    /> -->
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="overflow">
+      <header>
+        <div class="header__container">
+          <form class="search">
+            <input
+              class="search__input"
+              type="text"
+              placeholder="Введите ваш запрос"
+            />
+            <button class="search__btn" type="submit">Поиск</button>
+          </form>
+          <form class="city">
+            <button class="city__btn" type="submit">
+              Одесса <img src="img/arrow-bottom.svg" alt="arrow" />
+            </button>
+            <input
+              class="city__input"
+              type="text"
+              placeholder="Введите ваш город"
+            />
+          </form>
+          <form class="language">
+            <select
+              class="language__btn"
+              onchange="window.location.href=this.options[this.selectedIndex].value"
+            >
+              <option class="language__item" value="#ru">Рус</option>
+              <option class="language__item" value="#ukr">Укр</option>
+              <option class="language__item" value="#eng">Eng</option>
+            </select>
+          </form>
+        </div>
+        <div class="header__container header__container_mobile">
+          <a href="index.html" class="logo-mobile">
+            <img src="img/logo_white.png" alt="logo" />
+          </a>
+          <div class="btn-menu">
+            <div class="line first__line"></div>
+            <div class="line second__line"></div>
+            <div class="line third__line"></div>
+          </div>
+        </div>
+      </header>
+      <div class="menu">
+        <a href="index.html" class="logo logo_link">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+        <a href="#" class="logo logo_btn">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+        <div class="menu__wrapper">
+          <div class="menu__list">
+            <a href="index.html" class="menu__item menu__item_active"
+              ><p>Главная</p></a
+            >
+            <a href="section.html" class="menu__item"><p>Политика</p></a>
+            <a href="section.html" class="menu__item"><p>Экономика</p></a>
+            <a href="section.html" class="menu__item"><p>Шоу-бизнес</p></a>
+            <a href="section.html" class="menu__item"><p>Спорт</p></a>
+            <a href="section.html" class="menu__item"><p>Здоровье</p></a>
+            <a href="section.html" class="menu__item"><p>Общество</p></a>
+            <a href="section.html" class="menu__item"><p>Полезные советы</p></a>
+            <a href="section.html" class="menu__item"><p>Интересное</p></a>
+            <div class="social-networks">
+              <a class="social-link" href="#fb"
+                ><img src="img/facebook.png" alt="fb"
+              /></a>
+              <a class="social-link" href="#insta"
+                ><img src="img/instagram.png" alt="insta"
+              /></a>
+              <a class="social-link" href="#tl"
+                ><img src="img/telegram.png" alt="tl"
+              /></a>
+            </div>
+          </div>
+
+          <div class="about__list">
+            <a class="about__link about__link_active" href="advertising.html"
+              >Реклама в интернете</a
+            >
+            <a class="about__link" href="confidentiality.html"
+              >Политика конфиденциальности</a
+            >
+            <a class="about__link" href="#contacts">Контакты</a>
+            <p class="menu__year">© 2021</p>
+          </div>
+        </div>
+      </div>
+      <section class="article__main-content">
+        <div class="container article__container">
+          <div class="advertising">
+            <h3 class="article__title">Аудиторія та рекламні можливості</h3>
+            <div class="advertising__list">
+              <p class="advertising__item">&#8226; Щотижня 60 млн. показів</p>
+              <p class="advertising__item">
+                &#8226; Щотижня 11 млн. унікальных користувачів
+              </p>
+              <p class="advertising__item">
+                &#8226; Преміум баннер 300х250/300х600
+              </p>
+              <p class="advertising__item">
+                &#8226; Частка української аудиторії: 94%
+              </p>
+            </div>
+            <h3 class="article__title">Форма обратной связи</h3>
+            <form class="feedback" action="#">
+              <div class="feedback__wrapper">
+                <div class="form-group">
+                  <input
+                    class="feedback__input"
+                    type="text"
+                    name="name"
+                    placeholder="Ваше имя"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    class="feedback__input"
+                    type="tel"
+                    name="phone"
+                    placeholder="Номер телефона"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    class="feedback__input"
+                    type="email"
+                    name="email"
+                    placeholder="Электронная почта"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="feedback__text"
+                  name="info"
+                  placeholder="Дополнительная информация"
+                  required
+                ></textarea>
+              </div>
+              <div class="wrapper-captcha">
+                <!-- добавление элемента div -->
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6KepjAsTFFFFFFMqccY0ZiGqc3TEd3YVxo8cHsGX"
+                ></div>
+
+                <!-- элемент для вывода ошибок -->
+                <div class="text-danger" id="recaptchaError"></div>
+              </div>
+
+              <div class="form-group submite__wrapper">
+                <button class="feedback__btn" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="js/jq.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/lazysizes.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
