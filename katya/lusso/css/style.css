@@ -3003,8 +3003,8 @@ html[xmlns] .input-file-row-1 {
     text-align: left;
   }
   .product .price {
-    width: 290px;
-    min-width: 290px;
+    width: 320px;
+    min-width: 320px;
   }
   .product2 .product__shoe1 {
     left: 280px;
@@ -4087,7 +4087,10 @@ html[xmlns] .input-file-row-1 {
   .end .main-title {
     font-size: 48px;
     line-height: 120%;
-    width: 280px;
+    width: 100%;
+  }
+  .end .main-title span {
+    display: inline-block;
   }
   .end__abs-bg1 {
     left: 50px;
