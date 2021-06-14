@@ -1827,6 +1827,9 @@ section {
 @media (max-width: 991px) {
   .promo--services .promo-content {
     min-height: initial; }
+  .promo__subtitle {
+    max-width: 372px;
+    margin-bottom: 20px; }
   .promo-content {
     width: 435px;
     min-height: 350px; }
@@ -1917,7 +1920,8 @@ section {
   .promo__subtitle {
     font-size: 26px;
     text-align: right;
-    max-width: 360px;
+    max-width: initial;
+    width: 90%;
     margin-left: auto; }
   .promo .btn-primary {
     margin-left: auto;
