@@ -3214,7 +3214,7 @@ body {
   }
   .galary__title {
     font-size: 29px;
-    padding: 40px 15px 0;
+    padding: 30px 15px 0;
   }
   .slide {
     width: 300px;
@@ -3330,6 +3330,55 @@ body {
   }
   .footer__info .container {
     font-size: 14px;
+  }
+  .advantage__text {
+    font-size: 15px;
+  }
+  .sprey__title {
+    width: 220px;
+    margin-bottom: 324px;
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 412px) {
+  .sprey__price {
+    width: 290px;
+  }
+  .sprey__price .new__price {
+    font-size: 34px;
+  }
+  .card {
+    margin-top: 70px;
+  }
+  .card__info {
+    font-size: 17px;
+    line-height: 1.2;
+  }
+  .card__info span {
+    line-height: 1.2;
+  }
+  .card__galary {
+    bottom: auto;
+    top: 825px;
+  }
+  .card__3 .card__galary {
+    bottom: auto;
+    top: 768px;
+  }
+  .card__size {
+    bottom: 10px;
+    left: -16px;
+    width: 60px;
+  }
+  .old__price {
+    font-size: 22px;
+  }
+  .new__price {
+    font-size: 34px;
+  }
+  .card__title {
+    width: 280px;
   }
 }
 
