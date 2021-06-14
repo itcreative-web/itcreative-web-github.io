@@ -2825,7 +2825,7 @@ body {
   .card__color-block {
     position: absolute;
     top: -255px;
-    left: 0;
+    left: -95px;
     width: auto;
   }
   .site__footer {
