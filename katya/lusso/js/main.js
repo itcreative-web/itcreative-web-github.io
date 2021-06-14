@@ -65,6 +65,7 @@ $(document).ready(function () {
       });
       $(".modal__name").val("");
       $(".modal__text").val("");
+      $("#image").attr('src', "img/6_add-photo.png");
       $(".error_empty").css("display", "none");
     }
   }); // ЗАГРУЗКА ВИДЕО ПРИ КЛИКЕ ПОЛЬЗОВАТЕЛЯ
@@ -252,4 +253,21 @@ $(document).ready(function () {
   //     window.addEventListener("resize", lazyload);
   //     window.addEventListener("orientationChange", lazyload);
   //   }
+  // ДОБАВЛЕНИЕ ФОТО В ОТЗЫВ
+
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        $('#image').attr('src', e.target.result);
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+  $("#imgInput").change(function () {
+    readURL(this);
+  });
 });
