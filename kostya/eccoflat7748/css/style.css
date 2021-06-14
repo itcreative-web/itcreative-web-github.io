@@ -3345,11 +3345,17 @@ body {
   .sprey__price {
     width: 290px;
   }
+  .sprey__price .old__price {
+    font-size: 20px;
+  }
   .sprey__price .new__price {
-    font-size: 34px;
+    font-size: 32px;
   }
   .card {
     margin-top: 70px;
+  }
+  .card__title {
+    line-height: 1.2;
   }
   .card__info {
     font-size: 17px;
@@ -3367,18 +3373,31 @@ body {
     top: 768px;
   }
   .card__size {
-    bottom: 10px;
-    left: -16px;
-    width: 60px;
+    bottom: 6px;
+    left: -21px;
+    width: 70px;
   }
   .old__price {
-    font-size: 22px;
+    font-size: 20px;
   }
   .new__price {
-    font-size: 34px;
+    font-size: 32px;
   }
   .card__title {
     width: 280px;
+    font-size: 40px;
+  }
+  .card__left {
+    margin-bottom: 700px;
+  }
+  .card__delivery {
+    font-size: 12px;
+  }
+  .card__color-left {
+    top: -370px;
+  }
+  .price span {
+    word-wrap: normal;
   }
 }
 
