@@ -872,7 +872,7 @@ select {
 
 .sprey .price {
   margin-top: 50px;
-  width: 295px;
+  width: 320px;
 }
 
 .sprey .old-price {
@@ -2950,7 +2950,7 @@ html[xmlns] .input-file-row-1 {
 
 @media (max-width: 500px) {
   .sprey .price {
-    min-width: 295px;
+    min-width: 320px;
   }
 }
 
@@ -4092,9 +4092,12 @@ html[xmlns] .input-file-row-1 {
   .end .main-title span {
     display: inline-block;
   }
+  .end .price {
+    width: 320px;
+  }
   .end__abs-bg1 {
     left: 50px;
-    top: 150px;
+    top: 165px;
     -webkit-transform: scale(1.5);
         -ms-transform: scale(1.5);
             transform: scale(1.5);
