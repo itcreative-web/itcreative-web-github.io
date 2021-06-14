@@ -4070,6 +4070,12 @@ html[xmlns] .input-file-row-1 {
   }
 }
 
+@media (max-width: 550px) {
+  .end .main-title {
+    font-size: 66px;
+  }
+}
+
 @media (max-width: 480px) {
   .end .main-title {
     font-size: 48px;
