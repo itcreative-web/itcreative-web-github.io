@@ -3370,9 +3370,23 @@ body {
     margin-bottom: 324px;
     font-size: 34px;
   }
-}
-
-@media (max-width: 412px) {
+  .card__size {
+    bottom: -2px;
+    left: -25px;
+    width: 80px;
+    word-wrap: normal;
+    font-size: 13px;
+    display: inline-block;
+  }
+  .old__price {
+    font-size: 20px;
+  }
+  .new__price {
+    font-size: 32px;
+  }
+  .card__price .new__price {
+    font-size: 30px;
+  }
   .sprey__price {
     width: 300px;
   }
@@ -3382,6 +3396,18 @@ body {
   .sprey__price .new__price {
     font-size: 32px;
   }
+  .card__title {
+    width: 350px;
+    font-size: 38px;
+  }
+  .price span {
+    word-wrap: normal;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 412px) {
   .card {
     margin-top: 70px;
   }
@@ -3395,34 +3421,11 @@ body {
   .card__size-block {
     height: 90px;
   }
-  .card__size {
-    bottom: 10px;
-    left: -25px;
-    width: 80px;
-    word-wrap: normal;
-    font-size: 13px;
-    display: inline-block;
-  }
-  .old__price {
-    font-size: 20px;
-  }
-  .new__price {
-    font-size: 32px;
-  }
-  .card__title {
-    width: 350px;
-    font-size: 38px;
-  }
   .card__delivery {
     font-size: 12px;
   }
   .card__color-left {
     top: -370px;
-  }
-  .price span {
-    word-wrap: normal;
-    -webkit-flex-shrink: 0;
-    flex-shrink: 0;
   }
   .card__2 .card__boot-2 {
     top: 200px;
@@ -3433,12 +3436,6 @@ body {
     top: 70px;
     margin-left: 50px;
     width: 270px;
-  }
-  .card__price .new__price {
-    font-size: 30px;
-  }
-  .card__right {
-    width: 290px;
   }
 }
 
