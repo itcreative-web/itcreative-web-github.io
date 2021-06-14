@@ -3392,12 +3392,16 @@ body {
   .card__info span {
     line-height: 1.2;
   }
+  .card__size-block {
+    height: 90px;
+  }
   .card__size {
-    bottom: 6px;
-    left: -21px;
-    width: 70px;
+    bottom: 10px;
+    left: -25px;
+    width: 80px;
     word-wrap: normal;
     font-size: 13px;
+    display: inline-block;
   }
   .old__price {
     font-size: 20px;
@@ -3406,7 +3410,7 @@ body {
     font-size: 32px;
   }
   .card__title {
-    width: 280px;
+    width: 350px;
     font-size: 38px;
   }
   .card__delivery {
@@ -3417,6 +3421,8 @@ body {
   }
   .price span {
     word-wrap: normal;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
   }
   .card__2 .card__boot-2 {
     top: 200px;
@@ -3430,6 +3436,9 @@ body {
   }
   .card__price .new__price {
     font-size: 30px;
+  }
+  .card__right {
+    width: 290px;
   }
 }
 
@@ -3484,6 +3493,9 @@ body {
   }
   .card__color-text {
     font-size: 18px;
+  }
+  .card__right {
+    width: 280px;
   }
 }
 
@@ -3584,5 +3596,8 @@ body {
   }
   .card__color-text {
     font-size: 14px;
+  }
+  .card__title {
+    width: 100%;
   }
 }
