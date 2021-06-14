@@ -2948,6 +2948,12 @@ html[xmlns] .input-file-row-1 {
   z-index: 5;
 }
 
+@media (max-width: 500px) {
+  .sprey .price {
+    min-width: 295px;
+  }
+}
+
 @media (max-width: 480px) {
   .sprey {
     padding: 50px 25px;
@@ -2997,7 +3003,8 @@ html[xmlns] .input-file-row-1 {
     text-align: left;
   }
   .product .price {
-    width: 281px;
+    width: 290px;
+    min-width: 290px;
   }
   .product2 .product__shoe1 {
     left: 280px;
