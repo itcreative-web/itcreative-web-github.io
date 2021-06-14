@@ -709,56 +709,56 @@ body {
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/Ubuntu-Bold.woff2") format("woff2"), url("../fonts/Ubuntu-Bold.woff") format("woff"), url("../fonts/Ubuntu-Bold.ttf") format("truetype");
+  src: url("../../../../call-centre/build/fonts/Ubuntu-Bold.woff2") format("woff2"), url("../../../../call-centre/build/fonts/Ubuntu-Bold.woff") format("woff"), url("../../../../call-centre/build/fonts/Ubuntu-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/Ubuntu-Regular.woff2") format("woff2"), url("../fonts/Ubuntu-Regular.woff") format("woff"), url("../fonts/Ubuntu-Regular.ttf") format("truetype");
+  src: url("../../../../call-centre/build/fonts/Ubuntu-Regular.woff2") format("woff2"), url("../../../../call-centre/build/fonts/Ubuntu-Regular.woff") format("woff"), url("../../../../call-centre/build/fonts/Ubuntu-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/Ubuntu-MediumItalic.woff2") format("woff2"), url("../fonts/Ubuntu-MediumItalic.woff") format("woff"), url("../fonts/Ubuntu-MediumItalic.ttf") format("truetype");
+  src: url("../../../../call-centre/build/fonts/Ubuntu-MediumItalic.woff2") format("woff2"), url("../../../../call-centre/build/fonts/Ubuntu-MediumItalic.woff") format("woff"), url("../../../../call-centre/build/fonts/Ubuntu-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
   font-display: swap; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/Ubuntu-Medium.woff2") format("woff2"), url("../fonts/Ubuntu-Medium.woff") format("woff"), url("../fonts/Ubuntu-Medium.ttf") format("truetype");
+  src: url("../../../../call-centre/build/fonts/Ubuntu-Medium.woff2") format("woff2"), url("../../../../call-centre/build/fonts/Ubuntu-Medium.woff") format("woff"), url("../../../../call-centre/build/fonts/Ubuntu-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/Ubuntu-BoldItalic.woff2") format("woff2"), url("../fonts/Ubuntu-BoldItalic.woff") format("woff"), url("../fonts/Ubuntu-BoldItalic.ttf") format("truetype");
+  src: url("../../../../call-centre/build/fonts/Ubuntu-BoldItalic.woff2") format("woff2"), url("../../../../call-centre/build/fonts/Ubuntu-BoldItalic.woff") format("woff"), url("../../../../call-centre/build/fonts/Ubuntu-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
   font-display: swap; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/Ubuntu-Italic.woff2") format("woff2"), url("../fonts/Ubuntu-Italic.woff") format("woff"), url("../fonts/Ubuntu-Italic.ttf") format("truetype");
+  src: url("../../../../call-centre/build/fonts/Ubuntu-Italic.woff2") format("woff2"), url("../../../../call-centre/build/fonts/Ubuntu-Italic.woff") format("woff"), url("../../../../call-centre/build/fonts/Ubuntu-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
   font-display: swap; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/Ubuntu-LightItalic.woff2") format("woff2"), url("../fonts/Ubuntu-LightItalic.woff") format("woff"), url("../fonts/Ubuntu-LightItalic.ttf") format("truetype");
+  src: url("../../../../call-centre/build/fonts/Ubuntu-LightItalic.woff2") format("woff2"), url("../../../../call-centre/build/fonts/Ubuntu-LightItalic.woff") format("woff"), url("../../../../call-centre/build/fonts/Ubuntu-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
   font-display: swap; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/Ubuntu-Light.woff2") format("woff2"), url("../fonts/Ubuntu-Light.woff") format("woff"), url("../fonts/Ubuntu-Light.ttf") format("truetype");
+  src: url("../../../../call-centre/build/fonts/Ubuntu-Light.woff2") format("woff2"), url("../../../../call-centre/build/fonts/Ubuntu-Light.woff") format("woff"), url("../../../../call-centre/build/fonts/Ubuntu-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap; }
@@ -934,7 +934,7 @@ p {
     content: "";
     width: 30px;
     height: 30px;
-    background: #396DE3 url("../images/call.svg") center no-repeat;
+    background: #396DE3 url("../../../../call-centre/build/images/call.svg") center no-repeat;
     border-radius: 50%;
     -webkit-transition: 320ms;
     -o-transition: 320ms;
@@ -1032,7 +1032,7 @@ section {
   z-index: 50;
   width: 50px;
   height: 50px;
-  background: #396DE3 url(../images/call.svg) center no-repeat;
+  background: #396DE3 url(../../../../call-centre/build/images/call.svg) center no-repeat;
   background-size: 50%;
   border-radius: 50%;
   -webkit-animation: 2s animOrderBtn linear infinite;
@@ -1253,7 +1253,7 @@ section {
   margin-left: 15px;
   width: 16px;
   height: 16px;
-  background: url("../images/arrow.png") center no-repeat;
+  background: url("../../../../call-centre/build/images/arrow.png") center no-repeat;
   background-size: contain;
   cursor: pointer; }
 
@@ -1343,12 +1343,12 @@ section {
   right: 10px;
   width: 50px;
   height: 50px;
-  background: url("../images/menu-burger.png") center no-repeat;
+  background: url("../../../../call-centre/build/images/menu-burger.png") center no-repeat;
   -webkit-transition: 320ms;
   -o-transition: 320ms;
   transition: 320ms; }
   .mob-menu-open.opened {
-    background-image: url("../images/menu-burger-close.png"); }
+    background-image: url("../../../../call-centre/build/images/menu-burger-close.png"); }
 
 @media (max-width: 1365px) {
   .container {
@@ -1454,7 +1454,7 @@ section {
       content: " ";
       width: 1000px;
       height: 1000px;
-      background: url("../images/round-1.png") center no-repeat;
+      background: url("../../../../call-centre/build/images/round-1.png") center no-repeat;
       background-size: contain; }
     .header-nav.active {
       height: 100vh;
@@ -1545,7 +1545,7 @@ section {
     content: " ";
     width: 1000px;
     height: 1000px;
-    background: url("../images/round-1.png") center no-repeat;
+    background: url("../../../../call-centre/build/images/round-1.png") center no-repeat;
     background-size: contain; }
 
 .promo--price {
@@ -1654,7 +1654,7 @@ section {
   height: 334px; }
 
 .promo__subtitle {
-  max-width: 608px; }
+  max-width: 578px; }
 
 .promo__images--2 .oval {
   -webkit-transform: rotate(30deg);
@@ -1755,6 +1755,8 @@ section {
 @media (max-width: 1365px) {
   .promo__images {
     left: 97%; }
+  .promo__subtitle {
+    max-width: 548px; }
   .promo__images--1 {
     left: 81%; }
   .pm-bg-1 {
@@ -1766,7 +1768,7 @@ section {
 
 @media (max-width: 1199px) {
   .promo__subtitle {
-    max-width: 528px; }
+    max-width: 488px; }
   .promo-content {
     width: 585px;
     min-height: 400px; }
@@ -1904,7 +1906,7 @@ section {
     left: auto;
     right: auto;
     bottom: auto;
-    height: 393px;
+    height: 413px;
     margin-bottom: 10px; }
   .promo__images--1 .image {
     top: 0px;
@@ -2320,7 +2322,7 @@ section {
     content: "";
     width: 16px;
     height: 16px;
-    background: url("../images/check-icon.png") center no-repeat;
+    background: url("../../../../call-centre/build/images/check-icon.png") center no-repeat;
     background-size: contain; }
 
 .request-form-post {
@@ -2405,7 +2407,7 @@ section {
     content: "";
     width: 100%;
     height: 100%;
-    background: url("../images/map.png") center no-repeat;
+    background: url("../../../../call-centre/build/images/map.png") center no-repeat;
     background-size: contain; }
 
 @media (min-width: 992px) {
@@ -3458,7 +3460,7 @@ input {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: url("../images/like.png") center no-repeat;
+  background: url("../../../../call-centre/build/images/like.png") center no-repeat;
   background-size: 80%;
   z-index: 50; }
 
@@ -3530,13 +3532,13 @@ input {
     height: 32px;
     border-radius: 50%;
     border: 1px solid #00AF55;
-    background: #E2F6E7 url("../images/icon-done-active.png") center no-repeat; }
+    background: #E2F6E7 url("../../../../call-centre/build/images/icon-done-active.png") center no-repeat; }
   .tariff-list li.blocked {
     color: #999999; }
     .tariff-list li.blocked:before {
       background-color: #E3E3E3;
       border: 1px solid #999999;
-      background-image: url("../images/icon-done.png"); }
+      background-image: url("../../../../call-centre/build/images/icon-done.png"); }
 
 .tariff .btn-primary {
   color: #555;
@@ -3721,7 +3723,7 @@ input {
       height: 32px;
       border: 1px solid #00AF55;
       border-radius: 50%;
-      background: #E2F6E7 url("../images/icon-done-active.png") center no-repeat; }
+      background: #E2F6E7 url("../../../../call-centre/build/images/icon-done-active.png") center no-repeat; }
 
 @media (max-width: 1536px) {
   .um-info-inner .um-info-images {
