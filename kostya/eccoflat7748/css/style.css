@@ -280,7 +280,7 @@ body {
 }
 
 .header__price {
-  width: 290px;
+  width: 300px;
   height: auto;
   margin-bottom: 84px;
 }
@@ -301,9 +301,10 @@ body {
   font-weight: normal;
   font-size: 24px;
   line-height: 1;
-  text-align: center;
+  text-align: left;
   color: #FFFFFF;
   position: relative;
+  width: auto;
 }
 
 .old__price:before {
@@ -326,6 +327,7 @@ body {
   line-height: 1;
   text-align: center;
   color: #FBFF41;
+  width: auto;
 }
 
 .header__order-btn {
@@ -1114,6 +1116,16 @@ body {
   width: 280px;
 }
 
+.card__center {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 .card:before {
   content: "";
   width: 500px;
@@ -1384,7 +1396,7 @@ body {
   border-radius: 0px 50px 50px 0px;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -320px;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
@@ -2378,6 +2390,9 @@ body {
     left: auto;
     right: -230px;
   }
+  .card__color-block {
+    left: -250px;
+  }
   .card__left {
     margin-right: 453px;
   }
@@ -2560,6 +2575,10 @@ body {
   }
   .card {
     margin-top: 600px;
+  }
+  .card__color-block {
+    left: -145px;
+    bottom: 22px;
   }
   .card__bg {
     display: none;
@@ -3072,7 +3091,19 @@ body {
   }
   .card__left {
     width: 384px;
-    margin-bottom: 670px;
+    margin-bottom: 0px;
+  }
+  .card__center {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: 700px;
+    -webkit-transform: none;
+    transform: none;
+  }
+  .card__galary {
+    bottom: 10px;
   }
   .card:before {
     top: 420px;
@@ -3085,19 +3116,20 @@ body {
     width: 410px;
   }
   .card__boot-1 {
-    top: 405px;
+    top: 46px;
     margin-left: 50px;
     width: 270px;
   }
   .card__boot-2 {
-    top: 510px;
+    top: 170px;
     width: 370px;
     margin-left: 20px;
   }
   .card__color-block {
     position: absolute;
-    top: 750px;
+    top: auto;
     left: 0;
+    bottom: 220px;
     width: auto;
   }
   .card__color-left {
@@ -3110,13 +3142,13 @@ body {
     width: 260px;
   }
   .card__2 .card__boot-1 {
-    top: 392px;
+    top: 45px;
     margin-left: 50px;
     width: 270px;
   }
   .card__3 .card__color-block {
     position: absolute;
-    top: 690px;
+    top: 430px;
     left: 0;
     width: auto;
   }
@@ -3128,11 +3160,11 @@ body {
     top: 372px;
   }
   .card__3 .card__boot-1 {
-    top: 360px;
+    top: 80px;
     margin-left: 50px;
   }
   .card__3 .card__boot-2 {
-    top: 490px;
+    top: 212px;
     margin-left: 20px;
   }
   .review__section {
@@ -3289,7 +3321,6 @@ body {
   }
   .card__left {
     width: 100%;
-    margin-bottom: 670px;
   }
   .card__color-left {
     padding: 0 15px;
@@ -3343,7 +3374,7 @@ body {
 
 @media (max-width: 412px) {
   .sprey__price {
-    width: 290px;
+    width: 300px;
   }
   .sprey__price .old__price {
     font-size: 20px;
@@ -3354,9 +3385,6 @@ body {
   .card {
     margin-top: 70px;
   }
-  .card__title {
-    line-height: 1.2;
-  }
   .card__info {
     font-size: 17px;
     line-height: 1.2;
@@ -3364,18 +3392,12 @@ body {
   .card__info span {
     line-height: 1.2;
   }
-  .card__galary {
-    bottom: auto;
-    top: 825px;
-  }
-  .card__3 .card__galary {
-    bottom: auto;
-    top: 768px;
-  }
   .card__size {
     bottom: 6px;
     left: -21px;
     width: 70px;
+    word-wrap: normal;
+    font-size: 13px;
   }
   .old__price {
     font-size: 20px;
@@ -3385,10 +3407,7 @@ body {
   }
   .card__title {
     width: 280px;
-    font-size: 40px;
-  }
-  .card__left {
-    margin-bottom: 700px;
+    font-size: 38px;
   }
   .card__delivery {
     font-size: 12px;
@@ -3398,6 +3417,19 @@ body {
   }
   .price span {
     word-wrap: normal;
+  }
+  .card__2 .card__boot-2 {
+    top: 200px;
+    width: 370px;
+    margin-left: 20px;
+  }
+  .card__2 .card__boot-1 {
+    top: 70px;
+    margin-left: 50px;
+    width: 270px;
+  }
+  .card__price .new__price {
+    font-size: 30px;
   }
 }
 
@@ -3460,7 +3492,6 @@ body {
     top: -376px;
   }
   .card__boot-2 {
-    top: 510px;
     width: 400px;
     margin-left: 20px;
   }
@@ -3513,7 +3544,6 @@ body {
   }
   .card__galary {
     width: 290px;
-    bottom: 490px;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
   }
@@ -3522,21 +3552,17 @@ body {
     height: 65px;
   }
   .card__boot-1 {
-    top: 393px;
     margin-left: 40px;
     width: 250px;
   }
   .card__boot-2 {
-    top: 510px;
     width: 370px;
     margin-left: 20px;
   }
   .card__3 .card__boot-1 {
-    top: 375px;
     margin-left: 50px;
   }
   .card__3 .card__boot-2 {
-    top: 490px;
     margin-left: 20px;
   }
   .footer__title {
