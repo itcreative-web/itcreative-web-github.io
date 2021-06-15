@@ -3392,13 +3392,10 @@ html[xmlns] .input-file-row-1 {
     padding: 70px 15px 0px 15px;
   }
   .product__title {
-    margin-bottom: 150px;
+    margin-bottom: 190px;
     text-align: center;
     font-size: 32px;
     line-height: 120%;
-  }
-  .product__abs-figure {
-    top: 70px;
   }
   .form__size-wrapper {
     -webkit-align-self: flex-start;
@@ -3483,7 +3480,10 @@ html[xmlns] .input-file-row-1 {
     margin-bottom: 10px;
   }
   .product__abs-figure {
-    top: 75px;
+    top: 65px;
+  }
+  .product__abs-text {
+    top: -130px;
   }
 }
 
@@ -3551,7 +3551,13 @@ html[xmlns] .input-file-row-1 {
     width: 71%;
   }
   .product__abs-figure {
-    top: 90px;
+    top: 65px;
+  }
+  .product3 .product__abs-figure {
+    top: 100px;
+  }
+  .product__abs-text {
+    top: -140px;
   }
 }
 
@@ -3564,7 +3570,7 @@ html[xmlns] .input-file-row-1 {
             transform: scale(0.3);
   }
   .product__abs-text {
-    top: -125px;
+    top: -140px;
     font-size: 14px;
     line-height: 120%;
   }
