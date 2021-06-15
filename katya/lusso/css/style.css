@@ -2763,6 +2763,12 @@ html[xmlns] .input-file-row-1 {
   .video__wrapper {
     height: 243px;
   }
+  .video__left-bg_text {
+    font-size: 18px;
+    line-height: 120%;
+    left: -140px;
+    bottom: 170px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -3476,6 +3482,9 @@ html[xmlns] .input-file-row-1 {
   .product__gallery-img {
     margin-bottom: 10px;
   }
+  .product__abs-figure {
+    top: 75px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -3540,6 +3549,9 @@ html[xmlns] .input-file-row-1 {
     left: 130px;
     top: -10%;
     width: 71%;
+  }
+  .product__abs-figure {
+    top: 90px;
   }
 }
 
@@ -4194,6 +4206,9 @@ html[xmlns] .input-file-row-1 {
   .end .sale-proposition {
     max-width: none;
     width: 280px;
+  }
+  .end .main-title {
+    font-size: 40px;
   }
 }
 
