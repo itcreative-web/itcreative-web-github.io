@@ -1095,6 +1095,11 @@ body {
   cursor: pointer;
 }
 
+.card__foto-wrapper .card__img {
+  width: 100%;
+  height: auto;
+}
+
 .sprey {
   width: 100%;
   height: auto;
