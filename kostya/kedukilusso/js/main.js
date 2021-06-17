@@ -52,7 +52,7 @@ $(function () {
 		once: true,
 		// offset : -200,
 	});
-	
+
 
 	$(window).resize(function() {
 		AOS.refresh();
@@ -60,6 +60,7 @@ $(function () {
 
 	$('[data-fancybox]').fancybox({
 		loop: true,
+		infobar: false,
 	});
 
 	function modal() {
@@ -257,7 +258,6 @@ $(function () {
 			var getBigFotoSrc = $(selector + " .main__foto .card__img").attr("src");
 			if( getSrc !== getBigFotoSrc) {
 				$(selector + " .main__foto .card__img").hide().attr("src", getSrc).fadeIn(1000);
-				console.log($(selector + " .main__foto .card__img"))
 				$(selector + " .main__foto .card__img").parent().attr("href", getSrc);
 			}
 			return false
