@@ -2035,6 +2035,12 @@ body {
     right: -510px;
     left: auto;
   }
+  .sprey__right {
+    width: 350px;
+  }
+  .sprey__left {
+    width: 418px;
+  }
   .review {
     width: 440px;
     height: 190px;
@@ -2346,6 +2352,13 @@ body {
   }
   .footer__content {
     margin-left: 60px;
+  }
+  .sprey__text {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .sprey__info {
+    font-size: 16px;
   }
 }
 
@@ -3210,6 +3223,10 @@ body {
     top: 20px;
     left: -40px;
     width: 140px;
+  }
+  .add__review {
+    -webkit-align-self: center;
+    align-self: center;
   }
 }
 
