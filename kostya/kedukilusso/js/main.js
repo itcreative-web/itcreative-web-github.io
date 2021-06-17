@@ -312,8 +312,8 @@ $(function () {
 		animateElement(".card__1 .card__galary", "fade__in")
 		animateElement(".card__2 .card__galary", "fade__in")
 		animateElement(".card__3 .card__galary", "fade__in")
-		parallax(".site__header", ".parallax")
-		parallax(".footer__wrapper", ".parallax__2")
+		parallax("body", ".parallax")
+		parallax("body", ".parallax__2")
 	}
 })
 
