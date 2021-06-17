@@ -50,8 +50,9 @@ $(function () {
 	AOS.init({
 		disable : 'mobile',
 		once: true,
-		offset : -200,
+		// offset : -200,
 	});
+	
 
 	$(window).resize(function() {
 		AOS.refresh();
