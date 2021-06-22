@@ -221,7 +221,7 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1;
   text-align: center;
   color: #444444;
@@ -244,7 +244,7 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 1;
   text-align: right;
   color: #CD3333;
@@ -792,7 +792,6 @@ body {
 }
 
 .card__price .new__price {
-  font-size: 30px;
   text-align: center;
   color: #FFE600;
 }
