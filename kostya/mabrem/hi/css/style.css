@@ -221,7 +221,7 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1;
   text-align: center;
   color: #444444;
@@ -244,7 +244,7 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 30px;
   line-height: 1;
   text-align: right;
   color: #CD3333;
@@ -792,6 +792,7 @@ body {
 }
 
 .card__price .new__price {
+  font-size: 30px;
   text-align: center;
   color: #FFE600;
 }
@@ -960,18 +961,15 @@ body {
 
 .reviews {
   width: 440px;
-}
-
-.owl-carousel .owl-stage-outer {
-  overflow: visible;
+  height: auto;
+  display: block;
 }
 
 .review {
   width: 440px;
-  height: 621px;
+  height: auto;
   padding: 19px 20px 30px;
   background: #307618;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   display: -webkit-flex;
   display: flex;
@@ -985,10 +983,11 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   color: #FFFFFF;
-  height: 180px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .review__img-wrapper {
@@ -997,6 +996,7 @@ body {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .review__img {
