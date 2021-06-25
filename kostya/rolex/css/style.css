@@ -360,6 +360,7 @@ body {
   user-select: none;
   pointer-events: none;
   z-index: 10;
+  text-shadow: 1px 1px 3px black;
 }
 
 .card__section {
