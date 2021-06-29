@@ -7,20 +7,28 @@ $(function () {
 			items: 1,
 			dots: false,
 			onTranslate: callback,
-			// autoplay:true,
-			// autoplayTimeout: 2000,
-			// autoplayHoverPause: true,
+			autoplay:true,
+			autoplayTimeout: 2000,
+			autoplayHoverPause: true,
 		});
 	
 		function callback(event) {
 			var items     = event.item.count;     // Number of items
 			var item      = event.item.index - 2;     // Position of the current item
 	
-			console.log(items)
-			console.log(item-2)
+			// console.log(items)
+			// console.log(item)
+
+			if(items === 3) {
+				item  = event.item.index - 1; 
+			}
 	
-			if(item === 0) {
+			if(items === 6 && item === 0) {
 				item = 6
+			}
+
+			if(items === 3 && item === 0) {
+				item = 3
 			}
 	
 			$(selector + " .current__slide").text(item);
@@ -29,6 +37,8 @@ $(function () {
 	}
 
 	initSlider(".slider__wrapper")
+
+	initSlider(".card__1 .card__slider-wrapper")
 
 	Date.prototype.daysInMonth = function () {
 		return 32 - new Date(this.getFullYear(), this.getMonth(), 32).getDate();
