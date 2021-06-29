@@ -5,11 +5,9 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="stylesheet" href="./libs/lightcase.css">
-	<link rel="stylesheet" href="./libs/animations.css">
+	<link rel="stylesheet" href="./libs/swipebox.min.css">
 	<link rel="stylesheet" href="./libs/aos.css">
 	<link rel="stylesheet" href="./libs/owl.carousel.min.css">
-	<link rel="stylesheet" href="./libs/jquery.raty.css">
 	<link rel="stylesheet" href="./css/style.css" />
 	<title>Кроссовки Кeduki Тина</title>
 </head>
@@ -24,7 +22,7 @@
 			<div class="container">
 				<div class="header__wrapper">
 					<div class="header__left">
-						<h1 class="header__title">
+						<h1 class="header__title" data-aos="zoom-in">
 							Взрывная коллаборация этого лета:
 							кроссовки от <br><span>Тины Кароль & Keduki!</span>
 						</h1>
@@ -33,7 +31,7 @@
 							<img src="./img/arrow.png" alt="">
 						</a>
 					</div>
-					<div class="header__right">
+					<div class="header__right" data-aos="zoom-in">
 						<img src="./img/logo-1.png" alt="" class="header__logo-1">
 						<img src="./img/logo-2.png" alt="" class="header__logo-2">
 					</div>
@@ -44,19 +42,19 @@
 		<!-- MAIN -->
 		<main class="site__main">
 			<div class="galary__section">
-				<div class="galary__img-wrapper galary__img-wrapper1">
-					<a data-rel="lightcase:galary" href="./img/galary/1.jpg">
-						<img src="./img/galary/1.jpg" alt="" class="galary__img">
+				<div class="galary__img-wrapper galary__img-wrapper1" data-aos="zoom-in">
+					<a class="swipebox" rel="galary" href="./img/galary/1.jpg">
+						<img data-src="./img/galary/1.jpg" alt="" class="galary__img lazyload">
 					</a>
 				</div>
-				<div class="galary__img-wrapper galary__img-wrapper2">
-					<a data-rel="lightcase:galary" href="./img/galary/2.jpg">
-						<img src="./img/galary/2.jpg" alt="" class="galary__img">
+				<div class="galary__img-wrapper galary__img-wrapper2" data-aos="zoom-in">
+					<a class="swipebox" rel="galary" href="./img/galary/2.jpg">
+						<img data-src="./img/galary/2.jpg" alt="" class="galary__img lazyload">
 					</a>
 				</div>
-				<div class="galary__img-wrapper galary__img-wrapper3">
-					<a data-rel="lightcase:galary" href="./img/galary/3.jpg">
-						<img src="./img/galary/3.jpg" alt="" class="galary__img">
+				<div class="galary__img-wrapper galary__img-wrapper3" data-aos="zoom-in">
+					<a class="swipebox" rel="galary" href="./img/galary/3.jpg">
+						<img data-src="./img/galary/3.jpg" alt="" class="galary__img lazyload">
 					</a>
 				</div>
 				<p class="galary__text-1">
@@ -68,20 +66,24 @@
 				</p>
 			</div>
 			<div class="advantage__section">
-				<div class="advantage__left">
-					<div class="advantage__img-wrapper advantage__img-wrapper1">
-						<a data-rel="lightcase:advantage" href="./img/advantage-1.jpg">
-							<img src="./img/advantage-1.jpg" alt="" class="galary__img">
-						</a>
-					</div>
-				</div>
 				<div class="advantage__right">
 					<div class="advantage__block">
 						<p class="advantage__block-text">
 							Красивая, хрупкая, сильная, смелая, уверенная, современная, идущая по жизни, танцуя. Ты несешь в себе целый мир. Ты вертишь этот земной шар. Ты успеваешь делать миллион дел одновременно. Для тебя <span>Keduki</span> создавали коллаборацию с <span>Тиной Кароль</span>. Для тебя эти кроссовки, сочетающие в себе:
 						</p>
+						<a href="#card" class="header__order-btn">
+							<span>Заказать</span>
+							<img src="./img/arrow-white.png" alt="">
+						</a>
+						<div class="advantage__left">
+							<div class="advantage__img-wrapper advantage__img-wrapper1" data-aos="zoom-in">
+								<a class="swipebox" rel="advantage" href="./img/advantage-1.jpg">
+									<img data-src="./img/advantage-1.jpg" alt="" class="galary__img lazyload">
+								</a>
+							</div>
+						</div>
 						<div class="advantages">
-							<div class="advantage advantage__1">
+							<div class="advantage advantage__1" data-aos="zoom-in">
 								<div class="advantage__header">
 									<span class="advantage__number">01</span>
 									<h4 class="advantage__title">
@@ -92,7 +94,7 @@
 									Амортизирующая подошва для легкости твоих побед
 								</p>
 							</div>
-							<div class="advantage advantage__2">
+							<div class="advantage advantage__2" data-aos="zoom-in" data-aos-delay="300">
 								<div class="advantage__header">
 									<span class="advantage__number">02</span>
 									<h4 class="advantage__title">
@@ -103,7 +105,7 @@
 									Внутри и снаружи кроссовок – мягкая натуральная кожа 
 								</p>
 							</div>
-							<div class="advantage advantage__3">
+							<div class="advantage advantage__3" data-aos="zoom-in" data-aos-delay="600">
 								<div class="advantage__header">
 									<span class="advantage__number">03</span>
 									<h4 class="advantage__title">
@@ -116,9 +118,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="advantage__img-wrapper advantage__img-wrapper2">
-						<a data-rel="lightcase:advantage" href="./img/advantage-2.jpg">
-							<img src="./img/advantage-2.jpg" alt="" class="galary__img">
+					<div class="advantage__img-wrapper advantage__img-wrapper2" data-aos="zoom-in">
+						<a class="swipebox" rel="advantage" href="./img/advantage-2.jpg">
+							<img data-src="./img/advantage-2.jpg" alt="" class="galary__img lazyload">
 						</a>
 					</div>
 				</div>
@@ -127,32 +129,6 @@
 				<div class="container">
 					<div class="card__wrapper">
 						<div class="card">
-							<div class="card__left">
-								<div class="card__column">
-									<div class="card__img-wrapper">
-										<a data-rel="lightcase:card" href="./img/card/1.jpg">
-											<img src="./img/card/1.jpg" alt="" class="galary__img">
-										</a>
-									</div>
-									<div class="card__img-wrapper">
-										<a data-rel="lightcase:card" href="./img/card/2.jpg">
-											<img src="./img/card/2.jpg" alt="" class="galary__img">
-										</a>
-									</div>
-								</div>
-								<div class="card__column">
-									<div class="card__img-wrapper">
-										<a data-rel="lightcase:card" href="./img/card/3.jpg">
-											<img src="./img/card/3.jpg" alt="" class="galary__img">
-										</a>
-									</div>
-									<div class="card__img-wrapper">
-										<a data-rel="lightcase:card" href="./img/card/4.jpg">
-											<img src="./img/card/4.jpg" alt="" class="galary__img">
-										</a>
-									</div>
-								</div>
-							</div>
 							<div class="card__right">
 								<h3 class="card__title">
 									KEDUKI ТИНА
@@ -166,6 +142,54 @@
 								<p class="card__text">
 									Бренд <span>«Keduki»</span>, вдохновленный альбомом певицы <span>«Красиво»</span>, представляет коллаборацию с блистательной <span>Тиной Кароль</span>. Кроссовки, созданные в классическом дизайне, будут комфортным решением для девушек, живущих в насыщенном ритме. Обувь украшена нежным золотистым рисунком розы из микросхем в стиле digital-art, повторяющим визуальный мотив из видеоработ <span>Тины</span>.  
 								</p>
+								<div class="card__left">
+									<div class="card__column">
+										<div class="card__img-wrapper" data-aos="zoom-in">
+											<a class="swipebox" rel="card" href="./img/card/1.jpg">
+												<img data-src="./img/card/1.jpg" alt="" class="galary__img lazyload">
+											</a>
+										</div>
+										<div class="card__img-wrapper" data-aos="zoom-in">
+											<a class="swipebox" rel="card" href="./img/card/2.jpg">
+												<img data-src="./img/card/2.jpg" alt="" class="galary__img lazyload">
+											</a>
+										</div>
+									</div>
+									<div class="card__column">
+										<div class="card__img-wrapper" data-aos="zoom-in">
+											<a class="swipebox" rel="card" href="./img/card/3.jpg">
+												<img data-src="./img/card/3.jpg" alt="" class="galary__img lazyload">
+											</a>
+										</div>
+										<div class="card__img-wrapper" data-aos="zoom-in">
+											<a class="swipebox" rel="card" href="./img/card/4.jpg">
+												<img data-src="./img/card/4.jpg" alt="" class="galary__img lazyload">
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="card__slider owl-carousel">
+									<div class="card__img-wrapper">
+										<a class="swipebox" rel="card-mobile" href="./img/card/1.jpg">
+											<img data-src="./img/card/1.jpg" alt="" class="galary__img lazyload">
+										</a>
+									</div>
+									<div class="card__img-wrapper">
+										<a class="swipebox" rel="card-mobile" href="./img/card/2.jpg">
+											<img data-src="./img/card/2.jpg" alt="" class="galary__img lazyload">
+										</a>
+									</div>
+									<div class="card__img-wrapper">
+										<a class="swipebox" rel="card-mobile" href="./img/card/3.jpg">
+											<img data-src="./img/card/3.jpg" alt="" class="galary__img lazyload">
+										</a>
+									</div>
+									<div class="card__img-wrapper">
+										<a class="swipebox" rel="card-mobile" href="./img/card/4.jpg">
+											<img data-src="./img/card/4.jpg" alt="" class="galary__img lazyload">
+										</a>
+									</div>
+								</div>
 								<div class="card__size-block">
 									<p class="card__size-text">Размеры:</p>
 									<div class="card__size-btns">
@@ -240,7 +264,7 @@
 					</div>
 					<div class="video__section">
 						<img src="./img/video-bg.png" alt="" class="video__img-bg">
-						<div class="video__img-wrapper">
+						<div class="video__img-wrapper" data-aos="zoom-in">
 							<img src="./img/video-img.jpg" alt="" class="video__img">
 						</div>
 						<div class="video__info">
@@ -271,9 +295,9 @@
 						Твои <span>Keduki</span> от <span>Тины Кароль</span> всего за три шага
 					</h3>
 					<div class="footer__delivery">
-						<div class="delivery__stage">
+						<div class="delivery__stage" data-aos="zoom-in">
 							<div class="delivery__stage-header">
-								<span class="delivery__stage-number">1</span>
+								<span class="delivery__stage-number">01</span>
 								<h4 class="delivery__title">
 									Заказ
 								</h4>
@@ -282,9 +306,9 @@
 								Оставь свои данные, и оператор перезвонит для уточнения всех деталей
 							</p>
 						</div>
-						<div class="delivery__stage">
+						<div class="delivery__stage" data-aos="zoom-in" data-aos-delay="300">
 							<div class="delivery__stage-header">
-								<span class="delivery__stage-number">2</span>
+								<span class="delivery__stage-number">02</span>
 								<h4 class="delivery__title">
 									Доставка
 								</h4>
@@ -293,9 +317,9 @@
 								В ближайшее время твоя пара отправится к тебе
 							</p>
 						</div>
-						<div class="delivery__stage">
+						<div class="delivery__stage" data-aos="zoom-in" data-aos-delay="600">
 							<div class="delivery__stage-header">
-								<span class="delivery__stage-number">3</span>
+								<span class="delivery__stage-number">03</span>
 								<h4 class="delivery__title">
 									Оплата
 								</h4>
@@ -306,7 +330,7 @@
 						</div>
 					</div>
 					<h3 class="footer__title">
-						Сияй этим летом, не жертвуя комфортом!
+						Сияй этим летом,<br> не жертвуя комфортом!
 					</h3>
 					<p class="footer__text">
 						Сделай себе <span>КРАСИВО</span> этим летом. Танцуй жизнь с комфортом!
@@ -332,13 +356,10 @@
 		</div>
 	</div>
 	<script src="./libs/jquery.min.js"></script>
-	<script src="./libs/jquery.events.touch.min.js"></script>
-	<script src="./libs/carousel.js"></script>
+	<script src="./libs/jquery.swipebox.min.js"></script>
 	<script src="./libs/owl.carousel.min.js"></script>
 	<script src="./libs/lazysizes.min.js"></script>
-	<script src="./libs/lightcase.js"></script>
 	<script src="./libs/aos.js"></script>
-	<script src="./libs/jquery.raty.js"></script>
 	<script src="./js/main.js"></script>
 </body>
 

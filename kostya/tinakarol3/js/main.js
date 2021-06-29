@@ -1,60 +1,39 @@
 $(function () {
 
-	$('a[data-rel^=lightcase]').lightcase({
-		swipe: true,
-		showCaption: false,
-		maxHeight: 1200,
-		speedIn: 0,
-		speedOut: 0,
-		showSequenceInfo: false,
-		
+	$( '.swipebox' ).swipebox({
+		loopAtEnd: true 
 	});
 
-	// $(".review__wrapper").owlCarousel({
-	// 	loop: true,
-	// 	nav : true,
-	// 	items: 2,
-	// 	margin: 70,
-	// 	dots: false,
-	// 	stagePadding: 35,
-	// 	autoplay:true,
-	// 	autoplayTimeout: 4000,
-	// 	autoplayHoverPause: true,
-	// 	responsive:{
-	// 		290: {
-	// 			items: 1,
-	// 			stagePadding: 0,
-	// 			margin: 40,
-	// 			center: true,
-	// 			dots: true,
-	// 		},
-	// 		600: {
-	// 			items: 1,
-	// 			stagePadding: 35,
-	// 			margin: 40,
-	// 			center: true,
-	// 			dots: true,
-	// 		},
-	// 		800: {
-	// 			margin: 15,
-	// 			stagePadding: 10,
-	// 		},
-	// 		1081: {
-	// 			margin: 40,
-	// 			stagePadding: 35,
-	// 		},
-	// 		1440: {
-	// 			margin: 70,
-	// 		}
-	// 	}
+
+	// $('a[data-rel^=lightcase]').lightcase({
+	// 	swipe: true,
+	// 	showCaption: false,
+	// 	maxHeight: 1200,
+	// 	speedIn: 0,
+	// 	speedOut: 0,
+	// 	showSequenceInfo: true,
+		
 	// });
 
+	if($(window).width() <= 700) {
+		$(".card__slider").owlCarousel({
+			loop: true,
+			nav : false,
+			items: 1,
+			margin: 30,
+			dots: true,
+			// autoplay:true,
+			// autoplayTimeout: 4000,
+			// autoplayHoverPause: true,
+			
+		});
+	}
 
-	// AOS.init({
-	// 	disable : 'mobile',
-	// 	once: true,
-	// 	// offset : -200,
-	// });
+	AOS.init({
+		disable : 'mobile',
+		once: true,
+		// offset : -200,
+	});
 
 
 	// $(window).resize(function() {
@@ -64,6 +43,7 @@ $(function () {
 	// $('[data-fancybox]').fancybox({
 	// 	loop: true,
 	// 	infobar: false,
+	// 	animated: false,
 	// });
 
 	function modal() {
@@ -80,9 +60,11 @@ $(function () {
 			var target = e.target;
 			if(target.classList.contains("modal__close")) {
 				close()
+				document.querySelector(".video__wrapper iframe").contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
 			}
 			if(target.classList.contains("modal")) {
 				close()
+				document.querySelector(".video__wrapper iframe").contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
 			}
 		})
 	}
@@ -142,7 +124,7 @@ $(function () {
 					}
 				});
 			} else {
-				var videoSrc = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&mute=1";
+				var videoSrc = "https://www.youtube.com/embed/" + videoId + "?enablejsapi=1&autoplay=1&mute=1";
 				$(this).append("<iframe src=\""+videoSrc+"\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>");
 			}
 		});
@@ -156,9 +138,6 @@ $(function () {
 			$(".site__order-btn").removeClass("active")
 			var scroll = $(window).scrollTop() + $(window).height();
 			var offset = $element.offset().top + $element.height();
-
-			console.log(scroll, offset)
-			console.log($element.height())
 	
 			if (scroll > offset + 700 || scroll < offset - $element.height() - 200 ) {
 				$(".site__order-btn").addClass('active');
