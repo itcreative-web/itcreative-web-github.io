@@ -1188,7 +1188,7 @@ body {
   }
 }
 
-@media (max-width: 1680px) {
+@media (max-width: 1820px) {
   .container {
     width: 1400px;
   }
@@ -1717,6 +1717,7 @@ body {
     margin: auto;
     margin-bottom: 50px;
     background-color: #C2924A;
+    box-shadow: none;
   }
   .advantage__block .header__order-btn span {
     color: #fff;
@@ -2039,6 +2040,7 @@ body {
     background-position: right bottom 60px;
     background-size: 800px;
     padding-bottom: 500px;
+    margin-top: 50px;
   }
   .footer__logo {
     bottom: -20px;

@@ -1,7 +1,8 @@
 $(function () {
 
 	$( '.swipebox' ).swipebox({
-		loopAtEnd: true 
+		loopAtEnd: true,
+		removeBarsOnMobile : false,
 	});
 
 
