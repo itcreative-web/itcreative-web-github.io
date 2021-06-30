@@ -15,9 +15,6 @@ $(function () {
 		function callback(event) {
 			var items     = event.item.count;     // Number of items
 			var item      = event.item.index - 2;     // Position of the current item
-	
-			// console.log(items)
-			// console.log(item)
 
 			if(items === 3) {
 				item  = event.item.index - 1; 
@@ -27,8 +24,16 @@ $(function () {
 				item = 6
 			}
 
+			if(items === 6 && item === 7) {
+				item = 1
+			}
+
 			if(items === 3 && item === 0) {
 				item = 3
+			}
+
+			if(items === 3 && item === 4) {
+				item = 1
 			}
 	
 			$(selector + " .current__slide").text(item);
@@ -37,8 +42,50 @@ $(function () {
 	}
 
 	initSlider(".slider__wrapper")
-
 	initSlider(".card__1 .card__slider-wrapper")
+	initSlider(".card__2 .card__slider-wrapper")
+	initSlider(".card__3 .card__slider-wrapper")
+	initSlider(".card__4 .card__slider-wrapper")
+
+	$(".review__slider").owlCarousel({
+		loop: true,
+		nav : true,
+		items: 1,
+		margin: 20,
+		dots: false,
+		onTranslate: callback,
+		autoHeight: true,
+		// autoplay:true,
+		// autoplayTimeout: 2000,
+		// autoplayHoverPause: true,
+	});
+
+	function callback(event) {
+		var items     = event.item.count;     // Number of items
+		var item      = event.item.index - 2;     // Position of the current item
+
+		// console.log(items)
+		// console.log(item)
+
+		if(items === 3) {
+			item  = event.item.index - 1; 
+		}
+
+		if(items === 6 && item === 0) {
+			item = 6
+		}
+
+		if(items === 6 && item === 7) {
+			item = 1
+		}
+
+		if(items === 3 && item === 0) {
+			item = 3
+		}
+
+		$(".review__wrapper .current__slide").text(item);
+		$(".review__wrapper .all__slides").text(items);
+	}
 
 	Date.prototype.daysInMonth = function () {
 		return 32 - new Date(this.getFullYear(), this.getMonth(), 32).getDate();
@@ -87,35 +134,12 @@ $(function () {
 		var currentDaysInMonth = new Date().daysInMonth()
 		if (+dd > currentDaysInMonth) {
 			dd = String(dd - currentDaysInMonth).padStart(2, '0');
-			mm++
+			mm = String(+ mm + 1).padStart(2, '0');
 		}
 		return dd + "." + mm + "." + yyyy
 	}
 
 	$(".date span").text(getDate(2));
-
-	// var owl = $(".second-slider").owlCarousel({
-	// 	loop: true,
-	// 	nav : true,
-	// 	items: 1,
-	// 	margin: 0,
-	// 	dots: false,
-	// 	onTranslate: callback,
-	// 	autoplay:true,
-	// 	autoplayTimeout: 2000,
-	// 	autoplayHoverPause: true,
-	// });
-
-	// function callback(event) {
-	// 	var item = event.item.index; 
-	// 	$(".block__slide-wrapper").removeClass("active")
-	// 	$(".block__slide-wrapper").eq(item-3).addClass("active")
-	// }
-
-	// $(".block__slide-wrapper").click(function() {
-	// 	var currentSlide = $(this).attr("data-item");
-	// 	owl.trigger('to.owl.carousel', [currentSlide-1]);
-	// })
 
 	$('a[data-rel^=lightcase]').lightcase({
 		swipe: true,
@@ -126,26 +150,8 @@ $(function () {
 		showSequenceInfo: false,
 	});
 
-
-	// AOS.init({
-	// 	disable : 'mobile',
-	// 	once: true,
-	// 	// offset : -200,
-	// });
-
-
-	// // $(window).resize(function() {
-	// // 	AOS.refresh();
-	// // })
-
-	// // $('[data-fancybox]').fancybox({
-	// // 	loop: true,
-	// // 	infobar: false,
-	// // });
-
-
 	$('[href*="#"]').on('click', function (e) {
-		var fixedOffset = -200;
+		var fixedOffset = -100;
 
 		$('html, body')
 			.stop()
@@ -154,37 +160,37 @@ $(function () {
 	});
 
 
-	// $(".year").text(new Date().getFullYear())
+	$(".year").text(new Date().getFullYear())
 
-	// function getRandomInt(max) {
-	// 	return Math.floor(Math.random() * Math.floor(max));
-	// }
+	function getRandomInt(max) {
+		return Math.floor(Math.random() * Math.floor(max));
+	}
 
-	// function quantity() {
-	// 	var currentNumber;
+	function quantity() {
+		var currentNumber;
 
-	// 	if(localStorage.getItem("quantity")) {
-	// 		$(".remainder__number").text(localStorage.getItem("quantity"));
-	// 	} else {
-	// 		currentNumber = 25
-	// 		localStorage.setItem("quantity", currentNumber)
-	// 		$(".remainder__number").text(currentNumber);
-	// 	}
+		if(localStorage.getItem("quantity")) {
+			$(".card__remainder span").text(localStorage.getItem("quantity"));
+		} else {
+			currentNumber = 25
+			localStorage.setItem("quantity", currentNumber)
+			$(".card__remainder span").text(currentNumber);
+		}
 
-	// 	setInterval(function () {
-	// 		currentNumber = localStorage.getItem("quantity");
-	// 		if (currentNumber >= 3) {
-	// 			currentNumber = currentNumber - getRandomInt(3);
-	// 			$(".remainder__number").text(currentNumber);
-	// 			localStorage.setItem("quantity", currentNumber)
-	// 		} else {
-	// 			currentNumber = 25;
-	// 			localStorage.setItem("quantity", currentNumber)
-	// 		}
-	// 	}, 100000)
-	// }
+		setInterval(function () {
+			currentNumber = localStorage.getItem("quantity");
+			if (currentNumber >= 3) {
+				currentNumber = currentNumber - getRandomInt(3);
+				$(".card__remainder span").text(currentNumber);
+				localStorage.setItem("quantity", currentNumber)
+			} else {
+				currentNumber = 25;
+				localStorage.setItem("quantity", currentNumber)
+			}
+		}, 100000)
+	}
 
-	// quantity()
+	quantity()
 
 	
 
@@ -225,5 +231,63 @@ $(function () {
 	}
 	
 	advantage()
+
+	function modal(selector) {
+		$(selector + " .card-main__btn").click(function () {
+			$(selector + " .modal").addClass("active")
+			$("body").css("overflow", "hidden")
+		})
+
+		function close() {
+			$(selector + " .modal").removeClass("active")
+			$("body").css("overflow", "auto")
+		}
+
+		$(".modal").click( function(e) {
+			var target = e.target;
+
+			if(target.classList.contains("modal__close")) {
+				close()
+			}
+			if(target.classList.contains("modal")) {
+				close()
+			}
+		})
+
+		$(".modal form").submit(function (e) {
+			e.preventDefault()
+			$(".modal .card-main__input").val("")
+			close()
+		})
+	}
+
+	modal(".card__1")
+	modal(".card__2")
+	modal(".card__3")
+	modal(".card__4")
+
+	function privacy() {
+		$(".privacy").click(function () {
+			$(".privacy-policy-popup").addClass("active")
+			$("body").css("overflow", "hidden")
+		})
+
+		function close() {
+			$(".privacy-policy-popup").removeClass("active")
+			$("body").css("overflow", "auto")
+		}
+
+		$(".privacy-policy-popup").click( function(e) {
+			var target = e.target;
+			if(target.classList.contains("privacy__close")) {
+				close()
+			}
+			if(target.classList.contains("privacy-policy-popup")) {
+				close()
+			}
+		})
+	}
+
+	privacy()
 })
 
