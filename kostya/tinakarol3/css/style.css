@@ -1045,6 +1045,7 @@ body {
 
 .footer__content .header__order-btn {
   background-color: #C2924A;
+  box-shadow: none;
 }
 
 .footer__content .header__order-btn span {
