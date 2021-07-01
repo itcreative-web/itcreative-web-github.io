@@ -8,7 +8,7 @@ $(function () {
 			dots: false,
 			onTranslate: callback,
 			autoplay:true,
-			autoplayTimeout: 2000,
+			autoplayTimeout: 4000,
 			autoplayHoverPause: true,
 		});
 	
