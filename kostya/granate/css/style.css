@@ -1223,6 +1223,9 @@ form {
   }
   .advanatge__logo {
     margin-right: 20px;
+    min-width: 32px;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
   }
   .information__title {
     font-size: 8vw;
