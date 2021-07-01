@@ -139,7 +139,7 @@ $(document).ready(function() {
 
 
 function promotionEndDate(countDays) {
-    const date = new Date(Date.now() + (86400000 * countDays));
+    const date = new Date(Date.now() + (86400000 * (countDays - 1)));
 
     $(".js-end-date").html(pad(date.getDate()) + "."
         + pad(date.getMonth() + 1) + "."
@@ -192,7 +192,7 @@ TimerUtils.startTimer(finish.toISOString(), function(diff) {
     if ($(".timer-inner").length > 0) {
         $(".timer-inner .days").text(pad(diff.days, 2));
         $(".timer-inner .hours").text(pad(diff.hours, 2));
-        $(".timer-inner .minutes").text(pad(diff.hours, 2));
+        $(".timer-inner .minutes").text(pad(diff.minutes, 2));
         $(".timer-inner .seconds").text(pad(diff.seconds, 2));
     }
 });
