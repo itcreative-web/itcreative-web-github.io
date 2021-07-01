@@ -38,8 +38,8 @@ $(document).ready(function() {
                 margin: 30,
             },
             1200: {
-              items: 2,
-              margin: 30
+                items: 2,
+                margin: 30
             },
             1536: {
                 items: 2,
@@ -69,6 +69,14 @@ $(document).ready(function() {
     });
 
     if ($(window).width() < 1200) {
+
+        for (var i = 0; i < document.querySelectorAll(".previews-content .slide").length; i++) {
+            $(".previews-nav .dots").append(
+                $("<span>", {"class": "dot " + (i === 0 ? "active" : "")})
+            );
+            $(".previews-nav .dots .dot").eq(i).text(pad(i + 1))
+        }
+
         $previewsOwl.addClass("owl-carousel");
 
         $previewsOwl.owlCarousel({
@@ -91,6 +99,18 @@ $(document).ready(function() {
                 }
             }
         });
+
+        $previewsOwl.on("changed.owl.carousel", function(e) {
+            var index = e.relatedTarget.relative(e.item.index);
+
+            $(".previews-nav .dots .dot").removeClass("active")
+            $(".previews-nav .dots .dot").eq(index).addClass("active")
+        });
+
+        $(".previews-nav .dots .dot").click(function(e) {
+            var $currentDot = $(e.target).closest(".dot").index();
+            $previewsOwl.trigger('to.owl.carousel', [$currentDot, 500])
+        })
 
         $(".previews-nav .prev").click(function() {
             $previewsOwl.trigger('prev.owl.carousel');

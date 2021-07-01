@@ -613,6 +613,12 @@ p {
     .order-modal .prices {
         margin-bottom: 20px; } }
 
+.end-date .new-price {
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    white-space: nowrap; }
+
 .header {
     padding-top: 50px;
     padding-bottom: 240px;
@@ -837,7 +843,7 @@ p {
     .old-price-wrapper {
         font-size: 4.7vw; }
     .new-price-wrapper {
-        font-size: 5.8vw; }
+        font-size: 5.5vw; }
     .btn-style {
         font-size: 20px; } }
 
@@ -904,7 +910,7 @@ p {
     margin-left: 10px;
     margin-right: 10px; }
 .previews-nav .dots .dot {
-    margin: 0 5px; }
+    margin: 0 8px; }
 
 @media (min-width: 1200px) {
     .previews-nav {
@@ -990,7 +996,8 @@ p {
     text-transform: uppercase;
     font-weight: bold;
     margin: 0 0 10px;
-    color: #9B7A33; }
+    color: #9B7A33;
+    line-height: 1.8; }
 .privilege-slide .content p {
     font-size: 18px;
     line-height: 1.95; }
@@ -1101,7 +1108,8 @@ p {
         font-size: 14px;
         line-height: 1.7; }
     .privilege-slide .image {
-        width: 260px; }
+        width: 260px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15); }
     .privilege-slide .content {
         width: -webkit-calc(100% - 260px - 30px);
         width: calc(100% - 260px - 30px); }
