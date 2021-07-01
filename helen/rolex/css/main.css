@@ -1205,9 +1205,11 @@ p {
     padding-top: 50px;
     padding-bottom: 50px;
     margin-top: -60px;
-    z-index: 20;
+    z-index: 1000;
     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), white 60px);
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white 60px); }
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white 60px);
+
+}
 .promo:before {
     position: absolute;
     left: -webkit-calc(50% - 1080px);
