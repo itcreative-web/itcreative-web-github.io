@@ -128,7 +128,7 @@ body {
   background-image: url(../img/header-bg.png);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 1920px;
+  background-size: 100% 100%;
 }
 
 .header__wrapper {
@@ -147,14 +147,14 @@ body {
 }
 
 .header__right {
-  width: 880px;
+  width: 1800px;
   height: 500px;
   background: linear-gradient(180deg, #6A37FF 0%, #8E67FF 100%);
-  box-shadow: 0px 0px 60px #FFFFFF;
+  box-shadow: 0px 0px 60px #ffffff;
   border-radius: 0px 0px 0px 400px;
   position: absolute;
   top: 0;
-  right: -400px;
+  right: -1325px;
   z-index: -1;
 }
 
@@ -800,7 +800,7 @@ body {
 }
 
 .video__section {
-  width: 1920px;
+  width: 100%;
   margin: auto;
   height: 900px;
   background-image: url(../img/video-bg.png);
@@ -1386,7 +1386,7 @@ body {
 .footer__tina {
   position: absolute;
   bottom: -38px;
-  right: -1020px;
+  right: -1380px;
   z-index: -1;
 }
 
@@ -1655,6 +1655,7 @@ body {
   .header__right {
     width: 790px;
     height: 480px;
+    right: -400px;
   }
   .header__tina {
     right: -190px;
@@ -1784,7 +1785,7 @@ body {
   .footer__tina {
     position: absolute;
     bottom: -38px;
-    right: -920px;
+    right: -985px;
     z-index: -1;
     width: 1300px;
   }
@@ -1914,7 +1915,7 @@ body {
   }
   .footer__tina {
     bottom: -38px;
-    right: -800px;
+    right: -870px;
     width: 1200px;
   }
   .footer__boot {
@@ -1934,7 +1935,7 @@ body {
 @media (max-width: 1080px) {
   .footer__tina {
     bottom: -30px;
-    right: -670px;
+    right: -720px;
     width: 1000px;
   }
   .footer__pattern {
@@ -2222,6 +2223,7 @@ body {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 1000px;
+    margin-left: 75px;
   }
   .footer__boot {
     bottom: 265px;
@@ -2593,7 +2595,7 @@ body {
     top: -600px;
   }
   .footer__tina {
-    width: 200vw;
+    width: 208vw;
   }
   .footer__boot {
     bottom: 250px;
@@ -2814,6 +2816,7 @@ body {
   }
   .footer__tina {
     bottom: -20px;
+    margin-left: 65px;
   }
 }
 
@@ -2950,5 +2953,10 @@ body {
   }
   .footer__wrapper .header__order-btn {
     margin-bottom: 370px;
+  }
+  .footer__tina {
+    bottom: -20px;
+    width: 215vw;
+    margin-left: 55px;
   }
 }

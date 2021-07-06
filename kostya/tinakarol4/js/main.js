@@ -11,10 +11,14 @@ $(function () {
 	// 	AOS.refresh();
 	// })
 
-	$('[data-fancybox]').fancybox({
-		loop: true,
-		infobar: false,
-		animationEffect: "fade",
+	// $('[data-fancybox]').fancybox({
+	// 	loop: true,
+	// 	infobar: false,
+	// 	animationEffect: "fade",
+	// });
+
+	Fancybox.bind("[data-fancybox]", {
+		
 	});
 
 
