@@ -638,6 +638,21 @@ body {
   transform: translateY(-50%);
   background: #FFFFFF;
   box-shadow: 0px 4px 20px rgba(142, 103, 255, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.advantage__1:before {
+  background-image: url(../img/1.png);
+}
+
+.advantage__2:before {
+  background-image: url(../img/2.png);
+}
+
+.advantage__3:before {
+  background-image: url(../img/3.png);
 }
 
 .advantage__text {
