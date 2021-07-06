@@ -14,6 +14,7 @@ $(function () {
 	$('[data-fancybox]').fancybox({
 		loop: true,
 		infobar: false,
+		animationEffect: "fade",
 	});
 
 
