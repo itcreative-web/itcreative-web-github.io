@@ -1804,7 +1804,7 @@ body {
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1366px) {
   .header__tina {
     right: -140px;
     width: 590px;
