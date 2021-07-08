@@ -185,10 +185,6 @@ body {
   align-items: center;
 }
 
-.header__nav-search .header__nav-img {
-  margin: auto;
-}
-
 .header__nav-burger {
   display: none;
 }
@@ -225,6 +221,7 @@ body {
   width: 1000px;
   background-color: #fff;
   margin-top: -45px;
+  position: relative;
 }
 
 .autor__info {
@@ -344,6 +341,7 @@ body {
 .dialog__autor {
   width: 100px;
   margin-right: 30px;
+  flex-shrink: 0;
 }
 
 .dialog__text {
@@ -714,6 +712,7 @@ body {
   text-align: center;
   color: #FFFFFF;
   margin-bottom: 9px;
+  width: 100%;
 }
 
 .card__subtitle {
@@ -725,6 +724,7 @@ body {
   text-align: center;
   color: #FFFFFF;
   margin-bottom: 14px;
+  width: 100%;
 }
 
 .card__text {

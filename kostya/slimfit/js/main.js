@@ -1,14 +1,28 @@
 $(document).ready(function () {
 
-	$('[href*="#"]').on('click', function (e) {
-		var fixedOffset = -48;
+	// $('[href*="#"]').on('click', function (e) {
+	// 	var fixedOffset = -48;
 		
 
-		$('html, body')
-			.stop()
-			.animate({ scrollTop: $(this.hash).offset().top + fixedOffset }, 1000);
-		e.preventDefault();
-	});
+	// 	$('html, body')
+	// 		.stop()
+	// 		.animate({ scrollTop: $(this.hash).offset().top + fixedOffset }, 1000);
+	// 	e.preventDefault();
+	// });
+
+	function scroll() {
+		$('[href*="#"]').on('click', function (e) {
+			var fixedOffset = -48;
+			
+	
+			$('html, body')
+				.stop()
+				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset }, 1000);
+			e.preventDefault();
+		});
+	}
+
+	scroll()
 
 	$(".year").text(new Date().getFullYear())
 
@@ -68,6 +82,7 @@ $(document).ready(function () {
                 " </div>"
 
             $(".reviews").prepend(el);
+			scroll()
             $(this).closest(".form-reviews").find('input').val('');
             $(this).closest(".form-reviews").find('textarea').val('');
         }
