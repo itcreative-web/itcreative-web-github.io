@@ -1220,6 +1220,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 10px center;
   cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .card__select:focus {
@@ -1240,6 +1241,7 @@ body {
   color: #163F4B;
   transition: 0.3s ease;
   cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .card__input:focus {
