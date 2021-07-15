@@ -45,6 +45,11 @@ select {
   -webkit-appearance: none;
 }
 
+select::-ms-value {
+  background: none;
+  color: #000;
+}
+
 select::-ms-expand {
   display: none;
 }
@@ -2274,6 +2279,9 @@ body {
   }
   .card__star-raiting {
     top: -35px;
+  }
+  .card__sale-text {
+    font-size: 22px;
   }
   .footer__wrapper .header__order-wrapper {
     width: 100%;
