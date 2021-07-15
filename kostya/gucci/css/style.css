@@ -67,8 +67,16 @@ input::placeholder {
 input,
 button,
 textarea,
-select {
+select,
+a,
+option {
   font: inherit;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 img {
@@ -84,12 +92,6 @@ img {
 
 p {
   width: 100%;
-}
-
-a, button {
-  outline: none;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -1765,6 +1767,7 @@ body {
 
 .privacy-policy__title span {
   min-width: 25%;
+  padding-right: 10px;
 }
 
 .privacy-policy__text {
