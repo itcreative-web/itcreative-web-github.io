@@ -67,7 +67,7 @@ $(function () {
 		// console.log(items)
 		// console.log(item)
 
-		if(items === 3) {
+		if(items === 4) {
 			item  = event.item.index - 1; 
 		}
 
@@ -79,8 +79,8 @@ $(function () {
 			item = 1
 		}
 
-		if(items === 3 && item === 0) {
-			item = 3
+		if(items === 4 && item === 0) {
+			item = 4
 		}
 
 		$(".review__wrapper .current__slide").text(item);
