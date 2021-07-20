@@ -84,7 +84,6 @@ $(document).ready(function() {
         overview1Gallery.next();
     });
 
-
     overview1Hammer = new Hammer(overview1GalleryEl,{
         recognizers: [[Hammer.Swipe, {
             direction: Hammer.DIRECTION_HORIZONTAL
@@ -92,7 +91,6 @@ $(document).ready(function() {
     });
 
     overview1Hammer.on("swipeleft", function() {
-
         overview1Gallery.next();
     });
 
