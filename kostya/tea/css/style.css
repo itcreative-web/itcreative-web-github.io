@@ -2159,6 +2159,18 @@ body {
   .section4__list-item {
     font-size: 4vw;
   }
+  .section6__card {
+    padding: 77px 16px 25px;
+  }
+  .section6__text {
+    font-size: 15px;
+  }
+  .section7__text-wrapper {
+    padding: 20px 30px 24px;
+  }
+  .section7__text {
+    font-size: 15px;
+  }
   .footer__title {
     font-size: 8vw;
   }
