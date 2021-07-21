@@ -2153,6 +2153,9 @@ body {
   .card .header__sale {
     top: -60vw;
   }
+  .section__2 .header__order-btn {
+    font-size: 26px;
+  }
   .section4__list-item {
     font-size: 4vw;
   }
