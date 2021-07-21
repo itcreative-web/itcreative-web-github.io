@@ -445,6 +445,10 @@ body {
   height: 100%;
 }
 
+.section__2 .header__order-btn {
+  font-size: 30px;
+}
+
 .section2__wrapper {
   width: 100%;
   height: 100%;
@@ -479,7 +483,7 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 42px;
+  font-size: 32px;
   line-height: 1.2;
   text-align: right;
   color: #255853;
@@ -2009,7 +2013,7 @@ body {
     font-size: 8vw;
   }
   .section2__title {
-    font-size: 8.5vw;
+    font-size: 6vw;
     margin-bottom: 25px;
   }
   .section2__text {
@@ -2256,6 +2260,9 @@ body {
   .header__order-btn {
     height: 60px;
     font-size: 32px;
+  }
+  .section__2 .header__order-btn {
+    font-size: 22px;
   }
   .section2__img-tea {
     bottom: 25px;
