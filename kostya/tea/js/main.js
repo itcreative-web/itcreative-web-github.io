@@ -12,7 +12,7 @@ $(function () {
 		});
 	}
 
-	if($(window).width() <= 1366) {
+	if($(window).width() <= 1367) {
 		$(".section7__cards").addClass("owl-carousel").owlCarousel({
 			loop: true,
 			nav : false,
