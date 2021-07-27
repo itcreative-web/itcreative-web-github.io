@@ -359,6 +359,7 @@ body {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
+  margin-top: 5px;
 }
 
 .timer__text {
@@ -459,7 +460,7 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 15px;
   line-height: 1;
   color: #FFFFFF;
   -webkit-transition: 0.3s ease;
@@ -736,7 +737,22 @@ body {
 
 .specific__list-item:last-child {
   margin-bottom: 0;
-  width: 84%;
+}
+
+.specific__list-item1 {
+  width: 94%;
+}
+
+.specific__list-item3 {
+  width: 93%;
+}
+
+.specific__list-item6 {
+  width: 71%;
+}
+
+.specific__list-item8 {
+  width: 79%;
 }
 
 .video__section {
@@ -1052,7 +1068,7 @@ body {
 .card .header__order-btn {
   height: 40px;
   width: 200px;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .card .header__order-btn::before {
