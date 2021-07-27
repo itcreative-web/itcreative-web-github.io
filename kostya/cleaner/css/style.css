@@ -544,6 +544,10 @@ body {
   z-index: 1;
 }
 
+.characteristic__wrapper .header__order-btn {
+  font-size: 36px;
+}
+
 .circle__2-img {
   position: absolute;
   top: -100px;
@@ -776,6 +780,10 @@ body {
   justify-content: space-between;
   padding-top: 35px;
   position: relative;
+}
+
+.video__wrapper .header__order-btn {
+  font-size: 36px;
 }
 
 .video__bg-img {
@@ -1975,6 +1983,7 @@ body {
   }
   .specific__list-item {
     text-align: left;
+    width: 100% !important;
   }
   .video__section {
     width: 100%;
@@ -2401,7 +2410,7 @@ body {
     width: 76vw;
   }
   .header__text {
-    font-size: 3vw;
+    font-size: 4vw;
     margin-bottom: 400px;
     text-align: center;
   }
@@ -2458,7 +2467,7 @@ body {
   .video {
     width: 90%;
     height: 52vw;
-    top: 47vw;
+    top: 38vw;
   }
   .video:before {
     width: 90px;
@@ -2537,7 +2546,7 @@ body {
   .card .header__order-btn {
     height: 50px;
     width: 100%;
-    font-size: 36px;
+    font-size: 22px;
   }
   .card__section:before {
     height: 59%;
@@ -2752,7 +2761,7 @@ body {
   .video {
     width: 90%;
     height: 52vw;
-    top: 66vw;
+    top: 54vw;
   }
   .card {
     width: 100%;
@@ -3067,7 +3076,7 @@ body {
   .video {
     width: 90%;
     height: 52vw;
-    top: 68vw;
+    top: 56vw;
   }
   .card__wrapper .header__cleaner-img {
     width: 117vw;

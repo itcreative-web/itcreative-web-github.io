@@ -7,7 +7,6 @@ $(function () {
 		margin: 30,
 		dots: true,
 		dotsEach: true,
-		dotsData: true,
 		responsive : {
 			0: {
 				items: 1,
