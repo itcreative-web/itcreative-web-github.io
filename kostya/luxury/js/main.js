@@ -173,9 +173,14 @@ $(function () {
 
 		$(selector + " .header__order-btn").click(function() {
 			var el = $(this).attr("data-kode")
+			$(".order__checkbox").prop("checked", false);
 			$(".order__checkbox[id="+ el +"]").prop("checked", true);
+			$(".order__block .order__checkbox").prop("checked", false);
 		})
 	}
+
+
+
 
 	cardModal(".card__1")
 	cardModal(".card__2")
