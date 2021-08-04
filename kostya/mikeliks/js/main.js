@@ -14,7 +14,7 @@ $(function () {
 
 	scroll()
 
-	var height = $(".right__fixed").offset().top
+	var height = $(".right__fixed").offset().top - 80;
 
 	$(window).scroll(function() {
 		// console.log($(".right__fixed").offset().top);
