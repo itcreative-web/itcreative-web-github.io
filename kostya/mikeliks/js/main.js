@@ -14,8 +14,11 @@ $(function () {
 
 	scroll()
 
+	var height = $(".right__fixed").offset().top
+
 	$(window).scroll(function() {
-		if($(window).scrollTop() >= 600) {
+		// console.log($(".right__fixed").offset().top);
+		if($(window).scrollTop() >= height) {
 			$(".right__fixed").addClass("fixed")
 		} else {
 			$(".right__fixed").removeClass("fixed")
