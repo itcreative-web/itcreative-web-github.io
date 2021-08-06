@@ -875,6 +875,11 @@ body {
   display: inline-flex;
 }
 
+.star {
+  width: 18px !important;
+  height: 18px;
+}
+
 .card__price {
   margin-top: 8px;
   margin-bottom: 16px;
