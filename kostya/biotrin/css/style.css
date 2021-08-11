@@ -1274,6 +1274,9 @@ body {
   .header__nav-link {
     font-size: 12px;
   }
+  .card {
+    padding: 8px 25px;
+  }
 }
 
 @media (max-width: 1080px) {
@@ -1502,7 +1505,9 @@ body {
     margin-bottom: -2px;
   }
   .card__main-img {
+    display: block;
     width: 46vw;
+    max-height: 60vw;
     margin-left: -12vw;
   }
   .card__ingredients {
