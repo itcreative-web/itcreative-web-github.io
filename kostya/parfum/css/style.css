@@ -546,6 +546,7 @@ body {
   line-height: 1.25;
   text-align: center;
   margin-bottom: 15px;
+  width: 100%;
 }
 
 .advantage__card-text {
