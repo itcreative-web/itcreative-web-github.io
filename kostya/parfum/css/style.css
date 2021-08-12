@@ -2593,6 +2593,9 @@ body {
     background-size: cover;
     background-position: center;
   }
+  .order__btn {
+    font-size: 14px;
+  }
   .header__title {
     min-height: 88px;
   }
@@ -2669,7 +2672,7 @@ body {
   }
   .order__btn {
     padding: 0px 20px;
-    font-size: 14px;
+    font-size: 12px;
   }
   .nav__link {
     font-size: 16px;
@@ -2700,8 +2703,8 @@ body {
 
 @media (max-width: 320px) {
   .order__btn {
-    padding: 0px 15px;
-    font-size: 12px;
+    padding: 0px 10px;
+    font-size: 10px;
   }
   .header__title {
     font-size: 30px;

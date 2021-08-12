@@ -269,7 +269,6 @@ $(function () {
 			}
 		})
 
-
 		$(".modal__review form").submit(function (e) {
 			e.preventDefault()
 			$(this).removeClass("active");
