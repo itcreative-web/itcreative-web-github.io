@@ -491,43 +491,8 @@ body {
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 19px;
+  margin-bottom: 60px;
   color: #922790;
-}
-
-.advantage__subtitle {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.25;
-  text-align: center;
-  text-transform: uppercase;
-  color: #971F67;
-  margin-bottom: 15px;
-}
-
-.advantage__text {
-  max-width: 750px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.3;
-  text-align: center;
-  color: #222222;
-  margin-bottom: 20px;
-}
-
-.advantage__info {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.3;
-  text-align: center;
-  color: #971F67;
-  margin-bottom: 95px;
 }
 
 .advantages {
