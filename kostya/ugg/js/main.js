@@ -275,7 +275,8 @@ $(function () {
 
 	if($(window).width() <= 800) {
 		$(".advantage__btn-wrapper").click( function() {
-			$(this).toggleClass("active")
+			$(".advantage__btn-wrapper").removeClass("active");
+			$(this).toggleClass("active");
 		})
 	}
 })
