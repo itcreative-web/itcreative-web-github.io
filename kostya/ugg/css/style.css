@@ -2776,7 +2776,8 @@ body {
     height: 800px;
   }
   .advantage__section {
-    margin-top: -160px;
+    margin-top: -175px;
+    background-size: 1920px;
   }
   .header__circle-3 {
     right: -470px;
