@@ -91,10 +91,6 @@ option {
   outline: none;
   margin: 0;
   padding: 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 img {
@@ -3446,6 +3442,30 @@ body {
   }
   .site__header {
     height: 500px;
+  }
+  .advantage__btn-wrapper:hover .advantage__btn {
+    background-color: #4F4F4F;
+  }
+  .advantage__btn-wrapper:hover .advantage__plus {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .advantage__btn-wrapper:hover .advantage__btn-block {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .advantage__btn-wrapper.active .advantage__btn {
+    background-color: #870009;
+  }
+  .advantage__btn-wrapper.active .advantage__plus {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .advantage__btn-wrapper.active .advantage__btn-block {
+    opacity: 1;
+    visibility: visible;
   }
   .card__foto {
     width: 145px;

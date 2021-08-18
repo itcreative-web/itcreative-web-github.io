@@ -272,5 +272,11 @@ $(function () {
 		  }
 	   }
 	}
+
+	if($(window).width() <= 800) {
+		$(".advantage__btn-wrapper").click( function() {
+			$(this).toggleClass("active")
+		})
+	}
 })
 
