@@ -1405,33 +1405,6 @@ body {
 }
 
 @media (max-width: 1025px) {
-  .container {
-    width: 800px;
-  }
-  .site__header {
-    width: 100%;
-    height: 700px;
-  }
-  .header__content {
-    width: 400px;
-  }
-  .header__logo {
-    margin-bottom: 50px;
-  }
-  .header__title {
-    font-size: 56px;
-  }
-  .header__right-title {
-    font-size: 170px;
-  }
-  .header__boot {
-    bottom: 72px;
-    left: 42%;
-    width: 530px;
-  }
-  .header__graffiti {
-    width: 960px;
-  }
   .advantage__section {
     height: auto;
     -webkit-box-orient: vertical;
@@ -1493,6 +1466,36 @@ body {
   }
   .advantage__graffiti {
     width: 100vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+  .site__header {
+    width: 100%;
+    height: 700px;
+  }
+  .header__content {
+    width: 400px;
+  }
+  .header__logo {
+    margin-bottom: 50px;
+  }
+  .header__title {
+    font-size: 56px;
+  }
+  .header__right-title {
+    font-size: 170px;
+  }
+  .header__boot {
+    bottom: 72px;
+    left: 42%;
+    width: 530px;
+  }
+  .header__graffiti {
+    width: 960px;
   }
   .video__content {
     width: 100%;
