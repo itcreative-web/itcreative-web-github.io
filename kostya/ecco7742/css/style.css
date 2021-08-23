@@ -726,6 +726,7 @@ body {
   width: 100%;
   height: auto;
   margin-bottom: 20px;
+  background: #3E3F43;
 }
 
 .card__main-foto img {
@@ -738,6 +739,7 @@ body {
 .card__main-slide {
   width: 100%;
   height: auto;
+  padding: 0px;
 }
 
 .card__other-foto {
@@ -1345,6 +1347,9 @@ body {
   .card__foto:before {
     height: 8px;
   }
+  .card__left {
+    width: 542px;
+  }
   .card__left-footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1399,7 +1404,7 @@ body {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
   .container {
     width: 800px;
   }
@@ -1441,7 +1446,7 @@ body {
   }
   .advantage__left {
     width: 100%;
-    height: 92vh;
+    height: 74vw;
   }
   .advantage__right {
     width: 100%;
@@ -1726,7 +1731,7 @@ body {
   }
   .advantage__left {
     width: 100%;
-    height: 52vh;
+    height: 72vw;
     margin-top: -1px;
   }
   .advantage__graffiti {
