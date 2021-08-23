@@ -45,6 +45,7 @@ $(function () {
 			loop: true,
 			mouseDrag: false,
 			touchDrag: false,
+			animateOut: 'fadeOut',
 		});
 
 		$(selector + " .card__foto").each(function() {
