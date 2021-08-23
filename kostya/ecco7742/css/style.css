@@ -896,7 +896,7 @@ body {
   font-family: "Open Sans" ,sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.5;
   color: #FFFFFF;
   margin-bottom: 30px;
@@ -904,6 +904,7 @@ body {
 
 .card__table tr td:first-child {
   padding-right: 5px;
+  min-width: 105px;
 }
 
 .card__size-btns {
@@ -1941,6 +1942,10 @@ body {
   }
   .card__table {
     width: 100%;
+  }
+  .card__table tr td:first-child {
+    padding-right: 5px;
+    min-width: auto;
   }
   .card__sale {
     width: auto;
