@@ -3690,8 +3690,6 @@ body {
   }
   .card__table {
     font-size: 4vw;
-    position: relative;
-    z-index: 1;
   }
   .card__table tr:before {
     z-index: 1;
