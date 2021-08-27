@@ -3748,6 +3748,10 @@ body {
   .footer__wrapper .header__info {
     text-align: left;
   }
+  .galary__block .owl-nav button {
+    width: 90px;
+    height: 15px;
+  }
 }
 
 @media (max-width: 375px) {
