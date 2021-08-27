@@ -3690,6 +3690,14 @@ body {
   }
   .card__table {
     font-size: 4vw;
+    position: relative;
+    z-index: 1;
+  }
+  .card__table tr:before {
+    z-index: 1;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 213, 149, 0.4)), to(rgba(255, 213, 149, 0)));
+    background: -o-linear-gradient(left, rgba(255, 213, 149, 0.4) 0%, rgba(255, 213, 149, 0) 100%);
+    background: linear-gradient(90deg, rgba(255, 213, 149, 0.4) 0%, rgba(255, 213, 149, 0) 100%);
   }
   .card__price .new__price {
     font-size: 10vw;
