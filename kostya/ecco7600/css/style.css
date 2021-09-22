@@ -3283,10 +3283,13 @@ input.error {
   }
   .advantage {
     width: 245px;
-    height: 355px;
+    height: 370px;
   }
   .advantage__img {
     width: auto !important;
+  }
+  .advantage__text-wrapper {
+    padding: 0px 8px 25px;
   }
   .advantage__text {
     font-size: 17px;
