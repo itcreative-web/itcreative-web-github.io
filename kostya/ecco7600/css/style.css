@@ -852,6 +852,9 @@ input.error {
 .advantage__img {
   margin-top: 13px;
   margin-bottom: 11px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .advantage__title {
@@ -863,6 +866,9 @@ input.error {
   text-align: center;
   color: #000000;
   margin-bottom: 10px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .advantage__divider {
@@ -2368,9 +2374,6 @@ input.error {
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-  }
-  .advantage__text-wrapper {
-    height: 100%;
   }
   .advantage__title {
     font-size: 16px;
