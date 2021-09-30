@@ -644,7 +644,7 @@ body {
 
 .old__price span {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.4;
   text-transform: uppercase;
   color: #1D2537;
@@ -1358,8 +1358,10 @@ body {
 }
 
 .card__price .old__price span {
+  display: inline-block;
   color: #1D2537;
-  margin-left: 5px;
+  margin-left: 3px;
+  word-wrap: normal;
 }
 
 .card__price .new__price span {
@@ -1368,7 +1370,7 @@ body {
   line-height: 1.4;
   text-transform: uppercase;
   color: #B41561;
-  margin-left: 5px;
+  margin-left: 3px;
 }
 
 .card__btns {
@@ -3234,6 +3236,11 @@ label {
   }
   .card__price .new__price span {
     font-size: 8vw;
+  }
+  .card__price .old__price {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
   }
   .card__section-title {
     font-size: 9vw;

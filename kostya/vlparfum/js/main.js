@@ -7,15 +7,6 @@ var landing = {
 	}, 
 
 	initLibraris: function() {
-		// AOS.init({
-		// 	disable : 'mobile',
-		// 	once: true,
-		// 	// offset : -200,
-		// });
-
-		// $(window).resize(function() {
-		// 	AOS.refresh();
-		// })
 
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = -100;
@@ -27,7 +18,6 @@ var landing = {
 				cardHeight = $("#card").outerHeight(false)
 				windowHeight = $(window).height()
 			}
-			
 
 			$('html, body')
 				.stop()
