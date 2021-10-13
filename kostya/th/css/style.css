@@ -1141,6 +1141,12 @@ body {
   margin-bottom: 10px;
 }
 
+.card__info span {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
 .card__divider {
   width: 100%;
   height: 1px;
@@ -2799,15 +2805,15 @@ body {
     width: 68px;
   }
   .header__bg-wrapper {
-    height: -webkit-calc(100% - 30vw);
-    height: calc(100% - 30vw);
+    height: -webkit-calc(100% - 26vw);
+    height: calc(100% - 26vw);
     background-image: url(../img/header-mobile-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   .header__subtitle {
-    width: 56vw;
+    width: 58vw;
     font-size: 4vw;
   }
   .header__title {
