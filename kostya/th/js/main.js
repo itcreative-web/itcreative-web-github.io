@@ -65,12 +65,15 @@ var landing = {
 			responsive: {
 				0: {
 					items:1,
+					autoHeight: true,
 				},
 				481: {
 					items:2,
+					autoHeight: false,
 				},
 				1001: {
 					items:3,
+					autoHeight: false,
 				}
 			}
 		});
