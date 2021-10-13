@@ -2096,7 +2096,7 @@ body {
   }
 }
 
-@media (max-width: 1660px) {
+@media (max-width: 1680px) {
   .header__bg-wrapper {
     width: 90vw;
   }
