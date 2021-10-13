@@ -2985,6 +2985,9 @@ body {
   .card__discount {
     font-size: 3.5vw;
   }
+  .card__info {
+    font-size: 4vw;
+  }
   .sprey__title {
     font-size: 6vw;
   }
