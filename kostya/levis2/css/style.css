@@ -1644,6 +1644,13 @@ body {
   margin-left: 170px;
 }
 
+@media (max-width: 1400px) {
+  .review__img {
+    top: -130px;
+    right: -140px;
+  }
+}
+
 @media (max-width: 1280px) {
   .container {
     width: 1000px;
