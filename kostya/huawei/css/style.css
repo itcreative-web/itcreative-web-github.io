@@ -2463,7 +2463,7 @@ body {
   .info__circle-2 {
     right: -75px;
     top: 150vw;
-    z-index: auto;
+    z-index: 1;
   }
 
   .info__circle-3 {
