@@ -1790,14 +1790,14 @@ body {
   }
 
   .line:before {
-    left: -webkit-calc(50% - 660px);
-    left: -moz-calc(50% - 660px);
-    left: calc(50% - 660px);
+    left: -webkit-calc(50% - 700px);
+    left: -moz-calc(50% - 700px);
+    left: calc(50% - 700px);
   }
   .line:after {
-    right: -webkit-calc(50% - 660px);
-    right: -moz-calc(50% - 660px);
-    right: calc(50% - 660px);
+    right: -webkit-calc(50% - 700px);
+    right: -moz-calc(50% - 700px);
+    right: calc(50% - 700px);
   }
 }
 @media (max-width: 1200px) {
