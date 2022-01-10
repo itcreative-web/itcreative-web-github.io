@@ -2479,6 +2479,10 @@ body {
             justify-content: space-around;
   }
 
+  .info__img-1 {
+    margin-top: 0px;
+  }
+
   .info__img-3 {
     margin-top: -20px;
   }
